@@ -29,3 +29,14 @@ set(CMAKE_CXX_FLAGS "${C_COMMON_FLAGS} -fno-rtti -fno-exceptions \
 -fno-non-call-exceptions -fno-threadsafe-statics -fno-use-cxa-atexit")
 set(CMAKE_EXE_LINKER_FLAGS "${CPU_BUILD_FLAGS} -static \
 -Wl,--gc-sections -Wl,-Map,application.map,--cref")
+
+if (NOT DEFINED CMAKE_C_COMPILER)
+    if (NOT DEFINED ENV{CC})
+        message(FATAL_ERROR "C compiler unspecified")
+    endif ()
+
+    set(CMAKE_C_COMPILER $ENV{CC})
+endif ()
+
+cmake_path(GET CMAKE_C_COMPILER PARENT_PATH TOOLCHAIN_BIN_DIR)
+cmake_path(GET TOOLCHAIN_BIN_DIR PARENT_PATH TOOLCHAIN_PREFIX)
