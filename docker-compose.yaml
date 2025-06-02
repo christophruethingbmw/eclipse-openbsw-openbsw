@@ -1,0 +1,15 @@
+version: '3'
+services:
+  development:
+    image: ghcr.io/eclipse-openbsw/docker/development:v0.0.1
+    stdin_open: true
+    tty: true
+    network_mode: host
+    working_dir: /src
+    volumes:
+      - type: bind
+        source: ./
+        target: /src
+      - type: bind
+        source: ${DOCKER_HISTORY:-${HOME}/.docker_history}
+        target: /home/build/.bash_history

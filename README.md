@@ -77,6 +77,20 @@ It is expected that this respository will be used as a starting point for many c
 You may wish to contribute back some of your work to this repository.
 For more details see [CONTRIBUTING](CONTRIBUTING.md).
 
+## Getting Started
+
+To get started, we recommend to compile our reference application for one of the supported platforms
+using the docker image we provide including all the necessary tools. Therefore, you can simply run
+the development service in the docker compose in the root of the repo, call cmake with the correct
+options and build the generated project.
+
+```
+host> docker compose run development
+docker> mkdir .build && cd .build
+docker> cmake -GNinja ../executables/referenceApp -DCMAKE_TOOLCHAIN_FILE=../admin/cmake/ArmNoneEabi-gcc.cmake -DCMAKE_C_COMPILER=/opt/arm-gnu-toolchain/bin/arm-none-eabi-gcc -DBUILD_TARGET_PLATFORM=s32k148evb
+docker> ninja
+```
+
 ## Legals
 
 Distributed under the [Apache 2.0 License](LICENSE).
