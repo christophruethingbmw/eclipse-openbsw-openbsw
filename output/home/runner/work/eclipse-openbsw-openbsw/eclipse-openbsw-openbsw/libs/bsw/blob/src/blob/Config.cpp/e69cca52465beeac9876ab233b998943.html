@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../blob.html">blob</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../blob.html">blob</a>
+            </li>
+
+        
+        <li class="active"><a href="../Config.cpp.html">Config.cpp</a>:21
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">blob::loadConfigHeader(etl::span&lt;unsigned char const, 4294967295u&gt;&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0003ca70</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>32 (static)</td>
+                <td>268</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../routing/src/routing/pduRouting.cpp/732069993010997471fcf699cd4c236f.html">routing::load(etl::span&lt;unsigned char const, 4294967295u&gt;, routing::PduRoutingTable&amp;) (240)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./153c28e26cbfcd9c89f96c7b07ddc95b.html">blob::Config::from_bytes(etl::span&lt;unsigned char const, 4294967295u&gt;) (144)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            Σ=28
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../doip/src/doip/server/DoIpServerTransportConnectionProvider.cpp/7c5cbf4e10e606a6247a51db143bb842.html">doip::DoIpServerTransportConnectionProvider::connectionAccepted(unsigned char, tcp::AbstractSocket&amp;, doip::DoIpTcpConnection::ConnectionType) (92)</a></pre>
+    
+
+    <pre>
+
+    blob::loadConfigHeader(etl::span<unsigned char const, 4294967295u>&):
+
+       3ca70:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+
+       3ca74:	460e      	mov	r6, r1
+
+    _ZNK3etl4spanIKhLj4294967295EE4sizeEv():
+
+       3ca76:	6809      	ldr	r1, [r1, #0]
+
+       3ca78:	6873      	ldr	r3, [r6, #4]
+
+       3ca7a:	1a5b      	subs	r3, r3, r1
+
+    blob::loadConfigHeader(etl::span<unsigned char const, 4294967295u>&):
+
+       3ca7c:	2b0f      	cmp	r3, #15
+
+       3ca7e:	b082      	sub	sp, #8
+
+       3ca80:	4604      	mov	r4, r0
+
+       3ca82:	d827      	bhi.n	3cad4 <<a href="./e69cca52465beeac9876ab233b998943.html">blob::loadConfigHeader(etl::span<unsigned char const, 4294967295u>&)</a>+0x64>
+
+       3ca84:	f04f 33ff 	mov.w	r3, #4294967295	@ 0xffffffff
+
+       3ca88:	2500      	movs	r5, #0
+
+       3ca8a:	7003      	strb	r3, [r0, #0]
+
+       3ca8c:	7043      	strb	r3, [r0, #1]
+
+       3ca8e:	7083      	strb	r3, [r0, #2]
+
+       3ca90:	70c3      	strb	r3, [r0, #3]
+
+       3ca92:	462f      	mov	r7, r5
+
+       3ca94:	462b      	mov	r3, r5
+
+       3ca96:	f3c5 2207 	ubfx	r2, r5, #8, #8
+
+       3ca9a:	7162      	strb	r2, [r4, #5]
+
+       3ca9c:	f3c5 4207 	ubfx	r2, r5, #16, #8
+
+       3caa0:	71a2      	strb	r2, [r4, #6]
+
+       3caa2:	f3c7 2207 	ubfx	r2, r7, #8, #8
+
+       3caa6:	f3c3 2007 	ubfx	r0, r3, #8, #8
+
+       3caaa:	7262      	strb	r2, [r4, #9]
+
+       3caac:	f3c7 4207 	ubfx	r2, r7, #16, #8
+
+       3cab0:	7125      	strb	r5, [r4, #4]
+
+       3cab2:	7227      	strb	r7, [r4, #8]
+
+       3cab4:	0e2d      	lsrs	r5, r5, #24
+
+       3cab6:	0e3f      	lsrs	r7, r7, #24
+
+       3cab8:	72a2      	strb	r2, [r4, #10]
+
+       3caba:	f3c3 4107 	ubfx	r1, r3, #16, #8
+
+       3cabe:	0e1a      	lsrs	r2, r3, #24
+
+       3cac0:	7360      	strb	r0, [r4, #13]
+
+       3cac2:	4620      	mov	r0, r4
+
+       3cac4:	71e5      	strb	r5, [r4, #7]
+
+       3cac6:	72e7      	strb	r7, [r4, #11]
+
+       3cac8:	7323      	strb	r3, [r4, #12]
+
+       3caca:	73a1      	strb	r1, [r4, #14]
+
+       3cacc:	73e2      	strb	r2, [r4, #15]
+
+       3cace:	b002      	add	sp, #8
+
+       3cad0:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+    _ZN3etl4spanIKhLj4294967295EE7advanceEj():
+
+       3cad4:	1d0b      	adds	r3, r1, #4
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       3cad6:	2200      	movs	r2, #0
+
+       3cad8:	9200      	str	r2, [sp, #0]
+
+    _ZN3etl4spanIKhLj4294967295EE7advanceEj():
+
+       3cada:	6033      	str	r3, [r6, #0]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       3cadc:	2204      	movs	r2, #4
+
+       3cade:	4668      	mov	r0, sp
+
+       3cae0:	f7c3 fdd2 	bl	688 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZNK3etl4spanIKhLj4294967295EE4sizeEv():
+
+       3cae4:	e9d6 1300 	ldrd	r1, r3, [r6]
+
+       3cae8:	9a00      	ldr	r2, [sp, #0]
+
+       3caea:	1a5b      	subs	r3, r3, r1
+
+    _ZN3etl4spanIKhLj4294967295EE4takeIKNS_14unaligned_typeIyLi4321EEEEERT_v():
+
+       3caec:	2b07      	cmp	r3, #7
+
+       3caee:	fa92 f882 	rev.w	r8, r2
+
+       3caf2:	d806      	bhi.n	3cb02 <<a href="./e69cca52465beeac9876ab233b998943.html">blob::loadConfigHeader(etl::span<unsigned char const, 4294967295u>&)</a>+0x92>
+
+       3caf4:	4b22      	ldr	r3, [pc, #136]	@ (3cb80 <<a href="./e69cca52465beeac9876ab233b998943.html">blob::loadConfigHeader(etl::span<unsigned char const, 4294967295u>&)</a>+0x110>)
+
+       3caf6:	4668      	mov	r0, sp
+
+       3caf8:	681b      	ldr	r3, [r3, #0]
+
+       3cafa:	4798      	blx	r3
+
+    _ZNK3etl4spanIKhLj4294967295EE4sizeEv():
+
+       3cafc:	e9d6 1300 	ldrd	r1, r3, [r6]
+
+       3cb00:	1a5b      	subs	r3, r3, r1
+
+    _ZNK3etl14unaligned_typeIyLi4321EEcvyEv():
+
+       3cb02:	ed9f 7b1d 	vldr	d7, [pc, #116]	@ 3cb78 <<a href="./e69cca52465beeac9876ab233b998943.html">blob::loadConfigHeader(etl::span<unsigned char const, 4294967295u>&)</a>+0x108>
+
+    _ZN3etl4spanIKhLj4294967295EE7advanceEj():
+
+       3cb06:	2b08      	cmp	r3, #8
+
+       3cb08:	bf94      	ite	ls
+
+       3cb0a:	18ca      	addls	r2, r1, r3
+
+       3cb0c:	f101 0208 	addhi.w	r2, r1, #8
+
+       3cb10:	6032      	str	r2, [r6, #0]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj8ELi4321ELb1EE19copy_store_to_valueIyEEvPKhRT_():
+
+       3cb12:	4668      	mov	r0, sp
+
+       3cb14:	2208      	movs	r2, #8
+
+    _ZNK3etl14unaligned_typeIyLi4321EEcvyEv():
+
+       3cb16:	ed8d 7b00 	vstr	d7, [sp]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj8ELi4321ELb1EE19copy_store_to_valueIyEEvPKhRT_():
+
+       3cb1a:	f7c3 fdb5 	bl	688 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZNK3etl4spanIKhLj4294967295EE4sizeEv():
+
+       3cb1e:	e9d6 1300 	ldrd	r1, r3, [r6]
+
+       3cb22:	9f00      	ldr	r7, [sp, #0]
+
+       3cb24:	9d01      	ldr	r5, [sp, #4]
+
+       3cb26:	1a5b      	subs	r3, r3, r1
+
+    _ZN3etl4spanIKhLj4294967295EE4takeIKNS_14unaligned_typeImLi4321EEEEERT_v():
+
+       3cb28:	2b03      	cmp	r3, #3
+
+       3cb2a:	ba3f      	rev	r7, r7
+
+    _ZNK3etl4spanIKhLj4294967295EE4sizeEv():
+
+       3cb2c:	ba2d      	rev	r5, r5
+
+    _ZN3etl4spanIKhLj4294967295EE4takeIKNS_14unaligned_typeImLi4321EEEEERT_v():
+
+       3cb2e:	d806      	bhi.n	3cb3e <<a href="./e69cca52465beeac9876ab233b998943.html">blob::loadConfigHeader(etl::span<unsigned char const, 4294967295u>&)</a>+0xce>
+
+       3cb30:	4b13      	ldr	r3, [pc, #76]	@ (3cb80 <<a href="./e69cca52465beeac9876ab233b998943.html">blob::loadConfigHeader(etl::span<unsigned char const, 4294967295u>&)</a>+0x110>)
+
+       3cb32:	4668      	mov	r0, sp
+
+       3cb34:	681b      	ldr	r3, [r3, #0]
+
+       3cb36:	4798      	blx	r3
+
+    _ZNK3etl4spanIKhLj4294967295EE4sizeEv():
+
+       3cb38:	e9d6 1300 	ldrd	r1, r3, [r6]
+
+       3cb3c:	1a5b      	subs	r3, r3, r1
+
+    _ZN3etl4spanIKhLj4294967295EE7advanceEj():
+
+       3cb3e:	2b04      	cmp	r3, #4
+
+       3cb40:	bf94      	ite	ls
+
+       3cb42:	18ca      	addls	r2, r1, r3
+
+       3cb44:	1d0a      	addhi	r2, r1, #4
+
+       3cb46:	6032      	str	r2, [r6, #0]
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       3cb48:	2300      	movs	r3, #0
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       3cb4a:	2204      	movs	r2, #4
+
+       3cb4c:	4668      	mov	r0, sp
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       3cb4e:	9300      	str	r3, [sp, #0]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       3cb50:	f7c3 fd9a 	bl	688 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    blob::loadConfigHeader(etl::span<unsigned char const, 4294967295u>&):
+
+       3cb54:	f3c8 2207 	ubfx	r2, r8, #8, #8
+
+       3cb58:	9b00      	ldr	r3, [sp, #0]
+
+       3cb5a:	f884 8000 	strb.w	r8, [r4]
+
+       3cb5e:	7062      	strb	r2, [r4, #1]
+
+       3cb60:	f3c8 4207 	ubfx	r2, r8, #16, #8
+
+       3cb64:	ea4f 6818 	mov.w	r8, r8, lsr #24
+
+       3cb68:	ba1b      	rev	r3, r3
+
+       3cb6a:	70a2      	strb	r2, [r4, #2]
+
+       3cb6c:	f884 8003 	strb.w	r8, [r4, #3]
+
+       3cb70:	e791      	b.n	3ca96 <<a href="./e69cca52465beeac9876ab233b998943.html">blob::loadConfigHeader(etl::span<unsigned char const, 4294967295u>&)</a>+0x26>
+
+       3cb72:	bf00      	nop
+
+       3cb74:	f3af 8000 	nop.w
+
+    	...
+
+       3cb80:	20000000 	.word	0x20000000
+
+    </pre>
+
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 448</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 3,160</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    448
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    3,160
+                    
+                    
+                </td>
+                <td class="col_size">268</td>
+                <td><a href="./e69cca52465beeac9876ab233b998943.html" class="icon-function">blob::loadConfigHeader(etl::span&lt;unsigned char const, 4294967295u&gt;&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    416
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,892
+                    
+                    
+                </td>
+                <td class="col_size">144</td>
+                <td><a href="./153c28e26cbfcd9c89f96c7b07ddc95b.html" class="icon-function">blob::Config::from_bytes(etl::span&lt;unsigned char const, 4294967295u&gt;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    376
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,748
+                    
+                    
+                </td>
+                <td class="col_size">232</td>
+                <td><a href="../../../../routing/src/routing/util.cpp/abff4e9ba34d1c62c0abd038acb4c8e5.html" class="icon-function">routing::config(etl::span&lt;unsigned char const, 4294967295u&gt;, blob::ConfigType, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                320 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">2,516</td>
+                <td><a href="../../../../../../executables/referenceApp/application/src/systems/RoutingSystem.cpp/6c3a6cf02cf3e5c9326ae59149e6367c.html" class="icon-function">systems::RoutingSystem::init()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

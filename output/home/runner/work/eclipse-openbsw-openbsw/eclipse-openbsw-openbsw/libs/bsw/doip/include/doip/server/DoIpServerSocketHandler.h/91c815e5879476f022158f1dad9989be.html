@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../doip.html">doip</a></li>
+        
+        <li><a href="../../../../include.html">include</a></li>
+        
+        <li><a href="../../../doip.html">doip</a></li>
+        
+        <li ><a href="../../server.html">server</a>
+            </li>
+
+        
+        <li class="active"><a href="../DoIpServerSocketHandler.h.html">DoIpServerSocketHandler.h</a>:212
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">doip::declare::DoIpServerSocketHandler&lt;tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u&gt;::releaseSocket(tcp::AbstractSocket&amp;, doip::DoIpTcpConnection::ConnectionType)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000d6cc</td>
+                <td>
+    
+    
+</td>
+                <td>24 (static)</td>
+                <td>112</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../../executables/referenceApp/application/src/systems/DoIpServerSystem.cpp/71aaf17f6501f62c653b8cfba0ca5873.html">doip::DoIpServerSystem::checkRoutingActivation(unsigned short, unsigned char, unsigned char, ip::IPEndpoint const&amp;, ip::IPEndpoint const&amp;, etl::optional&lt;unsigned long&gt;, bool) (84)</a></pre>
+    
+
+    <pre>
+
+    doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType):
+
+        d6cc:	b102      	cbz	r2, d6d0 <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x4>
+
+        d6ce:	4770      	bx	lr
+
+        d6d0:	b530      	push	{r4, r5, lr}
+
+    _ZN3etl5ipool7destroyIN3tcp10LwipSocketEEEvPKT_():
+
+        d6d2:	6e03      	ldr	r3, [r0, #96]	@ 0x60
+
+        d6d4:	2b33      	cmp	r3, #51	@ 0x33
+
+    doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType):
+
+        d6d6:	b083      	sub	sp, #12
+
+        d6d8:	4604      	mov	r4, r0
+
+        d6da:	460d      	mov	r5, r1
+
+    _ZN3etl5ipool7destroyIN3tcp10LwipSocketEEEvPKT_():
+
+        d6dc:	d91a      	bls.n	d714 <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x48>
+
+        d6de:	682b      	ldr	r3, [r5, #0]
+
+        d6e0:	4a14      	ldr	r2, [pc, #80]	@ (d734 <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x68>)
+
+        d6e2:	6cdb      	ldr	r3, [r3, #76]	@ 0x4c
+
+        d6e4:	4293      	cmp	r3, r2
+
+        d6e6:	d121      	bne.n	d72c <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x60>
+
+    _ZNK3etl5ipool15is_item_in_poolEPKc():
+
+        d6e8:	6d23      	ldr	r3, [r4, #80]	@ 0x50
+
+        d6ea:	1aeb      	subs	r3, r5, r3
+
+        d6ec:	d406      	bmi.n	d6fc <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x30>
+
+        d6ee:	6e62      	ldr	r2, [r4, #100]	@ 0x64
+
+        d6f0:	6e21      	ldr	r1, [r4, #96]	@ 0x60
+
+        d6f2:	3a01      	subs	r2, #1
+
+        d6f4:	fb01 f202 	mul.w	r2, r1, r2
+
+        d6f8:	4293      	cmp	r3, r2
+
+        d6fa:	dd03      	ble.n	d704 <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x38>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+        d6fc:	4b0e      	ldr	r3, [pc, #56]	@ (d738 <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x6c>)
+
+        d6fe:	a801      	add	r0, sp, #4
+
+        d700:	681b      	ldr	r3, [r3, #0]
+
+        d702:	4798      	blx	r3
+
+        d704:	6da3      	ldr	r3, [r4, #88]	@ 0x58
+
+        d706:	b953      	cbnz	r3, d71e <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x52>
+
+        d708:	4b0b      	ldr	r3, [pc, #44]	@ (d738 <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x6c>)
+
+        d70a:	a801      	add	r0, sp, #4
+
+        d70c:	681b      	ldr	r3, [r3, #0]
+
+        d70e:	4798      	blx	r3
+
+    doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType):
+
+        d710:	b003      	add	sp, #12
+
+        d712:	bd30      	pop	{r4, r5, pc}
+
+    _ZN3etl5ipool7destroyIN3tcp10LwipSocketEEEvPKT_():
+
+        d714:	4b08      	ldr	r3, [pc, #32]	@ (d738 <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x6c>)
+
+        d716:	a801      	add	r0, sp, #4
+
+        d718:	681b      	ldr	r3, [r3, #0]
+
+        d71a:	4798      	blx	r3
+
+        d71c:	e7df      	b.n	d6de <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x12>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+        d71e:	6d62      	ldr	r2, [r4, #84]	@ 0x54
+
+        d720:	602a      	str	r2, [r5, #0]
+
+        d722:	3b01      	subs	r3, #1
+
+        d724:	6565      	str	r5, [r4, #84]	@ 0x54
+
+        d726:	65a3      	str	r3, [r4, #88]	@ 0x58
+
+    doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType):
+
+        d728:	b003      	add	sp, #12
+
+        d72a:	bd30      	pop	{r4, r5, pc}
+
+    _ZN3etl5ipool7destroyIN3tcp10LwipSocketEEEvPKT_():
+
+        d72c:	4628      	mov	r0, r5
+
+        d72e:	4798      	blx	r3
+
+        d730:	e7da      	b.n	d6e8 <<a href="./91c815e5879476f022158f1dad9989be.html">doip::declare::DoIpServerSocketHandler<tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u>::releaseSocket(tcp::AbstractSocket&, doip::DoIpTcpConnection::ConnectionType)</a>+0x1c>
+
+        d732:	bf00      	nop
+
+        d734:	0000d501 	.word	0x0000d501
+
+        d738:	20000000 	.word	0x20000000
+
+    </pre>
+
+    
+    <pre><a href="../../../../../../../executables/referenceApp/application/src/systems/DoIpServerSystem.cpp/2091f2531a6eebc0689f8139932e5fbf.html">doip::DoIpServerSystem::getEntityStatus(unsigned char) const (68)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

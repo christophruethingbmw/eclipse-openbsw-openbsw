@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../3rdparty.html">3rdparty</a></li>
+        
+        <li><a href="../../../../etl.html">etl</a></li>
+        
+        <li><a href="../../../include.html">include</a></li>
+        
+        <li ><a href="../../etl.html">etl</a>
+            </li>
+
+        
+        <li class="active"><a href="../reference_flat_set.h.html">reference_flat_set.h</a>:582
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">etl::ireference_flat_set&lt;someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator&gt;::find(someip::SubscribedEventGroup*)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00029588</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>24 (static)</td>
+                <td>168</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (5)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../bsw/cpp2someip/src/SubscriptionManager.cpp/d2093f1e72b1cee9dbec218bb39b3b07.html">someip::SubscriptionManager::addSubscription(unsigned short, unsigned char, unsigned short, unsigned short, unsigned long, ip::IPAddress const&amp;, unsigned short) (1160)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../bsw/cpp2someip/src/SubscriptionManager.cpp/51307af4dc76b1655750ef1c47f7f6ae.html">someip::SubscriptionManager::removeSubscription(unsigned short, unsigned char, unsigned short, unsigned short, ip::IPAddress const&amp;, unsigned short) (584)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../bsw/cpp2someip/src/SubscriptionManager.cpp/6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short) (496)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../bsw/cpp2someip/src/SubscriptionManager.cpp/62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear() (360)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../bsw/cpp2someip/src/SubscriptionManager.cpp/7e45877349ebfaf414484a846bd156da.html">someip::SubscriptionManager::getSubscriptions(someip::SubscribedEventGroup const&amp;) const (88)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../bsw/cpp2someip/include/someip/SubscriptionManager.h/88890476170323fd1de634de07a008eb.html">someip::SubscriptionManager::~SubscriptionManager() (16)</a></pre>
+    
+
+    <pre>
+
+    etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*):
+
+       29588:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+
+    _ZN3etl11pvoidvector5beginEv():
+
+       2958c:	684c      	ldr	r4, [r1, #4]
+
+    _ZN3etl11pvoidvector3endEv():
+
+       2958e:	688f      	ldr	r7, [r1, #8]
+
+    _ZN3etl15distance_helperINS_19ireference_flat_setIPN6someip20SubscribedEventGroupENS2_19SubscriptionManager18LessThanComparatorEE8iteratorEEENS_15iterator_traitsIT_vE15difference_typeESA_SA_NS_26bidirectional_iterator_tagE():
+
+       29590:	42bc      	cmp	r4, r7
+
+       29592:	d049      	beq.n	29628 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0xa0>
+
+       29594:	1f3b      	subs	r3, r7, #4
+
+       29596:	1b1b      	subs	r3, r3, r4
+
+       29598:	089b      	lsrs	r3, r3, #2
+
+    _ZNK6someip20SubscribedEventGroup12getServiceIdEv():
+
+       2959a:	8915      	ldrh	r5, [r2, #8]
+
+       2959c:	4616      	mov	r6, r2
+
+    _ZN3etl15distance_helperINS_19ireference_flat_setIPN6someip20SubscribedEventGroupENS2_19SubscriptionManager18LessThanComparatorEE8iteratorEEENS_15iterator_traitsIT_vE15difference_typeESA_SA_NS_26bidirectional_iterator_tagE():
+
+       2959e:	3301      	adds	r3, #1
+
+    _ZN3etl14advance_helperINS_19ireference_flat_setIPN6someip20SubscribedEventGroupENS2_19SubscriptionManager18LessThanComparatorEE8iteratorEiEEvRT_T0_NS_26bidirectional_iterator_tagE():
+
+       295a0:	1059      	asrs	r1, r3, #1
+
+       295a2:	bf14      	ite	ne
+
+       295a4:	eb04 0e81 	addne.w	lr, r4, r1, lsl #2
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE8iteratorC4ERKS7_():
+
+       295a8:	46a6      	moveq	lr, r4
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip20SubscribedEventGroupENS2_19SubscriptionManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       295aa:	f8de 2000 	ldr.w	r2, [lr]
+
+       295ae:	6812      	ldr	r2, [r2, #0]
+
+    _ZNK6someip20SubscribedEventGroup12getServiceIdEv():
+
+       295b0:	f8b2 c008 	ldrh.w	ip, [r2, #8]
+
+    _ZNK6someip19SubscriptionManager18LessThanComparatorclEPKNS_20SubscribedEventGroupES4_():
+
+       295b4:	45ac      	cmp	ip, r5
+
+       295b6:	d015      	beq.n	295e4 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x5c>
+
+       295b8:	bf34      	ite	cc
+
+       295ba:	2201      	movcc	r2, #1
+
+       295bc:	2200      	movcs	r2, #0
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip20SubscribedEventGroupENS2_19SubscriptionManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       295be:	b962      	cbnz	r2, 295da <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x52>
+
+       295c0:	460b      	mov	r3, r1
+
+       295c2:	2b00      	cmp	r3, #0
+
+       295c4:	dcec      	bgt.n	295a0 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x18>
+
+    etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*):
+
+       295c6:	42a7      	cmp	r7, r4
+
+       295c8:	d02e      	beq.n	29628 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0xa0>
+
+       295ca:	6823      	ldr	r3, [r4, #0]
+
+       295cc:	681b      	ldr	r3, [r3, #0]
+
+    _ZNK6someip19SubscriptionManager18LessThanComparatorclEPKNS_20SubscribedEventGroupES4_():
+
+       295ce:	891a      	ldrh	r2, [r3, #8]
+
+       295d0:	42aa      	cmp	r2, r5
+
+       295d2:	d01b      	beq.n	2960c <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x84>
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE8iteratorC4EPPS3_():
+
+       295d4:	6007      	str	r7, [r0, #0]
+
+    etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*):
+
+       295d6:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip20SubscribedEventGroupENS2_19SubscriptionManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       295da:	3101      	adds	r1, #1
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE8iteratorppEv():
+
+       295dc:	f10e 0404 	add.w	r4, lr, #4
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip20SubscribedEventGroupENS2_19SubscriptionManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       295e0:	1a5b      	subs	r3, r3, r1
+
+       295e2:	e7ee      	b.n	295c2 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x3a>
+
+    _ZNK6someip20SubscribedEventGroup13getInstanceIdEv():
+
+       295e4:	f8b2 800a 	ldrh.w	r8, [r2, #10]
+
+       295e8:	f8b6 c00a 	ldrh.w	ip, [r6, #10]
+
+    _ZNK6someip19SubscriptionManager18LessThanComparatorclEPKNS_20SubscribedEventGroupES4_():
+
+       295ec:	45e0      	cmp	r8, ip
+
+       295ee:	d1e3      	bne.n	295b8 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x30>
+
+    _ZNK6someip20SubscribedEventGroup15getEventgroupIdEv():
+
+       295f0:	f8b2 800c 	ldrh.w	r8, [r2, #12]
+
+       295f4:	f8b6 c00c 	ldrh.w	ip, [r6, #12]
+
+    _ZNK6someip19SubscriptionManager18LessThanComparatorclEPKNS_20SubscribedEventGroupES4_():
+
+       295f8:	45e0      	cmp	r8, ip
+
+       295fa:	d1dd      	bne.n	295b8 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x30>
+
+       295fc:	f892 c00e 	ldrb.w	ip, [r2, #14]
+
+       29600:	7bb2      	ldrb	r2, [r6, #14]
+
+       29602:	4594      	cmp	ip, r2
+
+       29604:	bf2c      	ite	cs
+
+       29606:	2200      	movcs	r2, #0
+
+       29608:	2201      	movcc	r2, #1
+
+       2960a:	e7d8      	b.n	295be <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x36>
+
+       2960c:	8971      	ldrh	r1, [r6, #10]
+
+       2960e:	895a      	ldrh	r2, [r3, #10]
+
+       29610:	4291      	cmp	r1, r2
+
+       29612:	d1df      	bne.n	295d4 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x4c>
+
+    _ZNK6someip20SubscribedEventGroup15getEventgroupIdEv():
+
+       29614:	8999      	ldrh	r1, [r3, #12]
+
+       29616:	89b2      	ldrh	r2, [r6, #12]
+
+    _ZNK6someip19SubscriptionManager18LessThanComparatorclEPKNS_20SubscribedEventGroupES4_():
+
+       29618:	4291      	cmp	r1, r2
+
+       2961a:	d1db      	bne.n	295d4 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x4c>
+
+    etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*):
+
+       2961c:	7b9b      	ldrb	r3, [r3, #14]
+
+       2961e:	7bb2      	ldrb	r2, [r6, #14]
+
+       29620:	4293      	cmp	r3, r2
+
+       29622:	d3d7      	bcc.n	295d4 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x4c>
+
+       29624:	429a      	cmp	r2, r3
+
+       29626:	d3d5      	bcc.n	295d4 <<a href="./1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0+0x4c>
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE8iteratorC4EPPS3_():
+
+       29628:	6004      	str	r4, [r0, #0]
+
+    etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*):
+
+       2962a:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE4findES3_.isra.0():
+
+       2962e:	bf00      	nop
+
+    </pre>
+
+    
+    <pre><a href="../../../../../bsw/cpp2someip/src/SubscriptionManager.cpp/51307af4dc76b1655750ef1c47f7f6ae.html">someip::SubscriptionManager::removeSubscription(unsigned short, unsigned char, unsigned short, unsigned short, ip::IPAddress const&amp;, unsigned short) (584)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 136</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,328</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    136
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,328
+                    
+                    
+                </td>
+                <td class="col_size">168</td>
+                <td><a href="./1bdac026410d1ba9bfd999aeab04ddd7.html" class="icon-function">etl::ireference_flat_set&lt;someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator&gt;::find(someip::SubscribedEventGroup*)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                112 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">1,160</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/SubscriptionManager.cpp/d2093f1e72b1cee9dbec218bb39b3b07.html" class="icon-function">someip::SubscriptionManager::addSubscription(unsigned short, unsigned char, unsigned short, unsigned short, unsigned long, ip::IPAddress const&amp;, unsigned short)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

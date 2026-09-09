@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../SubscriptionManager.cpp.html">SubscriptionManager.cpp</a>:214
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00029878</td>
+                <td>
+    
+    
+</td>
+                <td>64 (static)</td>
+                <td>496</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (6,
+                            <span title="sum of used bytes by all callees">
+                            Σ=378
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../SubscribedEventGroup.cpp/52c3aa2bfe72098e57096dfe9908feed.html">someip::SubscribedEventGroup::SubscribedEventGroup(unsigned short, unsigned char, unsigned short, unsigned short) (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../3rdparty/etl/include/etl/reference_flat_set.h/1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set&lt;someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator&gt;::find(someip::SubscribedEventGroup*) (168)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SubscriptionEndpoint.cpp/d308f34704b6a3d6e87155c46f9c8040.html">someip::SubscriptionEndpoint::clear() (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../unknown/unknown/7d8c66e32294c0fbcad3762662cbd6d5.html">memmove (50)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...) (56)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./51307af4dc76b1655750ef1c47f7f6ae.html">someip::SubscriptionManager::removeSubscription(unsigned short, unsigned char, unsigned short, unsigned short, ip::IPAddress const&amp;, unsigned short) (584)</a></pre>
+    
+
+    <pre>
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       29878:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+       2987c:	b088      	sub	sp, #32
+
+       2987e:	4680      	mov	r8, r0
+
+       29880:	f8bd 7040 	ldrh.w	r7, [sp, #64]	@ 0x40
+
+       29884:	9700      	str	r7, [sp, #0]
+
+       29886:	a804      	add	r0, sp, #16
+
+       29888:	4615      	mov	r5, r2
+
+       2988a:	461e      	mov	r6, r3
+
+       2988c:	460c      	mov	r4, r1
+
+       2988e:	f7ff fe0d 	bl	294ac <<a href="../SubscribedEventGroup.cpp/52c3aa2bfe72098e57096dfe9908feed.html">someip::SubscribedEventGroup::SubscribedEventGroup(unsigned short, unsigned char, unsigned short, unsigned short)</a>>
+
+    _ZNK6someip8internal23FindEventGroupCondition7isValidEv():
+
+       29892:	f8bd 2018 	ldrh.w	r2, [sp, #24]
+
+       29896:	f64f 73ff 	movw	r3, #65535	@ 0xffff
+
+       2989a:	429a      	cmp	r2, r3
+
+       2989c:	f000 80b3 	beq.w	29a06 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x18e>
+
+       298a0:	f89d 201e 	ldrb.w	r2, [sp, #30]
+
+       298a4:	2aff      	cmp	r2, #255	@ 0xff
+
+       298a6:	f000 80ae 	beq.w	29a06 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x18e>
+
+       298aa:	f8bd 201a 	ldrh.w	r2, [sp, #26]
+
+       298ae:	429a      	cmp	r2, r3
+
+       298b0:	f000 80a9 	beq.w	29a06 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x18e>
+
+       298b4:	f8bd 201c 	ldrh.w	r2, [sp, #28]
+
+       298b8:	429a      	cmp	r2, r3
+
+       298ba:	f000 80a4 	beq.w	29a06 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x18e>
+
+    _ZN3etl9iflat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE4findERKS3_():
+
+       298be:	f8d8 3004 	ldr.w	r3, [r8, #4]
+
+       298c2:	f8d3 9000 	ldr.w	r9, [r3]
+
+       298c6:	aa04      	add	r2, sp, #16
+
+       298c8:	4649      	mov	r1, r9
+
+       298ca:	a803      	add	r0, sp, #12
+
+       298cc:	f7ff fe5c 	bl	29588 <<a href="../../../../3rdparty/etl/include/etl/reference_flat_set.h/1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0>
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       298d0:	f8d9 3008 	ldr.w	r3, [r9, #8]
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE14const_iteratorC4ERKNS6_8iteratorE():
+
+       298d4:	f8dd 900c 	ldr.w	r9, [sp, #12]
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       298d8:	454b      	cmp	r3, r9
+
+       298da:	f000 8099 	beq.w	29a10 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x198>
+
+       298de:	e9cd 6700 	strd	r6, r7, [sp]
+
+       298e2:	495c      	ldr	r1, [pc, #368]	@ (29a54 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1dc>)
+
+       298e4:	4f5c      	ldr	r7, [pc, #368]	@ (29a58 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1e0>)
+
+       298e6:	7808      	ldrb	r0, [r1, #0]
+
+       298e8:	495c      	ldr	r1, [pc, #368]	@ (29a5c <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1e4>)
+
+       298ea:	462b      	mov	r3, r5
+
+       298ec:	4622      	mov	r2, r4
+
+       298ee:	f7e0 f847 	bl	9980 <<a href="../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...)</a>>
+
+       298f2:	f8d9 3000 	ldr.w	r3, [r9]
+
+       298f6:	681d      	ldr	r5, [r3, #0]
+
+       298f8:	686b      	ldr	r3, [r5, #4]
+
+       298fa:	2b00      	cmp	r3, #0
+
+       298fc:	d034      	beq.n	29968 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0xf0>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       298fe:	f8df 9160 	ldr.w	r9, [pc, #352]	@ 29a60 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1e8>
+
+    _ZN3etl12forward_linkILj0EE5clearEv():
+
+       29902:	f04f 0a00 	mov.w	sl, #0
+
+       29906:	e006      	b.n	29916 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x9e>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       29908:	6863      	ldr	r3, [r4, #4]
+
+       2990a:	6033      	str	r3, [r6, #0]
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       2990c:	686b      	ldr	r3, [r5, #4]
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       2990e:	6066      	str	r6, [r4, #4]
+
+       29910:	3a01      	subs	r2, #1
+
+       29912:	60a2      	str	r2, [r4, #8]
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       29914:	b343      	cbz	r3, 29968 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0xf0>
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE8get_headEv():
+
+       29916:	682e      	ldr	r6, [r5, #0]
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       29918:	4630      	mov	r0, r6
+
+       2991a:	f7ff fe19 	bl	29550 <<a href="../SubscriptionEndpoint.cpp/d308f34704b6a3d6e87155c46f9c8040.html">someip::SubscriptionEndpoint::clear()</a>>
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE21disconnect_link_afterERS2_():
+
+       2991e:	682b      	ldr	r3, [r5, #0]
+
+       29920:	42bb      	cmp	r3, r7
+
+       29922:	d007      	beq.n	29934 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0xbc>
+
+    _ZN3etl12unlink_afterINS_12forward_linkILj0EEEEENS_9enable_ifIXsrNS_15is_forward_linkIT_EE5valueEPS5_E4typeERS5_():
+
+       29924:	b11b      	cbz	r3, 2992e <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0xb6>
+
+       29926:	681a      	ldr	r2, [r3, #0]
+
+       29928:	602a      	str	r2, [r5, #0]
+
+    _ZN3etl12forward_linkILj0EE5clearEv():
+
+       2992a:	f8c3 a000 	str.w	sl, [r3]
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE21disconnect_link_afterERS2_():
+
+       2992e:	686b      	ldr	r3, [r5, #4]
+
+       29930:	3b01      	subs	r3, #1
+
+       29932:	606b      	str	r3, [r5, #4]
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       29934:	f8d8 400c 	ldr.w	r4, [r8, #12]
+
+    _ZNK3etl5ipool15is_item_in_poolEPKc():
+
+       29938:	6823      	ldr	r3, [r4, #0]
+
+       2993a:	1af3      	subs	r3, r6, r3
+
+       2993c:	d406      	bmi.n	2994c <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0xd4>
+
+       2993e:	6962      	ldr	r2, [r4, #20]
+
+       29940:	6921      	ldr	r1, [r4, #16]
+
+       29942:	3a01      	subs	r2, #1
+
+       29944:	fb01 f202 	mul.w	r2, r1, r2
+
+       29948:	4293      	cmp	r3, r2
+
+       2994a:	dd03      	ble.n	29954 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0xdc>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       2994c:	f8d9 3000 	ldr.w	r3, [r9]
+
+       29950:	a803      	add	r0, sp, #12
+
+       29952:	4798      	blx	r3
+
+       29954:	68a2      	ldr	r2, [r4, #8]
+
+       29956:	2a00      	cmp	r2, #0
+
+       29958:	d1d6      	bne.n	29908 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x90>
+
+       2995a:	f8d9 3000 	ldr.w	r3, [r9]
+
+       2995e:	a803      	add	r0, sp, #12
+
+       29960:	4798      	blx	r3
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       29962:	686b      	ldr	r3, [r5, #4]
+
+       29964:	2b00      	cmp	r3, #0
+
+       29966:	d1d6      	bne.n	29916 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x9e>
+
+       29968:	f8d8 4008 	ldr.w	r4, [r8, #8]
+
+    _ZNK3etl5ipool15is_item_in_poolEPKc():
+
+       2996c:	6823      	ldr	r3, [r4, #0]
+
+       2996e:	1aeb      	subs	r3, r5, r3
+
+       29970:	d45b      	bmi.n	29a2a <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1b2>
+
+       29972:	6962      	ldr	r2, [r4, #20]
+
+       29974:	6921      	ldr	r1, [r4, #16]
+
+       29976:	3a01      	subs	r2, #1
+
+       29978:	fb01 f202 	mul.w	r2, r1, r2
+
+       2997c:	4293      	cmp	r3, r2
+
+       2997e:	dc54      	bgt.n	29a2a <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1b2>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       29980:	68a3      	ldr	r3, [r4, #8]
+
+       29982:	2b00      	cmp	r3, #0
+
+       29984:	d058      	beq.n	29a38 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1c0>
+
+       29986:	6862      	ldr	r2, [r4, #4]
+
+       29988:	602a      	str	r2, [r5, #0]
+
+       2998a:	3b01      	subs	r3, #1
+
+       2998c:	60a3      	str	r3, [r4, #8]
+
+       2998e:	6065      	str	r5, [r4, #4]
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       29990:	f8d8 6004 	ldr.w	r6, [r8, #4]
+
+    _ZN3etl9iflat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE4findERKS3_():
+
+       29994:	462a      	mov	r2, r5
+
+       29996:	6835      	ldr	r5, [r6, #0]
+
+       29998:	a803      	add	r0, sp, #12
+
+       2999a:	4629      	mov	r1, r5
+
+       2999c:	f7ff fdf4 	bl	29588 <<a href="../../../../3rdparty/etl/include/etl/reference_flat_set.h/1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0>
+
+    _ZN3etleqERKNS_19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE8iteratorES9_():
+
+       299a0:	9c03      	ldr	r4, [sp, #12]
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       299a2:	68ab      	ldr	r3, [r5, #8]
+
+       299a4:	429c      	cmp	r4, r3
+
+       299a6:	d022      	beq.n	299ee <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x176>
+
+    _ZN3etl9iflat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE5eraseENS_19ireference_flat_setIS3_S5_E8iteratorE():
+
+       299a8:	68b5      	ldr	r5, [r6, #8]
+
+    _ZNK3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE8iteratordeEv():
+
+       299aa:	f8d4 8000 	ldr.w	r8, [r4]
+
+    _ZNK3etl5ipool15is_item_in_poolEPKc():
+
+       299ae:	682b      	ldr	r3, [r5, #0]
+
+       299b0:	ebb8 0303 	subs.w	r3, r8, r3
+
+       299b4:	d406      	bmi.n	299c4 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x14c>
+
+       299b6:	696a      	ldr	r2, [r5, #20]
+
+       299b8:	6929      	ldr	r1, [r5, #16]
+
+       299ba:	3a01      	subs	r2, #1
+
+       299bc:	fb01 f202 	mul.w	r2, r1, r2
+
+       299c0:	4293      	cmp	r3, r2
+
+       299c2:	dd03      	ble.n	299cc <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x154>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       299c4:	4b26      	ldr	r3, [pc, #152]	@ (29a60 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1e8>)
+
+       299c6:	a802      	add	r0, sp, #8
+
+       299c8:	681b      	ldr	r3, [r3, #0]
+
+       299ca:	4798      	blx	r3
+
+       299cc:	68ab      	ldr	r3, [r5, #8]
+
+       299ce:	2b00      	cmp	r3, #0
+
+       299d0:	d137      	bne.n	29a42 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1ca>
+
+       299d2:	4b23      	ldr	r3, [pc, #140]	@ (29a60 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1e8>)
+
+       299d4:	a802      	add	r0, sp, #8
+
+       299d6:	681b      	ldr	r3, [r3, #0]
+
+       299d8:	4798      	blx	r3
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE5eraseENS6_8iteratorE():
+
+       299da:	6835      	ldr	r5, [r6, #0]
+
+    _ZN3etl8mem_moveIPvEEPT_PKS2_S5_S3_():
+
+       299dc:	68aa      	ldr	r2, [r5, #8]
+
+    _ZN3etl11pvoidvector5eraseEPPv():
+
+       299de:	1d21      	adds	r1, r4, #4
+
+    _ZN3etl8mem_moveIPvEEPT_PKS2_S5_S3_():
+
+       299e0:	4620      	mov	r0, r4
+
+       299e2:	1a52      	subs	r2, r2, r1
+
+       299e4:	f020 fd28 	bl	4a438 <<a href="../../../../../../../../../../unknown/unknown/7d8c66e32294c0fbcad3762662cbd6d5.html">memmove</a>>
+
+    _ZN3etl11pvoidvector5eraseEPPv():
+
+       299e8:	68ab      	ldr	r3, [r5, #8]
+
+       299ea:	3b04      	subs	r3, #4
+
+       299ec:	60ab      	str	r3, [r5, #8]
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE5clearEv():
+
+       299ee:	9b04      	ldr	r3, [sp, #16]
+
+       299f0:	42bb      	cmp	r3, r7
+
+       299f2:	d005      	beq.n	29a00 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x188>
+
+    _ZN3etl12forward_linkILj0EE5clearEv():
+
+       299f4:	2100      	movs	r1, #0
+
+       299f6:	461a      	mov	r2, r3
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE5clearEv():
+
+       299f8:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl12forward_linkILj0EE5clearEv():
+
+       299fa:	6011      	str	r1, [r2, #0]
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE5clearEv():
+
+       299fc:	42bb      	cmp	r3, r7
+
+       299fe:	d1fa      	bne.n	299f6 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x17e>
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       29a00:	b008      	add	sp, #32
+
+       29a02:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+       29a06:	4b13      	ldr	r3, [pc, #76]	@ (29a54 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1dc>)
+
+       29a08:	4916      	ldr	r1, [pc, #88]	@ (29a64 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1ec>)
+
+       29a0a:	7818      	ldrb	r0, [r3, #0]
+
+       29a0c:	f7e3 fc22 	bl	d254 <<a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE5clearEv():
+
+       29a10:	9b04      	ldr	r3, [sp, #16]
+
+       29a12:	4f11      	ldr	r7, [pc, #68]	@ (29a58 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1e0>)
+
+       29a14:	42bb      	cmp	r3, r7
+
+       29a16:	d0f3      	beq.n	29a00 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x188>
+
+    _ZN3etl12forward_linkILj0EE5clearEv():
+
+       29a18:	2100      	movs	r1, #0
+
+       29a1a:	461a      	mov	r2, r3
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE5clearEv():
+
+       29a1c:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl12forward_linkILj0EE5clearEv():
+
+       29a1e:	6011      	str	r1, [r2, #0]
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE5clearEv():
+
+       29a20:	42bb      	cmp	r3, r7
+
+       29a22:	d1fa      	bne.n	29a1a <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1a2>
+
+    someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short):
+
+       29a24:	b008      	add	sp, #32
+
+       29a26:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       29a2a:	4b0d      	ldr	r3, [pc, #52]	@ (29a60 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1e8>)
+
+       29a2c:	a803      	add	r0, sp, #12
+
+       29a2e:	681b      	ldr	r3, [r3, #0]
+
+       29a30:	4798      	blx	r3
+
+       29a32:	68a3      	ldr	r3, [r4, #8]
+
+       29a34:	2b00      	cmp	r3, #0
+
+       29a36:	d1a6      	bne.n	29986 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x10e>
+
+       29a38:	4b09      	ldr	r3, [pc, #36]	@ (29a60 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x1e8>)
+
+       29a3a:	a803      	add	r0, sp, #12
+
+       29a3c:	681b      	ldr	r3, [r3, #0]
+
+       29a3e:	4798      	blx	r3
+
+       29a40:	e7a6      	b.n	29990 <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x118>
+
+       29a42:	686a      	ldr	r2, [r5, #4]
+
+       29a44:	f8c8 2000 	str.w	r2, [r8]
+
+       29a48:	3b01      	subs	r3, #1
+
+       29a4a:	f8c5 8004 	str.w	r8, [r5, #4]
+
+       29a4e:	60ab      	str	r3, [r5, #8]
+
+       29a50:	e7c3      	b.n	299da <<a href="./6afeea7692b1d1c24b494930210ab38b.html">someip::SubscriptionManager::removeSubscriptions(unsigned short, unsigned char, unsigned short, unsigned short)</a>+0x162>
+
+       29a52:	bf00      	nop
+
+       29a54:	20000004 	.word	0x20000004
+
+       29a58:	20000120 	.word	0x20000120
+
+       29a5c:	0004e9a4 	.word	0x0004e9a4
+
+       29a60:	20000000 	.word	0x20000000
+
+       29a64:	0004e964 	.word	0x0004e964
+
+    </pre>
+
+    
+    <pre><a href="./7e45877349ebfaf414484a846bd156da.html">someip::SubscriptionManager::getSubscriptions(someip::SubscribedEventGroup const&amp;) const (88)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 132</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 124</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    132
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    124
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    84
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html" class="icon-function">util::logger::Logger::debug(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">64
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

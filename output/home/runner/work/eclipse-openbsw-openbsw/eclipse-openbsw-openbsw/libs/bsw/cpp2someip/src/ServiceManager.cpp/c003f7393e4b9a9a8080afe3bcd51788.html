@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../ServiceManager.cpp.html">ServiceManager.cpp</a>:114
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::ServiceManager::unregisterService(someip::ProvidedService&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00027718</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>48 (static)</td>
+                <td>524</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../SdServiceRegistry.cpp/c18c2f718d5c67f04b40796fd24717d6.html">someip::SdServiceRegistry::unregisterProvidedService(someip::ProvidedService&amp;) (44)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (4,
+                            <span title="sum of used bytes by all callees">
+                            Σ=186
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="./6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const (64)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../util/include/util/logger/Logger.h/0ab01804358606b880086539418bdb3a.html">util::logger::Logger::info(unsigned char, char const*, ...) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../ServiceDescription.cpp/dd79a3835d8e48604f8e1cefa1d21777.html">someip::containsEventGroup(someip::ServiceDescription const&amp;) (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../unknown/unknown/7d8c66e32294c0fbcad3762662cbd6d5.html">memmove (50)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const (64)</a></pre>
+    
+
+    <pre>
+
+    someip::ServiceManager::unregisterService(someip::ProvidedService&):
+
+       27718:	6803      	ldr	r3, [r0, #0]
+
+       2771a:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+       2771e:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl11pvoidvector5beginEv():
+
+       27720:	685e      	ldr	r6, [r3, #4]
+
+    _ZN3etl11pvoidvector3endEv():
+
+       27722:	f8d3 9008 	ldr.w	r9, [r3, #8]
+
+    _ZN3etl15distance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE14const_iteratorEEENS_15iterator_traitsIT_vE15difference_typeESA_SA_NS_26bidirectional_iterator_tagE():
+
+       27726:	454e      	cmp	r6, r9
+
+    someip::ServiceManager::unregisterService(someip::ProvidedService&):
+
+       27728:	b084      	sub	sp, #16
+
+    _ZN3etl15distance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE14const_iteratorEEENS_15iterator_traitsIT_vE15difference_typeESA_SA_NS_26bidirectional_iterator_tagE():
+
+       2772a:	d028      	beq.n	2777e <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x66>
+
+       2772c:	f1a9 0404 	sub.w	r4, r9, #4
+
+       27730:	1ba4      	subs	r4, r4, r6
+
+       27732:	08a4      	lsrs	r4, r4, #2
+
+       27734:	4680      	mov	r8, r0
+
+       27736:	460f      	mov	r7, r1
+
+       27738:	3401      	adds	r4, #1
+
+    _ZN3etl14advance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE14const_iteratorEiEEvRT_T0_NS_26bidirectional_iterator_tagE():
+
+       2773a:	1065      	asrs	r5, r4, #1
+
+       2773c:	f106 0304 	add.w	r3, r6, #4
+
+       27740:	f105 31ff 	add.w	r1, r5, #4294967295	@ 0xffffffff
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE14const_iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       27744:	463a      	mov	r2, r7
+
+       27746:	a803      	add	r0, sp, #12
+
+       27748:	eb03 0a81 	add.w	sl, r3, r1, lsl #2
+
+    _ZN3etl14advance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE14const_iteratorEiEEvRT_T0_NS_26bidirectional_iterator_tagE():
+
+       2774c:	d007      	beq.n	2775e <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x46>
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE14const_iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       2774e:	f853 3021 	ldr.w	r3, [r3, r1, lsl #2]
+
+       27752:	6819      	ldr	r1, [r3, #0]
+
+       27754:	f7ff ffc0 	bl	276d8 <<a href="./6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       27758:	b9a8      	cbnz	r0, 27786 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x6e>
+
+       2775a:	462c      	mov	r4, r5
+
+       2775c:	e7ed      	b.n	2773a <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x22>
+
+       2775e:	6833      	ldr	r3, [r6, #0]
+
+       27760:	a803      	add	r0, sp, #12
+
+       27762:	6819      	ldr	r1, [r3, #0]
+
+       27764:	f7ff ffb8 	bl	276d8 <<a href="./6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       27768:	b100      	cbz	r0, 2776c <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x54>
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE14const_iteratorppEv():
+
+       2776a:	3604      	adds	r6, #4
+
+    _ZNK3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE4findES3_():
+
+       2776c:	45b1      	cmp	r9, r6
+
+       2776e:	d006      	beq.n	2777e <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x66>
+
+       27770:	6833      	ldr	r3, [r6, #0]
+
+       27772:	463a      	mov	r2, r7
+
+       27774:	6819      	ldr	r1, [r3, #0]
+
+       27776:	a802      	add	r0, sp, #8
+
+       27778:	f7ff ffae 	bl	276d8 <<a href="./6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       2777c:	b150      	cbz	r0, 27794 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x7c>
+
+    someip::ServiceManager::unregisterService(someip::ProvidedService&):
+
+       2777e:	2000      	movs	r0, #0
+
+       27780:	b004      	add	sp, #16
+
+       27782:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE14const_iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       27786:	3501      	adds	r5, #1
+
+       27788:	1b64      	subs	r4, r4, r5
+
+       2778a:	2c00      	cmp	r4, #0
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE14const_iteratorppEv():
+
+       2778c:	f10a 0604 	add.w	r6, sl, #4
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE14const_iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       27790:	dcd3      	bgt.n	2773a <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x22>
+
+       27792:	e7eb      	b.n	2776c <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x54>
+
+    _ZNK3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE4findES3_():
+
+       27794:	460a      	mov	r2, r1
+
+       27796:	a803      	add	r0, sp, #12
+
+       27798:	4639      	mov	r1, r7
+
+       2779a:	f7ff ff9d 	bl	276d8 <<a href="./6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       2779e:	2800      	cmp	r0, #0
+
+       277a0:	d1ed      	bne.n	2777e <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x66>
+
+    someip::ServiceManager::unregisterService(someip::ProvidedService&):
+
+       277a2:	4b5d      	ldr	r3, [pc, #372]	@ (27918 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x200>)
+
+       277a4:	495d      	ldr	r1, [pc, #372]	@ (2791c <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x204>)
+
+       277a6:	7818      	ldrb	r0, [r3, #0]
+
+       277a8:	89bb      	ldrh	r3, [r7, #12]
+
+       277aa:	9301      	str	r3, [sp, #4]
+
+       277ac:	897b      	ldrh	r3, [r7, #10]
+
+       277ae:	9300      	str	r3, [sp, #0]
+
+       277b0:	7d7b      	ldrb	r3, [r7, #21]
+
+       277b2:	893a      	ldrh	r2, [r7, #8]
+
+       277b4:	f7db fd4c 	bl	3250 <<a href="../../../util/include/util/logger/Logger.h/0ab01804358606b880086539418bdb3a.html">util::logger::Logger::info(unsigned char, char const*, ...)</a>>
+
+       277b8:	f8d8 6000 	ldr.w	r6, [r8]
+
+       277bc:	8939      	ldrh	r1, [r7, #8]
+
+    _ZNK3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE6cbeginEv():
+
+       277be:	6833      	ldr	r3, [r6, #0]
+
+    _ZNK3etl11pvoidvector6cbeginEv():
+
+       277c0:	f8d3 9004 	ldr.w	r9, [r3, #4]
+
+    _ZNK3etl11pvoidvector4cendEv():
+
+       277c4:	689d      	ldr	r5, [r3, #8]
+
+    someip::ServiceManager::unregisterService(someip::ProvidedService&):
+
+       277c6:	454d      	cmp	r5, r9
+
+    find_if<etl::ireference_flat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::const_iterator, someip::ServiceManager::unregisterService(someip::ProvidedService&)::<lambda(const someip::ProvidedService*)> >():
+
+       277c8:	d014      	beq.n	277f4 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xdc>
+
+       277ca:	464b      	mov	r3, r9
+
+       277cc:	681a      	ldr	r2, [r3, #0]
+
+       277ce:	6814      	ldr	r4, [r2, #0]
+
+    someip::ServiceManager::unregisterService(someip::ProvidedService&):
+
+       277d0:	b1a4      	cbz	r4, 277fc <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xe4>
+
+    operator()():
+
+       277d2:	8922      	ldrh	r2, [r4, #8]
+
+       277d4:	4291      	cmp	r1, r2
+
+       277d6:	d811      	bhi.n	277fc <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xe4>
+
+    someip::ServiceManager::unregisterService(someip::ProvidedService&):
+
+       277d8:	429d      	cmp	r5, r3
+
+       277da:	d00b      	beq.n	277f4 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xdc>
+
+       277dc:	3304      	adds	r3, #4
+
+       277de:	e007      	b.n	277f0 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xd8>
+
+       277e0:	42a7      	cmp	r7, r4
+
+       277e2:	d00f      	beq.n	27804 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xec>
+
+       277e4:	429d      	cmp	r5, r3
+
+       277e6:	d005      	beq.n	277f4 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xdc>
+
+       277e8:	681a      	ldr	r2, [r3, #0]
+
+       277ea:	6814      	ldr	r4, [r2, #0]
+
+       277ec:	8922      	ldrh	r2, [r4, #8]
+
+       277ee:	3304      	adds	r3, #4
+
+       277f0:	4291      	cmp	r1, r2
+
+       277f2:	d0f5      	beq.n	277e0 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xc8>
+
+       277f4:	2001      	movs	r0, #1
+
+       277f6:	b004      	add	sp, #16
+
+       277f8:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+       277fc:	3304      	adds	r3, #4
+
+    find_if<etl::ireference_flat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::const_iterator, someip::ServiceManager::unregisterService(someip::ProvidedService&)::<lambda(const someip::ProvidedService*)> >():
+
+       277fe:	429d      	cmp	r5, r3
+
+       27800:	d1e4      	bne.n	277cc <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xb4>
+
+       27802:	e7f7      	b.n	277f4 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xdc>
+
+    someip::ServiceManager::unregisterService(someip::ProvidedService&):
+
+       27804:	f8d8 3004 	ldr.w	r3, [r8, #4]
+
+    _ZN6someip15ProvidedService8setStateENS0_20ProvidedServiceStateE():
+
+       27808:	2205      	movs	r2, #5
+
+       2780a:	f884 202c 	strb.w	r2, [r4, #44]	@ 0x2c
+
+    someip::ServiceManager::unregisterService(someip::ProvidedService&):
+
+       2780e:	b163      	cbz	r3, 2782a <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x112>
+
+       27810:	4620      	mov	r0, r4
+
+       27812:	f7ff fbc1 	bl	26f98 <<a href="../ServiceDescription.cpp/dd79a3835d8e48604f8e1cefa1d21777.html">someip::containsEventGroup(someip::ServiceDescription const&)</a>>
+
+       27816:	2800      	cmp	r0, #0
+
+       27818:	d072      	beq.n	27900 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x1e8>
+
+       2781a:	f8d8 6000 	ldr.w	r6, [r8]
+
+       2781e:	6833      	ldr	r3, [r6, #0]
+
+    _ZN3etl11pvoidvector5beginEv():
+
+       27820:	f8d3 9004 	ldr.w	r9, [r3, #4]
+
+    _ZN3etl11pvoidvector3endEv():
+
+       27824:	689d      	ldr	r5, [r3, #8]
+
+    _ZN3etl15distance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEEENS_15iterator_traitsIT_vE15difference_typeESA_SA_NS_26bidirectional_iterator_tagE():
+
+       27826:	454d      	cmp	r5, r9
+
+       27828:	d059      	beq.n	278de <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x1c6>
+
+       2782a:	1f2f      	subs	r7, r5, #4
+
+       2782c:	eba7 0709 	sub.w	r7, r7, r9
+
+       27830:	08bf      	lsrs	r7, r7, #2
+
+       27832:	3701      	adds	r7, #1
+
+    _ZN3etl14advance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEiEEvRT_T0_NS_26bidirectional_iterator_tagE():
+
+       27834:	ea5f 0a67 	movs.w	sl, r7, asr #1
+
+       27838:	f109 0304 	add.w	r3, r9, #4
+
+       2783c:	f10a 32ff 	add.w	r2, sl, #4294967295	@ 0xffffffff
+
+       27840:	d012      	beq.n	27868 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x150>
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       27842:	f853 1022 	ldr.w	r1, [r3, r2, lsl #2]
+
+       27846:	eb03 0882 	add.w	r8, r3, r2, lsl #2
+
+       2784a:	6809      	ldr	r1, [r1, #0]
+
+       2784c:	4622      	mov	r2, r4
+
+       2784e:	a803      	add	r0, sp, #12
+
+       27850:	f7ff ff42 	bl	276d8 <<a href="./6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       27854:	2800      	cmp	r0, #0
+
+       27856:	d14a      	bne.n	278ee <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x1d6>
+
+       27858:	4657      	mov	r7, sl
+
+    _ZN3etl14advance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEiEEvRT_T0_NS_26bidirectional_iterator_tagE():
+
+       2785a:	ea5f 0a67 	movs.w	sl, r7, asr #1
+
+       2785e:	f109 0304 	add.w	r3, r9, #4
+
+       27862:	f10a 32ff 	add.w	r2, sl, #4294967295	@ 0xffffffff
+
+       27866:	d1ec      	bne.n	27842 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x12a>
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       27868:	f8d9 3000 	ldr.w	r3, [r9]
+
+       2786c:	4622      	mov	r2, r4
+
+       2786e:	6819      	ldr	r1, [r3, #0]
+
+       27870:	a803      	add	r0, sp, #12
+
+       27872:	f7ff ff31 	bl	276d8 <<a href="./6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       27876:	b108      	cbz	r0, 2787c <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x164>
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratorppEv():
+
+       27878:	f109 0904 	add.w	r9, r9, #4
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE4findES3_():
+
+       2787c:	45a9      	cmp	r9, r5
+
+       2787e:	d02e      	beq.n	278de <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x1c6>
+
+    _ZNK3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratordeEv():
+
+       27880:	f8d9 7000 	ldr.w	r7, [r9]
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE4findES3_():
+
+       27884:	a802      	add	r0, sp, #8
+
+       27886:	6839      	ldr	r1, [r7, #0]
+
+       27888:	4622      	mov	r2, r4
+
+       2788a:	f7ff ff25 	bl	276d8 <<a href="./6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       2788e:	bb30      	cbnz	r0, 278de <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x1c6>
+
+       27890:	460a      	mov	r2, r1
+
+       27892:	a803      	add	r0, sp, #12
+
+       27894:	4621      	mov	r1, r4
+
+       27896:	f7ff ff1f 	bl	276d8 <<a href="./6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       2789a:	bb00      	cbnz	r0, 278de <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x1c6>
+
+    _ZN3etl9iflat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE5eraseENS_19ireference_flat_setIS3_S5_E8iteratorE():
+
+       2789c:	68b5      	ldr	r5, [r6, #8]
+
+    _ZNK3etl5ipool15is_item_in_poolEPKc():
+
+       2789e:	682b      	ldr	r3, [r5, #0]
+
+       278a0:	1afa      	subs	r2, r7, r3
+
+       278a2:	d406      	bmi.n	278b2 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x19a>
+
+       278a4:	696b      	ldr	r3, [r5, #20]
+
+       278a6:	6929      	ldr	r1, [r5, #16]
+
+       278a8:	3b01      	subs	r3, #1
+
+       278aa:	fb01 f303 	mul.w	r3, r1, r3
+
+       278ae:	429a      	cmp	r2, r3
+
+       278b0:	dd03      	ble.n	278ba <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x1a2>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       278b2:	4b1b      	ldr	r3, [pc, #108]	@ (27920 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x208>)
+
+       278b4:	a803      	add	r0, sp, #12
+
+       278b6:	681b      	ldr	r3, [r3, #0]
+
+       278b8:	4798      	blx	r3
+
+       278ba:	68ab      	ldr	r3, [r5, #8]
+
+       278bc:	b333      	cbz	r3, 2790c <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x1f4>
+
+       278be:	686a      	ldr	r2, [r5, #4]
+
+       278c0:	603a      	str	r2, [r7, #0]
+
+       278c2:	3b01      	subs	r3, #1
+
+       278c4:	606f      	str	r7, [r5, #4]
+
+       278c6:	60ab      	str	r3, [r5, #8]
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE5eraseENS6_8iteratorE():
+
+       278c8:	6835      	ldr	r5, [r6, #0]
+
+    _ZN3etl8mem_moveIPvEEPT_PKS2_S5_S3_():
+
+       278ca:	68aa      	ldr	r2, [r5, #8]
+
+    _ZN3etl11pvoidvector5eraseEPPv():
+
+       278cc:	f109 0104 	add.w	r1, r9, #4
+
+    _ZN3etl8mem_moveIPvEEPT_PKS2_S5_S3_():
+
+       278d0:	4648      	mov	r0, r9
+
+       278d2:	1a52      	subs	r2, r2, r1
+
+       278d4:	f022 fdb0 	bl	4a438 <<a href="../../../../../../../../../../unknown/unknown/7d8c66e32294c0fbcad3762662cbd6d5.html">memmove</a>>
+
+    _ZN3etl11pvoidvector5eraseEPPv():
+
+       278d8:	68ab      	ldr	r3, [r5, #8]
+
+       278da:	3b04      	subs	r3, #4
+
+       278dc:	60ab      	str	r3, [r5, #8]
+
+    _ZNK6someip15ProvidedService14unregisterDoneEv():
+
+       278de:	69e0      	ldr	r0, [r4, #28]
+
+       278e0:	2800      	cmp	r0, #0
+
+       278e2:	d087      	beq.n	277f4 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xdc>
+
+       278e4:	6803      	ldr	r3, [r0, #0]
+
+       278e6:	4621      	mov	r1, r4
+
+       278e8:	689b      	ldr	r3, [r3, #8]
+
+       278ea:	4798      	blx	r3
+
+       278ec:	e782      	b.n	277f4 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xdc>
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       278ee:	f10a 0a01 	add.w	sl, sl, #1
+
+       278f2:	eba7 070a 	sub.w	r7, r7, sl
+
+       278f6:	2f00      	cmp	r7, #0
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratorppEv():
+
+       278f8:	f108 0904 	add.w	r9, r8, #4
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       278fc:	dc9a      	bgt.n	27834 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x11c>
+
+       278fe:	e7bd      	b.n	2787c <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x164>
+
+    someip::ServiceManager::unregisterService(someip::ProvidedService&):
+
+       27900:	f898 3008 	ldrb.w	r3, [r8, #8]
+
+       27904:	2b00      	cmp	r3, #0
+
+       27906:	f43f af75 	beq.w	277f4 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0xdc>
+
+       2790a:	e786      	b.n	2781a <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x102>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       2790c:	4b04      	ldr	r3, [pc, #16]	@ (27920 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x208>)
+
+       2790e:	a803      	add	r0, sp, #12
+
+       27910:	681b      	ldr	r3, [r3, #0]
+
+       27912:	4798      	blx	r3
+
+       27914:	e7d8      	b.n	278c8 <<a href="./c003f7393e4b9a9a8080afe3bcd51788.html">someip::ServiceManager::unregisterService(someip::ProvidedService&)</a>+0x1b0>
+
+       27916:	bf00      	nop
+
+       27918:	20000004 	.word	0x20000004
+
+       2791c:	0004e468 	.word	0x0004e468
+
+       27920:	20000000 	.word	0x20000000
+
+    </pre>
+
+    
+    <pre><a href="../../../../3rdparty/etl/include/etl/reference_flat_set.h/31aa1b1b5e2ca3931a0fff05f0875784.html">etl::ireference_flat_set&lt;someip::ProvidedService*, someip::ServiceManager::LessThanComparator&gt;::insert_at(etl::ireference_flat_set&lt;someip::ProvidedService*, someip::ServiceManager::LessThanComparator&gt;::iterator, someip::ProvidedService*&amp;) (256)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 140</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 124</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    140
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    124
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    92
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="../../../util/include/util/logger/Logger.h/0ab01804358606b880086539418bdb3a.html" class="icon-function">util::logger::Logger::info(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">72
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 72</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 568</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    568
+                    
+                    
+                </td>
+                <td class="col_size">524</td>
+                <td><a href="./c003f7393e4b9a9a8080afe3bcd51788.html" class="icon-function">someip::ServiceManager::unregisterService(someip::ProvidedService&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">44</td>
+                <td><a href="../SdServiceRegistry.cpp/c18c2f718d5c67f04b40796fd24717d6.html" class="icon-function">someip::SdServiceRegistry::unregisterProvidedService(someip::ProvidedService&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

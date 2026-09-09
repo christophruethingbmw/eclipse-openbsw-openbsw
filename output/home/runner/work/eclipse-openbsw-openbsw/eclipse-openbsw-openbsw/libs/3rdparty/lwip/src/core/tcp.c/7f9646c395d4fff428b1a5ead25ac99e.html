@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../3rdparty.html">3rdparty</a></li>
+        
+        <li><a href="../../../../lwip.html">lwip</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../core.html">core</a>
+            </li>
+
+        
+        <li class="active"><a href="../tcp.c.html">tcp.c</a>:849
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">tcp_listen_with_backlog_and_err</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00030aac</td>
+                <td>
+    
+    
+</td>
+                <td>16 (static)</td>
+                <td>228</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="./848f02953c565e3a7aeca68172aa2cc3.html">tcp_listen_with_backlog (8)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (4,
+                            <span title="sum of used bytes by all callees">
+                            Σ=264
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../memp.c/080225340a3623bfcc0fc6f05dfe360c.html">memp_malloc (40)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../memp.c/39d50c52143357af896630c36b8c515f.html">memp_free (60)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../timeouts.c/4e2533dcb9c4baaa4bf5f653137665f9.html">tcp_timer_needed (64)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../executables/referenceApp/application/src/logger/logger.cpp/98866fb3d81ee8db78cbfd1e2dfd931d.html">log_lwipInfo (100)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./7257a35627e94c30525a90dd5674d1ba.html">tcp_bind (196)</a></pre>
+    
+
+    <pre>
+
+    tcp_listen_with_backlog_and_err():
+
+       30aac:	b570      	push	{r4, r5, r6, lr}
+
+       30aae:	4616      	mov	r6, r2
+
+       30ab0:	4604      	mov	r4, r0
+
+       30ab2:	2800      	cmp	r0, #0
+
+       30ab4:	d05a      	beq.n	30b6c <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0xc0>
+
+       30ab6:	7d03      	ldrb	r3, [r0, #20]
+
+       30ab8:	2b00      	cmp	r3, #0
+
+       30aba:	d14d      	bne.n	30b58 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0xac>
+
+       30abc:	7a43      	ldrb	r3, [r0, #9]
+
+       30abe:	075b      	lsls	r3, r3, #29
+
+       30ac0:	d514      	bpl.n	30aec <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x40>
+
+       30ac2:	4b2e      	ldr	r3, [pc, #184]	@ (30b7c <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0xd0>)
+
+       30ac4:	681b      	ldr	r3, [r3, #0]
+
+       30ac6:	b18b      	cbz	r3, 30aec <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x40>
+
+       30ac8:	8ac0      	ldrh	r0, [r0, #22]
+
+       30aca:	e001      	b.n	30ad0 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x24>
+
+       30acc:	68db      	ldr	r3, [r3, #12]
+
+       30ace:	b16b      	cbz	r3, 30aec <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x40>
+
+       30ad0:	8ad9      	ldrh	r1, [r3, #22]
+
+       30ad2:	4281      	cmp	r1, r0
+
+       30ad4:	d1fa      	bne.n	30acc <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x20>
+
+       30ad6:	6819      	ldr	r1, [r3, #0]
+
+       30ad8:	6822      	ldr	r2, [r4, #0]
+
+       30ada:	4291      	cmp	r1, r2
+
+       30adc:	d1f6      	bne.n	30acc <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x20>
+
+       30ade:	f06f 0307 	mvn.w	r3, #7
+
+       30ae2:	2500      	movs	r5, #0
+
+       30ae4:	b106      	cbz	r6, 30ae8 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x3c>
+
+       30ae6:	7033      	strb	r3, [r6, #0]
+
+       30ae8:	4628      	mov	r0, r5
+
+       30aea:	bd70      	pop	{r4, r5, r6, pc}
+
+       30aec:	2003      	movs	r0, #3
+
+       30aee:	f7ff f96d 	bl	2fdcc <<a href="../memp.c/080225340a3623bfcc0fc6f05dfe360c.html">memp_malloc</a>>
+
+       30af2:	4605      	mov	r5, r0
+
+       30af4:	2800      	cmp	r0, #0
+
+       30af6:	d036      	beq.n	30b66 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0xba>
+
+       30af8:	6922      	ldr	r2, [r4, #16]
+
+       30afa:	8ae3      	ldrh	r3, [r4, #22]
+
+       30afc:	6102      	str	r2, [r0, #16]
+
+       30afe:	2201      	movs	r2, #1
+
+       30b00:	7502      	strb	r2, [r0, #20]
+
+       30b02:	82c3      	strh	r3, [r0, #22]
+
+       30b04:	7d62      	ldrb	r2, [r4, #21]
+
+       30b06:	7542      	strb	r2, [r0, #21]
+
+       30b08:	68a2      	ldr	r2, [r4, #8]
+
+       30b0a:	6082      	str	r2, [r0, #8]
+
+       30b0c:	6822      	ldr	r2, [r4, #0]
+
+       30b0e:	6002      	str	r2, [r0, #0]
+
+       30b10:	b163      	cbz	r3, 30b2c <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x80>
+
+       30b12:	4a1b      	ldr	r2, [pc, #108]	@ (30b80 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0xd4>)
+
+       30b14:	6813      	ldr	r3, [r2, #0]
+
+       30b16:	42a3      	cmp	r3, r4
+
+       30b18:	d016      	beq.n	30b48 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x9c>
+
+       30b1a:	b12b      	cbz	r3, 30b28 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x7c>
+
+       30b1c:	68d9      	ldr	r1, [r3, #12]
+
+       30b1e:	42a1      	cmp	r1, r4
+
+       30b20:	d015      	beq.n	30b4e <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0xa2>
+
+       30b22:	460b      	mov	r3, r1
+
+       30b24:	2b00      	cmp	r3, #0
+
+       30b26:	d1f9      	bne.n	30b1c <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x70>
+
+       30b28:	2300      	movs	r3, #0
+
+       30b2a:	60e3      	str	r3, [r4, #12]
+
+    tcp_free():
+
+       30b2c:	4621      	mov	r1, r4
+
+       30b2e:	2002      	movs	r0, #2
+
+       30b30:	f7ff f960 	bl	2fdf4 <<a href="../memp.c/39d50c52143357af896630c36b8c515f.html">memp_free</a>>
+
+    tcp_listen_with_backlog_and_err():
+
+       30b34:	4b11      	ldr	r3, [pc, #68]	@ (30b7c <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0xd0>)
+
+       30b36:	4913      	ldr	r1, [pc, #76]	@ (30b84 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0xd8>)
+
+       30b38:	681a      	ldr	r2, [r3, #0]
+
+       30b3a:	61a9      	str	r1, [r5, #24]
+
+       30b3c:	60ea      	str	r2, [r5, #12]
+
+       30b3e:	601d      	str	r5, [r3, #0]
+
+       30b40:	f003 fabc 	bl	340bc <<a href="../timeouts.c/4e2533dcb9c4baaa4bf5f653137665f9.html">tcp_timer_needed</a>>
+
+       30b44:	2300      	movs	r3, #0
+
+       30b46:	e7cd      	b.n	30ae4 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x38>
+
+       30b48:	68e3      	ldr	r3, [r4, #12]
+
+       30b4a:	6013      	str	r3, [r2, #0]
+
+       30b4c:	e7ec      	b.n	30b28 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x7c>
+
+       30b4e:	68e2      	ldr	r2, [r4, #12]
+
+       30b50:	60da      	str	r2, [r3, #12]
+
+       30b52:	2300      	movs	r3, #0
+
+       30b54:	60e3      	str	r3, [r4, #12]
+
+       30b56:	e7e9      	b.n	30b2c <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x80>
+
+       30b58:	480b      	ldr	r0, [pc, #44]	@ (30b88 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0xdc>)
+
+       30b5a:	f7d8 fde7 	bl	972c <<a href="../../../../../../executables/referenceApp/application/src/logger/logger.cpp/98866fb3d81ee8db78cbfd1e2dfd931d.html">log_lwipInfo</a>>
+
+       30b5e:	2500      	movs	r5, #0
+
+       30b60:	f06f 030e 	mvn.w	r3, #14
+
+       30b64:	e7be      	b.n	30ae4 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x38>
+
+       30b66:	f04f 33ff 	mov.w	r3, #4294967295	@ 0xffffffff
+
+       30b6a:	e7bb      	b.n	30ae4 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x38>
+
+       30b6c:	4807      	ldr	r0, [pc, #28]	@ (30b8c <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0xe0>)
+
+       30b6e:	f7d8 fddd 	bl	972c <<a href="../../../../../../executables/referenceApp/application/src/logger/logger.cpp/98866fb3d81ee8db78cbfd1e2dfd931d.html">log_lwipInfo</a>>
+
+       30b72:	4625      	mov	r5, r4
+
+       30b74:	f06f 030f 	mvn.w	r3, #15
+
+       30b78:	e7b4      	b.n	30ae4 <<a href="./7f9646c395d4fff428b1a5ead25ac99e.html">tcp_listen_with_backlog_and_err</a>+0x38>
+
+       30b7a:	bf00      	nop
+
+       30b7c:	1ffe48dc 	.word	0x1ffe48dc
+
+       30b80:	1ffe48e0 	.word	0x1ffe48e0
+
+       30b84:	0003172d 	.word	0x0003172d
+
+       30b88:	00050880 	.word	0x00050880
+
+       30b8c:	00050850 	.word	0x00050850
+
+    </pre>
+
+    
+    <pre><a href="./848f02953c565e3a7aeca68172aa2cc3.html">tcp_listen_with_backlog (8)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 208</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 332</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    208
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    332
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../../../bsw/util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    160
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    264
+                    
+                    
+                </td>
+                <td class="col_size">100</td>
+                <td><a href="../../../../../../executables/referenceApp/application/src/logger/logger.cpp/98866fb3d81ee8db78cbfd1e2dfd931d.html" class="icon-function">log_lwipInfo</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    136
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    164
+                    
+                    
+                </td>
+                <td class="col_size">40</td>
+                <td><a href="../memp.c/080225340a3623bfcc0fc6f05dfe360c.html" class="icon-function">memp_malloc</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    124
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../timeouts.c/adeca70697e75a7be09901e30d9fe070.html" class="icon-function">sys_timeout_abs</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">64</td>
+                <td><a href="../timeouts.c/4e2533dcb9c4baaa4bf5f653137665f9.html" class="icon-function">tcp_timer_needed</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">104
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 104</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 632</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    104
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    632
+                    
+                    
+                </td>
+                <td class="col_size">228</td>
+                <td><a href="./7f9646c395d4fff428b1a5ead25ac99e.html" class="icon-function">tcp_listen_with_backlog_and_err</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    404
+                    
+                    
+                </td>
+                <td class="col_size">8</td>
+                <td><a href="./848f02953c565e3a7aeca68172aa2cc3.html" class="icon-function">tcp_listen_with_backlog</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    88
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    396
+                    
+                    
+                </td>
+                <td class="col_size">152</td>
+                <td><a href="../../../../../bsw/lwipSocket/src/lwipSocket/tcp/LwipServerSocket.cpp/3b75437cf0f44cbd153f619c067f2bc9.html" class="icon-function">tcp::LwipServerSocket::accept()</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    80
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    244
+                    
+                    
+                </td>
+                <td class="col_size">176</td>
+                <td><a href="../../../../../bsw/doip/include/doip/server/DoIpServerSocketHandler.h/6bbc34dd8ab6860fabdae144aa23f6df.html" class="icon-function">doip::declare::DoIpServerSocketHandler&lt;tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u&gt;::SocketHandler::updateSocket(ip::NetworkInterfaceConfig const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../../../bsw/doip/include/doip/server/DoIpServerSocketHandler.h/833096376e5abe78f9dad83d775108dc.html" class="icon-function">doip::declare::DoIpServerSocketHandler&lt;tcp::LwipServerSocket, tcp::LwipSocket, 2u, 6u, 0u&gt;::start(doip::IDoIpServerSocketHandlerListener&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2390 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../application.html">application</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../main.cpp.html">main.cpp</a>:31
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">etl_assert_function(etl::exception const&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000a0e8</td>
+                <td>
+    
+    
+</td>
+                <td>216 (static)</td>
+                <td>1,828</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            Σ=272
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../platforms/s32k1xx/bsp/bspMcu/src/reset/softwareSystemReset.cpp/496f6459998c11698b21b2f22baffe6d.html">softwareSystemReset (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../libs/3rdparty/etl/include/etl/format.h/1e210a6c076402009317d31ba2d80ae1.html">etl::private_format::parse_nested_replacement(etl::basic_format_parse_context&lt;char&gt;&amp;, etl::optional&lt;unsigned int&gt;&amp;) (256)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../systems/SafetySystem.cpp/fa1147bffb6738905264d816920ff2b6.html">_GLOBAL__sub_I_safetyManager (12)</a></pre>
+    
+
+    <pre>
+
+    etl_assert_function(etl::exception const&):
+
+        a0e8:	e92d 4880 	stmdb	sp!, {r7, fp, lr}
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a0ec:	4994      	ldr	r1, [pc, #592]	@ (a340 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x258>)
+
+    etl_assert_function(etl::exception const&):
+
+        a0ee:	b0b3      	sub	sp, #204	@ 0xcc
+
+        a0f0:	4670      	mov	r0, lr
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a0f2:	460a      	mov	r2, r1
+
+        a0f4:	f812 3b01 	ldrb.w	r3, [r2], #1
+
+        a0f8:	2b00      	cmp	r3, #0
+
+        a0fa:	d1fb      	bne.n	a0f4 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0xc>
+
+    _ZN3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE18construct_in_placeIjRKjEEvPcOT0_():
+
+        a0fc:	9008      	str	r0, [sp, #32]
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a0fe:	1a50      	subs	r0, r2, r1
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4EPKc():
+
+        a100:	3a01      	subs	r2, #1
+
+    _ZN3etl15private_variant12variant_baseILb0EJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4Ej():
+
+        a102:	2404      	movs	r4, #4
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4ERKS3_():
+
+        a104:	9212      	str	r2, [sp, #72]	@ 0x48
+
+        a106:	9111      	str	r1, [sp, #68]	@ 0x44
+
+    _ZN3etl26basic_format_parse_contextIcEC4ENS_17basic_string_viewIcNS_11char_traitsIcEEEEj():
+
+        a108:	2201      	movs	r2, #1
+
+    _ZN3etl20basic_format_contextINS_13private_print14print_iteratorEcEC4ES2_RNS_17basic_format_argsIS3_EE():
+
+        a10a:	2120      	movs	r1, #32
+
+        a10c:	e9cd 3316 	strd	r3, r3, [sp, #88]	@ 0x58
+
+        a110:	e9cd 3118 	strd	r3, r1, [sp, #96]	@ 0x60
+
+        a114:	e9cd 331a 	strd	r3, r3, [sp, #104]	@ 0x68
+
+        a118:	e9cd 331c 	strd	r3, r3, [sp, #112]	@ 0x70
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_typeC4Ev():
+
+        a11c:	e9cd 331e 	strd	r3, r3, [sp, #120]	@ 0x78
+
+    _ZN3etl20basic_format_contextINS_13private_print14print_iteratorEcEC4ES2_RNS_17basic_format_argsIS3_EE():
+
+        a120:	e9cd 3320 	strd	r3, r3, [sp, #128]	@ 0x80
+
+    _ZN3etl15private_variant12variant_baseILb0EJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4Ej():
+
+        a124:	940a      	str	r4, [sp, #40]	@ 0x28
+
+    _ZN3etl10array_viewINS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEEEEC4IS6_Lj1EvEERNS_5arrayIT_XT0_EEE():
+
+        a126:	af0c      	add	r7, sp, #48	@ 0x30
+
+        a128:	ac08      	add	r4, sp, #32
+
+    _ZN3etl26basic_format_parse_contextIcEC4ENS_17basic_string_viewIcNS_11char_traitsIcEEEEj():
+
+        a12a:	9213      	str	r2, [sp, #76]	@ 0x4c
+
+        a12c:	9314      	str	r3, [sp, #80]	@ 0x50
+
+    _ZN3etl20basic_format_contextINS_13private_print14print_iteratorEcEC4ES2_RNS_17basic_format_argsIS3_EE():
+
+        a12e:	aa04      	add	r2, sp, #16
+
+    _ZN3etl26basic_format_parse_contextIcEC4ENS_17basic_string_viewIcNS_11char_traitsIcEEEEj():
+
+        a130:	f8ad 3054 	strh.w	r3, [sp, #84]	@ 0x54
+
+    _ZN3etl14private_format14format_visitorINS_13private_print14print_iteratorEEC4ERNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIS3_cEE():
+
+        a134:	f10d 0844 	add.w	r8, sp, #68	@ 0x44
+
+        a138:	ab16      	add	r3, sp, #88	@ 0x58
+
+    _ZN3etl10vformat_toINS_13private_print14print_iteratorEEET_S3_NS_17basic_string_viewIcNS_11char_traitsIcEEEENS_17basic_format_argsINS_20basic_format_contextIS3_cEEEE():
+
+        a13a:	2801      	cmp	r0, #1
+
+    _ZN3etl14private_format14format_visitorINS_13private_print14print_iteratorEEC4ERNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIS3_cEE():
+
+        a13c:	e9cd 8306 	strd	r8, r3, [sp, #24]
+
+    _ZN3etl10array_viewINS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEEEEC4IS6_Lj1EvEERNS_5arrayIT_XT0_EEE():
+
+        a140:	9404      	str	r4, [sp, #16]
+
+        a142:	9705      	str	r7, [sp, #20]
+
+    _ZN3etl20basic_format_contextINS_13private_print14print_iteratorEcEC4ES2_RNS_17basic_format_argsIS3_EE():
+
+        a144:	9223      	str	r2, [sp, #140]	@ 0x8c
+
+    _ZN3etl10vformat_toINS_13private_print14print_iteratorEEET_S3_NS_17basic_string_viewIcNS_11char_traitsIcEEEENS_17basic_format_argsINS_20basic_format_contextIS3_cEEEE():
+
+        a146:	d07c      	beq.n	a242 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x15a>
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE5beginEv():
+
+        a148:	4b7d      	ldr	r3, [pc, #500]	@ (a340 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x258>)
+
+    _ZN3etl10vformat_toINS_13private_print14print_iteratorEEET_S3_NS_17basic_string_viewIcNS_11char_traitsIcEEEENS_17basic_format_argsINS_20basic_format_contextIS3_cEEEE():
+
+        a14a:	4e7e      	ldr	r6, [pc, #504]	@ (a344 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x25c>)
+
+        a14c:	2045      	movs	r0, #69	@ 0x45
+
+        a14e:	e011      	b.n	a174 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x8c>
+
+        a150:	287d      	cmp	r0, #125	@ 0x7d
+
+        a152:	d170      	bne.n	a236 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x14e>
+
+        a154:	785b      	ldrb	r3, [r3, #1]
+
+        a156:	2b7d      	cmp	r3, #125	@ 0x7d
+
+        a158:	d002      	beq.n	a160 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x78>
+
+        a15a:	6833      	ldr	r3, [r6, #0]
+
+        a15c:	a824      	add	r0, sp, #144	@ 0x90
+
+        a15e:	4798      	blx	r3
+
+    _ZN3etl13private_print14print_iterator8print_toaSEc():
+
+        a160:	207d      	movs	r0, #125	@ 0x7d
+
+        a162:	f00a fb4f 	bl	14804 <<a href="../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar</a>>
+
+    _ZN3etl14private_format7advanceERNS_26basic_format_parse_contextIcEE():
+
+        a166:	9b11      	ldr	r3, [sp, #68]	@ 0x44
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE3endEv():
+
+        a168:	9a12      	ldr	r2, [sp, #72]	@ 0x48
+
+    _ZN3etl14private_format7advanceERNS_26basic_format_parse_contextIcEE():
+
+        a16a:	3301      	adds	r3, #1
+
+    _ZN3etl10vformat_toINS_13private_print14print_iteratorEEET_S3_NS_17basic_string_viewIcNS_11char_traitsIcEEEENS_17basic_format_argsINS_20basic_format_contextIS3_cEEEE():
+
+        a16c:	4293      	cmp	r3, r2
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a16e:	9311      	str	r3, [sp, #68]	@ 0x44
+
+    _ZN3etl10vformat_toINS_13private_print14print_iteratorEEET_S3_NS_17basic_string_viewIcNS_11char_traitsIcEEEENS_17basic_format_argsINS_20basic_format_contextIS3_cEEEE():
+
+        a170:	d067      	beq.n	a242 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x15a>
+
+        a172:	7818      	ldrb	r0, [r3, #0]
+
+    _ZN3etl14private_format7advanceERNS_26basic_format_parse_contextIcEE():
+
+        a174:	1c5c      	adds	r4, r3, #1
+
+    _ZN3etl10vformat_toINS_13private_print14print_iteratorEEET_S3_NS_17basic_string_viewIcNS_11char_traitsIcEEEENS_17basic_format_argsINS_20basic_format_contextIS3_cEEEE():
+
+        a176:	287b      	cmp	r0, #123	@ 0x7b
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a178:	9411      	str	r4, [sp, #68]	@ 0x44
+
+    _ZN3etl10vformat_toINS_13private_print14print_iteratorEEET_S3_NS_17basic_string_viewIcNS_11char_traitsIcEEEENS_17basic_format_argsINS_20basic_format_contextIS3_cEEEE():
+
+        a17a:	d1e9      	bne.n	a150 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x68>
+
+        a17c:	785b      	ldrb	r3, [r3, #1]
+
+        a17e:	2b7b      	cmp	r3, #123	@ 0x7b
+
+        a180:	d0ef      	beq.n	a162 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x7a>
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a182:	9912      	ldr	r1, [sp, #72]	@ 0x48
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type7destroyEv():
+
+        a184:	2200      	movs	r2, #0
+
+    _ZN3etl14private_format13format_spec_taSEOS1_():
+
+        a186:	2320      	movs	r3, #32
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a188:	428c      	cmp	r4, r1
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type7destroyEv():
+
+        a18a:	f88d 205c 	strb.w	r2, [sp, #92]	@ 0x5c
+
+    _ZN3etl14private_format13format_spec_taSEOS1_():
+
+        a18e:	9218      	str	r2, [sp, #96]	@ 0x60
+
+        a190:	f88d 3064 	strb.w	r3, [sp, #100]	@ 0x64
+
+        a194:	921a      	str	r2, [sp, #104]	@ 0x68
+
+        a196:	f8ad 206c 	strh.w	r2, [sp, #108]	@ 0x6c
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type7destroyEv():
+
+        a19a:	f88d 2074 	strb.w	r2, [sp, #116]	@ 0x74
+
+    _ZN3etl14private_format13format_spec_taSEOS1_():
+
+        a19e:	f88d 2078 	strb.w	r2, [sp, #120]	@ 0x78
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type7destroyEv():
+
+        a1a2:	f88d 2080 	strb.w	r2, [sp, #128]	@ 0x80
+
+    _ZN3etl14private_format13format_spec_taSEOS1_():
+
+        a1a6:	f8ad 2084 	strh.w	r2, [sp, #132]	@ 0x84
+
+    _ZN3etl16private_optional13optional_implIcLb1EE12storage_type7destroyEv():
+
+        a1aa:	f88d 2087 	strb.w	r2, [sp, #135]	@ 0x87
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE3endEv():
+
+        a1ae:	bf08      	it	eq
+
+        a1b0:	f10d 0990 	addeq.w	r9, sp, #144	@ 0x90
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a1b4:	d049      	beq.n	a24a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x162>
+
+        a1b6:	4692      	mov	sl, r2
+
+        a1b8:	f10d 0990 	add.w	r9, sp, #144	@ 0x90
+
+        a1bc:	e005      	b.n	a1ca <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0xe2>
+
+        a1be:	42a1      	cmp	r1, r4
+
+        a1c0:	4682      	mov	sl, r0
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE3endEv():
+
+        a1c2:	460d      	mov	r5, r1
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructERKj():
+
+        a1c4:	f04f 0201 	mov.w	r2, #1
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a1c8:	d01d      	beq.n	a206 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x11e>
+
+        a1ca:	4625      	mov	r5, r4
+
+        a1cc:	f814 3b01 	ldrb.w	r3, [r4], #1
+
+    _ZN3etl14private_format8is_digitEc():
+
+        a1d0:	f1a3 0030 	sub.w	r0, r3, #48	@ 0x30
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a1d4:	fa5f fc80 	uxtb.w	ip, r0
+
+        a1d8:	f1bc 0f09 	cmp.w	ip, #9
+
+        a1dc:	d833      	bhi.n	a246 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x15e>
+
+    _ZNKR3etl16private_optional13optional_implIjLb1EE8value_orIiEENS_9enable_ifIXsrNS_14is_convertibleIT_jEE5valueEjE4typeEOS6_():
+
+        a1de:	2a00      	cmp	r2, #0
+
+        a1e0:	d0ed      	beq.n	a1be <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0xd6>
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a1e2:	eb0a 028a 	add.w	r2, sl, sl, lsl #2
+
+        a1e6:	eb03 0342 	add.w	r3, r3, r2, lsl #1
+
+        a1ea:	f1a3 0530 	sub.w	r5, r3, #48	@ 0x30
+
+        a1ee:	4555      	cmp	r5, sl
+
+        a1f0:	d203      	bcs.n	a1fa <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x112>
+
+        a1f2:	6833      	ldr	r3, [r6, #0]
+
+        a1f4:	4648      	mov	r0, r9
+
+        a1f6:	4798      	blx	r3
+
+        a1f8:	9912      	ldr	r1, [sp, #72]	@ 0x48
+
+        a1fa:	42a1      	cmp	r1, r4
+
+        a1fc:	46aa      	mov	sl, r5
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructERKj():
+
+        a1fe:	f04f 0201 	mov.w	r2, #1
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE3endEv():
+
+        a202:	460d      	mov	r5, r1
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a204:	d1e1      	bne.n	a1ca <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0xe2>
+
+    _ZN3etl26basic_format_parse_contextIcE12check_arg_idEj():
+
+        a206:	f89d 3054 	ldrb.w	r3, [sp, #84]	@ 0x54
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a20a:	9511      	str	r5, [sp, #68]	@ 0x44
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructEOj():
+
+        a20c:	2201      	movs	r2, #1
+
+        a20e:	f8cd a058 	str.w	sl, [sp, #88]	@ 0x58
+
+        a212:	f88d 205c 	strb.w	r2, [sp, #92]	@ 0x5c
+
+    _ZN3etl26basic_format_parse_contextIcE12check_arg_idEj():
+
+        a216:	b11b      	cbz	r3, a220 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x138>
+
+        a218:	4b4a      	ldr	r3, [pc, #296]	@ (a344 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x25c>)
+
+        a21a:	4648      	mov	r0, r9
+
+        a21c:	681b      	ldr	r3, [r3, #0]
+
+        a21e:	4798      	blx	r3
+
+        a220:	9b13      	ldr	r3, [sp, #76]	@ 0x4c
+
+        a222:	2201      	movs	r2, #1
+
+        a224:	4553      	cmp	r3, sl
+
+        a226:	f88d 2055 	strb.w	r2, [sp, #85]	@ 0x55
+
+        a22a:	d825      	bhi.n	a278 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x190>
+
+    _ZN3etl14private_format15check_precisionERKNS0_13format_spec_tE():
+
+        a22c:	4b45      	ldr	r3, [pc, #276]	@ (a344 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x25c>)
+
+        a22e:	4648      	mov	r0, r9
+
+        a230:	681b      	ldr	r3, [r3, #0]
+
+        a232:	4798      	blx	r3
+
+        a234:	e020      	b.n	a278 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x190>
+
+    _ZN3etl13private_print14print_iterator8print_toaSEc():
+
+        a236:	f00a fae5 	bl	14804 <<a href="../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar</a>>
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE5beginEv():
+
+        a23a:	9b11      	ldr	r3, [sp, #68]	@ 0x44
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE3endEv():
+
+        a23c:	9a12      	ldr	r2, [sp, #72]	@ 0x48
+
+    _ZN3etl10vformat_toINS_13private_print14print_iteratorEEET_S3_NS_17basic_string_viewIcNS_11char_traitsIcEEEENS_17basic_format_argsINS_20basic_format_contextIS3_cEEEE():
+
+        a23e:	4293      	cmp	r3, r2
+
+        a240:	d197      	bne.n	a172 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x8a>
+
+    etl_assert_function(etl::exception const&):
+
+        a242:	f00a facd 	bl	147e0 <<a href="../../../../../platforms/s32k1xx/bsp/bspMcu/src/reset/softwareSystemReset.cpp/496f6459998c11698b21b2f22baffe6d.html">softwareSystemReset</a>>
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a246:	2a00      	cmp	r2, #0
+
+        a248:	d1dd      	bne.n	a206 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x11e>
+
+        a24a:	2300      	movs	r3, #0
+
+        a24c:	f88d 305c 	strb.w	r3, [sp, #92]	@ 0x5c
+
+    _ZN3etl26basic_format_parse_contextIcE11next_arg_idEv():
+
+        a250:	f89d 3055 	ldrb.w	r3, [sp, #85]	@ 0x55
+
+        a254:	b11b      	cbz	r3, a25e <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x176>
+
+        a256:	4b3b      	ldr	r3, [pc, #236]	@ (a344 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x25c>)
+
+        a258:	4648      	mov	r0, r9
+
+        a25a:	681b      	ldr	r3, [r3, #0]
+
+        a25c:	4798      	blx	r3
+
+        a25e:	2301      	movs	r3, #1
+
+        a260:	9a13      	ldr	r2, [sp, #76]	@ 0x4c
+
+        a262:	f88d 3054 	strb.w	r3, [sp, #84]	@ 0x54
+
+        a266:	9b14      	ldr	r3, [sp, #80]	@ 0x50
+
+        a268:	4293      	cmp	r3, r2
+
+        a26a:	d25f      	bcs.n	a32c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x244>
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructEOj():
+
+        a26c:	9316      	str	r3, [sp, #88]	@ 0x58
+
+    _ZN3etl26basic_format_parse_contextIcE11next_arg_idEv():
+
+        a26e:	3301      	adds	r3, #1
+
+        a270:	9314      	str	r3, [sp, #80]	@ 0x50
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructEOj():
+
+        a272:	2301      	movs	r3, #1
+
+        a274:	f88d 305c 	strb.w	r3, [sp, #92]	@ 0x5c
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE5beginEv():
+
+        a278:	9c11      	ldr	r4, [sp, #68]	@ 0x44
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE3endEv():
+
+        a27a:	9912      	ldr	r1, [sp, #72]	@ 0x48
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a27c:	428c      	cmp	r4, r1
+
+        a27e:	d003      	beq.n	a288 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1a0>
+
+        a280:	7823      	ldrb	r3, [r4, #0]
+
+        a282:	2b3a      	cmp	r3, #58	@ 0x3a
+
+        a284:	f000 80eb 	beq.w	a45e <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x376>
+
+    _ZN3etl14private_format27resolve_nested_replacementsINS_13private_print14print_iteratorEEEvRNS0_13format_spec_tERNS_17basic_format_argsINS_20basic_format_contextIT_cEEEE():
+
+        a288:	f89d 3078 	ldrb.w	r3, [sp, #120]	@ 0x78
+
+        a28c:	b123      	cbz	r3, a298 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1b0>
+
+        a28e:	f89d 3074 	ldrb.w	r3, [sp, #116]	@ 0x74
+
+        a292:	2b00      	cmp	r3, #0
+
+        a294:	f040 809f 	bne.w	a3d6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x2ee>
+
+        a298:	f89d 3084 	ldrb.w	r3, [sp, #132]	@ 0x84
+
+        a29c:	b11b      	cbz	r3, a2a6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1be>
+
+        a29e:	f89d 3080 	ldrb.w	r3, [sp, #128]	@ 0x80
+
+        a2a2:	2b00      	cmp	r3, #0
+
+        a2a4:	d152      	bne.n	a34c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x264>
+
+    _ZNK3etl10array_viewINS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEEEEixEj():
+
+        a2a6:	9a16      	ldr	r2, [sp, #88]	@ 0x58
+
+        a2a8:	9804      	ldr	r0, [sp, #16]
+
+        a2aa:	0115      	lsls	r5, r2, #4
+
+        a2ac:	eb00 1202 	add.w	r2, r0, r2, lsl #4
+
+    _ZN3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4ERKSH_():
+
+        a2b0:	6893      	ldr	r3, [r2, #8]
+
+    _ZN3etl15private_variant12variant_baseILb0EJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4Ej():
+
+        a2b2:	930e      	str	r3, [sp, #56]	@ 0x38
+
+    _ZNK3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE5indexEv():
+
+        a2b4:	6891      	ldr	r1, [r2, #8]
+
+    _ZN3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4ERKSH_():
+
+        a2b6:	1e4c      	subs	r4, r1, #1
+
+        a2b8:	3403      	adds	r4, #3
+
+        a2ba:	d810      	bhi.n	a2de <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1f6>
+
+    _ZN3etl15private_variant18variant_operationsILj1EJbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a2bc:	2901      	cmp	r1, #1
+
+        a2be:	d03b      	beq.n	a338 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x250>
+
+    _ZN3etl15private_variant18variant_operationsILj2EJcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a2c0:	2902      	cmp	r1, #2
+
+        a2c2:	d039      	beq.n	a338 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x250>
+
+    _ZN3etl15private_variant18variant_operationsILj3EJijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a2c4:	2903      	cmp	r1, #3
+
+        a2c6:	f000 8102 	beq.w	a4ce <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3e6>
+
+    _ZN3etl15private_variant18variant_operationsILj4EJjxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a2ca:	2904      	cmp	r1, #4
+
+        a2cc:	f000 80ff 	beq.w	a4ce <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3e6>
+
+    _ZN3etl15private_variant18variant_operationsILj5EJxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a2d0:	2905      	cmp	r1, #5
+
+        a2d2:	f040 81cd 	bne.w	a670 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x588>
+
+    _ZN3etl15private_variant18variant_operationsILj6EJyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a2d6:	e9d2 0100 	ldrd	r0, r1, [r2]
+
+        a2da:	e9cd 010c 	strd	r0, r1, [sp, #48]	@ 0x30
+
+    etl_assert_function(etl::exception const&):
+
+        a2de:	1c5a      	adds	r2, r3, #1
+
+    do_visit<void, etl::private_format::format_visitor<etl::private_print::print_iterator>&, etl::variant<etl::monostate, bool, char, int, unsigned int, long long int, long long unsigned int, float, double, long double, char const*, etl::basic_string_view<char, etl::char_traits<char> >, void const*, etl::basic_format_arg<etl::basic_format_context<etl::private_print::print_iterator, char> >::handle>&, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13>():
+
+        a2e0:	d104      	bne.n	a2ec <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x204>
+
+        a2e2:	4b18      	ldr	r3, [pc, #96]	@ (a344 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x25c>)
+
+        a2e4:	4648      	mov	r0, r9
+
+        a2e6:	681b      	ldr	r3, [r3, #0]
+
+        a2e8:	4798      	blx	r3
+
+    _ZNK3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE5indexEv():
+
+        a2ea:	9b0e      	ldr	r3, [sp, #56]	@ 0x38
+
+    do_visit<void, etl::private_format::format_visitor<etl::private_print::print_iterator>&, etl::variant<etl::monostate, bool, char, int, unsigned int, long long int, long long unsigned int, float, double, long double, char const*, etl::basic_string_view<char, etl::char_traits<char> >, void const*, etl::basic_format_arg<etl::basic_format_context<etl::private_print::print_iterator, char> >::handle>&, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13>():
+
+        a2ec:	4d16      	ldr	r5, [pc, #88]	@ (a348 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x260>)
+
+        a2ee:	eb0d 0c83 	add.w	ip, sp, r3, lsl #2
+
+        a2f2:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+
+        a2f4:	464c      	mov	r4, r9
+
+        a2f6:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+
+        a2f8:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+
+        a2fa:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+
+        a2fc:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+
+        a2fe:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+
+        a300:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+        a304:	e884 0003 	stmia.w	r4, {r0, r1}
+
+        a308:	4639      	mov	r1, r7
+
+        a30a:	f8dc 3090 	ldr.w	r3, [ip, #144]	@ 0x90
+
+        a30e:	a806      	add	r0, sp, #24
+
+        a310:	4798      	blx	r3
+
+    _ZN3etl10vformat_toINS_13private_print14print_iteratorEEET_S3_NS_17basic_string_viewIcNS_11char_traitsIcEEEENS_17basic_format_argsINS_20basic_format_contextIS3_cEEEE():
+
+        a312:	9b11      	ldr	r3, [sp, #68]	@ 0x44
+
+        a314:	781a      	ldrb	r2, [r3, #0]
+
+        a316:	2a7d      	cmp	r2, #125	@ 0x7d
+
+        a318:	d003      	beq.n	a322 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x23a>
+
+        a31a:	6833      	ldr	r3, [r6, #0]
+
+        a31c:	4648      	mov	r0, r9
+
+        a31e:	4798      	blx	r3
+
+        a320:	9b11      	ldr	r3, [sp, #68]	@ 0x44
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE3endEv():
+
+        a322:	9a12      	ldr	r2, [sp, #72]	@ 0x48
+
+    _ZN3etl10vformat_toINS_13private_print14print_iteratorEEET_S3_NS_17basic_string_viewIcNS_11char_traitsIcEEEENS_17basic_format_argsINS_20basic_format_contextIS3_cEEEE():
+
+        a324:	4293      	cmp	r3, r2
+
+        a326:	f47f af20 	bne.w	a16a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x82>
+
+        a32a:	e78a      	b.n	a242 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x15a>
+
+    _ZN3etl26basic_format_parse_contextIcE11next_arg_idEv():
+
+        a32c:	4b05      	ldr	r3, [pc, #20]	@ (a344 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x25c>)
+
+        a32e:	4648      	mov	r0, r9
+
+        a330:	681b      	ldr	r3, [r3, #0]
+
+        a332:	4798      	blx	r3
+
+        a334:	9b14      	ldr	r3, [sp, #80]	@ 0x50
+
+        a336:	e799      	b.n	a26c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x184>
+
+    _ZN3etl15private_variant18variant_operationsILj2EJcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a338:	5d42      	ldrb	r2, [r0, r5]
+
+        a33a:	f88d 2030 	strb.w	r2, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj2EJcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a33e:	e7ce      	b.n	a2de <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1f6>
+
+        a340:	0004a8e0 	.word	0x0004a8e0
+
+        a344:	20000000 	.word	0x20000000
+
+        a348:	000004f0 	.word	0x000004f0
+
+    _ZNK3etl10array_viewINS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEEEEixEj():
+
+        a34c:	9b1f      	ldr	r3, [sp, #124]	@ 0x7c
+
+        a34e:	9904      	ldr	r1, [sp, #16]
+
+        a350:	011d      	lsls	r5, r3, #4
+
+        a352:	eb01 1303 	add.w	r3, r1, r3, lsl #4
+
+    _ZN3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4ERKSH_():
+
+        a356:	689c      	ldr	r4, [r3, #8]
+
+    _ZN3etl15private_variant12variant_baseILb0EJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4Ej():
+
+        a358:	940e      	str	r4, [sp, #56]	@ 0x38
+
+    _ZNK3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE5indexEv():
+
+        a35a:	689a      	ldr	r2, [r3, #8]
+
+    _ZN3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4ERKSH_():
+
+        a35c:	1e50      	subs	r0, r2, #1
+
+        a35e:	3003      	adds	r0, #3
+
+        a360:	d816      	bhi.n	a390 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x2a8>
+
+    _ZN3etl15private_variant18variant_operationsILj1EJbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a362:	2a01      	cmp	r2, #1
+
+        a364:	f000 80e6 	beq.w	a534 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x44c>
+
+    _ZN3etl15private_variant18variant_operationsILj2EJcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a368:	2a02      	cmp	r2, #2
+
+        a36a:	f000 80e3 	beq.w	a534 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x44c>
+
+    _ZN3etl15private_variant18variant_operationsILj3EJijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a36e:	2a03      	cmp	r2, #3
+
+        a370:	f000 81d2 	beq.w	a718 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x630>
+
+    _ZN3etl15private_variant18variant_operationsILj4EJjxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a374:	2a04      	cmp	r2, #4
+
+        a376:	f000 81cf 	beq.w	a718 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x630>
+
+    _ZN3etl15private_variant18variant_operationsILj5EJxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a37a:	2a05      	cmp	r2, #5
+
+        a37c:	f000 81f8 	beq.w	a770 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x688>
+
+    _ZN3etl15private_variant18variant_operationsILj6EJyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a380:	2a06      	cmp	r2, #6
+
+        a382:	f000 81f5 	beq.w	a770 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x688>
+
+    _ZN3etl15private_variant18variant_operationsILj7EJfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a386:	2a07      	cmp	r2, #7
+
+        a388:	f040 8203 	bne.w	a792 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x6aa>
+
+    _ZN3etl15private_variant18variant_operationsILj7EJfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a38c:	681b      	ldr	r3, [r3, #0]
+
+        a38e:	930c      	str	r3, [sp, #48]	@ 0x30
+
+    _ZN3etl14private_format16size_t_extractorC4Ev():
+
+        a390:	2300      	movs	r3, #0
+
+    etl_assert_function(etl::exception const&):
+
+        a392:	3401      	adds	r4, #1
+
+    _ZN3etl14private_format16size_t_extractorC4Ev():
+
+        a394:	9303      	str	r3, [sp, #12]
+
+    do_visit<void, etl::private_format::size_t_extractor&, etl::variant<etl::monostate, bool, char, int, unsigned int, long long int, long long unsigned int, float, double, long double, char const*, etl::basic_string_view<char, etl::char_traits<char> >, void const*, etl::basic_format_arg<etl::basic_format_context<etl::private_print::print_iterator, char> >::handle>&, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13>():
+
+        a396:	f000 8090 	beq.w	a4ba <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3d2>
+
+        a39a:	9b0e      	ldr	r3, [sp, #56]	@ 0x38
+
+        a39c:	4daa      	ldr	r5, [pc, #680]	@ (a648 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x560>)
+
+        a39e:	aa32      	add	r2, sp, #200	@ 0xc8
+
+        a3a0:	eb02 0c83 	add.w	ip, r2, r3, lsl #2
+
+        a3a4:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+
+        a3a6:	464c      	mov	r4, r9
+
+        a3a8:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+
+        a3aa:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+
+        a3ac:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+
+        a3ae:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+
+        a3b0:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+
+        a3b2:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+        a3b6:	e884 0003 	stmia.w	r4, {r0, r1}
+
+        a3ba:	4639      	mov	r1, r7
+
+        a3bc:	f85c 3c38 	ldr.w	r3, [ip, #-56]
+
+        a3c0:	a803      	add	r0, sp, #12
+
+        a3c2:	4798      	blx	r3
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructERKj():
+
+        a3c4:	9b03      	ldr	r3, [sp, #12]
+
+        a3c6:	931f      	str	r3, [sp, #124]	@ 0x7c
+
+        a3c8:	2301      	movs	r3, #1
+
+        a3ca:	f88d 3080 	strb.w	r3, [sp, #128]	@ 0x80
+
+    _ZN3etl14private_format27resolve_nested_replacementsINS_13private_print14print_iteratorEEEvRNS0_13format_spec_tERNS_17basic_format_argsINS_20basic_format_contextIT_cEEEE():
+
+        a3ce:	2300      	movs	r3, #0
+
+        a3d0:	f88d 3084 	strb.w	r3, [sp, #132]	@ 0x84
+
+        a3d4:	e767      	b.n	a2a6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1be>
+
+    _ZNK3etl10array_viewINS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEEEEixEj():
+
+        a3d6:	9b1c      	ldr	r3, [sp, #112]	@ 0x70
+
+        a3d8:	9904      	ldr	r1, [sp, #16]
+
+        a3da:	011d      	lsls	r5, r3, #4
+
+        a3dc:	eb01 1303 	add.w	r3, r1, r3, lsl #4
+
+    _ZN3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4ERKSH_():
+
+        a3e0:	689c      	ldr	r4, [r3, #8]
+
+    _ZN3etl15private_variant12variant_baseILb0EJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4Ej():
+
+        a3e2:	940e      	str	r4, [sp, #56]	@ 0x38
+
+    _ZNK3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE5indexEv():
+
+        a3e4:	689a      	ldr	r2, [r3, #8]
+
+    _ZN3etl7variantIJNS_9monostateEbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEEC4ERKSH_():
+
+        a3e6:	1e50      	subs	r0, r2, #1
+
+        a3e8:	3003      	adds	r0, #3
+
+        a3ea:	d816      	bhi.n	a41a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x332>
+
+    _ZN3etl15private_variant18variant_operationsILj1EJbcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a3ec:	2a01      	cmp	r2, #1
+
+        a3ee:	f000 80a5 	beq.w	a53c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x454>
+
+    _ZN3etl15private_variant18variant_operationsILj2EJcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a3f2:	2a02      	cmp	r2, #2
+
+        a3f4:	f000 80a2 	beq.w	a53c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x454>
+
+    _ZN3etl15private_variant18variant_operationsILj3EJijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a3f8:	2a03      	cmp	r2, #3
+
+        a3fa:	f000 8190 	beq.w	a71e <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x636>
+
+    _ZN3etl15private_variant18variant_operationsILj4EJjxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a3fe:	2a04      	cmp	r2, #4
+
+        a400:	f000 818d 	beq.w	a71e <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x636>
+
+    _ZN3etl15private_variant18variant_operationsILj5EJxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a404:	2a05      	cmp	r2, #5
+
+        a406:	f000 81b8 	beq.w	a77a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x692>
+
+    _ZN3etl15private_variant18variant_operationsILj6EJyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a40a:	2a06      	cmp	r2, #6
+
+        a40c:	f000 81b5 	beq.w	a77a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x692>
+
+    _ZN3etl15private_variant18variant_operationsILj7EJfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a410:	2a07      	cmp	r2, #7
+
+        a412:	f040 81cf 	bne.w	a7b4 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x6cc>
+
+    _ZN3etl15private_variant18variant_operationsILj7EJfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a416:	681b      	ldr	r3, [r3, #0]
+
+        a418:	930c      	str	r3, [sp, #48]	@ 0x30
+
+    _ZN3etl14private_format16size_t_extractorC4Ev():
+
+        a41a:	2300      	movs	r3, #0
+
+    etl_assert_function(etl::exception const&):
+
+        a41c:	3401      	adds	r4, #1
+
+    _ZN3etl14private_format16size_t_extractorC4Ev():
+
+        a41e:	9303      	str	r3, [sp, #12]
+
+    do_visit<void, etl::private_format::size_t_extractor&, etl::variant<etl::monostate, bool, char, int, unsigned int, long long int, long long unsigned int, float, double, long double, char const*, etl::basic_string_view<char, etl::char_traits<char> >, void const*, etl::basic_format_arg<etl::basic_format_context<etl::private_print::print_iterator, char> >::handle>&, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13>():
+
+        a420:	d050      	beq.n	a4c4 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3dc>
+
+        a422:	9b0e      	ldr	r3, [sp, #56]	@ 0x38
+
+        a424:	4d88      	ldr	r5, [pc, #544]	@ (a648 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x560>)
+
+        a426:	aa32      	add	r2, sp, #200	@ 0xc8
+
+        a428:	eb02 0c83 	add.w	ip, r2, r3, lsl #2
+
+        a42c:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+
+        a42e:	464c      	mov	r4, r9
+
+        a430:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+
+        a432:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+
+        a434:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+
+        a436:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
+
+        a438:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+
+        a43a:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+        a43e:	e884 0003 	stmia.w	r4, {r0, r1}
+
+        a442:	4639      	mov	r1, r7
+
+        a444:	f85c 3c38 	ldr.w	r3, [ip, #-56]
+
+        a448:	a803      	add	r0, sp, #12
+
+        a44a:	4798      	blx	r3
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructERKj():
+
+        a44c:	9b03      	ldr	r3, [sp, #12]
+
+        a44e:	931c      	str	r3, [sp, #112]	@ 0x70
+
+        a450:	2301      	movs	r3, #1
+
+        a452:	f88d 3074 	strb.w	r3, [sp, #116]	@ 0x74
+
+    _ZN3etl14private_format27resolve_nested_replacementsINS_13private_print14print_iteratorEEEvRNS0_13format_spec_tERNS_17basic_format_argsINS_20basic_format_contextIT_cEEEE():
+
+        a456:	2300      	movs	r3, #0
+
+        a458:	f88d 3078 	strb.w	r3, [sp, #120]	@ 0x78
+
+        a45c:	e71c      	b.n	a298 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1b0>
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a45e:	f104 0c01 	add.w	ip, r4, #1
+
+    _ZN3etl14private_format20parse_fill_and_alignERNS_26basic_format_parse_contextIcEERc():
+
+        a462:	2320      	movs	r3, #32
+
+        a464:	4561      	cmp	r1, ip
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a466:	f8cd c044 	str.w	ip, [sp, #68]	@ 0x44
+
+    _ZN3etl14private_format20parse_fill_and_alignERNS_26basic_format_parse_contextIcEERc():
+
+        a46a:	f88d 3064 	strb.w	r3, [sp, #100]	@ 0x64
+
+        a46e:	d031      	beq.n	a4d4 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3ec>
+
+        a470:	7865      	ldrb	r5, [r4, #1]
+
+    _ZN3etl14private_format18is_align_characterEc():
+
+        a472:	2d3c      	cmp	r5, #60	@ 0x3c
+
+    _ZN3etl14private_format20parse_fill_and_alignERNS_26basic_format_parse_contextIcEERc():
+
+        a474:	f104 0202 	add.w	r2, r4, #2
+
+    _ZN3etl14private_format18is_align_characterEc():
+
+        a478:	f000 80f6 	beq.w	a668 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x580>
+
+        a47c:	2d3e      	cmp	r5, #62	@ 0x3e
+
+        a47e:	f000 80ff 	beq.w	a680 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x598>
+
+        a482:	2d5e      	cmp	r5, #94	@ 0x5e
+
+        a484:	f000 814e 	beq.w	a724 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x63c>
+
+    _ZN3etl14private_format20parse_fill_and_alignERNS_26basic_format_parse_contextIcEERc():
+
+        a488:	4291      	cmp	r1, r2
+
+        a48a:	d023      	beq.n	a4d4 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3ec>
+
+        a48c:	78a3      	ldrb	r3, [r4, #2]
+
+    _ZN3etl14private_format18is_align_characterEc():
+
+        a48e:	2b3c      	cmp	r3, #60	@ 0x3c
+
+        a490:	f000 8159 	beq.w	a746 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x65e>
+
+        a494:	2b3e      	cmp	r3, #62	@ 0x3e
+
+        a496:	f000 817a 	beq.w	a78e <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x6a6>
+
+        a49a:	2b5e      	cmp	r3, #94	@ 0x5e
+
+        a49c:	d11a      	bne.n	a4d4 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3ec>
+
+    _ZN3etl14private_format15align_from_charEc():
+
+        a49e:	2303      	movs	r3, #3
+
+    _ZN3etl14private_format20parse_fill_and_alignERNS_26basic_format_parse_contextIcEERc():
+
+        a4a0:	2d7b      	cmp	r5, #123	@ 0x7b
+
+        a4a2:	f000 8148 	beq.w	a736 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x64e>
+
+        a4a6:	2d7d      	cmp	r5, #125	@ 0x7d
+
+        a4a8:	f000 8145 	beq.w	a736 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x64e>
+
+        a4ac:	f104 0c03 	add.w	ip, r4, #3
+
+        a4b0:	f88d 5064 	strb.w	r5, [sp, #100]	@ 0x64
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a4b4:	f8cd c044 	str.w	ip, [sp, #68]	@ 0x44
+
+    _ZN3etl26basic_format_parse_contextIcE10advance_toEPKc():
+
+        a4b8:	e00d      	b.n	a4d6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3ee>
+
+    do_visit<void, etl::private_format::size_t_extractor&, etl::variant<etl::monostate, bool, char, int, unsigned int, long long int, long long unsigned int, float, double, long double, char const*, etl::basic_string_view<char, etl::char_traits<char> >, void const*, etl::basic_format_arg<etl::basic_format_context<etl::private_print::print_iterator, char> >::handle>&, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13>():
+
+        a4ba:	4b64      	ldr	r3, [pc, #400]	@ (a64c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x564>)
+
+        a4bc:	4648      	mov	r0, r9
+
+        a4be:	681b      	ldr	r3, [r3, #0]
+
+        a4c0:	4798      	blx	r3
+
+        a4c2:	e76a      	b.n	a39a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x2b2>
+
+        a4c4:	4b61      	ldr	r3, [pc, #388]	@ (a64c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x564>)
+
+        a4c6:	4648      	mov	r0, r9
+
+        a4c8:	681b      	ldr	r3, [r3, #0]
+
+        a4ca:	4798      	blx	r3
+
+        a4cc:	e7a9      	b.n	a422 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x33a>
+
+    _ZN3etl15private_variant18variant_operationsILj12EJPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcPKcNS_17integral_constantIbLb1EEE():
+
+        a4ce:	5942      	ldr	r2, [r0, r5]
+
+        a4d0:	920c      	str	r2, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj12EJPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a4d2:	e704      	b.n	a2de <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1f6>
+
+    _ZN3etl14private_format20parse_fill_and_alignERNS_26basic_format_parse_contextIcEERc():
+
+        a4d4:	2300      	movs	r3, #0
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a4d6:	4a5e      	ldr	r2, [pc, #376]	@ (a650 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x568>)
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a4d8:	9318      	str	r3, [sp, #96]	@ 0x60
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a4da:	4613      	mov	r3, r2
+
+        a4dc:	f813 5b01 	ldrb.w	r5, [r3], #1
+
+        a4e0:	2d00      	cmp	r5, #0
+
+        a4e2:	d1fb      	bne.n	a4dc <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3f4>
+
+    _ZN3etl14private_format12parse_any_ofERNS_26basic_format_parse_contextIcEENS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        a4e4:	4561      	cmp	r1, ip
+
+        a4e6:	d02f      	beq.n	a548 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x460>
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a4e8:	1a9b      	subs	r3, r3, r2
+
+    _ZN3etl4findIPKccEET_S3_S3_RKT0_():
+
+        a4ea:	2b01      	cmp	r3, #1
+
+    _ZN3etl14private_format12parse_any_ofERNS_26basic_format_parse_contextIcEENS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        a4ec:	f89c e000 	ldrb.w	lr, [ip]
+
+    _ZN3etl4findIPKccEET_S3_S3_RKT0_():
+
+        a4f0:	d02a      	beq.n	a548 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x460>
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a4f2:	3b01      	subs	r3, #1
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4EPKc():
+
+        a4f4:	4413      	add	r3, r2
+
+        a4f6:	4a56      	ldr	r2, [pc, #344]	@ (a650 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x568>)
+
+        a4f8:	e001      	b.n	a4fe <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x416>
+
+    _ZN3etl4findIPKccEET_S3_S3_RKT0_():
+
+        a4fa:	4293      	cmp	r3, r2
+
+        a4fc:	d024      	beq.n	a548 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x460>
+
+        a4fe:	4610      	mov	r0, r2
+
+        a500:	3201      	adds	r2, #1
+
+        a502:	7804      	ldrb	r4, [r0, #0]
+
+        a504:	4574      	cmp	r4, lr
+
+        a506:	d1f8      	bne.n	a4fa <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x412>
+
+    _ZN3etl14private_format12parse_any_ofERNS_26basic_format_parse_contextIcEENS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        a508:	4283      	cmp	r3, r0
+
+        a50a:	d01d      	beq.n	a548 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x460>
+
+        a50c:	f10c 0301 	add.w	r3, ip, #1
+
+    _ZN3etl14private_format14sign_from_charEc():
+
+        a510:	f1be 0f2b 	cmp.w	lr, #43	@ 0x2b
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a514:	9311      	str	r3, [sp, #68]	@ 0x44
+
+    _ZN3etl14private_format14sign_from_charEc():
+
+        a516:	f000 80fd 	beq.w	a714 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x62c>
+
+        a51a:	f1be 0f2d 	cmp.w	lr, #45	@ 0x2d
+
+        a51e:	d007      	beq.n	a530 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x448>
+
+        a520:	f1be 0f20 	cmp.w	lr, #32
+
+        a524:	d00e      	beq.n	a544 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x45c>
+
+        a526:	4b49      	ldr	r3, [pc, #292]	@ (a64c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x564>)
+
+        a528:	4648      	mov	r0, r9
+
+        a52a:	681b      	ldr	r3, [r3, #0]
+
+        a52c:	4798      	blx	r3
+
+        a52e:	9912      	ldr	r1, [sp, #72]	@ 0x48
+
+        a530:	2300      	movs	r3, #0
+
+        a532:	e008      	b.n	a546 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x45e>
+
+    _ZN3etl15private_variant18variant_operationsILj2EJcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a534:	5d4b      	ldrb	r3, [r1, r5]
+
+        a536:	f88d 3030 	strb.w	r3, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj2EJcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a53a:	e729      	b.n	a390 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x2a8>
+
+    _ZN3etl15private_variant18variant_operationsILj2EJcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a53c:	5d4b      	ldrb	r3, [r1, r5]
+
+        a53e:	f88d 3030 	strb.w	r3, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj2EJcijxyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a542:	e76a      	b.n	a41a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x332>
+
+    _ZN3etl14private_format14sign_from_charEc():
+
+        a544:	2302      	movs	r3, #2
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a546:	931a      	str	r3, [sp, #104]	@ 0x68
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE5beginEv():
+
+        a548:	9b11      	ldr	r3, [sp, #68]	@ 0x44
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a54a:	428b      	cmp	r3, r1
+
+        a54c:	f000 8084 	beq.w	a658 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x570>
+
+        a550:	781a      	ldrb	r2, [r3, #0]
+
+        a552:	2a23      	cmp	r2, #35	@ 0x23
+
+        a554:	f000 80d2 	beq.w	a6fc <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x614>
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a558:	2200      	movs	r2, #0
+
+        a55a:	f88d 206c 	strb.w	r2, [sp, #108]	@ 0x6c
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a55e:	781a      	ldrb	r2, [r3, #0]
+
+        a560:	2a30      	cmp	r2, #48	@ 0x30
+
+        a562:	f000 80c7 	beq.w	a6f4 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x60c>
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a566:	2200      	movs	r2, #0
+
+        a568:	f88d 206d 	strb.w	r2, [sp, #109]	@ 0x6d
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a56c:	2400      	movs	r4, #0
+
+        a56e:	f8df b0dc 	ldr.w	fp, [pc, #220]	@ a64c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x564>
+
+        a572:	469a      	mov	sl, r3
+
+        a574:	4622      	mov	r2, r4
+
+        a576:	e005      	b.n	a584 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x49c>
+
+        a578:	4551      	cmp	r1, sl
+
+        a57a:	4602      	mov	r2, r0
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE3endEv():
+
+        a57c:	468c      	mov	ip, r1
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructERKj():
+
+        a57e:	f04f 0401 	mov.w	r4, #1
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a582:	d01e      	beq.n	a5c2 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x4da>
+
+        a584:	46d4      	mov	ip, sl
+
+        a586:	f81a 3b01 	ldrb.w	r3, [sl], #1
+
+    _ZN3etl14private_format8is_digitEc():
+
+        a58a:	f1a3 0030 	sub.w	r0, r3, #48	@ 0x30
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a58e:	fa5f fe80 	uxtb.w	lr, r0
+
+        a592:	f1be 0f09 	cmp.w	lr, #9
+
+        a596:	d847      	bhi.n	a628 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x540>
+
+    _ZNKR3etl16private_optional13optional_implIjLb1EE8value_orIiEENS_9enable_ifIXsrNS_14is_convertibleIT_jEE5valueEjE4typeEOS6_():
+
+        a598:	2c00      	cmp	r4, #0
+
+        a59a:	d0ed      	beq.n	a578 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x490>
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a59c:	eb02 0082 	add.w	r0, r2, r2, lsl #2
+
+        a5a0:	eb03 0340 	add.w	r3, r3, r0, lsl #1
+
+        a5a4:	f1a3 0430 	sub.w	r4, r3, #48	@ 0x30
+
+        a5a8:	4294      	cmp	r4, r2
+
+        a5aa:	d204      	bcs.n	a5b6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x4ce>
+
+        a5ac:	f8db 3000 	ldr.w	r3, [fp]
+
+        a5b0:	4648      	mov	r0, r9
+
+        a5b2:	4798      	blx	r3
+
+        a5b4:	9912      	ldr	r1, [sp, #72]	@ 0x48
+
+        a5b6:	4551      	cmp	r1, sl
+
+        a5b8:	4622      	mov	r2, r4
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE3endEv():
+
+        a5ba:	468c      	mov	ip, r1
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructERKj():
+
+        a5bc:	f04f 0401 	mov.w	r4, #1
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a5c0:	d1e0      	bne.n	a584 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x49c>
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a5c2:	2301      	movs	r3, #1
+
+        a5c4:	f8cd c044 	str.w	ip, [sp, #68]	@ 0x44
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructEOj():
+
+        a5c8:	921c      	str	r2, [sp, #112]	@ 0x70
+
+        a5ca:	f88d 3074 	strb.w	r3, [sp, #116]	@ 0x74
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE5beginEv():
+
+        a5ce:	9b11      	ldr	r3, [sp, #68]	@ 0x44
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a5d0:	428b      	cmp	r3, r1
+
+        a5d2:	d005      	beq.n	a5e0 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x4f8>
+
+        a5d4:	781a      	ldrb	r2, [r3, #0]
+
+        a5d6:	2a2e      	cmp	r2, #46	@ 0x2e
+
+        a5d8:	d058      	beq.n	a68c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x5a4>
+
+        a5da:	781a      	ldrb	r2, [r3, #0]
+
+        a5dc:	2a4c      	cmp	r2, #76	@ 0x4c
+
+        a5de:	d051      	beq.n	a684 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x59c>
+
+        a5e0:	2200      	movs	r2, #0
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a5e2:	4c1c      	ldr	r4, [pc, #112]	@ (a654 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x56c>)
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a5e4:	f88d 2085 	strb.w	r2, [sp, #133]	@ 0x85
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a5e8:	4622      	mov	r2, r4
+
+        a5ea:	f812 0b01 	ldrb.w	r0, [r2], #1
+
+        a5ee:	2800      	cmp	r0, #0
+
+        a5f0:	d1fb      	bne.n	a5ea <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x502>
+
+    _ZN3etl14private_format12parse_any_ofERNS_26basic_format_parse_contextIcEENS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        a5f2:	428b      	cmp	r3, r1
+
+        a5f4:	d015      	beq.n	a622 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x53a>
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a5f6:	1b12      	subs	r2, r2, r4
+
+    _ZN3etl4findIPKccEET_S3_S3_RKT0_():
+
+        a5f8:	2a01      	cmp	r2, #1
+
+    _ZN3etl14private_format12parse_any_ofERNS_26basic_format_parse_contextIcEENS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        a5fa:	781d      	ldrb	r5, [r3, #0]
+
+    _ZN3etl4findIPKccEET_S3_S3_RKT0_():
+
+        a5fc:	d011      	beq.n	a622 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x53a>
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        a5fe:	3a01      	subs	r2, #1
+
+        a600:	4914      	ldr	r1, [pc, #80]	@ (a654 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x56c>)
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4EPKc():
+
+        a602:	4422      	add	r2, r4
+
+        a604:	e001      	b.n	a60a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x522>
+
+    _ZN3etl4findIPKccEET_S3_S3_RKT0_():
+
+        a606:	428a      	cmp	r2, r1
+
+        a608:	d01b      	beq.n	a642 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x55a>
+
+        a60a:	4608      	mov	r0, r1
+
+        a60c:	3101      	adds	r1, #1
+
+        a60e:	7804      	ldrb	r4, [r0, #0]
+
+        a610:	42ac      	cmp	r4, r5
+
+        a612:	d1f8      	bne.n	a606 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x51e>
+
+    _ZN3etl14private_format12parse_any_ofERNS_26basic_format_parse_contextIcEENS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        a614:	4282      	cmp	r2, r0
+
+        a616:	d014      	beq.n	a642 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x55a>
+
+        a618:	3301      	adds	r3, #1
+
+    _ZN3etl16private_optional13optional_implIcLb1EE12storage_type9constructEOc():
+
+        a61a:	f88d 5086 	strb.w	r5, [sp, #134]	@ 0x86
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a61e:	9311      	str	r3, [sp, #68]	@ 0x44
+
+    _ZN3etl16private_optional13optional_implIcLb1EE12storage_type9constructEOc():
+
+        a620:	2001      	movs	r0, #1
+
+        a622:	f88d 0087 	strb.w	r0, [sp, #135]	@ 0x87
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a626:	e62f      	b.n	a288 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1a0>
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a628:	2c00      	cmp	r4, #0
+
+        a62a:	d1ca      	bne.n	a5c2 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x4da>
+
+        a62c:	2300      	movs	r3, #0
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a62e:	a91c      	add	r1, sp, #112	@ 0x70
+
+        a630:	4640      	mov	r0, r8
+
+        a632:	f88d 3074 	strb.w	r3, [sp, #116]	@ 0x74
+
+        a636:	f7f8 fe45 	bl	32c4 <<a href="../../../../../libs/3rdparty/etl/include/etl/format.h/1e210a6c076402009317d31ba2d80ae1.html">etl::private_format::parse_nested_replacement(etl::basic_format_parse_context<char>&, etl::optional<unsigned int>&)</a>>
+
+        a63a:	9912      	ldr	r1, [sp, #72]	@ 0x48
+
+        a63c:	f88d 0078 	strb.w	r0, [sp, #120]	@ 0x78
+
+        a640:	e7c5      	b.n	a5ce <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x4e6>
+
+    _ZN3etl16private_optional13optional_implIcLb1EE12storage_type7destroyEv():
+
+        a642:	2000      	movs	r0, #0
+
+        a644:	e7ed      	b.n	a622 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x53a>
+
+        a646:	bf00      	nop
+
+        a648:	000004b8 	.word	0x000004b8
+
+        a64c:	20000000 	.word	0x20000000
+
+        a650:	0004a6c0 	.word	0x0004a6c0
+
+        a654:	0004a6c4 	.word	0x0004a6c4
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a658:	2200      	movs	r2, #0
+
+        a65a:	f88d 206c 	strb.w	r2, [sp, #108]	@ 0x6c
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a65e:	4299      	cmp	r1, r3
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a660:	f88d 206d 	strb.w	r2, [sp, #109]	@ 0x6d
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a664:	d182      	bne.n	a56c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x484>
+
+        a666:	e7e1      	b.n	a62c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x544>
+
+    _ZN3etl14private_format15align_from_charEc():
+
+        a668:	2301      	movs	r3, #1
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a66a:	9211      	str	r2, [sp, #68]	@ 0x44
+
+    _ZN3etl26basic_format_parse_contextIcE10advance_toEPKc():
+
+        a66c:	4694      	mov	ip, r2
+
+        a66e:	e732      	b.n	a4d6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3ee>
+
+    _ZN3etl15private_variant18variant_operationsILj6EJyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a670:	2906      	cmp	r1, #6
+
+        a672:	f43f ae30 	beq.w	a2d6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1ee>
+
+    _ZN3etl15private_variant18variant_operationsILj7EJfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a676:	2907      	cmp	r1, #7
+
+        a678:	d167      	bne.n	a74a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x662>
+
+    _ZN3etl15private_variant18variant_operationsILj7EJfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a67a:	6812      	ldr	r2, [r2, #0]
+
+        a67c:	920c      	str	r2, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj7EJfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a67e:	e62e      	b.n	a2de <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1f6>
+
+    _ZN3etl14private_format15align_from_charEc():
+
+        a680:	2302      	movs	r3, #2
+
+    _ZN3etl14private_format18is_align_characterEc():
+
+        a682:	e7f2      	b.n	a66a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x582>
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a684:	3301      	adds	r3, #1
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a686:	9311      	str	r3, [sp, #68]	@ 0x44
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a688:	2201      	movs	r2, #1
+
+        a68a:	e7aa      	b.n	a5e2 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x4fa>
+
+        a68c:	3301      	adds	r3, #1
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a68e:	f8df b178 	ldr.w	fp, [pc, #376]	@ a808 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x720>
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a692:	9311      	str	r3, [sp, #68]	@ 0x44
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a694:	469a      	mov	sl, r3
+
+        a696:	2000      	movs	r0, #0
+
+        a698:	240a      	movs	r4, #10
+
+        a69a:	e00c      	b.n	a6b6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x5ce>
+
+        a69c:	fb04 3300 	mla	r3, r4, r0, r3
+
+        a6a0:	f1a3 0530 	sub.w	r5, r3, #48	@ 0x30
+
+        a6a4:	4285      	cmp	r5, r0
+
+        a6a6:	d204      	bcs.n	a6b2 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x5ca>
+
+        a6a8:	f8db 3000 	ldr.w	r3, [fp]
+
+        a6ac:	4648      	mov	r0, r9
+
+        a6ae:	4798      	blx	r3
+
+        a6b0:	9912      	ldr	r1, [sp, #72]	@ 0x48
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructERKj():
+
+        a6b2:	4628      	mov	r0, r5
+
+        a6b4:	2501      	movs	r5, #1
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a6b6:	458a      	cmp	sl, r1
+
+        a6b8:	46d6      	mov	lr, sl
+
+        a6ba:	d00c      	beq.n	a6d6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x5ee>
+
+        a6bc:	f81a 3b01 	ldrb.w	r3, [sl], #1
+
+    _ZN3etl14private_format8is_digitEc():
+
+        a6c0:	f1a3 0230 	sub.w	r2, r3, #48	@ 0x30
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a6c4:	fa5f fc82 	uxtb.w	ip, r2
+
+        a6c8:	f1bc 0f09 	cmp.w	ip, #9
+
+        a6cc:	d803      	bhi.n	a6d6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x5ee>
+
+    _ZNKR3etl16private_optional13optional_implIjLb1EE8value_orIiEENS_9enable_ifIXsrNS_14is_convertibleIT_jEE5valueEjE4typeEOS6_():
+
+        a6ce:	2d00      	cmp	r5, #0
+
+        a6d0:	d1e4      	bne.n	a69c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x5b4>
+
+    _ZN3etl14private_format9parse_numERNS_26basic_format_parse_contextIcEE():
+
+        a6d2:	4615      	mov	r5, r2
+
+        a6d4:	e7ed      	b.n	a6b2 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x5ca>
+
+        a6d6:	bb3d      	cbnz	r5, a728 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x640>
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a6d8:	a91f      	add	r1, sp, #124	@ 0x7c
+
+        a6da:	4640      	mov	r0, r8
+
+        a6dc:	f88d 5080 	strb.w	r5, [sp, #128]	@ 0x80
+
+        a6e0:	f7f8 fdf0 	bl	32c4 <<a href="../../../../../libs/3rdparty/etl/include/etl/format.h/1e210a6c076402009317d31ba2d80ae1.html">etl::private_format::parse_nested_replacement(etl::basic_format_parse_context<char>&, etl::optional<unsigned int>&)</a>>
+
+        a6e4:	9912      	ldr	r1, [sp, #72]	@ 0x48
+
+        a6e6:	f88d 0084 	strb.w	r0, [sp, #132]	@ 0x84
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE5beginEv():
+
+        a6ea:	9b11      	ldr	r3, [sp, #68]	@ 0x44
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a6ec:	428b      	cmp	r3, r1
+
+        a6ee:	f47f af74 	bne.w	a5da <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x4f2>
+
+        a6f2:	e775      	b.n	a5e0 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x4f8>
+
+        a6f4:	3301      	adds	r3, #1
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a6f6:	9311      	str	r3, [sp, #68]	@ 0x44
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a6f8:	2201      	movs	r2, #1
+
+        a6fa:	e7b0      	b.n	a65e <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x576>
+
+        a6fc:	3301      	adds	r3, #1
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a6fe:	2201      	movs	r2, #1
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a700:	4299      	cmp	r1, r3
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a702:	9311      	str	r3, [sp, #68]	@ 0x44
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a704:	f88d 206c 	strb.w	r2, [sp, #108]	@ 0x6c
+
+    _ZN3etl14private_format10parse_charERNS_26basic_format_parse_contextIcEEc():
+
+        a708:	f47f af29 	bne.w	a55e <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x476>
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a70c:	2300      	movs	r3, #0
+
+        a70e:	f88d 306d 	strb.w	r3, [sp, #109]	@ 0x6d
+
+    _ZNK3etl17basic_string_viewIcNS_11char_traitsIcEEE3endEv():
+
+        a712:	e78b      	b.n	a62c <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x544>
+
+    _ZN3etl14private_format14sign_from_charEc():
+
+        a714:	2301      	movs	r3, #1
+
+        a716:	e716      	b.n	a546 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x45e>
+
+    _ZN3etl15private_variant18variant_operationsILj12EJPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcPKcNS_17integral_constantIbLb1EEE():
+
+        a718:	594b      	ldr	r3, [r1, r5]
+
+        a71a:	930c      	str	r3, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj12EJPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a71c:	e638      	b.n	a390 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x2a8>
+
+    _ZN3etl15private_variant18variant_operationsILj12EJPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcPKcNS_17integral_constantIbLb1EEE():
+
+        a71e:	594b      	ldr	r3, [r1, r5]
+
+        a720:	930c      	str	r3, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj12EJPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a722:	e67a      	b.n	a41a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x332>
+
+    _ZN3etl14private_format15align_from_charEc():
+
+        a724:	2303      	movs	r3, #3
+
+        a726:	e7a0      	b.n	a66a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x582>
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEaSERKS3_():
+
+        a728:	2301      	movs	r3, #1
+
+        a72a:	f8cd e044 	str.w	lr, [sp, #68]	@ 0x44
+
+    _ZN3etl16private_optional13optional_implIjLb1EE12storage_type9constructEOj():
+
+        a72e:	901f      	str	r0, [sp, #124]	@ 0x7c
+
+        a730:	f88d 3080 	strb.w	r3, [sp, #128]	@ 0x80
+
+    _ZN3etl14private_format17parse_format_specINS_13private_print14print_iteratorEEEvRNS_26basic_format_parse_contextIcEERNS_20basic_format_contextIT_cEE():
+
+        a734:	e7d9      	b.n	a6ea <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x602>
+
+    _ZN3etl14private_format20parse_fill_and_alignERNS_26basic_format_parse_contextIcEERc():
+
+        a736:	4a34      	ldr	r2, [pc, #208]	@ (a808 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x720>)
+
+        a738:	9301      	str	r3, [sp, #4]
+
+        a73a:	6812      	ldr	r2, [r2, #0]
+
+        a73c:	4648      	mov	r0, r9
+
+        a73e:	4790      	blx	r2
+
+        a740:	9912      	ldr	r1, [sp, #72]	@ 0x48
+
+        a742:	9b01      	ldr	r3, [sp, #4]
+
+        a744:	e6b2      	b.n	a4ac <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3c4>
+
+    _ZN3etl14private_format15align_from_charEc():
+
+        a746:	2301      	movs	r3, #1
+
+        a748:	e6aa      	b.n	a4a0 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3b8>
+
+    _ZN3etl15private_variant18variant_operationsILj8EJdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a74a:	2908      	cmp	r1, #8
+
+        a74c:	d01a      	beq.n	a784 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x69c>
+
+    _ZN3etl15private_variant18variant_operationsILj9EJePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a74e:	2909      	cmp	r1, #9
+
+        a750:	d018      	beq.n	a784 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x69c>
+
+    _ZN3etl15private_variant18variant_operationsILj10EJPKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a752:	290a      	cmp	r1, #10
+
+        a754:	f43f aebb 	beq.w	a4ce <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3e6>
+
+    _ZN3etl15private_variant18variant_operationsILj11EJNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a758:	290b      	cmp	r1, #11
+
+        a75a:	d04b      	beq.n	a7f4 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x70c>
+
+    _ZN3etl15private_variant18variant_operationsILj12EJPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a75c:	290c      	cmp	r1, #12
+
+        a75e:	f43f aeb6 	beq.w	a4ce <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3e6>
+
+    _ZN3etl15private_variant18variant_operationsILj13EJNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a762:	290d      	cmp	r1, #13
+
+    _ZN3etl15private_variant18variant_operationsILj13EJNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcPKcNS_17integral_constantIbLb1EEE():
+
+        a764:	bf04      	itt	eq
+
+        a766:	e9d2 0100 	ldrdeq	r0, r1, [r2]
+
+        a76a:	e9c7 0100 	strdeq	r0, r1, [r7]
+
+    _ZN3etl15private_variant18variant_operationsILj13EJNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a76e:	e5b6      	b.n	a2de <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1f6>
+
+    _ZN3etl15private_variant18variant_operationsILj6EJyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a770:	e9d3 2300 	ldrd	r2, r3, [r3]
+
+        a774:	e9cd 230c 	strd	r2, r3, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj6EJyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a778:	e60a      	b.n	a390 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x2a8>
+
+    _ZN3etl15private_variant18variant_operationsILj6EJyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a77a:	e9d3 2300 	ldrd	r2, r3, [r3]
+
+        a77e:	e9cd 230c 	strd	r2, r3, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj6EJyfdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a782:	e64a      	b.n	a41a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x332>
+
+    _ZN3etl15private_variant18variant_operationsILj9EJePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a784:	e9d2 0100 	ldrd	r0, r1, [r2]
+
+        a788:	e9cd 010c 	strd	r0, r1, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj9EJePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a78c:	e5a7      	b.n	a2de <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1f6>
+
+    _ZN3etl14private_format15align_from_charEc():
+
+        a78e:	2302      	movs	r3, #2
+
+        a790:	e686      	b.n	a4a0 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x3b8>
+
+    _ZN3etl15private_variant18variant_operationsILj8EJdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a792:	2a08      	cmp	r2, #8
+
+        a794:	d01f      	beq.n	a7d6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x6ee>
+
+    _ZN3etl15private_variant18variant_operationsILj9EJePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a796:	2a09      	cmp	r2, #9
+
+        a798:	d01d      	beq.n	a7d6 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x6ee>
+
+    _ZN3etl15private_variant18variant_operationsILj10EJPKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a79a:	2a0a      	cmp	r2, #10
+
+        a79c:	d0bc      	beq.n	a718 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x630>
+
+    _ZN3etl15private_variant18variant_operationsILj11EJNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a79e:	2a0b      	cmp	r2, #11
+
+        a7a0:	d02d      	beq.n	a7fe <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x716>
+
+    _ZN3etl15private_variant18variant_operationsILj12EJPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a7a2:	2a0c      	cmp	r2, #12
+
+        a7a4:	d0b8      	beq.n	a718 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x630>
+
+    _ZN3etl15private_variant18variant_operationsILj13EJNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a7a6:	2a0d      	cmp	r2, #13
+
+    _ZN3etl15private_variant18variant_operationsILj13EJNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcPKcNS_17integral_constantIbLb1EEE():
+
+        a7a8:	bf04      	itt	eq
+
+        a7aa:	e9d3 0100 	ldrdeq	r0, r1, [r3]
+
+        a7ae:	e9c7 0100 	strdeq	r0, r1, [r7]
+
+    _ZN3etl15private_variant18variant_operationsILj13EJNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a7b2:	e5ed      	b.n	a390 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x2a8>
+
+    _ZN3etl15private_variant18variant_operationsILj8EJdePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a7b4:	2a08      	cmp	r2, #8
+
+        a7b6:	d013      	beq.n	a7e0 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x6f8>
+
+    _ZN3etl15private_variant18variant_operationsILj9EJePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a7b8:	2a09      	cmp	r2, #9
+
+        a7ba:	d011      	beq.n	a7e0 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x6f8>
+
+    _ZN3etl15private_variant18variant_operationsILj10EJPKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a7bc:	2a0a      	cmp	r2, #10
+
+        a7be:	d0ae      	beq.n	a71e <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x636>
+
+    _ZN3etl15private_variant18variant_operationsILj11EJNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a7c0:	2a0b      	cmp	r2, #11
+
+        a7c2:	d012      	beq.n	a7ea <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x702>
+
+    _ZN3etl15private_variant18variant_operationsILj12EJPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a7c4:	2a0c      	cmp	r2, #12
+
+        a7c6:	d0aa      	beq.n	a71e <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x636>
+
+    _ZN3etl15private_variant18variant_operationsILj13EJNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a7c8:	2a0d      	cmp	r2, #13
+
+    _ZN3etl15private_variant18variant_operationsILj13EJNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcPKcNS_17integral_constantIbLb1EEE():
+
+        a7ca:	bf04      	itt	eq
+
+        a7cc:	e9d3 0100 	ldrdeq	r0, r1, [r3]
+
+        a7d0:	e9c7 0100 	strdeq	r0, r1, [r7]
+
+    _ZN3etl15private_variant18variant_operationsILj13EJNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a7d4:	e621      	b.n	a41a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x332>
+
+    _ZN3etl15private_variant18variant_operationsILj9EJePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a7d6:	e9d3 2300 	ldrd	r2, r3, [r3]
+
+        a7da:	e9cd 230c 	strd	r2, r3, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj9EJePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a7de:	e5d7      	b.n	a390 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x2a8>
+
+    _ZN3etl15private_variant18variant_operationsILj9EJePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE9copy_implEPcS3_NS_17integral_constantIbLb1EEE():
+
+        a7e0:	e9d3 2300 	ldrd	r2, r3, [r3]
+
+        a7e4:	e9cd 230c 	strd	r2, r3, [sp, #48]	@ 0x30
+
+    _ZN3etl15private_variant18variant_operationsILj9EJePKcNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcS3_j():
+
+        a7e8:	e617      	b.n	a41a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x332>
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4ERKS3_():
+
+        a7ea:	594a      	ldr	r2, [r1, r5]
+
+        a7ec:	685b      	ldr	r3, [r3, #4]
+
+        a7ee:	920c      	str	r2, [sp, #48]	@ 0x30
+
+        a7f0:	930d      	str	r3, [sp, #52]	@ 0x34
+
+    _ZN3etl15private_variant18variant_operationsILj11EJNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a7f2:	e612      	b.n	a41a <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x332>
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4ERKS3_():
+
+        a7f4:	5941      	ldr	r1, [r0, r5]
+
+        a7f6:	6852      	ldr	r2, [r2, #4]
+
+        a7f8:	910c      	str	r1, [sp, #48]	@ 0x30
+
+        a7fa:	920d      	str	r2, [sp, #52]	@ 0x34
+
+    _ZN3etl15private_variant18variant_operationsILj11EJNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a7fc:	e56f      	b.n	a2de <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x1f6>
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4ERKS3_():
+
+        a7fe:	594a      	ldr	r2, [r1, r5]
+
+        a800:	685b      	ldr	r3, [r3, #4]
+
+        a802:	920c      	str	r2, [sp, #48]	@ 0x30
+
+        a804:	930d      	str	r3, [sp, #52]	@ 0x34
+
+    _ZN3etl15private_variant18variant_operationsILj11EJNS_17basic_string_viewIcNS_11char_traitsIcEEEEPKvNS_16basic_format_argINS_20basic_format_contextINS_13private_print14print_iteratorEcEEE6handleEEE4copyEPcPKcj():
+
+        a806:	e5c3      	b.n	a390 <<a href="./bc46ea6f8caad88be79775322838789c.html">etl_assert_function(etl::exception const&)</a>+0x2a8>
+
+        a808:	20000000 	.word	0x20000000
+
+    </pre>
+
+    
+    <pre><a href="./5ca4565b9d11184b1d3b82aa1ebe323f.html">app_main() (20)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 280</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 476</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    280
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    476
+                    
+                    
+                </td>
+                <td class="col_size">228</td>
+                <td><a href="../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/4d2b35f004d57c9527b81a1790cf7eec.html" class="icon-function">bios::Io::setConfiguration(unsigned short, bios::Io::PinConfiguration const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    248
+                    
+                    
+                </td>
+                <td class="col_size">24</td>
+                <td><a href="../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html" class="icon-function">bios::Io::setDefaultConfiguration(unsigned short)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    272
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    224
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../../../../platforms/s32k1xx/bsp/bspUart/src/Uart.cpp/a6995270dd7b2ce4a3dc535f548e1353.html" class="icon-function">bsp::Uart::init()</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    256
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    164
+                    
+                    
+                </td>
+                <td class="col_size">92</td>
+                <td><a href="../../../../../platforms/s32k1xx/bsp/bspUart/src/Uart.cpp/3d17eef1aadb667b2ad32520c73b297c.html" class="icon-function">bsp::Uart::write(etl::span&lt;unsigned char const, 4294967295u&gt;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    240
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">64</td>
+                <td><a href="../../../platforms/s32k148evb/bspConfiguration/src/bsp/stdIo/stdIo.cpp/b4518472f943892ec1c4fd3c765433f9.html" class="icon-function">putByteToStdout</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">8</td>
+                <td><a href="../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html" class="icon-function">etl_putchar</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">216
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

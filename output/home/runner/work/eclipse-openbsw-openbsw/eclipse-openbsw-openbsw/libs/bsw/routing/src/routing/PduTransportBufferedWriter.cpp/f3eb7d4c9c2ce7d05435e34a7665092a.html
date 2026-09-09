@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../routing.html">routing</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../routing.html">routing</a>
+            </li>
+
+        
+        <li class="active"><a href="../PduTransportBufferedWriter.cpp.html">PduTransportBufferedWriter.cpp</a>:54
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">routing::PduTransportBufferedWriter::commit()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0003de50</td>
+                <td>
+    
+    
+</td>
+                <td>16 (static)</td>
+                <td>172</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=188
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="./ebe83d79f975849d8e1cd9595b5a6365.html">routing::PduTransportBufferedWriter::flush() (128)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/e7f55a9d953f32b1317f54c0d66911d5.html">getSystemTimeUs32Bit (60)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../include/routing/PduTransportBufferedWriter.h/e1cf2bdeb2505a15b2b64077eef5debb.html">routing::PduTransportBufferedWriter::maxSize() const (100)</a></pre>
+    
+
+    <pre>
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3de50:	6983      	ldr	r3, [r0, #24]
+
+       3de52:	2b00      	cmp	r3, #0
+
+       3de54:	d03e      	beq.n	3ded4 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x84>
+
+       3de56:	b570      	push	{r4, r5, r6, lr}
+
+       3de58:	4604      	mov	r4, r0
+
+       3de5a:	6840      	ldr	r0, [r0, #4]
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       3de5c:	68e2      	ldr	r2, [r4, #12]
+
+       3de5e:	6925      	ldr	r5, [r4, #16]
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3de60:	6803      	ldr	r3, [r0, #0]
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       3de62:	1aad      	subs	r5, r5, r2
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3de64:	689b      	ldr	r3, [r3, #8]
+
+       3de66:	4a23      	ldr	r2, [pc, #140]	@ (3def4 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0xa4>)
+
+       3de68:	4293      	cmp	r3, r2
+
+       3de6a:	d134      	bne.n	3ded6 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x86>
+
+    routing::PduTransportBufferedWriter::maxSize() const():
+
+       3de6c:	6840      	ldr	r0, [r0, #4]
+
+       3de6e:	6802      	ldr	r2, [r0, #0]
+
+       3de70:	6892      	ldr	r2, [r2, #8]
+
+       3de72:	429a      	cmp	r2, r3
+
+       3de74:	d138      	bne.n	3dee8 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x98>
+
+       3de76:	6840      	ldr	r0, [r0, #4]
+
+       3de78:	6803      	ldr	r3, [r0, #0]
+
+       3de7a:	689b      	ldr	r3, [r3, #8]
+
+       3de7c:	4293      	cmp	r3, r2
+
+       3de7e:	d12a      	bne.n	3ded6 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x86>
+
+       3de80:	6840      	ldr	r0, [r0, #4]
+
+       3de82:	6802      	ldr	r2, [r0, #0]
+
+       3de84:	6892      	ldr	r2, [r2, #8]
+
+       3de86:	429a      	cmp	r2, r3
+
+       3de88:	d12e      	bne.n	3dee8 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x98>
+
+       3de8a:	6840      	ldr	r0, [r0, #4]
+
+       3de8c:	6803      	ldr	r3, [r0, #0]
+
+       3de8e:	689b      	ldr	r3, [r3, #8]
+
+       3de90:	4798      	blx	r3
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3de92:	4285      	cmp	r5, r0
+
+       3de94:	d022      	beq.n	3dedc <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x8c>
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       3de96:	68e3      	ldr	r3, [r4, #12]
+
+       3de98:	6922      	ldr	r2, [r4, #16]
+
+    _ZN3etl3minIjNS_4lessIjEEEERKT_S5_S5_T0_():
+
+       3de9a:	69a0      	ldr	r0, [r4, #24]
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3de9c:	68a1      	ldr	r1, [r4, #8]
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       3de9e:	1ad2      	subs	r2, r2, r3
+
+    _ZN3etl4spanIhLj4294967295EE7advanceEj():
+
+       3dea0:	4282      	cmp	r2, r0
+
+       3dea2:	bf94      	ite	ls
+
+       3dea4:	189b      	addls	r3, r3, r2
+
+       3dea6:	181b      	addhi	r3, r3, r0
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3dea8:	2200      	movs	r2, #0
+
+    _ZN3etl4spanIhLj4294967295EE7advanceEj():
+
+       3deaa:	60e3      	str	r3, [r4, #12]
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3deac:	61a2      	str	r2, [r4, #24]
+
+       3deae:	b981      	cbnz	r1, 3ded2 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x82>
+
+    _ZN7routing14ClampedCounterImEppEv():
+
+       3deb0:	6a23      	ldr	r3, [r4, #32]
+
+       3deb2:	1c5a      	adds	r2, r3, #1
+
+       3deb4:	bf1c      	itt	ne
+
+       3deb6:	3301      	addne	r3, #1
+
+       3deb8:	6223      	strne	r3, [r4, #32]
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3deba:	6823      	ldr	r3, [r4, #0]
+
+       3debc:	4a0e      	ldr	r2, [pc, #56]	@ (3def8 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0xa8>)
+
+       3debe:	695b      	ldr	r3, [r3, #20]
+
+       3dec0:	4293      	cmp	r3, r2
+
+       3dec2:	d113      	bne.n	3deec <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x9c>
+
+    routing::PduTransportBufferedWriter::flush():
+
+       3dec4:	7d23      	ldrb	r3, [r4, #20]
+
+       3dec6:	b923      	cbnz	r3, 3ded2 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x82>
+
+       3dec8:	4620      	mov	r0, r4
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3deca:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
+
+    routing::PduTransportBufferedWriter::flush():
+
+       3dece:	f7ff bf47 	b.w	3dd60 <<a href="./ebe83d79f975849d8e1cd9595b5a6365.html">routing::PduTransportBufferedWriter::flush()</a>.part.0>
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3ded2:	bd70      	pop	{r4, r5, r6, pc}
+
+       3ded4:	4770      	bx	lr
+
+       3ded6:	4798      	blx	r3
+
+       3ded8:	4285      	cmp	r5, r0
+
+       3deda:	d1dc      	bne.n	3de96 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x46>
+
+       3dedc:	f005 f9e6 	bl	432ac <<a href="../../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/e7f55a9d953f32b1317f54c0d66911d5.html">getSystemTimeUs32Bit</a>>
+
+       3dee0:	2300      	movs	r3, #0
+
+       3dee2:	61e0      	str	r0, [r4, #28]
+
+       3dee4:	7523      	strb	r3, [r4, #20]
+
+       3dee6:	e7d6      	b.n	3de96 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x46>
+
+    routing::PduTransportBufferedWriter::maxSize() const():
+
+       3dee8:	4790      	blx	r2
+
+       3deea:	e7d2      	b.n	3de92 <<a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit()</a>+0x42>
+
+    routing::PduTransportBufferedWriter::commit():
+
+       3deec:	4620      	mov	r0, r4
+
+       3deee:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
+
+       3def2:	4718      	bx	r3
+
+       3def4:	0003dded 	.word	0x0003dded
+
+       3def8:	0003dde1 	.word	0x0003dde1
+
+    </pre>
+
+    
+    <pre><a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int) (176)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

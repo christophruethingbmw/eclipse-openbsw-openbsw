@@ -1,0 +1,1 @@
+genhtml code_coverage/coverage.info --prefix /home/runner/work/eclipse-openbsw-openbsw/eclipse-openbsw-openbsw --output-directory code_coverage/coverage

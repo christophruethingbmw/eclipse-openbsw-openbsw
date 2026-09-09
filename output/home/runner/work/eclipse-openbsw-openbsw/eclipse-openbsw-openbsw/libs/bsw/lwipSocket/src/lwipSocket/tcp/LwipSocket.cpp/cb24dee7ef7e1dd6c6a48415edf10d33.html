@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../lwipSocket.html">lwipSocket</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../lwipSocket.html">lwipSocket</a></li>
+        
+        <li ><a href="../../tcp.html">tcp</a>
+            </li>
+
+        
+        <li class="active"><a href="../LwipSocket.cpp.html">LwipSocket.cpp</a>:288
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">tcp::LwipSocket::connect(ip::IPAddress const&amp;, unsigned short, etl::delegate&lt;void (tcp::AbstractSocket::ErrorCode)&gt;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0002ed6c</td>
+                <td>
+    
+    
+</td>
+                <td>88 (static)</td>
+                <td>428</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (16,
+                            <span title="sum of used bytes by all callees">
+                            Σ=1348
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../utils/TaskAssert.cpp/39c8284cc5e0e36feda703ba48572d03.html">lwiputils::TASK_ASSERT_HOOK() (4)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/499461da780db58451c63cc3a5ac38f0.html">tcp_new_ip_type (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../utils/FilterFrame.cpp/54d7e9a3f27474890c3c37bb54d9dda9.html">lwiputils::to_lwipIp(ip::IPAddress const&amp;, ip4_addr*) (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/af07abf8bd8511afd7b4df66f57815db.html">tcp_arg (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/f8eaea74a929b5b641432769dfd841d1.html">tcp_sent (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/8ac3003586a7101c9fb805d3d2ca644f.html">tcp_recv (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/c6d024ec249c992e04afa078681a68df.html">tcp_err (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/c4f6cd5715099ae06770ac478f854441.html">tcp_poll (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/023477140fe3afd2005c820e49bbb43a.html">tcp_connect (448)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../cpp2ethernet/src/ip/to_str.cpp/0136b9da1328cb0b6fcc5bb356763d33.html">ip::to_str(ip::IPAddress const&amp;, etl::span&lt;char, 4294967295u&gt; const&amp;) (76)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../util/include/util/logger/Logger.h/0ab01804358606b880086539418bdb3a.html">util::logger::Logger::info(unsigned char, char const*, ...) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...) (88)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/7257a35627e94c30525a90dd5674d1ba.html">tcp_bind (196)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/65bf4b4d1cd8c2ab7ef11aba4b48c88a.html">tcp_abandon (308)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./8c13827d17df585c7412757c65b042e1.html">tcp::LwipSocket::resetSocket() (60)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./4734220ca54a761f1fd6170bf24c6bb0.html">tcp::LwipSocket::tcpErrorListener(void*, signed char) (28)</a></pre>
+    
+
+    <pre>
+
+    tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>):
+
+       2ed6c:	b082      	sub	sp, #8
+
+       2ed6e:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+
+       2ed72:	4604      	mov	r4, r0
+
+       2ed74:	b090      	sub	sp, #64	@ 0x40
+
+       2ed76:	460d      	mov	r5, r1
+
+       2ed78:	9317      	str	r3, [sp, #92]	@ 0x5c
+
+       2ed7a:	4616      	mov	r6, r2
+
+       2ed7c:	f000 fdca 	bl	2f914 <<a href="../../utils/TaskAssert.cpp/39c8284cc5e0e36feda703ba48572d03.html">lwiputils::TASK_ASSERT_HOOK()</a>>
+
+       2ed80:	68e3      	ldr	r3, [r4, #12]
+
+       2ed82:	b12b      	cbz	r3, 2ed90 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x24>
+
+       2ed84:	2001      	movs	r0, #1
+
+       2ed86:	b010      	add	sp, #64	@ 0x40
+
+       2ed88:	e8bd 41f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, lr}
+
+       2ed8c:	b002      	add	sp, #8
+
+       2ed8e:	4770      	bx	lr
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       2ed90:	9306      	str	r3, [sp, #24]
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2ed92:	f105 3cff 	add.w	ip, r5, #4294967295	@ 0xffffffff
+
+       2ed96:	1ceb      	adds	r3, r5, #3
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       2ed98:	f10d 0e18 	add.w	lr, sp, #24
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2ed9c:	f81c 0f01 	ldrb.w	r0, [ip, #1]!
+
+       2eda0:	f80e 0b01 	strb.w	r0, [lr], #1
+
+       2eda4:	4563      	cmp	r3, ip
+
+       2eda6:	d1f9      	bne.n	2ed9c <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x30>
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       2eda8:	2700      	movs	r7, #0
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       2edaa:	2204      	movs	r2, #4
+
+       2edac:	a906      	add	r1, sp, #24
+
+       2edae:	a804      	add	r0, sp, #16
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       2edb0:	9704      	str	r7, [sp, #16]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       2edb2:	f7d1 fc69 	bl	688 <<a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       2edb6:	9b04      	ldr	r3, [sp, #16]
+
+    tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>):
+
+       2edb8:	2b00      	cmp	r3, #0
+
+       2edba:	d04f      	beq.n	2ee5c <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0xf0>
+
+       2edbc:	202e      	movs	r0, #46	@ 0x2e
+
+       2edbe:	f002 fd9f 	bl	31900 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/499461da780db58451c63cc3a5ac38f0.html">tcp_new_ip_type</a>>
+
+       2edc2:	60e0      	str	r0, [r4, #12]
+
+       2edc4:	2800      	cmp	r0, #0
+
+       2edc6:	f000 808a 	beq.w	2eede <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x172>
+
+    _ZN9lwiputils9to_lwipIpERKN2ip9IPAddressE():
+
+       2edca:	a906      	add	r1, sp, #24
+
+       2edcc:	4628      	mov	r0, r5
+
+    _ZN3etl4spanIKhLj4294967295EEaSERKS2_():
+
+       2edce:	6227      	str	r7, [r4, #32]
+
+       2edd0:	6267      	str	r7, [r4, #36]	@ 0x24
+
+    _ZN9lwiputils9to_lwipIpERKN2ip9IPAddressE():
+
+       2edd2:	9706      	str	r7, [sp, #24]
+
+       2edd4:	f000 fd5a 	bl	2f88c <<a href="../../utils/FilterFrame.cpp/54d7e9a3f27474890c3c37bb54d9dda9.html">lwiputils::to_lwipIp(ip::IPAddress const&, ip4_addr*)</a>>
+
+    tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>):
+
+       2edd8:	ab17      	add	r3, sp, #92	@ 0x5c
+
+       2edda:	e893 0003 	ldmia.w	r3, {r0, r1}
+
+       2edde:	f104 0328 	add.w	r3, r4, #40	@ 0x28
+
+       2ede2:	e883 0003 	stmia.w	r3, {r0, r1}
+
+       2ede6:	f04f 0801 	mov.w	r8, #1
+
+    _ZN9lwiputils9to_lwipIpERKN2ip9IPAddressE():
+
+       2edea:	9b06      	ldr	r3, [sp, #24]
+
+    tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>):
+
+       2edec:	68e0      	ldr	r0, [r4, #12]
+
+       2edee:	f8a4 8030 	strh.w	r8, [r4, #48]	@ 0x30
+
+       2edf2:	4621      	mov	r1, r4
+
+       2edf4:	9301      	str	r3, [sp, #4]
+
+       2edf6:	f002 f825 	bl	30e44 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/af07abf8bd8511afd7b4df66f57815db.html">tcp_arg</a>>
+
+       2edfa:	493c      	ldr	r1, [pc, #240]	@ (2eeec <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x180>)
+
+       2edfc:	68e0      	ldr	r0, [r4, #12]
+
+       2edfe:	f002 f829 	bl	30e54 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/f8eaea74a929b5b641432769dfd841d1.html">tcp_sent</a>>
+
+       2ee02:	493b      	ldr	r1, [pc, #236]	@ (2eef0 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x184>)
+
+       2ee04:	68e0      	ldr	r0, [r4, #12]
+
+       2ee06:	f002 f821 	bl	30e4c <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/8ac3003586a7101c9fb805d3d2ca644f.html">tcp_recv</a>>
+
+       2ee0a:	493a      	ldr	r1, [pc, #232]	@ (2eef4 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x188>)
+
+       2ee0c:	68e0      	ldr	r0, [r4, #12]
+
+       2ee0e:	f002 f825 	bl	30e5c <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/c6d024ec249c992e04afa078681a68df.html">tcp_err</a>>
+
+       2ee12:	4939      	ldr	r1, [pc, #228]	@ (2eef8 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x18c>)
+
+       2ee14:	68e0      	ldr	r0, [r4, #12]
+
+       2ee16:	4642      	mov	r2, r8
+
+       2ee18:	f002 f82a 	bl	30e70 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/c4f6cd5715099ae06770ac478f854441.html">tcp_poll</a>>
+
+    _ZNK2ip10IPEndpoint5isSetEv():
+
+       2ee1c:	7ea3      	ldrb	r3, [r4, #26]
+
+       2ee1e:	07db      	lsls	r3, r3, #31
+
+       2ee20:	d422      	bmi.n	2ee68 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0xfc>
+
+    tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>):
+
+       2ee22:	4b36      	ldr	r3, [pc, #216]	@ (2eefc <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x190>)
+
+       2ee24:	68e0      	ldr	r0, [r4, #12]
+
+       2ee26:	4632      	mov	r2, r6
+
+       2ee28:	a901      	add	r1, sp, #4
+
+       2ee2a:	f001 ff0b 	bl	30c44 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/023477140fe3afd2005c820e49bbb43a.html">tcp_connect</a>>
+
+       2ee2e:	4b34      	ldr	r3, [pc, #208]	@ (2ef00 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x194>)
+
+       2ee30:	4607      	mov	r7, r0
+
+       2ee32:	f893 8000 	ldrb.w	r8, [r3]
+
+       2ee36:	2800      	cmp	r0, #0
+
+       2ee38:	d148      	bne.n	2eecc <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x160>
+
+    _ZN3etl4spanIcLj4294967295EEC4ILj40EEERAT__c():
+
+       2ee3a:	ab06      	add	r3, sp, #24
+
+       2ee3c:	9302      	str	r3, [sp, #8]
+
+    tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>):
+
+       2ee3e:	4629      	mov	r1, r5
+
+    _ZN3etl4spanIcLj4294967295EEC4ILj40EEERAT__c():
+
+       2ee40:	ab10      	add	r3, sp, #64	@ 0x40
+
+    tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>):
+
+       2ee42:	a804      	add	r0, sp, #16
+
+       2ee44:	aa02      	add	r2, sp, #8
+
+    _ZN3etl4spanIcLj4294967295EEC4ILj40EEERAT__c():
+
+       2ee46:	9303      	str	r3, [sp, #12]
+
+    tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>):
+
+       2ee48:	f016 fbd6 	bl	455f8 <<a href="../../../../../cpp2ethernet/src/ip/to_str.cpp/0136b9da1328cb0b6fcc5bb356763d33.html">ip::to_str(ip::IPAddress const&, etl::span<char, 4294967295u> const&)</a>>
+
+       2ee4c:	4640      	mov	r0, r8
+
+       2ee4e:	492d      	ldr	r1, [pc, #180]	@ (2ef04 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x198>)
+
+       2ee50:	9a04      	ldr	r2, [sp, #16]
+
+       2ee52:	4633      	mov	r3, r6
+
+       2ee54:	f7d4 f9fc 	bl	3250 <<a href="../../../../../util/include/util/logger/Logger.h/0ab01804358606b880086539418bdb3a.html">util::logger::Logger::info(unsigned char, char const*, ...)</a>>
+
+       2ee58:	4638      	mov	r0, r7
+
+       2ee5a:	e794      	b.n	2ed86 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x1a>
+
+       2ee5c:	4b28      	ldr	r3, [pc, #160]	@ (2ef00 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x194>)
+
+       2ee5e:	492a      	ldr	r1, [pc, #168]	@ (2ef08 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x19c>)
+
+       2ee60:	7818      	ldrb	r0, [r3, #0]
+
+       2ee62:	f7da fc09 	bl	9678 <<a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       2ee66:	e78d      	b.n	2ed84 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x18>
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       2ee68:	9706      	str	r7, [sp, #24]
+
+    _ZNK2ip9IPAddress12be_uint32_atEj():
+
+       2ee6a:	f104 0814 	add.w	r8, r4, #20
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2ee6e:	f104 0313 	add.w	r3, r4, #19
+
+       2ee72:	f104 0017 	add.w	r0, r4, #23
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       2ee76:	aa06      	add	r2, sp, #24
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2ee78:	f813 1f01 	ldrb.w	r1, [r3, #1]!
+
+       2ee7c:	f802 1b01 	strb.w	r1, [r2], #1
+
+       2ee80:	4283      	cmp	r3, r0
+
+       2ee82:	d1f9      	bne.n	2ee78 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x10c>
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       2ee84:	2700      	movs	r7, #0
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       2ee86:	2204      	movs	r2, #4
+
+       2ee88:	a906      	add	r1, sp, #24
+
+       2ee8a:	a804      	add	r0, sp, #16
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       2ee8c:	9704      	str	r7, [sp, #16]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       2ee8e:	f7d1 fbfb 	bl	688 <<a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       2ee92:	9b04      	ldr	r3, [sp, #16]
+
+    _ZNK2ip10IPEndpoint5isSetEv():
+
+       2ee94:	2b00      	cmp	r3, #0
+
+       2ee96:	d0c4      	beq.n	2ee22 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0xb6>
+
+    _ZN9lwiputils9to_lwipIpERKN2ip9IPAddressE():
+
+       2ee98:	4640      	mov	r0, r8
+
+       2ee9a:	a906      	add	r1, sp, #24
+
+       2ee9c:	9706      	str	r7, [sp, #24]
+
+       2ee9e:	f000 fcf5 	bl	2f88c <<a href="../../utils/FilterFrame.cpp/54d7e9a3f27474890c3c37bb54d9dda9.html">lwiputils::to_lwipIp(ip::IPAddress const&, ip4_addr*)</a>>
+
+    tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>):
+
+       2eea2:	8b22      	ldrh	r2, [r4, #24]
+
+       2eea4:	68e0      	ldr	r0, [r4, #12]
+
+       2eea6:	a906      	add	r1, sp, #24
+
+       2eea8:	f001 fd9e 	bl	309e8 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/7257a35627e94c30525a90dd5674d1ba.html">tcp_bind</a>>
+
+       2eeac:	4602      	mov	r2, r0
+
+       2eeae:	2800      	cmp	r0, #0
+
+       2eeb0:	d0b7      	beq.n	2ee22 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0xb6>
+
+       2eeb2:	4b13      	ldr	r3, [pc, #76]	@ (2ef00 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x194>)
+
+       2eeb4:	4915      	ldr	r1, [pc, #84]	@ (2ef0c <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x1a0>)
+
+       2eeb6:	7818      	ldrb	r0, [r3, #0]
+
+       2eeb8:	f7da fbde 	bl	9678 <<a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       2eebc:	68e0      	ldr	r0, [r4, #12]
+
+       2eebe:	4639      	mov	r1, r7
+
+       2eec0:	f002 fb96 	bl	315f0 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/65bf4b4d1cd8c2ab7ef11aba4b48c88a.html">tcp_abandon</a>>
+
+       2eec4:	4620      	mov	r0, r4
+
+       2eec6:	f7ff fde9 	bl	2ea9c <<a href="./8c13827d17df585c7412757c65b042e1.html">tcp::LwipSocket::resetSocket()</a>>
+
+       2eeca:	e75b      	b.n	2ed84 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x18>
+
+       2eecc:	4640      	mov	r0, r8
+
+       2eece:	4910      	ldr	r1, [pc, #64]	@ (2ef10 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x1a4>)
+
+       2eed0:	f7da fbd2 	bl	9678 <<a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       2eed4:	6823      	ldr	r3, [r4, #0]
+
+       2eed6:	4620      	mov	r0, r4
+
+       2eed8:	68db      	ldr	r3, [r3, #12]
+
+       2eeda:	4798      	blx	r3
+
+       2eedc:	e752      	b.n	2ed84 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x18>
+
+       2eede:	4b08      	ldr	r3, [pc, #32]	@ (2ef00 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x194>)
+
+       2eee0:	490c      	ldr	r1, [pc, #48]	@ (2ef14 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x1a8>)
+
+       2eee2:	7818      	ldrb	r0, [r3, #0]
+
+       2eee4:	f7da fbc8 	bl	9678 <<a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       2eee8:	e74c      	b.n	2ed84 <<a href="./cb24dee7ef7e1dd6c6a48415edf10d33.html">tcp::LwipSocket::connect(ip::IPAddress const&, unsigned short, etl::delegate<void (tcp::AbstractSocket::ErrorCode)>)</a>+0x18>
+
+       2eeea:	bf00      	nop
+
+       2eeec:	0002e981 	.word	0x0002e981
+
+       2eef0:	0002ec69 	.word	0x0002ec69
+
+       2eef4:	0002ed51 	.word	0x0002ed51
+
+       2eef8:	0002e951 	.word	0x0002e951
+
+       2eefc:	0002ea2d 	.word	0x0002ea2d
+
+       2ef00:	20000013 	.word	0x20000013
+
+       2ef04:	00050380 	.word	0x00050380
+
+       2ef08:	00050040 	.word	0x00050040
+
+       2ef0c:	000500a4 	.word	0x000500a4
+
+       2ef10:	000500e0 	.word	0x000500e0
+
+       2ef14:	0005007c 	.word	0x0005007c
+
+    </pre>
+
+    
+    <pre><a href="../../udp/LwipDatagramSocket.cpp/ed590a6919535c865fe0b51b1b5f36df.html">udp::LwipDatagramSocket::isBound() const (12)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 428</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 2,776</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    428
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,776
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    380
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,708
+                    
+                    
+                </td>
+                <td class="col_size">100</td>
+                <td><a href="../../../../../../../executables/referenceApp/application/src/logger/logger.cpp/98866fb3d81ee8db78cbfd1e2dfd931d.html" class="icon-function">log_lwipInfo</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    356
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,608
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/memp.c/39d50c52143357af896630c36b8c515f.html" class="icon-function">memp_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,548
+                    
+                    
+                </td>
+                <td class="col_size">112</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/pbuf.c/9b6fd2596874539050b4147be9634d35.html" class="icon-function">pbuf_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    340
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,436
+                    
+                    
+                </td>
+                <td class="col_size">264</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/pbuf.c/00f9d6c635a80626d607c18477d3504a.html" class="icon-function">pbuf_alloc</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    308
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,172
+                    
+                    
+                </td>
+                <td class="col_size">172</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/tcp_out.c/4c45a821c89299dd22544f20511fc68d.html" class="icon-function">tcp_output_alloc_header_common</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    276
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,000
+                    
+                    
+                </td>
+                <td class="col_size">100</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/tcp_out.c/750286e53faf5e6c6518b73dc75330b6.html" class="icon-function">tcp_send_empty_ack</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    252
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,900
+                    
+                    
+                </td>
+                <td class="col_size">1,040</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/tcp_out.c/65142df0c7be77da97e3dbbc90844f1a.html" class="icon-function">tcp_output</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    188
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    860
+                    
+                    
+                </td>
+                <td class="col_size">92</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/tcp.c/b9fce7e0b1692c774e7c7904cc0c9f1e.html" class="icon-function">tcp_pcb_remove</a></td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                <td class="col_size">
+                    
+                    180
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    768
+                    
+                    
+                </td>
+                <td class="col_size">308</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/tcp.c/65bf4b4d1cd8c2ab7ef11aba4b48c88a.html" class="icon-function">tcp_abandon</a></td>
+            </tr>
+        
+            <tr>
+                <th>11</th>
+                <td class="col_size">
+                    
+                    116
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                4 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    460
+                    
+                    
+                </td>
+                <td class="col_size">72</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/tcp.c/eeb201b5241a05aa29f7ac5d9e619cc3.html" class="icon-function">tcp_kill_state</a></td>
+            </tr>
+        
+            <tr>
+                <th>12</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    388
+                    
+                    
+                </td>
+                <td class="col_size">380</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/tcp.c/2b2cbbd7123c3c49fc928162267dac1e.html" class="icon-function">tcp_alloc</a></td>
+            </tr>
+        
+            <tr>
+                <th>13</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">8</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/tcp.c/499461da780db58451c63cc3a5ac38f0.html" class="icon-function">tcp_new_ip_type</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">88
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../3rdparty.html">3rdparty</a></li>
+        
+        <li><a href="../../../../etl.html">etl</a></li>
+        
+        <li><a href="../../../include.html">include</a></li>
+        
+        <li ><a href="../../etl.html">etl</a>
+            </li>
+
+        
+        <li class="active"><a href="../format.h.html">format.h</a>:2104
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">etl::format_context&lt;etl::private_print::print_iterator, char&gt;::iterator etl::private_format::format_aligned_int&lt;etl::private_print::print_iterator, unsigned long long&gt;(unsigned long long, etl::format_context&lt;etl::private_print::print_iterator, char&gt;&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00005780</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td></td>
+                <td>672</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../private/variant_variadic.h/31b30a73f8aa3a0c1015cd68cbc36bb3.html">void etl::private_variant::do_visit_single&lt;void, etl::private_format::format_visitor&lt;etl::private_print::print_iterator&gt;&amp;, etl::variant&lt;etl::monostate, bool, char, int, unsigned int, long long, unsigned long long, float, double, long double, char const*, etl::basic_string_view&lt;char, etl::char_traits&lt;char&gt; &gt;, void const*, etl::basic_format_arg&lt;etl::basic_format_context&lt;etl::private_print::print_iterator, char&gt; &gt;::handle&gt;&amp;, 6u&gt;(etl::private_format::format_visitor&lt;etl::private_print::print_iterator&gt;&amp;, etl::variant&lt;etl::monostate, bool, char, int, unsigned int, long long, unsigned long long, float, double, long double, char const*, etl::basic_string_view&lt;char, etl::char_traits&lt;char&gt; &gt;, void const*, etl::basic_format_arg&lt;etl::basic_format_context&lt;etl::private_print::print_iterator, char&gt; &gt;::handle&gt;&amp;) (80)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            Σ=732
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./21fffadcedb3af77e3dfe0c42ddb9e02.html">void etl::private_format::format_plain_num&lt;etl::private_print::print_iterator, unsigned long long, 10ull, false&gt;(etl::private_print::print_iterator&amp;, unsigned long long, etl::private_format::format_spec_t const&amp;, unsigned int) (416)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./d166f8fec4edbeef3cbafcc83846b119.html">void etl::private_format::format_plain_num&lt;etl::private_format::counter_iterator, unsigned long long, 10ull, false&gt;(etl::private_format::counter_iterator&amp;, unsigned long long, etl::private_format::format_spec_t const&amp;, unsigned int) (308)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./d166f8fec4edbeef3cbafcc83846b119.html">void etl::private_format::format_plain_num&lt;etl::private_format::counter_iterator, unsigned long long, 10ull, false&gt;(etl::private_format::counter_iterator&amp;, unsigned long long, etl::private_format::format_spec_t const&amp;, unsigned int) (308)</a></pre>
+    
+
+    <pre>
+
+    etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&):
+
+        5780:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+        5784:	b084      	sub	sp, #16
+
+        5786:	4680      	mov	r8, r0
+
+        5788:	9d0c      	ldr	r5, [sp, #48]	@ 0x30
+
+        578a:	7f29      	ldrb	r1, [r5, #28]
+
+        578c:	4617      	mov	r7, r2
+
+        578e:	4699      	mov	r9, r3
+
+        5790:	2900      	cmp	r1, #0
+
+        5792:	d150      	bne.n	5836 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xb6>
+
+        5794:	2400      	movs	r4, #0
+
+    _ZN3etl14private_format10format_numINS_13private_print14print_iteratorEyLb0EEEvRT_T0_RKNS0_13format_spec_tE():
+
+        5796:	692b      	ldr	r3, [r5, #16]
+
+    _ZN3etl14private_format11format_signINS_13private_print14print_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        5798:	2b01      	cmp	r3, #1
+
+        579a:	f000 809f 	beq.w	58dc <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x15c>
+
+        579e:	2b02      	cmp	r3, #2
+
+        57a0:	f000 8098 	beq.w	58d4 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x154>
+
+        57a4:	2b00      	cmp	r3, #0
+
+        57a6:	d141      	bne.n	582c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xac>
+
+    _ZN3etl14private_format21format_alternate_formINS_13private_print14print_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        57a8:	7d2b      	ldrb	r3, [r5, #20]
+
+        57aa:	b30b      	cbz	r3, 57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+        57ac:	f895 302f 	ldrb.w	r3, [r5, #47]	@ 0x2f
+
+        57b0:	b1f3      	cbz	r3, 57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+        57b2:	f895 302e 	ldrb.w	r3, [r5, #46]	@ 0x2e
+
+        57b6:	2b62      	cmp	r3, #98	@ 0x62
+
+        57b8:	f000 80ee 	beq.w	5998 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x218>
+
+        57bc:	f240 8090 	bls.w	58e0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x160>
+
+        57c0:	2b6f      	cmp	r3, #111	@ 0x6f
+
+        57c2:	f000 80bb 	beq.w	593c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x1bc>
+
+        57c6:	2b78      	cmp	r3, #120	@ 0x78
+
+        57c8:	d112      	bne.n	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+        57ca:	498f      	ldr	r1, [pc, #572]	@ (5a08 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x288>)
+
+        57cc:	460b      	mov	r3, r1
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        57ce:	f813 2b01 	ldrb.w	r2, [r3], #1
+
+        57d2:	2a00      	cmp	r2, #0
+
+        57d4:	d1fb      	bne.n	57ce <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x4e>
+
+        57d6:	1a59      	subs	r1, r3, r1
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        57d8:	2901      	cmp	r1, #1
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4EPKc():
+
+        57da:	f103 36ff 	add.w	r6, r3, #4294967295	@ 0xffffffff
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        57de:	d007      	beq.n	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+        57e0:	f8df a224 	ldr.w	sl, [pc, #548]	@ 5a08 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x288>
+
+    _ZN3etl13private_print14print_iterator8print_toaSEc():
+
+        57e4:	f81a 0b01 	ldrb.w	r0, [sl], #1
+
+        57e8:	f00f f80c 	bl	14804 <<a href="../../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar</a>>
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        57ec:	4556      	cmp	r6, sl
+
+        57ee:	d1f9      	bne.n	57e4 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x64>
+
+    _ZN3etl14private_format22adjust_width_from_specERKNS0_13format_spec_tERj():
+
+        57f0:	7d6e      	ldrb	r6, [r5, #21]
+
+        57f2:	b10e      	cbz	r6, 57f8 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x78>
+
+        57f4:	7f2e      	ldrb	r6, [r5, #28]
+
+        57f6:	b9be      	cbnz	r6, 5828 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xa8>
+
+    _ZN3etl14private_format15check_precisionERKNS0_13format_spec_tE():
+
+        57f8:	f895 3028 	ldrb.w	r3, [r5, #40]	@ 0x28
+
+        57fc:	b11b      	cbz	r3, 5806 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x86>
+
+        57fe:	4b83      	ldr	r3, [pc, #524]	@ (5a0c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x28c>)
+
+        5800:	a802      	add	r0, sp, #8
+
+        5802:	681b      	ldr	r3, [r3, #0]
+
+        5804:	4798      	blx	r3
+
+    _ZN3etl14private_format10format_numINS_13private_print14print_iteratorEyLb0EEEvRT_T0_RKNS0_13format_spec_tE():
+
+        5806:	462a      	mov	r2, r5
+
+        5808:	4633      	mov	r3, r6
+
+        580a:	4638      	mov	r0, r7
+
+        580c:	4649      	mov	r1, r9
+
+        580e:	f7fc fbc3 	bl	1f98 <<a href="./21fffadcedb3af77e3dfe0c42ddb9e02.html">void etl::private_format::format_plain_num<etl::private_print::print_iterator, unsigned long long, 10ull, false>(etl::private_print::print_iterator&, unsigned long long, etl::private_format::format_spec_t const&, unsigned int)</a>.isra.0>
+
+    etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&):
+
+        5812:	7b2d      	ldrb	r5, [r5, #12]
+
+    _ZN3etl14private_format4fillINS_13private_print14print_iteratorEEEvRT_jc():
+
+        5814:	b124      	cbz	r4, 5820 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xa0>
+
+    _ZN3etl13private_print14print_iterator8print_toaSEc():
+
+        5816:	4628      	mov	r0, r5
+
+        5818:	f00e fff4 	bl	14804 <<a href="../../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar</a>>
+
+    _ZN3etl14private_format4fillINS_13private_print14print_iteratorEEEvRT_jc():
+
+        581c:	3c01      	subs	r4, #1
+
+        581e:	d1fa      	bne.n	5816 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x96>
+
+    etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&):
+
+        5820:	4640      	mov	r0, r8
+
+        5822:	b004      	add	sp, #16
+
+        5824:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+    _ZNK3etl4lessIjEclERKjS3_():
+
+        5828:	69ae      	ldr	r6, [r5, #24]
+
+    _ZN3etl14private_format22adjust_width_from_specERKNS0_13format_spec_tERj():
+
+        582a:	e7e5      	b.n	57f8 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x78>
+
+    _ZN3etl14private_format11format_signINS0_16counter_iteratorEiEEvRT_T0_RKNS0_13format_spec_tE():
+
+        582c:	4b77      	ldr	r3, [pc, #476]	@ (5a0c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x28c>)
+
+        582e:	a802      	add	r0, sp, #8
+
+        5830:	681b      	ldr	r3, [r3, #0]
+
+        5832:	4798      	blx	r3
+
+        5834:	e7b8      	b.n	57a8 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x28>
+
+        5836:	692b      	ldr	r3, [r5, #16]
+
+    _ZN3etl14private_format11format_signINS0_16counter_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        5838:	2b00      	cmp	r3, #0
+
+        583a:	d072      	beq.n	5922 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x1a2>
+
+        583c:	3b01      	subs	r3, #1
+
+        583e:	2b01      	cmp	r3, #1
+
+        5840:	d867      	bhi.n	5912 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x192>
+
+        5842:	f04f 0a01 	mov.w	sl, #1
+
+        5846:	ae03      	add	r6, sp, #12
+
+    _ZN3etl14private_format21format_alternate_formINS0_16counter_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        5848:	7d2b      	ldrb	r3, [r5, #20]
+
+        584a:	b1c3      	cbz	r3, 587e <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xfe>
+
+        584c:	f895 302f 	ldrb.w	r3, [r5, #47]	@ 0x2f
+
+        5850:	b1ab      	cbz	r3, 587e <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xfe>
+
+        5852:	f895 302e 	ldrb.w	r3, [r5, #46]	@ 0x2e
+
+        5856:	2b62      	cmp	r3, #98	@ 0x62
+
+        5858:	f000 80bc 	beq.w	59d4 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x254>
+
+        585c:	d963      	bls.n	5926 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x1a6>
+
+        585e:	2b6f      	cmp	r3, #111	@ 0x6f
+
+        5860:	f000 80bf 	beq.w	59e2 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x262>
+
+        5864:	2b78      	cmp	r3, #120	@ 0x78
+
+        5866:	d10a      	bne.n	587e <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xfe>
+
+        5868:	4967      	ldr	r1, [pc, #412]	@ (5a08 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x288>)
+
+        586a:	460b      	mov	r3, r1
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        586c:	f813 2b01 	ldrb.w	r2, [r3], #1
+
+        5870:	2a00      	cmp	r2, #0
+
+        5872:	d1fb      	bne.n	586c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xec>
+
+        5874:	1a5b      	subs	r3, r3, r1
+
+        5876:	1e5a      	subs	r2, r3, #1
+
+    _ZN3etl14private_format15format_sequenceINS0_16counter_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        5878:	2b01      	cmp	r3, #1
+
+        587a:	bf18      	it	ne
+
+        587c:	4492      	addne	sl, r2
+
+    _ZN3etl14private_format22adjust_width_from_specERKNS0_13format_spec_tERj():
+
+        587e:	7d6c      	ldrb	r4, [r5, #21]
+
+        5880:	b114      	cbz	r4, 5888 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x108>
+
+        5882:	7f2c      	ldrb	r4, [r5, #28]
+
+        5884:	b104      	cbz	r4, 5888 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x108>
+
+    _ZNK3etl4lessIjEclERKjS3_():
+
+        5886:	69ac      	ldr	r4, [r5, #24]
+
+    _ZN3etl14private_format15check_precisionERKNS0_13format_spec_tE():
+
+        5888:	f895 3028 	ldrb.w	r3, [r5, #40]	@ 0x28
+
+        588c:	b11b      	cbz	r3, 5896 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x116>
+
+        588e:	4b5f      	ldr	r3, [pc, #380]	@ (5a0c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x28c>)
+
+        5890:	4630      	mov	r0, r6
+
+        5892:	681b      	ldr	r3, [r3, #0]
+
+        5894:	4798      	blx	r3
+
+    _ZN3etl14private_format10format_numINS0_16counter_iteratorEyLb0EEEvRT_T0_RKNS0_13format_spec_tE():
+
+        5896:	9401      	str	r4, [sp, #4]
+
+        5898:	464b      	mov	r3, r9
+
+        589a:	9500      	str	r5, [sp, #0]
+
+        589c:	4630      	mov	r0, r6
+
+        589e:	463a      	mov	r2, r7
+
+        58a0:	f8cd a00c 	str.w	sl, [sp, #12]
+
+        58a4:	f7ff fed2 	bl	564c <<a href="./d166f8fec4edbeef3cbafcc83846b119.html">void etl::private_format::format_plain_num<etl::private_format::counter_iterator, unsigned long long, 10ull, false>(etl::private_format::counter_iterator&, unsigned long long, etl::private_format::format_spec_t const&, unsigned int)</a>>
+
+        58a8:	9b03      	ldr	r3, [sp, #12]
+
+    etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&):
+
+        58aa:	69ac      	ldr	r4, [r5, #24]
+
+        58ac:	429c      	cmp	r4, r3
+
+        58ae:	f67f af71 	bls.w	5794 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x14>
+
+        58b2:	1ae4      	subs	r4, r4, r3
+
+        58b4:	68ab      	ldr	r3, [r5, #8]
+
+    _ZN3etl14private_format15compute_paddingEjNS0_12spec_align_tEbRjS2_():
+
+        58b6:	2b01      	cmp	r3, #1
+
+        58b8:	f43f af6d 	beq.w	5796 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x16>
+
+        58bc:	2b03      	cmp	r3, #3
+
+    etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&):
+
+        58be:	7b2e      	ldrb	r6, [r5, #12]
+
+    _ZN3etl14private_format15compute_paddingEjNS0_12spec_align_tEbRjS2_():
+
+        58c0:	d07f      	beq.n	59c2 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x242>
+
+    etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&):
+
+        58c2:	f04f 0a00 	mov.w	sl, #0
+
+    _ZN3etl13private_print14print_iterator8print_toaSEc():
+
+        58c6:	4630      	mov	r0, r6
+
+        58c8:	f00e ff9c 	bl	14804 <<a href="../../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar</a>>
+
+    _ZN3etl14private_format4fillINS_13private_print14print_iteratorEEEvRT_jc():
+
+        58cc:	3c01      	subs	r4, #1
+
+        58ce:	d1fa      	bne.n	58c6 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x146>
+
+        58d0:	4654      	mov	r4, sl
+
+        58d2:	e760      	b.n	5796 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x16>
+
+    _ZN3etl14private_format11format_signINS_13private_print14print_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        58d4:	2020      	movs	r0, #32
+
+    _ZN3etl13private_print14print_iterator8print_toaSEc():
+
+        58d6:	f00e ff95 	bl	14804 <<a href="../../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar</a>>
+
+        58da:	e765      	b.n	57a8 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x28>
+
+    _ZN3etl14private_format11format_signINS_13private_print14print_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        58dc:	202b      	movs	r0, #43	@ 0x2b
+
+        58de:	e7fa      	b.n	58d6 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x156>
+
+    _ZN3etl14private_format21format_alternate_formINS_13private_print14print_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        58e0:	2b42      	cmp	r3, #66	@ 0x42
+
+        58e2:	d044      	beq.n	596e <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x1ee>
+
+        58e4:	2b58      	cmp	r3, #88	@ 0x58
+
+        58e6:	d183      	bne.n	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+        58e8:	4949      	ldr	r1, [pc, #292]	@ (5a10 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x290>)
+
+        58ea:	460b      	mov	r3, r1
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        58ec:	f813 2b01 	ldrb.w	r2, [r3], #1
+
+        58f0:	2a00      	cmp	r2, #0
+
+        58f2:	d1fb      	bne.n	58ec <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x16c>
+
+        58f4:	1a59      	subs	r1, r3, r1
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        58f6:	2901      	cmp	r1, #1
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4EPKc():
+
+        58f8:	f103 36ff 	add.w	r6, r3, #4294967295	@ 0xffffffff
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        58fc:	f43f af78 	beq.w	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+        5900:	f8df a10c 	ldr.w	sl, [pc, #268]	@ 5a10 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x290>
+
+    _ZN3etl13private_print14print_iterator8print_toaSEc():
+
+        5904:	f81a 0b01 	ldrb.w	r0, [sl], #1
+
+        5908:	f00e ff7c 	bl	14804 <<a href="../../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar</a>>
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        590c:	4556      	cmp	r6, sl
+
+        590e:	d1f9      	bne.n	5904 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x184>
+
+        5910:	e76e      	b.n	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+    _ZN3etl14private_format11format_signINS0_16counter_iteratorEiEEvRT_T0_RKNS0_13format_spec_tE():
+
+        5912:	4b3e      	ldr	r3, [pc, #248]	@ (5a0c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x28c>)
+
+        5914:	ae03      	add	r6, sp, #12
+
+        5916:	681b      	ldr	r3, [r3, #0]
+
+        5918:	4630      	mov	r0, r6
+
+        591a:	4798      	blx	r3
+
+    _ZN3etl14private_format16counter_iteratorC4Ev():
+
+        591c:	f04f 0a00 	mov.w	sl, #0
+
+        5920:	e792      	b.n	5848 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xc8>
+
+        5922:	ae03      	add	r6, sp, #12
+
+        5924:	e7fa      	b.n	591c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x19c>
+
+    _ZN3etl14private_format21format_alternate_formINS0_16counter_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        5926:	2b42      	cmp	r3, #66	@ 0x42
+
+        5928:	d066      	beq.n	59f8 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x278>
+
+        592a:	2b58      	cmp	r3, #88	@ 0x58
+
+        592c:	d1a7      	bne.n	587e <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xfe>
+
+        592e:	4938      	ldr	r1, [pc, #224]	@ (5a10 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x290>)
+
+        5930:	460b      	mov	r3, r1
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        5932:	f813 2b01 	ldrb.w	r2, [r3], #1
+
+        5936:	2a00      	cmp	r2, #0
+
+        5938:	d1fb      	bne.n	5932 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x1b2>
+
+        593a:	e79b      	b.n	5874 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xf4>
+
+    _ZN3etl14private_format21format_alternate_formINS_13private_print14print_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        593c:	ea57 0309 	orrs.w	r3, r7, r9
+
+        5940:	f43f af56 	beq.w	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        5944:	4933      	ldr	r1, [pc, #204]	@ (5a14 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x294>)
+
+        5946:	460b      	mov	r3, r1
+
+        5948:	f813 2b01 	ldrb.w	r2, [r3], #1
+
+        594c:	2a00      	cmp	r2, #0
+
+        594e:	d1fb      	bne.n	5948 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x1c8>
+
+        5950:	1a59      	subs	r1, r3, r1
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        5952:	2901      	cmp	r1, #1
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4EPKc():
+
+        5954:	f103 36ff 	add.w	r6, r3, #4294967295	@ 0xffffffff
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        5958:	f43f af4a 	beq.w	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+        595c:	f8df a0b4 	ldr.w	sl, [pc, #180]	@ 5a14 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x294>
+
+    _ZN3etl13private_print14print_iterator8print_toaSEc():
+
+        5960:	f81a 0b01 	ldrb.w	r0, [sl], #1
+
+        5964:	f00e ff4e 	bl	14804 <<a href="../../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar</a>>
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        5968:	4556      	cmp	r6, sl
+
+        596a:	d1f9      	bne.n	5960 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x1e0>
+
+        596c:	e740      	b.n	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+    _ZN3etl14private_format21format_alternate_formINS_13private_print14print_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        596e:	492a      	ldr	r1, [pc, #168]	@ (5a18 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x298>)
+
+        5970:	460b      	mov	r3, r1
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        5972:	f813 2b01 	ldrb.w	r2, [r3], #1
+
+        5976:	2a00      	cmp	r2, #0
+
+        5978:	d1fb      	bne.n	5972 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x1f2>
+
+        597a:	1a59      	subs	r1, r3, r1
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        597c:	2901      	cmp	r1, #1
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4EPKc():
+
+        597e:	f103 36ff 	add.w	r6, r3, #4294967295	@ 0xffffffff
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        5982:	f43f af35 	beq.w	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+        5986:	f8df a090 	ldr.w	sl, [pc, #144]	@ 5a18 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x298>
+
+    _ZN3etl13private_print14print_iterator8print_toaSEc():
+
+        598a:	f81a 0b01 	ldrb.w	r0, [sl], #1
+
+        598e:	f00e ff39 	bl	14804 <<a href="../../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar</a>>
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        5992:	4556      	cmp	r6, sl
+
+        5994:	d1f9      	bne.n	598a <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x20a>
+
+        5996:	e72b      	b.n	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+    _ZN3etl14private_format21format_alternate_formINS_13private_print14print_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        5998:	4920      	ldr	r1, [pc, #128]	@ (5a1c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x29c>)
+
+        599a:	460b      	mov	r3, r1
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        599c:	f813 2b01 	ldrb.w	r2, [r3], #1
+
+        59a0:	2a00      	cmp	r2, #0
+
+        59a2:	d1fb      	bne.n	599c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x21c>
+
+        59a4:	1a59      	subs	r1, r3, r1
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        59a6:	2901      	cmp	r1, #1
+
+    _ZN3etl17basic_string_viewIcNS_11char_traitsIcEEEC4EPKc():
+
+        59a8:	f103 36ff 	add.w	r6, r3, #4294967295	@ 0xffffffff
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        59ac:	f43f af20 	beq.w	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+        59b0:	f8df a068 	ldr.w	sl, [pc, #104]	@ 5a1c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x29c>
+
+    _ZN3etl13private_print14print_iterator8print_toaSEc():
+
+        59b4:	f81a 0b01 	ldrb.w	r0, [sl], #1
+
+        59b8:	f00e ff24 	bl	14804 <<a href="../../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html">etl_putchar</a>>
+
+    _ZN3etl14private_format15format_sequenceINS_13private_print14print_iteratorEEEvRT_NS_17basic_string_viewIcNS_11char_traitsIcEEEE():
+
+        59bc:	4556      	cmp	r6, sl
+
+        59be:	d1f9      	bne.n	59b4 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x234>
+
+        59c0:	e716      	b.n	57f0 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x70>
+
+    _ZN3etl14private_format15compute_paddingEjNS0_12spec_align_tEbRjS2_():
+
+        59c2:	eba4 0a54 	sub.w	sl, r4, r4, lsr #1
+
+    _ZN3etl14private_format4fillINS_13private_print14print_iteratorEEEvRT_jc():
+
+        59c6:	0864      	lsrs	r4, r4, #1
+
+        59c8:	f47f af7d 	bne.w	58c6 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x146>
+
+        59cc:	f04f 0a01 	mov.w	sl, #1
+
+        59d0:	4654      	mov	r4, sl
+
+        59d2:	e6e0      	b.n	5796 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x16>
+
+    _ZN3etl14private_format21format_alternate_formINS0_16counter_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        59d4:	4911      	ldr	r1, [pc, #68]	@ (5a1c <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x29c>)
+
+        59d6:	460b      	mov	r3, r1
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        59d8:	f813 2b01 	ldrb.w	r2, [r3], #1
+
+        59dc:	2a00      	cmp	r2, #0
+
+        59de:	d1fb      	bne.n	59d8 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x258>
+
+        59e0:	e748      	b.n	5874 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xf4>
+
+    _ZN3etl14private_format21format_alternate_formINS0_16counter_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        59e2:	ea57 0309 	orrs.w	r3, r7, r9
+
+        59e6:	f43f af4a 	beq.w	587e <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xfe>
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        59ea:	490a      	ldr	r1, [pc, #40]	@ (5a14 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x294>)
+
+        59ec:	460b      	mov	r3, r1
+
+        59ee:	f813 2b01 	ldrb.w	r2, [r3], #1
+
+        59f2:	2a00      	cmp	r2, #0
+
+        59f4:	d1fb      	bne.n	59ee <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x26e>
+
+        59f6:	e73d      	b.n	5874 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xf4>
+
+    _ZN3etl14private_format21format_alternate_formINS0_16counter_iteratorEyEEvRT_T0_RKNS0_13format_spec_tE():
+
+        59f8:	4907      	ldr	r1, [pc, #28]	@ (5a18 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x298>)
+
+        59fa:	460b      	mov	r3, r1
+
+    _ZN3etl11char_traitsIcE6lengthEPKc():
+
+        59fc:	f813 2b01 	ldrb.w	r2, [r3], #1
+
+        5a00:	2a00      	cmp	r2, #0
+
+        5a02:	d1fb      	bne.n	59fc <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0x27c>
+
+        5a04:	e736      	b.n	5874 <<a href="./01137d3a7c7bb860ddf97f3e8ff3c517.html">etl::format_context<etl::private_print::print_iterator, char>::iterator etl::private_format::format_aligned_int<etl::private_print::print_iterator, unsigned long long>(unsigned long long, etl::format_context<etl::private_print::print_iterator, char>&)</a>+0xf4>
+
+        5a06:	bf00      	nop
+
+        5a08:	0004a624 	.word	0x0004a624
+
+        5a0c:	20000000 	.word	0x20000000
+
+        5a10:	0004a620 	.word	0x0004a620
+
+        5a14:	0004bae8 	.word	0x0004bae8
+
+        5a18:	0004a62c 	.word	0x0004a62c
+
+        5a1c:	0004a628 	.word	0x0004a628
+
+    </pre>
+
+    
+    <pre><a href="../private/variant_variadic.h/31b30a73f8aa3a0c1015cd68cbc36bb3.html">void etl::private_variant::do_visit_single&lt;void, etl::private_format::format_visitor&lt;etl::private_print::print_iterator&gt;&amp;, etl::variant&lt;etl::monostate, bool, char, int, unsigned int, long long, unsigned long long, float, double, long double, char const*, etl::basic_string_view&lt;char, etl::char_traits&lt;char&gt; &gt;, void const*, etl::basic_format_arg&lt;etl::basic_format_context&lt;etl::private_print::print_iterator, char&gt; &gt;::handle&gt;&amp;, 6u&gt;(etl::private_format::format_visitor&lt;etl::private_print::print_iterator&gt;&amp;, etl::variant&lt;etl::monostate, bool, char, int, unsigned int, long long, unsigned long long, float, double, long double, char const*, etl::basic_string_view&lt;char, etl::char_traits&lt;char&gt; &gt;, void const*, etl::basic_format_arg&lt;etl::basic_format_context&lt;etl::private_print::print_iterator, char&gt; &gt;::handle&gt;&amp;) (80)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 64</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 476</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    64
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    476
+                    
+                    
+                </td>
+                <td class="col_size">228</td>
+                <td><a href="../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/4d2b35f004d57c9527b81a1790cf7eec.html" class="icon-function">bios::Io::setConfiguration(unsigned short, bios::Io::PinConfiguration const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    248
+                    
+                    
+                </td>
+                <td class="col_size">24</td>
+                <td><a href="../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html" class="icon-function">bios::Io::setDefaultConfiguration(unsigned short)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    224
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../../../../../platforms/s32k1xx/bsp/bspUart/src/Uart.cpp/a6995270dd7b2ce4a3dc535f548e1353.html" class="icon-function">bsp::Uart::init()</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    40
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    164
+                    
+                    
+                </td>
+                <td class="col_size">92</td>
+                <td><a href="../../../../../../platforms/s32k1xx/bsp/bspUart/src/Uart.cpp/3d17eef1aadb667b2ad32520c73b297c.html" class="icon-function">bsp::Uart::write(etl::span&lt;unsigned char const, 4294967295u&gt;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    24
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">64</td>
+                <td><a href="../../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/stdIo/stdIo.cpp/b4518472f943892ec1c4fd3c765433f9.html" class="icon-function">putByteToStdout</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">8</td>
+                <td><a href="../../../../../../platforms/s32k1xx/etlImpl/src/print.cpp/af2af3469da23dee67fa9e7d365ad718.html" class="icon-function">etl_putchar</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

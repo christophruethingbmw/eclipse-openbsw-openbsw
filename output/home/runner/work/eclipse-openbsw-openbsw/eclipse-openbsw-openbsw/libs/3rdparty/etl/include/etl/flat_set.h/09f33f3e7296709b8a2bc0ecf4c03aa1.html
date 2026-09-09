@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../3rdparty.html">3rdparty</a></li>
+        
+        <li><a href="../../../../etl.html">etl</a></li>
+        
+        <li><a href="../../../include.html">include</a></li>
+        
+        <li ><a href="../../etl.html">etl</a>
+            </li>
+
+        
+        <li class="active"><a href="../flat_set.h.html">flat_set.h</a>:262
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">etl::iflat_set&lt;someip::ProvidedService*, someip::ServiceManager::LessThanComparator&gt;::insert(someip::ProvidedService*&amp;&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00027a24</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td></td>
+                <td>352</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../bsw/cpp2someip/src/ServiceManager.cpp/4950c4ba1df2d89d9112685b97166915.html">someip::ServiceManager::registerService(someip::ProvidedService&amp;) (264)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=320
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../bsw/cpp2someip/src/ServiceManager.cpp/6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const (64)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../reference_flat_set.h/31aa1b1b5e2ca3931a0fff05f0875784.html">etl::ireference_flat_set&lt;someip::ProvidedService*, someip::ServiceManager::LessThanComparator&gt;::insert_at(etl::ireference_flat_set&lt;someip::ProvidedService*, someip::ServiceManager::LessThanComparator&gt;::iterator, someip::ProvidedService*&amp;) (256)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../reference_flat_set.h/31aa1b1b5e2ca3931a0fff05f0875784.html">etl::ireference_flat_set&lt;someip::ProvidedService*, someip::ServiceManager::LessThanComparator&gt;::insert_at(etl::ireference_flat_set&lt;someip::ProvidedService*, someip::ServiceManager::LessThanComparator&gt;::iterator, someip::ProvidedService*&amp;) (256)</a></pre>
+    
+
+    <pre>
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27a24:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       27a28:	680c      	ldr	r4, [r1, #0]
+
+    _ZN3etl11pvoidvector5beginEv():
+
+       27a2a:	f8d4 9004 	ldr.w	r9, [r4, #4]
+
+    _ZN3etl11pvoidvector3endEv():
+
+       27a2e:	f8d4 b008 	ldr.w	fp, [r4, #8]
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27a32:	b089      	sub	sp, #36	@ 0x24
+
+    _ZN3etl15distance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEEENS_15iterator_traitsIT_vE15difference_typeESA_SA_NS_26bidirectional_iterator_tagE():
+
+       27a34:	45d9      	cmp	r9, fp
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27a36:	9203      	str	r2, [sp, #12]
+
+       27a38:	9102      	str	r1, [sp, #8]
+
+    _ZN3etl9iflat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE11lower_boundERKS3_():
+
+       27a3a:	6812      	ldr	r2, [r2, #0]
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27a3c:	4680      	mov	r8, r0
+
+    _ZN3etl15distance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEEENS_15iterator_traitsIT_vE15difference_typeESA_SA_NS_26bidirectional_iterator_tagE():
+
+       27a3e:	f000 8088 	beq.w	27b52 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x12e>
+
+       27a42:	f1ab 0504 	sub.w	r5, fp, #4
+
+       27a46:	eba5 0509 	sub.w	r5, r5, r9
+
+       27a4a:	08ad      	lsrs	r5, r5, #2
+
+       27a4c:	3501      	adds	r5, #1
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratorC4EPPS3_():
+
+       27a4e:	46ca      	mov	sl, r9
+
+       27a50:	af06      	add	r7, sp, #24
+
+       27a52:	9401      	str	r4, [sp, #4]
+
+    _ZN3etl14advance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEiEEvRT_T0_NS_26bidirectional_iterator_tagE():
+
+       27a54:	106c      	asrs	r4, r5, #1
+
+       27a56:	d00f      	beq.n	27a78 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x54>
+
+       27a58:	1e61      	subs	r1, r4, #1
+
+       27a5a:	f10a 0604 	add.w	r6, sl, #4
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       27a5e:	f856 0021 	ldr.w	r0, [r6, r1, lsl #2]
+
+       27a62:	eb06 0681 	add.w	r6, r6, r1, lsl #2
+
+       27a66:	6801      	ldr	r1, [r0, #0]
+
+       27a68:	4638      	mov	r0, r7
+
+       27a6a:	f7ff fe35 	bl	276d8 <<a href="../../../../../bsw/cpp2someip/src/ServiceManager.cpp/6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       27a6e:	2800      	cmp	r0, #0
+
+       27a70:	d158      	bne.n	27b24 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x100>
+
+       27a72:	4625      	mov	r5, r4
+
+    _ZN3etl14advance_helperINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEiEEvRT_T0_NS_26bidirectional_iterator_tagE():
+
+       27a74:	106c      	asrs	r4, r5, #1
+
+       27a76:	d1ef      	bne.n	27a58 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x34>
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       27a78:	f8da 1000 	ldr.w	r1, [sl]
+
+       27a7c:	9c01      	ldr	r4, [sp, #4]
+
+       27a7e:	6809      	ldr	r1, [r1, #0]
+
+       27a80:	4638      	mov	r0, r7
+
+       27a82:	f7ff fe29 	bl	276d8 <<a href="../../../../../bsw/cpp2someip/src/ServiceManager.cpp/6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       27a86:	b108      	cbz	r0, 27a8c <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x68>
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratorppEv():
+
+       27a88:	f10a 0a04 	add.w	sl, sl, #4
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEbEC4IRS8_bEEOT_OT0_():
+
+       27a8c:	2100      	movs	r1, #0
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27a8e:	45d3      	cmp	fp, sl
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratorC4ERKS7_():
+
+       27a90:	f8c8 a000 	str.w	sl, [r8]
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEbEC4IRS8_bEEOT_OT0_():
+
+       27a94:	f888 1004 	strb.w	r1, [r8, #4]
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27a98:	d00a      	beq.n	27ab0 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x8c>
+
+       27a9a:	9b02      	ldr	r3, [sp, #8]
+
+       27a9c:	4611      	mov	r1, r2
+
+       27a9e:	f8da 2000 	ldr.w	r2, [sl]
+
+       27aa2:	f103 000c 	add.w	r0, r3, #12
+
+       27aa6:	6812      	ldr	r2, [r2, #0]
+
+       27aa8:	f7ff fe16 	bl	276d8 <<a href="../../../../../bsw/cpp2someip/src/ServiceManager.cpp/6c0c155df06fde211a0d8499a481be80.html">someip::ServiceManager::LessThanComparator::operator()(someip::ProvidedService const*, someip::ProvidedService const*) const</a>>
+
+       27aac:	2800      	cmp	r0, #0
+
+       27aae:	d035      	beq.n	27b1c <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0xf8>
+
+       27ab0:	6822      	ldr	r2, [r4, #0]
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       27ab2:	ebab 0909 	sub.w	r9, fp, r9
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27ab6:	ebb2 0fa9 	cmp.w	r2, r9, asr #2
+
+       27aba:	d040      	beq.n	27b3e <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x11a>
+
+       27abc:	9b02      	ldr	r3, [sp, #8]
+
+       27abe:	689c      	ldr	r4, [r3, #8]
+
+    _ZN3etl5ipool8allocateIPN6someip15ProvidedServiceEEEPT_v():
+
+       27ac0:	6922      	ldr	r2, [r4, #16]
+
+       27ac2:	2a03      	cmp	r2, #3
+
+       27ac4:	d936      	bls.n	27b34 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x110>
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+       27ac6:	68a2      	ldr	r2, [r4, #8]
+
+       27ac8:	6961      	ldr	r1, [r4, #20]
+
+       27aca:	428a      	cmp	r2, r1
+
+       27acc:	d24e      	bcs.n	27b6c <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x148>
+
+       27ace:	68e0      	ldr	r0, [r4, #12]
+
+       27ad0:	4281      	cmp	r1, r0
+
+       27ad2:	d909      	bls.n	27ae8 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0xc4>
+
+       27ad4:	f8d4 e010 	ldr.w	lr, [r4, #16]
+
+       27ad8:	6823      	ldr	r3, [r4, #0]
+
+       27ada:	fb0e f600 	mul.w	r6, lr, r0
+
+       27ade:	199d      	adds	r5, r3, r6
+
+       27ae0:	3001      	adds	r0, #1
+
+       27ae2:	4475      	add	r5, lr
+
+       27ae4:	519d      	str	r5, [r3, r6]
+
+       27ae6:	60e0      	str	r0, [r4, #12]
+
+       27ae8:	3201      	adds	r2, #1
+
+       27aea:	6863      	ldr	r3, [r4, #4]
+
+       27aec:	60a2      	str	r2, [r4, #8]
+
+       27aee:	4291      	cmp	r1, r2
+
+       27af0:	bf88      	it	hi
+
+       27af2:	681a      	ldrhi	r2, [r3, #0]
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27af4:	9902      	ldr	r1, [sp, #8]
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratorC4ERKS7_():
+
+       27af6:	f8cd a014 	str.w	sl, [sp, #20]
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+       27afa:	bf98      	it	ls
+
+       27afc:	2200      	movls	r2, #0
+
+       27afe:	6062      	str	r2, [r4, #4]
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27b00:	9a03      	ldr	r2, [sp, #12]
+
+       27b02:	6812      	ldr	r2, [r2, #0]
+
+       27b04:	601a      	str	r2, [r3, #0]
+
+       27b06:	4638      	mov	r0, r7
+
+       27b08:	aa05      	add	r2, sp, #20
+
+       27b0a:	f7ff ff0b 	bl	27924 <<a href="../reference_flat_set.h/31aa1b1b5e2ca3931a0fff05f0875784.html">etl::ireference_flat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert_at(etl::ireference_flat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::iterator, someip::ProvidedService*&)</a>>
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratoraSERKS7_():
+
+       27b0e:	9a06      	ldr	r2, [sp, #24]
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEbEaSEOS9_():
+
+       27b10:	f89d 301c 	ldrb.w	r3, [sp, #28]
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratoraSERKS7_():
+
+       27b14:	f8c8 2000 	str.w	r2, [r8]
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEbEaSEOS9_():
+
+       27b18:	f888 3004 	strb.w	r3, [r8, #4]
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27b1c:	4640      	mov	r0, r8
+
+       27b1e:	b009      	add	sp, #36	@ 0x24
+
+       27b20:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       27b24:	3401      	adds	r4, #1
+
+       27b26:	1b2d      	subs	r5, r5, r4
+
+       27b28:	2d00      	cmp	r5, #0
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratorppEv():
+
+       27b2a:	f106 0a04 	add.w	sl, r6, #4
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       27b2e:	dc91      	bgt.n	27a54 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x30>
+
+       27b30:	9c01      	ldr	r4, [sp, #4]
+
+       27b32:	e7ab      	b.n	27a8c <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x68>
+
+    _ZN3etl5ipool8allocateIPN6someip15ProvidedServiceEEEPT_v():
+
+       27b34:	4a12      	ldr	r2, [pc, #72]	@ (27b80 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x15c>)
+
+       27b36:	4638      	mov	r0, r7
+
+       27b38:	6812      	ldr	r2, [r2, #0]
+
+       27b3a:	4790      	blx	r2
+
+       27b3c:	e7c3      	b.n	27ac6 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0xa2>
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27b3e:	4a10      	ldr	r2, [pc, #64]	@ (27b80 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x15c>)
+
+       27b40:	4638      	mov	r0, r7
+
+       27b42:	6812      	ldr	r2, [r2, #0]
+
+       27b44:	4790      	blx	r2
+
+       27b46:	9b02      	ldr	r3, [sp, #8]
+
+       27b48:	689c      	ldr	r4, [r3, #8]
+
+    _ZN3etl5ipool8allocateIPN6someip15ProvidedServiceEEEPT_v():
+
+       27b4a:	6922      	ldr	r2, [r4, #16]
+
+       27b4c:	2a03      	cmp	r2, #3
+
+       27b4e:	d8ba      	bhi.n	27ac6 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0xa2>
+
+       27b50:	e7f0      	b.n	27b34 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x110>
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27b52:	6822      	ldr	r2, [r4, #0]
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratorC4ERKS7_():
+
+       27b54:	f8c0 9000 	str.w	r9, [r0]
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratorC4EPPS3_():
+
+       27b58:	46ca      	mov	sl, r9
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       27b5a:	ebab 0909 	sub.w	r9, fp, r9
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEbEC4IRS8_bEEOT_OT0_():
+
+       27b5e:	2300      	movs	r3, #0
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27b60:	ebb2 0fa9 	cmp.w	r2, r9, asr #2
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip15ProvidedServiceENS2_14ServiceManager18LessThanComparatorEE8iteratorEbEC4IRS8_bEEOT_OT0_():
+
+       27b64:	7103      	strb	r3, [r0, #4]
+
+    _ZN3etl19ireference_flat_setIPN6someip15ProvidedServiceENS1_14ServiceManager18LessThanComparatorEE8iteratorC4EPPS3_():
+
+       27b66:	af06      	add	r7, sp, #24
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27b68:	d1a8      	bne.n	27abc <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x98>
+
+       27b6a:	e7e8      	b.n	27b3e <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x11a>
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+       27b6c:	4b04      	ldr	r3, [pc, #16]	@ (27b80 <<a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html">etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&)</a>+0x15c>)
+
+       27b6e:	4638      	mov	r0, r7
+
+       27b70:	681b      	ldr	r3, [r3, #0]
+
+       27b72:	4798      	blx	r3
+
+    etl::iflat_set<someip::ProvidedService*, someip::ServiceManager::LessThanComparator>::insert(someip::ProvidedService*&&):
+
+       27b74:	9a03      	ldr	r2, [sp, #12]
+
+       27b76:	2300      	movs	r3, #0
+
+       27b78:	6812      	ldr	r2, [r2, #0]
+
+       27b7a:	601a      	str	r2, [r3, #0]
+
+       27b7c:	deff      	udf	#255	@ 0xff
+
+       27b7e:	bf00      	nop
+
+       27b80:	20000000 	.word	0x20000000
+
+    </pre>
+
+    
+    <pre><a href="../../../../../bsw/cpp2someip/src/ServiceManager.cpp/4950c4ba1df2d89d9112685b97166915.html">someip::ServiceManager::registerService(someip::ProvidedService&amp;) (264)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 56</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 616</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    616
+                    
+                    
+                </td>
+                <td class="col_size">352</td>
+                <td><a href="./09f33f3e7296709b8a2bc0ecf4c03aa1.html" class="icon-function">etl::iflat_set&lt;someip::ProvidedService*, someip::ServiceManager::LessThanComparator&gt;::insert(someip::ProvidedService*&amp;&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">264</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/ServiceManager.cpp/4950c4ba1df2d89d9112685b97166915.html" class="icon-function">someip::ServiceManager::registerService(someip::ProvidedService&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

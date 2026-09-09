@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../ServiceAnnouncer.cpp.html">ServiceAnnouncer.cpp</a>:71
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::ServiceAnnouncer::shutdown()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00026b58</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>16 (static)</td>
+                <td>148</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../SdSomeIpStack.cpp/53ee85e50cd6d9d8796e2094fec2daa1.html">someip::SdSomeIpStack::doShutdown() (40)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (7,
+                            <span title="sum of used bytes by all callees">
+                            Σ=1700
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/a857dde1963b018a532cddd3ac0ab673.html">getSystemTimeMs32Bit (64)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./ad9908f725a70f9ffd16d6c06c22a86d.html">someip::ServiceAnnouncer::checkPendingTasks(unsigned long long) (960)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SdMessageBuilder.cpp/0e02a6853ff841527b082750323cb1ba.html">someip::SdMessageBuilder::startMessage(etl::span&lt;unsigned char, 4294967295u&gt; const&amp;) (272)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../ServiceManager.cpp/800bd998f1e93411706fd5db8035711b.html">someip::ServiceManager::triggerStopOffers() (160)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./6708387b5b832295dccabd7f5b9044b5.html">someip::ServiceAnnouncer::finalizeMessage() (96)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../asyncFreeRtos/src/async/Types.cpp/3decd3b646058460a8725450b13ebf07.html">async::TimeoutType::cancel() (120)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./02ab2a5ecd8d89ea5328e8b63c96d51c.html">someip::ServiceAnnouncer::unsubscribe(someip::ServiceDescription const&amp;, ip::IPAddress const&amp;) (124)</a></pre>
+    
+
+    <pre>
+
+    someip::ServiceAnnouncer::shutdown():
+
+       26b58:	6803      	ldr	r3, [r0, #0]
+
+       26b5a:	4a22      	ldr	r2, [pc, #136]	@ (26be4 <<a href="./f12d156450b9994130e3f8345f49ce5e.html">someip::ServiceAnnouncer::shutdown()</a>+0x8c>)
+
+       26b5c:	68db      	ldr	r3, [r3, #12]
+
+       26b5e:	4293      	cmp	r3, r2
+
+       26b60:	d13b      	bne.n	26bda <<a href="./f12d156450b9994130e3f8345f49ce5e.html">someip::ServiceAnnouncer::shutdown()</a>+0x82>
+
+       26b62:	b510      	push	{r4, lr}
+
+    someip::ServiceAnnouncer::stop():
+
+       26b64:	f890 35f8 	ldrb.w	r3, [r0, #1528]	@ 0x5f8
+
+    someip::ServiceAnnouncer::shutdown():
+
+       26b68:	b082      	sub	sp, #8
+
+       26b6a:	4604      	mov	r4, r0
+
+    someip::ServiceAnnouncer::stop():
+
+       26b6c:	b90b      	cbnz	r3, 26b72 <<a href="./f12d156450b9994130e3f8345f49ce5e.html">someip::ServiceAnnouncer::shutdown()</a>+0x1a>
+
+    someip::ServiceAnnouncer::shutdown():
+
+       26b6e:	b002      	add	sp, #8
+
+       26b70:	bd10      	pop	{r4, pc}
+
+    someip::ServiceAnnouncer::stop():
+
+       26b72:	f01c fbb9 	bl	432e8 <<a href="../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/a857dde1963b018a532cddd3ac0ab673.html">getSystemTimeMs32Bit</a>>
+
+       26b76:	2300      	movs	r3, #0
+
+       26b78:	4602      	mov	r2, r0
+
+       26b7a:	4620      	mov	r0, r4
+
+       26b7c:	f7ff faaa 	bl	260d4 <<a href="./ad9908f725a70f9ffd16d6c06c22a86d.html">someip::ServiceAnnouncer::checkPendingTasks(unsigned long long)</a>>
+
+       26b80:	6823      	ldr	r3, [r4, #0]
+
+       26b82:	4a19      	ldr	r2, [pc, #100]	@ (26be8 <<a href="./f12d156450b9994130e3f8345f49ce5e.html">someip::ServiceAnnouncer::shutdown()</a>+0x90>)
+
+       26b84:	6b9b      	ldr	r3, [r3, #56]	@ 0x38
+
+       26b86:	4293      	cmp	r3, r2
+
+       26b88:	d128      	bne.n	26bdc <<a href="./f12d156450b9994130e3f8345f49ce5e.html">someip::ServiceAnnouncer::shutdown()</a>+0x84>
+
+    _ZN3etl5arrayIhLj1416EE4dataEv():
+
+       26b8a:	f104 0270 	add.w	r2, r4, #112	@ 0x70
+
+    _ZN3etl4spanIhLj4294967295EEC4IhLj1416EEERNS_5arrayIT_XT0_EEEPNS_9enable_ifIXsrNS_14is_convertibleIPA_S4_PA_hEE5valueEvE4typeE():
+
+       26b8e:	f504 63bf 	add.w	r3, r4, #1528	@ 0x5f8
+
+    _ZN6someip16ServiceAnnouncer26initializeMulticastMessageEv():
+
+       26b92:	4669      	mov	r1, sp
+
+       26b94:	f104 0064 	add.w	r0, r4, #100	@ 0x64
+
+    _ZN3etl4spanIhLj4294967295EEC4IhLj1416EEERNS_5arrayIT_XT0_EEEPNS_9enable_ifIXsrNS_14is_convertibleIPA_S4_PA_hEE5valueEvE4typeE():
+
+       26b98:	e9cd 2300 	strd	r2, r3, [sp]
+
+    _ZN6someip16ServiceAnnouncer26initializeMulticastMessageEv():
+
+       26b9c:	f005 fa1e 	bl	2bfdc <<a href="../SdMessageBuilder.cpp/0e02a6853ff841527b082750323cb1ba.html">someip::SdMessageBuilder::startMessage(etl::span<unsigned char, 4294967295u> const&)</a>>
+
+       26ba0:	6860      	ldr	r0, [r4, #4]
+
+       26ba2:	6803      	ldr	r3, [r0, #0]
+
+       26ba4:	6b5b      	ldr	r3, [r3, #52]	@ 0x34
+
+       26ba6:	4798      	blx	r3
+
+       26ba8:	2204      	movs	r2, #4
+
+       26baa:	4601      	mov	r1, r0
+
+       26bac:	f204 50f9 	addw	r0, r4, #1529	@ 0x5f9
+
+       26bb0:	f7d9 fd6a 	bl	688 <<a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    someip::ServiceAnnouncer::sendStopOffers():
+
+       26bb4:	68a0      	ldr	r0, [r4, #8]
+
+       26bb6:	f000 fd33 	bl	27620 <<a href="../ServiceManager.cpp/800bd998f1e93411706fd5db8035711b.html">someip::ServiceManager::triggerStopOffers()</a>>
+
+       26bba:	4620      	mov	r0, r4
+
+       26bbc:	f7ff f842 	bl	25c44 <<a href="./6708387b5b832295dccabd7f5b9044b5.html">someip::ServiceAnnouncer::finalizeMessage()</a>>
+
+    someip::ServiceAnnouncer::stop():
+
+       26bc0:	f104 0024 	add.w	r0, r4, #36	@ 0x24
+
+       26bc4:	f7f2 fc4e 	bl	19464 <<a href="../../../asyncFreeRtos/src/async/Types.cpp/3decd3b646058460a8725450b13ebf07.html">async::TimeoutType::cancel()</a>>
+
+       26bc8:	f104 004c 	add.w	r0, r4, #76	@ 0x4c
+
+       26bcc:	f7f2 fc4a 	bl	19464 <<a href="../../../asyncFreeRtos/src/async/Types.cpp/3decd3b646058460a8725450b13ebf07.html">async::TimeoutType::cancel()</a>>
+
+       26bd0:	2300      	movs	r3, #0
+
+       26bd2:	f884 35f8 	strb.w	r3, [r4, #1528]	@ 0x5f8
+
+    someip::ServiceAnnouncer::shutdown():
+
+       26bd6:	b002      	add	sp, #8
+
+       26bd8:	bd10      	pop	{r4, pc}
+
+       26bda:	4718      	bx	r3
+
+    someip::ServiceAnnouncer::stop():
+
+       26bdc:	4620      	mov	r0, r4
+
+       26bde:	4798      	blx	r3
+
+       26be0:	e7ee      	b.n	26bc0 <<a href="./f12d156450b9994130e3f8345f49ce5e.html">someip::ServiceAnnouncer::shutdown()</a>+0x68>
+
+       26be2:	bf00      	nop
+
+       26be4:	00026495 	.word	0x00026495
+
+       26be8:	00025ca5 	.word	0x00025ca5
+
+    </pre>
+
+    
+    <pre><a href="../../../../3rdparty/etl/include/etl/private/delegate_cpp11.h/14f4347b4f6a493624b0e482295a2f2e.html">void etl::delegate&lt;void ()&gt;::method_stub&lt;someip::ServiceAnnouncer, &amp;someip::ServiceAnnouncer::checkPendingTasksAndSendDueMessages&gt;(etl::delegate&lt;void ()&gt;::invocation_element const&amp;) (28)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 696</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 5,032</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    696
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    5,032
+                    
+                    
+                </td>
+                <td class="col_size">160</td>
+                <td><a href="../../../../3rdparty/printf/src/printf/printf.c/aead89a8c09454d3b52c82329b9d6539.html" class="icon-function">out_rev_</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    648
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                112 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    4,872
+                    
+                    
+                </td>
+                <td class="col_size">792</td>
+                <td><a href="../../../../3rdparty/printf/src/printf/printf.c/ac6598d6032c1151c802f0c9a9979746.html" class="icon-function">print_integer</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    536
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                88 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    4,080
+                    
+                    
+                </td>
+                <td class="col_size">1,964</td>
+                <td><a href="../../../../3rdparty/printf/src/printf/printf.c/6d7d630ec5529648e33ae989eebb2cb7.html" class="icon-function">_vsnprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    448
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,116
+                    
+                    
+                </td>
+                <td class="col_size">32</td>
+                <td><a href="../../../../3rdparty/printf/src/printf/printf.c/529535ce0d5bfecabb7841bebeaf251c.html" class="icon-function">vsnprintf_</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    432
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,084
+                    
+                    
+                </td>
+                <td class="col_size">28</td>
+                <td><a href="../../../../bsp/bspCharInputOutput/src/charInputOutput/bspIo.cpp/dc46df748e7b0eb8da1d6cff089ebb09.html" class="icon-function">snprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    416
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,056
+                    
+                    
+                </td>
+                <td class="col_size">76</td>
+                <td><a href="../../../cpp2ethernet/src/ip/to_str.cpp/0136b9da1328cb0b6fcc5bb356763d33.html" class="icon-function">ip::to_str(ip::IPAddress const&amp;, etl::span&lt;char, 4294967295u&gt; const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    384
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                112 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,980
+                    
+                    
+                </td>
+                <td class="col_size">316</td>
+                <td><a href="../SdMessageBuilder.cpp/a324195bf50a897c30420617d51165e2.html" class="icon-function">someip::(anonymous namespace)::associateEndpointOption(someip::internal::Message&amp;, someip::(anonymous namespace)::MessageEndpointOptionType, unsigned short, ip::IPAddress const&amp;, unsigned short, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    272
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                88 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,664
+                    
+                    
+                </td>
+                <td class="col_size">420</td>
+                <td><a href="../SdMessageBuilder.cpp/ae88273672d19398a7e4c1dbb0a06a26.html" class="icon-function">someip::SdMessageBuilder::addSubscribe(unsigned short, unsigned short, unsigned short, unsigned char, unsigned long, ip::IPAddress const&amp;, unsigned short, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    184
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,244
+                    
+                    
+                </td>
+                <td class="col_size">104</td>
+                <td><a href="./a1356337080ef7d269dddc7e8b50f884.html" class="icon-function">someip::ServiceAnnouncer::addSubscribe(someip::ServiceDescription&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                <td class="col_size">
+                    
+                    136
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,140
+                    
+                    
+                </td>
+                <td class="col_size">180</td>
+                <td><a href="./6817f402106859955f469ef05d56a49a.html" class="icon-function">someip::ServiceAnnouncer::executeTask(someip::ServiceAnnouncerTask const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>11</th>
+                <td class="col_size">
+                    
+                    96
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">960</td>
+                <td><a href="./ad9908f725a70f9ffd16d6c06c22a86d.html" class="icon-function">someip::ServiceAnnouncer::checkPendingTasks(unsigned long long)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">24
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 24</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 188</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    24
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    188
+                    
+                    
+                </td>
+                <td class="col_size">148</td>
+                <td><a href="./f12d156450b9994130e3f8345f49ce5e.html" class="icon-function">someip::ServiceAnnouncer::shutdown()</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">40</td>
+                <td><a href="../SdSomeIpStack.cpp/53ee85e50cd6d9d8796e2094fec2daa1.html" class="icon-function">someip::SdSomeIpStack::doShutdown()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

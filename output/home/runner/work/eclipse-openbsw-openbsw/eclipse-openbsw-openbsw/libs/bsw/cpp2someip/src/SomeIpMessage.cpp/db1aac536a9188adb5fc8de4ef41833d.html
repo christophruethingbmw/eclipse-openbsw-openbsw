@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../SomeIpMessage.cpp.html">SomeIpMessage.cpp</a>:168
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::SomeIpMessage::setSessionId(unsigned short)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0002908c</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>24 (static)</td>
+                <td>56</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (3)</th>
+                <td colspan="5">
+                
+                    <a href="../RpcHandler.cpp/81374600d5dddd89cdb8f7ec3d5d2b5f.html">someip::RpcHandler::sendRequest(someip::ISomeIpSerializable const*, unsigned short, unsigned short, unsigned char, bool, someip::IRpcChannel&amp;, unsigned long) (576)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../BufferedEventSender.cpp/a92f0bafd74b8ca85a829e9b24321a48.html">someip::BufferedEventSender::serializeEvent(unsigned short, unsigned char, unsigned short, someip::ISomeIpSerializable const*, etl::span&lt;unsigned char, 4294967295u&gt;, unsigned int*, unsigned short) (244)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../BufferedEventSender.cpp/f50d4943a9a94b1e4aa2eb945eb95aa7.html">someip::BufferedEventSender::sendSingleEvent(someip::NetworkChannel&amp;, unsigned short, unsigned char, ip::IPEndpoint const&amp;, unsigned short, unsigned int) const (104)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=84
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="./1cf2c4f9b330ebbe4f693d65dcead5e3.html">someip::SomeIpMessage::getRequestId() const (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./ddf73cfbad90061924476ee5a59d704c.html">someip::SomeIpMessage::getSessionId() const (12)</a></pre>
+    
+
+    <pre>
+
+    someip::SomeIpMessage::setSessionId(unsigned short):
+
+       2908c:	b530      	push	{r4, r5, lr}
+
+       2908e:	b083      	sub	sp, #12
+
+       29090:	460d      	mov	r5, r1
+
+       29092:	4604      	mov	r4, r0
+
+    someip::SomeIpMessage::getClientId() const():
+
+       29094:	f7ff ffa0 	bl	28fd8 <<a href="./1cf2c4f9b330ebbe4f693d65dcead5e3.html">someip::SomeIpMessage::getRequestId() const</a>>
+
+    _ZNK3etl4spanIhLj4294967295EEixEj():
+
+       29098:	6824      	ldr	r4, [r4, #0]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_value_to_storeImEEvRKT_Ph():
+
+       2909a:	2204      	movs	r2, #4
+
+    someip::SomeIpMessage::setSessionId(unsigned short):
+
+       2909c:	f36f 000f 	bfc	r0, #0, #16
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_value_to_storeImEEvRKT_Ph():
+
+       290a0:	eb0d 0102 	add.w	r1, sp, r2
+
+    someip::SomeIpMessage::setSessionId(unsigned short):
+
+       290a4:	4305      	orrs	r5, r0
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_value_to_storeImEEvRKT_Ph():
+
+       290a6:	f104 0008 	add.w	r0, r4, #8
+
+       290aa:	9501      	str	r5, [sp, #4]
+
+       290ac:	f7d7 faec 	bl	688 <<a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl4swapIhEEvRT_S2_():
+
+       290b0:	7a21      	ldrb	r1, [r4, #8]
+
+       290b2:	7ae0      	ldrb	r0, [r4, #11]
+
+       290b4:	7a63      	ldrb	r3, [r4, #9]
+
+       290b6:	7aa2      	ldrb	r2, [r4, #10]
+
+       290b8:	7220      	strb	r0, [r4, #8]
+
+       290ba:	72e1      	strb	r1, [r4, #11]
+
+       290bc:	7262      	strb	r2, [r4, #9]
+
+       290be:	72a3      	strb	r3, [r4, #10]
+
+    someip::SomeIpMessage::setSessionId(unsigned short):
+
+       290c0:	b003      	add	sp, #12
+
+       290c2:	bd30      	pop	{r4, r5, pc}
+
+    </pre>
+
+    
+    <pre><a href="./8a61d97078f91ad2c01569ecf812c706.html">someip::SomeIpMessage::getProtocolVersion() const (8)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 344</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 56</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    344
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="./1cf2c4f9b330ebbe4f693d65dcead5e3.html" class="icon-function">someip::SomeIpMessage::getRequestId() const</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">328
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 328</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,264</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    328
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,264
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="./db1aac536a9188adb5fc8de4ef41833d.html" class="icon-function">someip::SomeIpMessage::setSessionId(unsigned short)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    304
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,208
+                    
+                    
+                </td>
+                <td class="col_size">244</td>
+                <td><a href="../BufferedEventSender.cpp/a92f0bafd74b8ca85a829e9b24321a48.html" class="icon-function">someip::BufferedEventSender::serializeEvent(unsigned short, unsigned char, unsigned short, someip::ISomeIpSerializable const*, etl::span&lt;unsigned char, 4294967295u&gt;, unsigned int*, unsigned short)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    248
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                112 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    964
+                    
+                    
+                </td>
+                <td class="col_size">520</td>
+                <td><a href="../BufferedEventSender.cpp/b0c861fc7ce763ccff544a233452ac8c.html" class="icon-function">someip::BufferedEventSender::sendEvent(unsigned short, unsigned char, unsigned short, unsigned long, someip::ISomeIpSerializable const*, unsigned short, unsigned char, ip::IPEndpoint const&amp;, unsigned short)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                136 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">444</td>
+                <td><a href="../EventTransceiver.cpp/2595f0e6c9bb7e7b0c13af2ac66ef1ee.html" class="icon-function">someip::EventTransceiver::sendEvent(unsigned short, unsigned char, unsigned short, unsigned short, etl::span&lt;unsigned short const, 4294967295u&gt;, unsigned short, someip::ISomeIpSerializable const*, unsigned short, unsigned char, unsigned short)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

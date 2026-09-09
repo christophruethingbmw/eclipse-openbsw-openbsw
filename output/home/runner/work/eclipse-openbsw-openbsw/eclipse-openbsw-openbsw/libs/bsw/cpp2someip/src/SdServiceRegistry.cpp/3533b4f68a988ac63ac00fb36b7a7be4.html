@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../SdServiceRegistry.cpp.html">SdServiceRegistry.cpp</a>:148
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&amp;, unsigned short, unsigned char)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0002536c</td>
+                <td>
+    
+    
+</td>
+                <td>120 (static)</td>
+                <td>588</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (5,
+                            <span title="sum of used bytes by all callees">
+                            Σ=300
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../ServiceDescription.cpp/22719455ce5d64782797f2ebfebff3ff.html">someip::ServiceDescription someip::make&lt;someip::ServiceDescription&gt;() (32)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../ServiceManager.cpp/9b5e1fda71ac2953024017a535e767f3.html">someip::ServiceManager::getEventGroup(someip::ServiceDescription const&amp;) const (156)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SubscribedEventGroup.cpp/52c3aa2bfe72098e57096dfe9908feed.html">someip::SubscribedEventGroup::SubscribedEventGroup(unsigned short, unsigned char, unsigned short, unsigned short) (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...) (56)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../include/someip/SdServiceRegistry.h/7d7bbce241edbd420c1e86a551cc9f13.html">non-virtual thunk to someip::SdServiceRegistry::serviceTrackerChanged(someip::ServiceDescription const&amp;, someip::IServiceTrackerListener::ServiceTrackerStatus) (8)</a></pre>
+    
+
+    <pre>
+
+    someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char):
+
+       2536c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       25370:	b095      	sub	sp, #84	@ 0x54
+
+       25372:	4607      	mov	r7, r0
+
+       25374:	f89d b088 	ldrb.w	fp, [sp, #136]	@ 0x88
+
+       25378:	f8bd 9078 	ldrh.w	r9, [sp, #120]	@ 0x78
+
+       2537c:	f8dd 807c 	ldr.w	r8, [sp, #124]	@ 0x7c
+
+       25380:	f8bd a084 	ldrh.w	sl, [sp, #132]	@ 0x84
+
+       25384:	f1bb 0f11 	cmp.w	fp, #17
+
+       25388:	460c      	mov	r4, r1
+
+       2538a:	4616      	mov	r6, r2
+
+       2538c:	461d      	mov	r5, r3
+
+       2538e:	d003      	beq.n	25398 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x2c>
+
+       25390:	f1bb 0f06 	cmp.w	fp, #6
+
+       25394:	f040 8089 	bne.w	254aa <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x13e>
+
+       25398:	a80e      	add	r0, sp, #56	@ 0x38
+
+       2539a:	f001 fd99 	bl	26ed0 <<a href="../ServiceDescription.cpp/22719455ce5d64782797f2ebfebff3ff.html">someip::ServiceDescription someip::make<someip::ServiceDescription>()</a>>
+
+       2539e:	9920      	ldr	r1, [sp, #128]	@ 0x80
+
+       253a0:	f8ad 4040 	strh.w	r4, [sp, #64]	@ 0x40
+
+       253a4:	2204      	movs	r2, #4
+
+       253a6:	f10d 0046 	add.w	r0, sp, #70	@ 0x46
+
+       253aa:	f8ad 6042 	strh.w	r6, [sp, #66]	@ 0x42
+
+       253ae:	f88d 504d 	strb.w	r5, [sp, #77]	@ 0x4d
+
+       253b2:	f8ad 9044 	strh.w	r9, [sp, #68]	@ 0x44
+
+       253b6:	f8cd 803c 	str.w	r8, [sp, #60]	@ 0x3c
+
+       253ba:	f7db f965 	bl	688 <<a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       253be:	6bb8      	ldr	r0, [r7, #56]	@ 0x38
+
+       253c0:	f88d b04c 	strb.w	fp, [sp, #76]	@ 0x4c
+
+       253c4:	a90e      	add	r1, sp, #56	@ 0x38
+
+       253c6:	f8ad a04a 	strh.w	sl, [sp, #74]	@ 0x4a
+
+       253ca:	f002 f867 	bl	2749c <<a href="../ServiceManager.cpp/9b5e1fda71ac2953024017a535e767f3.html">someip::ServiceManager::getEventGroup(someip::ServiceDescription const&) const</a>>
+
+       253ce:	4683      	mov	fp, r0
+
+       253d0:	2800      	cmp	r0, #0
+
+       253d2:	f000 80c6 	beq.w	25562 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x1f6>
+
+       253d6:	6b78      	ldr	r0, [r7, #52]	@ 0x34
+
+       253d8:	6803      	ldr	r3, [r0, #0]
+
+       253da:	f1b8 0f00 	cmp.w	r8, #0
+
+       253de:	d068      	beq.n	254b2 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x146>
+
+       253e0:	9a20      	ldr	r2, [sp, #128]	@ 0x80
+
+       253e2:	9202      	str	r2, [sp, #8]
+
+       253e4:	f8cd 8004 	str.w	r8, [sp, #4]
+
+       253e8:	f8cd a00c 	str.w	sl, [sp, #12]
+
+       253ec:	f8cd 9000 	str.w	r9, [sp]
+
+       253f0:	f8d3 8008 	ldr.w	r8, [r3, #8]
+
+       253f4:	462a      	mov	r2, r5
+
+       253f6:	4633      	mov	r3, r6
+
+       253f8:	4621      	mov	r1, r4
+
+       253fa:	47c0      	blx	r8
+
+       253fc:	4680      	mov	r8, r0
+
+       253fe:	2800      	cmp	r0, #0
+
+       25400:	f040 808c 	bne.w	2551c <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x1b0>
+
+    _ZNK6someip15ProvidedService10getHandlerEv():
+
+       25404:	f8db 3018 	ldr.w	r3, [fp, #24]
+
+       25408:	9305      	str	r3, [sp, #20]
+
+    someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char):
+
+       2540a:	2b00      	cmp	r3, #0
+
+       2540c:	f000 80bc 	beq.w	25588 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x21c>
+
+       25410:	6b7b      	ldr	r3, [r7, #52]	@ 0x34
+
+       25412:	9306      	str	r3, [sp, #24]
+
+       25414:	681b      	ldr	r3, [r3, #0]
+
+       25416:	69da      	ldr	r2, [r3, #28]
+
+       25418:	9207      	str	r2, [sp, #28]
+
+       2541a:	4633      	mov	r3, r6
+
+       2541c:	a80a      	add	r0, sp, #40	@ 0x28
+
+       2541e:	462a      	mov	r2, r5
+
+       25420:	4621      	mov	r1, r4
+
+       25422:	f8cd 9000 	str.w	r9, [sp]
+
+       25426:	9004      	str	r0, [sp, #16]
+
+       25428:	f004 f840 	bl	294ac <<a href="../SubscribedEventGroup.cpp/52c3aa2bfe72098e57096dfe9908feed.html">someip::SubscribedEventGroup::SubscribedEventGroup(unsigned short, unsigned char, unsigned short, unsigned short)</a>>
+
+       2542c:	9a07      	ldr	r2, [sp, #28]
+
+       2542e:	9904      	ldr	r1, [sp, #16]
+
+       25430:	9806      	ldr	r0, [sp, #24]
+
+       25432:	4790      	blx	r2
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE5clearEv():
+
+       25434:	9b0a      	ldr	r3, [sp, #40]	@ 0x28
+
+       25436:	4a5c      	ldr	r2, [pc, #368]	@ (255a8 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x23c>)
+
+       25438:	4293      	cmp	r3, r2
+
+       2543a:	d007      	beq.n	2544c <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0xe0>
+
+       2543c:	4694      	mov	ip, r2
+
+       2543e:	4642      	mov	r2, r8
+
+       25440:	4619      	mov	r1, r3
+
+       25442:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl12forward_linkILj0EE5clearEv():
+
+       25444:	600a      	str	r2, [r1, #0]
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE5clearEv():
+
+       25446:	4563      	cmp	r3, ip
+
+       25448:	d1fa      	bne.n	25440 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0xd4>
+
+       2544a:	4662      	mov	r2, ip
+
+    someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char):
+
+       2544c:	9b05      	ldr	r3, [sp, #20]
+
+       2544e:	6819      	ldr	r1, [r3, #0]
+
+       25450:	b130      	cbz	r0, 25460 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0xf4>
+
+       25452:	6843      	ldr	r3, [r0, #4]
+
+       25454:	b123      	cbz	r3, 25460 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0xf4>
+
+    _ZN3etl22intrusive_forward_listIN6someip20SubscriptionEndpointENS_12forward_linkILj0EEEE8iteratorppEv():
+
+       25456:	6803      	ldr	r3, [r0, #0]
+
+    someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char):
+
+       25458:	681b      	ldr	r3, [r3, #0]
+
+       2545a:	4293      	cmp	r3, r2
+
+       2545c:	f000 8086 	beq.w	2556c <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x200>
+
+       25460:	f10d 0346 	add.w	r3, sp, #70	@ 0x46
+
+       25464:	9301      	str	r3, [sp, #4]
+
+       25466:	f89d 304c 	ldrb.w	r3, [sp, #76]	@ 0x4c
+
+       2546a:	9303      	str	r3, [sp, #12]
+
+       2546c:	f8bd 304a 	ldrh.w	r3, [sp, #74]	@ 0x4a
+
+       25470:	9302      	str	r3, [sp, #8]
+
+       25472:	f8bd 3044 	ldrh.w	r3, [sp, #68]	@ 0x44
+
+       25476:	9300      	str	r3, [sp, #0]
+
+       25478:	f8d1 8008 	ldr.w	r8, [r1, #8]
+
+       2547c:	9805      	ldr	r0, [sp, #20]
+
+       2547e:	f89d 304d 	ldrb.w	r3, [sp, #77]	@ 0x4d
+
+       25482:	f8bd 2042 	ldrh.w	r2, [sp, #66]	@ 0x42
+
+       25486:	f8bd 1040 	ldrh.w	r1, [sp, #64]	@ 0x40
+
+       2548a:	47c0      	blx	r8
+
+       2548c:	2800      	cmp	r0, #0
+
+       2548e:	d149      	bne.n	25524 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x1b8>
+
+       25490:	6b78      	ldr	r0, [r7, #52]	@ 0x34
+
+       25492:	462a      	mov	r2, r5
+
+       25494:	4621      	mov	r1, r4
+
+       25496:	9d20      	ldr	r5, [sp, #128]	@ 0x80
+
+       25498:	6804      	ldr	r4, [r0, #0]
+
+       2549a:	f8cd a008 	str.w	sl, [sp, #8]
+
+       2549e:	9501      	str	r5, [sp, #4]
+
+       254a0:	f8cd 9000 	str.w	r9, [sp]
+
+       254a4:	68e4      	ldr	r4, [r4, #12]
+
+       254a6:	4633      	mov	r3, r6
+
+       254a8:	47a0      	blx	r4
+
+       254aa:	2002      	movs	r0, #2
+
+       254ac:	b015      	add	sp, #84	@ 0x54
+
+       254ae:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       254b2:	9a20      	ldr	r2, [sp, #128]	@ 0x80
+
+       254b4:	9201      	str	r2, [sp, #4]
+
+       254b6:	f8cd a008 	str.w	sl, [sp, #8]
+
+       254ba:	f8cd 9000 	str.w	r9, [sp]
+
+       254be:	f8d3 a00c 	ldr.w	sl, [r3, #12]
+
+       254c2:	462a      	mov	r2, r5
+
+       254c4:	4633      	mov	r3, r6
+
+       254c6:	4621      	mov	r1, r4
+
+       254c8:	47d0      	blx	sl
+
+    _ZNK6someip15ProvidedService10getHandlerEv():
+
+       254ca:	f8db a018 	ldr.w	sl, [fp, #24]
+
+    someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char):
+
+       254ce:	f1ba 0f00 	cmp.w	sl, #0
+
+       254d2:	d021      	beq.n	25518 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x1ac>
+
+       254d4:	6b7f      	ldr	r7, [r7, #52]	@ 0x34
+
+       254d6:	6838      	ldr	r0, [r7, #0]
+
+       254d8:	4633      	mov	r3, r6
+
+       254da:	462a      	mov	r2, r5
+
+       254dc:	4621      	mov	r1, r4
+
+       254de:	69c4      	ldr	r4, [r0, #28]
+
+       254e0:	f8cd 9000 	str.w	r9, [sp]
+
+       254e4:	a80a      	add	r0, sp, #40	@ 0x28
+
+       254e6:	f003 ffe1 	bl	294ac <<a href="../SubscribedEventGroup.cpp/52c3aa2bfe72098e57096dfe9908feed.html">someip::SubscribedEventGroup::SubscribedEventGroup(unsigned short, unsigned char, unsigned short, unsigned short)</a>>
+
+       254ea:	a90a      	add	r1, sp, #40	@ 0x28
+
+       254ec:	4638      	mov	r0, r7
+
+       254ee:	47a0      	blx	r4
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE5clearEv():
+
+       254f0:	9b0a      	ldr	r3, [sp, #40]	@ 0x28
+
+       254f2:	4a2d      	ldr	r2, [pc, #180]	@ (255a8 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x23c>)
+
+       254f4:	4293      	cmp	r3, r2
+
+       254f6:	bf18      	it	ne
+
+       254f8:	4644      	movne	r4, r8
+
+       254fa:	d004      	beq.n	25506 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x19a>
+
+       254fc:	4619      	mov	r1, r3
+
+       254fe:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl12forward_linkILj0EE5clearEv():
+
+       25500:	600c      	str	r4, [r1, #0]
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE5clearEv():
+
+       25502:	4293      	cmp	r3, r2
+
+       25504:	d1fa      	bne.n	254fc <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x190>
+
+    someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char):
+
+       25506:	b108      	cbz	r0, 2550c <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x1a0>
+
+       25508:	6843      	ldr	r3, [r0, #4]
+
+       2550a:	b92b      	cbnz	r3, 25518 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x1ac>
+
+       2550c:	f8da 3000 	ldr.w	r3, [sl]
+
+       25510:	4a26      	ldr	r2, [pc, #152]	@ (255ac <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x240>)
+
+       25512:	68db      	ldr	r3, [r3, #12]
+
+       25514:	4293      	cmp	r3, r2
+
+       25516:	d142      	bne.n	2559e <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x232>
+
+       25518:	2003      	movs	r0, #3
+
+       2551a:	e7c7      	b.n	254ac <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x140>
+
+       2551c:	2802      	cmp	r0, #2
+
+       2551e:	d1c4      	bne.n	254aa <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x13e>
+
+       25520:	ab0a      	add	r3, sp, #40	@ 0x28
+
+       25522:	9304      	str	r3, [sp, #16]
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       25524:	2300      	movs	r3, #0
+
+       25526:	9a04      	ldr	r2, [sp, #16]
+
+       25528:	930a      	str	r3, [sp, #40]	@ 0x28
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2552a:	f10b 0011 	add.w	r0, fp, #17
+
+       2552e:	f10b 030d 	add.w	r3, fp, #13
+
+       25532:	f813 1f01 	ldrb.w	r1, [r3, #1]!
+
+       25536:	f802 1b01 	strb.w	r1, [r2], #1
+
+       2553a:	4298      	cmp	r0, r3
+
+       2553c:	d1f9      	bne.n	25532 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x1c6>
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       2553e:	2300      	movs	r3, #0
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       25540:	9904      	ldr	r1, [sp, #16]
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       25542:	9309      	str	r3, [sp, #36]	@ 0x24
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       25544:	2204      	movs	r2, #4
+
+       25546:	a809      	add	r0, sp, #36	@ 0x24
+
+       25548:	f7db f89e 	bl	688 <<a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl13reverse_bytesImEENS_9enable_ifIXaaaasrNS_11is_integralIT_EE5valuesrNS_11is_unsignedIS3_EE5valueeqsrNS_15integral_limitsIS3_EE4bitsLj32EES3_E4typeES3_():
+
+       2554c:	9809      	ldr	r0, [sp, #36]	@ 0x24
+
+    _ZN2ip18isMulticastAddressERKNS_9IPAddressE():
+
+       2554e:	f000 00f0 	and.w	r0, r0, #240	@ 0xf0
+
+    someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char):
+
+       25552:	f1a0 00e0 	sub.w	r0, r0, #224	@ 0xe0
+
+       25556:	fab0 f080 	clz	r0, r0
+
+       2555a:	0940      	lsrs	r0, r0, #5
+
+       2555c:	b015      	add	sp, #84	@ 0x54
+
+       2555e:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       25562:	f1b8 0f00 	cmp.w	r8, #0
+
+       25566:	d1a0      	bne.n	254aa <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x13e>
+
+       25568:	2004      	movs	r0, #4
+
+       2556a:	e79f      	b.n	254ac <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x140>
+
+       2556c:	68cb      	ldr	r3, [r1, #12]
+
+       2556e:	4a0f      	ldr	r2, [pc, #60]	@ (255ac <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x240>)
+
+       25570:	4293      	cmp	r3, r2
+
+       25572:	f43f af75 	beq.w	25460 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0xf4>
+
+       25576:	f8dd 8014 	ldr.w	r8, [sp, #20]
+
+       2557a:	4649      	mov	r1, r9
+
+       2557c:	2201      	movs	r2, #1
+
+       2557e:	4640      	mov	r0, r8
+
+       25580:	4798      	blx	r3
+
+       25582:	f8d8 1000 	ldr.w	r1, [r8]
+
+       25586:	e76b      	b.n	25460 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0xf4>
+
+       25588:	4b09      	ldr	r3, [pc, #36]	@ (255b0 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x244>)
+
+       2558a:	f8cd 9004 	str.w	r9, [sp, #4]
+
+       2558e:	7818      	ldrb	r0, [r3, #0]
+
+       25590:	4908      	ldr	r1, [pc, #32]	@ (255b4 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x248>)
+
+       25592:	9600      	str	r6, [sp, #0]
+
+       25594:	462b      	mov	r3, r5
+
+       25596:	4622      	mov	r2, r4
+
+       25598:	f7e7 fe5c 	bl	d254 <<a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+       2559c:	e785      	b.n	254aa <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x13e>
+
+       2559e:	2200      	movs	r2, #0
+
+       255a0:	4649      	mov	r1, r9
+
+       255a2:	4650      	mov	r0, sl
+
+       255a4:	4798      	blx	r3
+
+       255a6:	e7b7      	b.n	25518 <<a href="./3533b4f68a988ac63ac00fb36b7a7be4.html">someip::SdServiceRegistry::subscribeReceived(unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&, unsigned short, unsigned char)</a>+0x1ac>
+
+       255a8:	20000120 	.word	0x20000120
+
+       255ac:	0000beed 	.word	0x0000beed
+
+       255b0:	20000004 	.word	0x20000004
+
+       255b4:	0004e1c0 	.word	0x0004e1c0
+
+    </pre>
+
+    
+    <pre><a href="./d40b6827168572c52ce6e6572aec3525.html">someip::SdServiceRegistry::SdServiceRegistry(someip::ISubscriptionManager&amp;, unsigned char, someip::ServiceManager&amp;, someip::ServiceTracker&amp;, someip::QueryManager&amp;) (68)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 220</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 280</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    220
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    280
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    172
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    212
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html" class="icon-function">util::logger::Logger::warn(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    152
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">156</td>
+                <td><a href="../ServiceManager.cpp/9b5e1fda71ac2953024017a535e767f3.html" class="icon-function">someip::ServiceManager::getEventGroup(someip::ServiceDescription const&amp;) const</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">120
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

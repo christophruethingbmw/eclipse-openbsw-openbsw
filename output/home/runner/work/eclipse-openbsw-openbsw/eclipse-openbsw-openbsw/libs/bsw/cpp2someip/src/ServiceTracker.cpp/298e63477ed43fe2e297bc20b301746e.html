@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../ServiceTracker.cpp.html">ServiceTracker.cpp</a>:46
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::ServiceTracker::addService(someip::ServiceDescription const&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000285e0</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>96 (static)</td>
+                <td>536</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../SdServiceRegistry.cpp/1b9189314835682e493d2502ac00d5cf.html">someip::SdServiceRegistry::offerReceived(someip::ServiceDescription const&amp;, ip::IPAddress const&amp;) (52)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (6,
+                            <span title="sum of used bytes by all callees">
+                            Σ=664
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/a857dde1963b018a532cddd3ac0ab673.html">getSystemTimeMs32Bit (64)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../util/include/util/logger/Logger.h/0ab01804358606b880086539418bdb3a.html">util::logger::Logger::info(unsigned char, char const*, ...) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../3rdparty/etl/include/etl/flat_set.h/bbcbdf37a25cca9904e5647f353e66af.html">etl::iflat_set&lt;someip::internal::TrackedService, someip::internal::LessThanComparator&gt;::insert(someip::internal::TrackedService&amp;&amp;) (404)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../3rdparty/etl/include/etl/flat_set.h/bbcbdf37a25cca9904e5647f353e66af.html">etl::iflat_set&lt;someip::internal::TrackedService, someip::internal::LessThanComparator&gt;::insert(someip::internal::TrackedService&amp;&amp;) (404)</a></pre>
+    
+
+    <pre>
+
+    someip::ServiceTracker::addService(someip::ServiceDescription const&):
+
+       285e0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       285e4:	f8d1 8004 	ldr.w	r8, [r1, #4]
+
+       285e8:	4a7d      	ldr	r2, [pc, #500]	@ (287e0 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x200>)
+
+       285ea:	f108 33ff 	add.w	r3, r8, #4294967295	@ 0xffffffff
+
+       285ee:	3303      	adds	r3, #3
+
+       285f0:	4606      	mov	r6, r0
+
+       285f2:	b08f      	sub	sp, #60	@ 0x3c
+
+       285f4:	7810      	ldrb	r0, [r2, #0]
+
+       285f6:	f200 8084 	bhi.w	28702 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x122>
+
+    _ZNK6someip8internal20FindServiceCondition7isValidEv():
+
+       285fa:	890a      	ldrh	r2, [r1, #8]
+
+       285fc:	460d      	mov	r5, r1
+
+       285fe:	f64f 71ff 	movw	r1, #65535	@ 0xffff
+
+       28602:	428a      	cmp	r2, r1
+
+       28604:	d076      	beq.n	286f4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x114>
+
+       28606:	7d6b      	ldrb	r3, [r5, #21]
+
+       28608:	2bff      	cmp	r3, #255	@ 0xff
+
+       2860a:	d073      	beq.n	286f4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x114>
+
+       2860c:	f8b5 a00a 	ldrh.w	sl, [r5, #10]
+
+       28610:	458a      	cmp	sl, r1
+
+       28612:	d06f      	beq.n	286f4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x114>
+
+    _ZN3etl19ireference_flat_setIN6someip8internal14TrackedServiceENS2_18LessThanComparatorEE5beginEv():
+
+       28614:	6831      	ldr	r1, [r6, #0]
+
+       28616:	f8d1 9000 	ldr.w	r9, [r1]
+
+    _ZN3etl11pvoidvector5beginEv():
+
+       2861a:	f8d9 b004 	ldr.w	fp, [r9, #4]
+
+    _ZN3etl11pvoidvector3endEv():
+
+       2861e:	f8d9 1008 	ldr.w	r1, [r9, #8]
+
+    _ZN3etl7find_ifINS_19ireference_flat_setIN6someip8internal14TrackedServiceENS3_18LessThanComparatorEE8iteratorENS3_20FindServiceConditionEEET_S9_S9_T0_():
+
+       28622:	4559      	cmp	r1, fp
+
+       28624:	bf18      	it	ne
+
+       28626:	46dc      	movne	ip, fp
+
+       28628:	d102      	bne.n	28630 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x50>
+
+       2862a:	e06e      	b.n	2870a <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x12a>
+
+       2862c:	4561      	cmp	r1, ip
+
+       2862e:	d06c      	beq.n	2870a <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x12a>
+
+       28630:	4667      	mov	r7, ip
+
+    _ZNK3etl19ireference_flat_setIN6someip8internal14TrackedServiceENS2_18LessThanComparatorEE8iteratordeEv():
+
+       28632:	f85c 4b04 	ldr.w	r4, [ip], #4
+
+    _ZNK6someip8internal20FindServiceConditionclERKNS0_14TrackedServiceE():
+
+       28636:	f8b4 e008 	ldrh.w	lr, [r4, #8]
+
+       2863a:	4596      	cmp	lr, r2
+
+       2863c:	d1f6      	bne.n	2862c <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x4c>
+
+       2863e:	f894 e015 	ldrb.w	lr, [r4, #21]
+
+       28642:	459e      	cmp	lr, r3
+
+       28644:	d1f2      	bne.n	2862c <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x4c>
+
+       28646:	8964      	ldrh	r4, [r4, #10]
+
+       28648:	4554      	cmp	r4, sl
+
+       2864a:	d1ef      	bne.n	2862c <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x4c>
+
+    someip::ServiceTracker::addService(someip::ServiceDescription const&):
+
+       2864c:	42b9      	cmp	r1, r7
+
+       2864e:	d05c      	beq.n	2870a <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x12a>
+
+       28650:	4964      	ldr	r1, [pc, #400]	@ (287e4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x204>)
+
+       28652:	f8cd 8004 	str.w	r8, [sp, #4]
+
+       28656:	f8cd a000 	str.w	sl, [sp]
+
+       2865a:	f7e1 f991 	bl	9980 <<a href="../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...)</a>>
+
+    _ZNK3etl19ireference_flat_setIN6someip8internal14TrackedServiceENS2_18LessThanComparatorEE14const_iteratordeEv():
+
+       2865e:	683c      	ldr	r4, [r7, #0]
+
+    someip::ServiceTracker::addService(someip::ServiceDescription const&):
+
+       28660:	686b      	ldr	r3, [r5, #4]
+
+       28662:	6063      	str	r3, [r4, #4]
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       28664:	2200      	movs	r2, #0
+
+       28666:	9204      	str	r2, [sp, #16]
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       28668:	f104 030d 	add.w	r3, r4, #13
+
+       2866c:	f104 0011 	add.w	r0, r4, #17
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       28670:	aa04      	add	r2, sp, #16
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       28672:	f813 1f01 	ldrb.w	r1, [r3, #1]!
+
+       28676:	f802 1b01 	strb.w	r1, [r2], #1
+
+       2867a:	4298      	cmp	r0, r3
+
+       2867c:	d1f9      	bne.n	28672 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x92>
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       2867e:	2700      	movs	r7, #0
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       28680:	2204      	movs	r2, #4
+
+       28682:	a904      	add	r1, sp, #16
+
+       28684:	a802      	add	r0, sp, #8
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       28686:	9702      	str	r7, [sp, #8]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       28688:	f7d7 fffe 	bl	688 <<a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       2868c:	f8dd 8008 	ldr.w	r8, [sp, #8]
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       28690:	9704      	str	r7, [sp, #16]
+
+       28692:	f105 030d 	add.w	r3, r5, #13
+
+       28696:	f105 0011 	add.w	r0, r5, #17
+
+       2869a:	aa04      	add	r2, sp, #16
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2869c:	f813 1f01 	ldrb.w	r1, [r3, #1]!
+
+       286a0:	f802 1b01 	strb.w	r1, [r2], #1
+
+       286a4:	4283      	cmp	r3, r0
+
+       286a6:	d1f9      	bne.n	2869c <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0xbc>
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       286a8:	a904      	add	r1, sp, #16
+
+       286aa:	a802      	add	r0, sp, #8
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       286ac:	2700      	movs	r7, #0
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       286ae:	2204      	movs	r2, #4
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       286b0:	9702      	str	r7, [sp, #8]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       286b2:	f7d7 ffe9 	bl	688 <<a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       286b6:	9b02      	ldr	r3, [sp, #8]
+
+    someip::ServiceTracker::addService(someip::ServiceDescription const&):
+
+       286b8:	4543      	cmp	r3, r8
+
+       286ba:	d103      	bne.n	286c4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0xe4>
+
+       286bc:	8a62      	ldrh	r2, [r4, #18]
+
+       286be:	8a6b      	ldrh	r3, [r5, #18]
+
+       286c0:	429a      	cmp	r2, r3
+
+       286c2:	d051      	beq.n	28768 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x188>
+
+       286c4:	2216      	movs	r2, #22
+
+       286c6:	4629      	mov	r1, r5
+
+       286c8:	4620      	mov	r0, r4
+
+       286ca:	f7d7 ffdd 	bl	688 <<a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       286ce:	f01a fe0b 	bl	432e8 <<a href="../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/a857dde1963b018a532cddd3ac0ab673.html">getSystemTimeMs32Bit</a>>
+
+       286d2:	6873      	ldr	r3, [r6, #4]
+
+       286d4:	6220      	str	r0, [r4, #32]
+
+       286d6:	2100      	movs	r1, #0
+
+       286d8:	2201      	movs	r2, #1
+
+       286da:	6261      	str	r1, [r4, #36]	@ 0x24
+
+       286dc:	61a2      	str	r2, [r4, #24]
+
+       286de:	b12b      	cbz	r3, 286ec <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x10c>
+
+       286e0:	6819      	ldr	r1, [r3, #0]
+
+       286e2:	2202      	movs	r2, #2
+
+       286e4:	688c      	ldr	r4, [r1, #8]
+
+       286e6:	4618      	mov	r0, r3
+
+       286e8:	4629      	mov	r1, r5
+
+       286ea:	47a0      	blx	r4
+
+       286ec:	2001      	movs	r0, #1
+
+       286ee:	b00f      	add	sp, #60	@ 0x3c
+
+       286f0:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       286f4:	493c      	ldr	r1, [pc, #240]	@ (287e8 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x208>)
+
+       286f6:	f7e4 fdad 	bl	d254 <<a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+       286fa:	2000      	movs	r0, #0
+
+       286fc:	b00f      	add	sp, #60	@ 0x3c
+
+       286fe:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       28702:	493a      	ldr	r1, [pc, #232]	@ (287ec <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x20c>)
+
+       28704:	f7e4 fda6 	bl	d254 <<a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+       28708:	e7f7      	b.n	286fa <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x11a>
+
+       2870a:	f8d9 4000 	ldr.w	r4, [r9]
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       2870e:	eba1 010b 	sub.w	r1, r1, fp
+
+    someip::ServiceTracker::addService(someip::ServiceDescription const&):
+
+       28712:	ebb4 0fa1 	cmp.w	r4, r1, asr #2
+
+       28716:	d050      	beq.n	287ba <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x1da>
+
+       28718:	4935      	ldr	r1, [pc, #212]	@ (287f0 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x210>)
+
+       2871a:	f8cd 8004 	str.w	r8, [sp, #4]
+
+       2871e:	f8cd a000 	str.w	sl, [sp]
+
+       28722:	462f      	mov	r7, r5
+
+       28724:	f7da fd94 	bl	3250 <<a href="../../../util/include/util/logger/Logger.h/0ab01804358606b880086539418bdb3a.html">util::logger::Logger::info(unsigned char, char const*, ...)</a>>
+
+       28728:	cf0f      	ldmia	r7!, {r0, r1, r2, r3}
+
+       2872a:	ac04      	add	r4, sp, #16
+
+       2872c:	c40f      	stmia	r4!, {r0, r1, r2, r3}
+
+       2872e:	e897 0003 	ldmia.w	r7, {r0, r1}
+
+       28732:	f04f 0c01 	mov.w	ip, #1
+
+       28736:	e884 0003 	stmia.w	r4, {r0, r1}
+
+       2873a:	f8d6 8000 	ldr.w	r8, [r6]
+
+       2873e:	f8cd c028 	str.w	ip, [sp, #40]	@ 0x28
+
+       28742:	f01a fdd1 	bl	432e8 <<a href="../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/a857dde1963b018a532cddd3ac0ab673.html">getSystemTimeMs32Bit</a>>
+
+       28746:	2400      	movs	r4, #0
+
+       28748:	900c      	str	r0, [sp, #48]	@ 0x30
+
+       2874a:	4641      	mov	r1, r8
+
+       2874c:	a802      	add	r0, sp, #8
+
+       2874e:	aa04      	add	r2, sp, #16
+
+       28750:	940d      	str	r4, [sp, #52]	@ 0x34
+
+       28752:	f7ff fe7b 	bl	2844c <<a href="../../../../3rdparty/etl/include/etl/flat_set.h/bbcbdf37a25cca9904e5647f353e66af.html">etl::iflat_set<someip::internal::TrackedService, someip::internal::LessThanComparator>::insert(someip::internal::TrackedService&&)</a>>
+
+       28756:	6870      	ldr	r0, [r6, #4]
+
+       28758:	2800      	cmp	r0, #0
+
+       2875a:	d0c7      	beq.n	286ec <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x10c>
+
+       2875c:	6803      	ldr	r3, [r0, #0]
+
+       2875e:	4622      	mov	r2, r4
+
+       28760:	689b      	ldr	r3, [r3, #8]
+
+       28762:	4629      	mov	r1, r5
+
+       28764:	4798      	blx	r3
+
+       28766:	e7c1      	b.n	286ec <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x10c>
+
+       28768:	7d22      	ldrb	r2, [r4, #20]
+
+       2876a:	7d2b      	ldrb	r3, [r5, #20]
+
+       2876c:	429a      	cmp	r2, r3
+
+       2876e:	d1a9      	bne.n	286c4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0xe4>
+
+       28770:	68b3      	ldr	r3, [r6, #8]
+
+       28772:	2b00      	cmp	r3, #0
+
+       28774:	d0ba      	beq.n	286ec <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x10c>
+
+       28776:	68f3      	ldr	r3, [r6, #12]
+
+       28778:	2b00      	cmp	r3, #0
+
+       2877a:	d0b7      	beq.n	286ec <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x10c>
+
+       2877c:	f01a fdb4 	bl	432e8 <<a href="../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/a857dde1963b018a532cddd3ac0ab673.html">getSystemTimeMs32Bit</a>>
+
+       28780:	68b3      	ldr	r3, [r6, #8]
+
+       28782:	6a21      	ldr	r1, [r4, #32]
+
+       28784:	f8d6 c00c 	ldr.w	ip, [r6, #12]
+
+       28788:	f240 32e7 	movw	r2, #999	@ 0x3e7
+
+       2878c:	189a      	adds	r2, r3, r2
+
+       2878e:	6a63      	ldr	r3, [r4, #36]	@ 0x24
+
+       28790:	f147 0e00 	adc.w	lr, r7, #0
+
+       28794:	1a41      	subs	r1, r0, r1
+
+       28796:	4680      	mov	r8, r0
+
+       28798:	eb63 0043 	sbc.w	r0, r3, r3, lsl #1
+
+       2879c:	428a      	cmp	r2, r1
+
+       2879e:	eb7e 0e00 	sbcs.w	lr, lr, r0
+
+       287a2:	69a3      	ldr	r3, [r4, #24]
+
+       287a4:	d30d      	bcc.n	287c2 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x1e2>
+
+       287a6:	459c      	cmp	ip, r3
+
+       287a8:	d904      	bls.n	287b4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x1d4>
+
+       287aa:	3301      	adds	r3, #1
+
+       287ac:	61a3      	str	r3, [r4, #24]
+
+       287ae:	68f2      	ldr	r2, [r6, #12]
+
+       287b0:	4293      	cmp	r3, r2
+
+       287b2:	d00b      	beq.n	287cc <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x1ec>
+
+       287b4:	e9c4 8708 	strd	r8, r7, [r4, #32]
+
+       287b8:	e798      	b.n	286ec <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x10c>
+
+       287ba:	490e      	ldr	r1, [pc, #56]	@ (287f4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x214>)
+
+       287bc:	f7e4 fd4a 	bl	d254 <<a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+       287c0:	e79b      	b.n	286fa <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x11a>
+
+       287c2:	459c      	cmp	ip, r3
+
+       287c4:	bf84      	itt	hi
+
+       287c6:	2301      	movhi	r3, #1
+
+       287c8:	61a3      	strhi	r3, [r4, #24]
+
+       287ca:	e7f3      	b.n	287b4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x1d4>
+
+       287cc:	6870      	ldr	r0, [r6, #4]
+
+       287ce:	2800      	cmp	r0, #0
+
+       287d0:	d0f0      	beq.n	287b4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x1d4>
+
+       287d2:	6803      	ldr	r3, [r0, #0]
+
+       287d4:	4629      	mov	r1, r5
+
+       287d6:	689b      	ldr	r3, [r3, #8]
+
+       287d8:	2203      	movs	r2, #3
+
+       287da:	4798      	blx	r3
+
+       287dc:	e7ea      	b.n	287b4 <<a href="./298e63477ed43fe2e297bc20b301746e.html">someip::ServiceTracker::addService(someip::ServiceDescription const&)</a>+0x1d4>
+
+       287de:	bf00      	nop
+
+       287e0:	20000004 	.word	0x20000004
+
+       287e4:	0004e6f0 	.word	0x0004e6f0
+
+       287e8:	0004e6c0 	.word	0x0004e6c0
+
+       287ec:	0004e698 	.word	0x0004e698
+
+       287f0:	0004e768 	.word	0x0004e768
+
+       287f4:	0004e740 	.word	0x0004e740
+
+    </pre>
+
+    
+    <pre><a href="../../../cpp2ethernet/include/ip/IPAddress.h/5979ea58fa9eb4d26ab2f2a2dd362b39.html">ip::IPAddressCompareLess::operator()(ip::IPAddress const&amp;, ip::IPAddress const&amp;) const (200)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 180</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 124</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    180
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    124
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    132
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html" class="icon-function">util::logger::Logger::debug(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">112
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 112</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 588</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    588
+                    
+                    
+                </td>
+                <td class="col_size">536</td>
+                <td><a href="./298e63477ed43fe2e297bc20b301746e.html" class="icon-function">someip::ServiceTracker::addService(someip::ServiceDescription const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">52</td>
+                <td><a href="../SdServiceRegistry.cpp/1b9189314835682e493d2502ac00d5cf.html" class="icon-function">someip::SdServiceRegistry::offerReceived(someip::ServiceDescription const&amp;, ip::IPAddress const&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

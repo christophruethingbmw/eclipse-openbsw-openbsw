@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../routing.html">routing</a></li>
+        
+        <li><a href="../../../../include.html">include</a></li>
+        
+        <li><a href="../../../io.html">io</a></li>
+        
+        <li ><a href="../../udp.html">udp</a>
+            </li>
+
+        
+        <li class="active"><a href="../Receiver.h.html">Receiver.h</a>:55
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&amp;, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000e680</td>
+                <td>
+    
+    
+</td>
+                <td>56 (static)</td>
+                <td>324</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            Σ=28
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../routing/PduTransportRxAdapter.h/08e9babf918a5a366b7f706c5008cc05.html">routing::PduTransportRxAdapter&lt;72u&gt;::lookup(etl::span&lt;unsigned char const, 4294967295u&gt;) const (272)</a></pre>
+    
+
+    <pre>
+
+    io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short):
+
+        e680:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+    _ZNK3etl4spanIKhLj4294967295EE5emptyEv():
+
+        e684:	6984      	ldr	r4, [r0, #24]
+
+        e686:	69c6      	ldr	r6, [r0, #28]
+
+    io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short):
+
+        e688:	b086      	sub	sp, #24
+
+        e68a:	42a6      	cmp	r6, r4
+
+        e68c:	f8bd 903c 	ldrh.w	r9, [sp, #60]	@ 0x3c
+
+        e690:	9201      	str	r2, [sp, #4]
+
+        e692:	4607      	mov	r7, r0
+
+    _ZNK3etl4spanIKhLj4294967295EE5emptyEv():
+
+        e694:	f10d 0810 	add.w	r8, sp, #16
+
+    io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short):
+
+        e698:	d027      	beq.n	e6ea <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x6a>
+
+    _ZN3etl4spanIKhLj4294967295EE4takeIS1_EENS0_IT_Lj4294967295EEEj():
+
+        e69a:	f8df a124 	ldr.w	sl, [pc, #292]	@ e7c0 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x140>
+
+        e69e:	e002      	b.n	e6a6 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x26>
+
+    io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short):
+
+        e6a0:	429e      	cmp	r6, r3
+
+        e6a2:	461c      	mov	r4, r3
+
+        e6a4:	d049      	beq.n	e73a <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0xba>
+
+    _ZNK3etl4spanIKhLj4294967295EE4sizeEv():
+
+        e6a6:	1b35      	subs	r5, r6, r4
+
+    _ZN3etl4spanIKhLj4294967295EE4takeIS1_EENS0_IT_Lj4294967295EEEj():
+
+        e6a8:	2d03      	cmp	r5, #3
+
+        e6aa:	4640      	mov	r0, r8
+
+        e6ac:	d802      	bhi.n	e6b4 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x34>
+
+        e6ae:	f8da 3000 	ldr.w	r3, [sl]
+
+        e6b2:	4798      	blx	r3
+
+    _ZN3etl11mem_compareIhEEiPKT_S3_S3_():
+
+        e6b4:	7821      	ldrb	r1, [r4, #0]
+
+        e6b6:	f89d 2004 	ldrb.w	r2, [sp, #4]
+
+    _ZN3etl4spanIKhLj4294967295EE7advanceEj():
+
+        e6ba:	2d04      	cmp	r5, #4
+
+        e6bc:	bf94      	ite	ls
+
+        e6be:	1963      	addls	r3, r4, r5
+
+        e6c0:	1d23      	addhi	r3, r4, #4
+
+    _ZN3etl11mem_compareIhEEiPKT_S3_S3_():
+
+        e6c2:	4291      	cmp	r1, r2
+
+        e6c4:	d1ec      	bne.n	e6a0 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x20>
+
+        e6c6:	7861      	ldrb	r1, [r4, #1]
+
+        e6c8:	f89d 2005 	ldrb.w	r2, [sp, #5]
+
+        e6cc:	4291      	cmp	r1, r2
+
+        e6ce:	f104 0401 	add.w	r4, r4, #1
+
+        e6d2:	d1e5      	bne.n	e6a0 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x20>
+
+        e6d4:	f814 1f01 	ldrb.w	r1, [r4, #1]!
+
+        e6d8:	f89d 2006 	ldrb.w	r2, [sp, #6]
+
+        e6dc:	4291      	cmp	r1, r2
+
+        e6de:	d1df      	bne.n	e6a0 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x20>
+
+        e6e0:	7861      	ldrb	r1, [r4, #1]
+
+        e6e2:	f89d 2007 	ldrb.w	r2, [sp, #7]
+
+        e6e6:	4291      	cmp	r1, r2
+
+        e6e8:	d1da      	bne.n	e6a0 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x20>
+
+    io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short):
+
+        e6ea:	68b9      	ldr	r1, [r7, #8]
+
+        e6ec:	680b      	ldr	r3, [r1, #0]
+
+        e6ee:	4640      	mov	r0, r8
+
+        e6f0:	68db      	ldr	r3, [r3, #12]
+
+        e6f2:	464a      	mov	r2, r9
+
+        e6f4:	4798      	blx	r3
+
+        e6f6:	6878      	ldr	r0, [r7, #4]
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+        e6f8:	9904      	ldr	r1, [sp, #16]
+
+    io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short):
+
+        e6fa:	6803      	ldr	r3, [r0, #0]
+
+        e6fc:	6a1c      	ldr	r4, [r3, #32]
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+        e6fe:	9b05      	ldr	r3, [sp, #20]
+
+        e700:	1a5b      	subs	r3, r3, r1
+
+    io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short):
+
+        e702:	4599      	cmp	r9, r3
+
+        e704:	464a      	mov	r2, r9
+
+        e706:	d00d      	beq.n	e724 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0xa4>
+
+        e708:	2100      	movs	r1, #0
+
+        e70a:	47a0      	blx	r4
+
+        e70c:	f897 3020 	ldrb.w	r3, [r7, #32]
+
+        e710:	2b00      	cmp	r3, #0
+
+        e712:	d042      	beq.n	e79a <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x11a>
+
+    _ZN7routing14ClampedCounterImEppEv():
+
+        e714:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+
+        e716:	1c5a      	adds	r2, r3, #1
+
+        e718:	d00c      	beq.n	e734 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0xb4>
+
+        e71a:	3301      	adds	r3, #1
+
+        e71c:	62bb      	str	r3, [r7, #40]	@ 0x28
+
+    io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short):
+
+        e71e:	b006      	add	sp, #24
+
+        e720:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+        e724:	2300      	movs	r3, #0
+
+        e726:	f887 3020 	strb.w	r3, [r7, #32]
+
+        e72a:	47a0      	blx	r4
+
+        e72c:	68b8      	ldr	r0, [r7, #8]
+
+        e72e:	6803      	ldr	r3, [r0, #0]
+
+        e730:	691b      	ldr	r3, [r3, #16]
+
+        e732:	4798      	blx	r3
+
+        e734:	b006      	add	sp, #24
+
+        e736:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+        e73a:	6878      	ldr	r0, [r7, #4]
+
+        e73c:	6803      	ldr	r3, [r0, #0]
+
+        e73e:	464a      	mov	r2, r9
+
+        e740:	6a1b      	ldr	r3, [r3, #32]
+
+        e742:	2100      	movs	r1, #0
+
+        e744:	4798      	blx	r3
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+        e746:	2300      	movs	r3, #0
+
+        e748:	9304      	str	r3, [sp, #16]
+
+        e74a:	4642      	mov	r2, r8
+
+        e74c:	ab01      	add	r3, sp, #4
+
+        e74e:	a805      	add	r0, sp, #20
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+        e750:	f813 1b01 	ldrb.w	r1, [r3], #1
+
+        e754:	f802 1b01 	strb.w	r1, [r2], #1
+
+        e758:	4282      	cmp	r2, r0
+
+        e75a:	d1f9      	bne.n	e750 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0xd0>
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+        e75c:	2300      	movs	r3, #0
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        e75e:	2204      	movs	r2, #4
+
+        e760:	4641      	mov	r1, r8
+
+        e762:	a803      	add	r0, sp, #12
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+        e764:	9303      	str	r3, [sp, #12]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        e766:	f7f1 ff8f 	bl	688 <<a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+        e76a:	9b03      	ldr	r3, [sp, #12]
+
+    _ZNK3etl8delegateIFvN7routing12ErrorHandler10StatusCodeEhmEE8is_validEv():
+
+        e76c:	693d      	ldr	r5, [r7, #16]
+
+        e76e:	ba1c      	rev	r4, r3
+
+    _ZNK3etl8delegateIFvN7routing12ErrorHandler10StatusCodeEhmEEclIJRKS3_RKhmEEEvDpOT_():
+
+        e770:	b16d      	cbz	r5, e78e <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x10e>
+
+        e772:	4623      	mov	r3, r4
+
+        e774:	2107      	movs	r1, #7
+
+        e776:	7d3a      	ldrb	r2, [r7, #20]
+
+        e778:	f107 000c 	add.w	r0, r7, #12
+
+        e77c:	47a8      	blx	r5
+
+    _ZN7routing14ClampedCounterImEppEv():
+
+        e77e:	6a7b      	ldr	r3, [r7, #36]	@ 0x24
+
+        e780:	1c59      	adds	r1, r3, #1
+
+        e782:	d0d7      	beq.n	e734 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0xb4>
+
+        e784:	3301      	adds	r3, #1
+
+        e786:	627b      	str	r3, [r7, #36]	@ 0x24
+
+    io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short):
+
+        e788:	b006      	add	sp, #24
+
+        e78a:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+    _ZNK3etl8delegateIFvN7routing12ErrorHandler10StatusCodeEhmEEclIJRKS3_RKhmEEEvDpOT_():
+
+        e78e:	4b0c      	ldr	r3, [pc, #48]	@ (e7c0 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x140>)
+
+        e790:	4640      	mov	r0, r8
+
+        e792:	681b      	ldr	r3, [r3, #0]
+
+        e794:	4798      	blx	r3
+
+        e796:	693d      	ldr	r5, [r7, #16]
+
+        e798:	e7eb      	b.n	e772 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0xf2>
+
+    _ZNK3etl8delegateIFvN7routing12ErrorHandler10StatusCodeEhmEE8is_validEv():
+
+        e79a:	693c      	ldr	r4, [r7, #16]
+
+    _ZNK3etl8delegateIFvN7routing12ErrorHandler10StatusCodeEhmEEclIJRKS3_RKhRKmEEEvDpOT_():
+
+        e79c:	b14c      	cbz	r4, e7b2 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x132>
+
+        e79e:	2300      	movs	r3, #0
+
+        e7a0:	7d3a      	ldrb	r2, [r7, #20]
+
+        e7a2:	2106      	movs	r1, #6
+
+        e7a4:	f107 000c 	add.w	r0, r7, #12
+
+        e7a8:	47a0      	blx	r4
+
+    io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short):
+
+        e7aa:	2301      	movs	r3, #1
+
+        e7ac:	f887 3020 	strb.w	r3, [r7, #32]
+
+        e7b0:	e7b0      	b.n	e714 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x94>
+
+    _ZNK3etl8delegateIFvN7routing12ErrorHandler10StatusCodeEhmEEclIJRKS3_RKhRKmEEEvDpOT_():
+
+        e7b2:	4b03      	ldr	r3, [pc, #12]	@ (e7c0 <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x140>)
+
+        e7b4:	a803      	add	r0, sp, #12
+
+        e7b6:	681b      	ldr	r3, [r3, #0]
+
+        e7b8:	4798      	blx	r3
+
+        e7ba:	693c      	ldr	r4, [r7, #16]
+
+        e7bc:	e7ef      	b.n	e79e <<a href="./13ad58c6f4beac0dba8116bfb988eaf8.html">io::udp::Receiver::dataReceived(udp::AbstractDatagramSocket&, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short)</a>+0x11e>
+
+        e7be:	bf00      	nop
+
+        e7c0:	20000000 	.word	0x20000000
+
+    </pre>
+
+    
+    <pre><a href="../../../routing/PduTransportRxAdapter.h/0bd2ba9b0f32e7bcbc23acdf4f4963f3.html">routing::PduTransportRxAdapter&lt;72u&gt;::peek() const (804)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

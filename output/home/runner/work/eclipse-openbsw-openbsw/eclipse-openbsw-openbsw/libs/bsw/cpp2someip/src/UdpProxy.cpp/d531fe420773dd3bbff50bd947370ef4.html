@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../UdpProxy.cpp.html">UdpProxy.cpp</a>:153
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::UdpProxy::send(ip::IPEndpoint const&amp;, unsigned long)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0002b4b0</td>
+                <td>
+    
+    
+</td>
+                <td>88 (static)</td>
+                <td>304</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            Σ=160
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...) (88)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../cpp2ethernet/src/udp/DatagramPacket.cpp/c62d05c7483fbe8943f0702d21614e6c.html">udp::DatagramPacket::DatagramPacket(unsigned char const*, unsigned short, ip::IPAddress, unsigned short) (44)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./5ee7c6cccc1c48b15b5614d46a8e1f73.html">someip::UdpProxy::close() (48)</a></pre>
+    
+
+    <pre>
+
+    someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long):
+
+       2b4b0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       2b4b4:	6803      	ldr	r3, [r0, #0]
+
+       2b4b6:	780f      	ldrb	r7, [r1, #0]
+
+       2b4b8:	695b      	ldr	r3, [r3, #20]
+
+       2b4ba:	f891 8001 	ldrb.w	r8, [r1, #1]
+
+       2b4be:	f891 9002 	ldrb.w	r9, [r1, #2]
+
+       2b4c2:	f891 a003 	ldrb.w	sl, [r1, #3]
+
+    _ZNK2ip10IPEndpoint7getPortEv():
+
+       2b4c6:	f8b1 b004 	ldrh.w	fp, [r1, #4]
+
+    someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long):
+
+       2b4ca:	b08d      	sub	sp, #52	@ 0x34
+
+       2b4cc:	4605      	mov	r5, r0
+
+       2b4ce:	460c      	mov	r4, r1
+
+       2b4d0:	4616      	mov	r6, r2
+
+       2b4d2:	4798      	blx	r3
+
+       2b4d4:	b1d0      	cbz	r0, 2b50c <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x5c>
+
+       2b4d6:	b19e      	cbz	r6, 2b500 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x50>
+
+    _ZNK2ip10IPEndpoint5isSetEv():
+
+       2b4d8:	79a3      	ldrb	r3, [r4, #6]
+
+       2b4da:	07db      	lsls	r3, r3, #31
+
+       2b4dc:	d41c      	bmi.n	2b518 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x68>
+
+    someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long):
+
+       2b4de:	493a      	ldr	r1, [pc, #232]	@ (2b5c8 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x118>)
+
+       2b4e0:	f8cd b00c 	str.w	fp, [sp, #12]
+
+       2b4e4:	f8cd a008 	str.w	sl, [sp, #8]
+
+       2b4e8:	e9cd 8900 	strd	r8, r9, [sp]
+
+       2b4ec:	4837      	ldr	r0, [pc, #220]	@ (2b5cc <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x11c>)
+
+       2b4ee:	463b      	mov	r3, r7
+
+       2b4f0:	7800      	ldrb	r0, [r0, #0]
+
+       2b4f2:	462a      	mov	r2, r5
+
+       2b4f4:	f7de f8c0 	bl	9678 <<a href="../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       2b4f8:	2000      	movs	r0, #0
+
+       2b4fa:	b00d      	add	sp, #52	@ 0x34
+
+       2b4fc:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       2b500:	4933      	ldr	r1, [pc, #204]	@ (2b5d0 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x120>)
+
+       2b502:	f8cd b00c 	str.w	fp, [sp, #12]
+
+       2b506:	f8cd a008 	str.w	sl, [sp, #8]
+
+       2b50a:	e7ed      	b.n	2b4e8 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x38>
+
+       2b50c:	4931      	ldr	r1, [pc, #196]	@ (2b5d4 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x124>)
+
+       2b50e:	f8cd b00c 	str.w	fp, [sp, #12]
+
+       2b512:	f8cd a008 	str.w	sl, [sp, #8]
+
+       2b516:	e7e7      	b.n	2b4e8 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x38>
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       2b518:	2300      	movs	r3, #0
+
+       2b51a:	9308      	str	r3, [sp, #32]
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2b51c:	1ce0      	adds	r0, r4, #3
+
+       2b51e:	1e63      	subs	r3, r4, #1
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       2b520:	aa08      	add	r2, sp, #32
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2b522:	f813 1f01 	ldrb.w	r1, [r3, #1]!
+
+       2b526:	f802 1b01 	strb.w	r1, [r2], #1
+
+       2b52a:	4298      	cmp	r0, r3
+
+       2b52c:	d1f9      	bne.n	2b522 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x72>
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       2b52e:	2300      	movs	r3, #0
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       2b530:	2204      	movs	r2, #4
+
+       2b532:	a908      	add	r1, sp, #32
+
+       2b534:	a807      	add	r0, sp, #28
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       2b536:	9307      	str	r3, [sp, #28]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       2b538:	f7d5 f8a6 	bl	688 <<a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       2b53c:	9b07      	ldr	r3, [sp, #28]
+
+    _ZNK2ip10IPEndpoint5isSetEv():
+
+       2b53e:	2b00      	cmp	r3, #0
+
+       2b540:	d0cd      	beq.n	2b4de <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x2e>
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       2b542:	68e9      	ldr	r1, [r5, #12]
+
+       2b544:	692b      	ldr	r3, [r5, #16]
+
+       2b546:	1a5b      	subs	r3, r3, r1
+
+    someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long):
+
+       2b548:	42b3      	cmp	r3, r6
+
+       2b54a:	d31c      	bcc.n	2b586 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0xd6>
+
+       2b54c:	7860      	ldrb	r0, [r4, #1]
+
+       2b54e:	7823      	ldrb	r3, [r4, #0]
+
+       2b550:	ea43 2300 	orr.w	r3, r3, r0, lsl #8
+
+       2b554:	78a0      	ldrb	r0, [r4, #2]
+
+       2b556:	ea43 4300 	orr.w	r3, r3, r0, lsl #16
+
+       2b55a:	78e0      	ldrb	r0, [r4, #3]
+
+       2b55c:	ea43 6300 	orr.w	r3, r3, r0, lsl #24
+
+       2b560:	88a0      	ldrh	r0, [r4, #4]
+
+       2b562:	9000      	str	r0, [sp, #0]
+
+       2b564:	b2b2      	uxth	r2, r6
+
+       2b566:	a808      	add	r0, sp, #32
+
+       2b568:	f7f4 fc5a 	bl	1fe20 <<a href="../../../cpp2ethernet/src/udp/DatagramPacket.cpp/c62d05c7483fbe8943f0702d21614e6c.html">udp::DatagramPacket::DatagramPacket(unsigned char const*, unsigned short, ip::IPAddress, unsigned short)</a>>
+
+       2b56c:	6a28      	ldr	r0, [r5, #32]
+
+       2b56e:	6803      	ldr	r3, [r0, #0]
+
+       2b570:	a908      	add	r1, sp, #32
+
+       2b572:	6a9b      	ldr	r3, [r3, #40]	@ 0x28
+
+       2b574:	4798      	blx	r3
+
+       2b576:	4604      	mov	r4, r0
+
+       2b578:	b9a8      	cbnz	r0, 2b5a6 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0xf6>
+
+       2b57a:	fab4 f084 	clz	r0, r4
+
+       2b57e:	0940      	lsrs	r0, r0, #5
+
+       2b580:	b00d      	add	sp, #52	@ 0x34
+
+       2b582:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       2b586:	e9cd 7800 	strd	r7, r8, [sp]
+
+       2b58a:	4810      	ldr	r0, [pc, #64]	@ (2b5cc <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x11c>)
+
+       2b58c:	f8cd b010 	str.w	fp, [sp, #16]
+
+       2b590:	f8cd a00c 	str.w	sl, [sp, #12]
+
+       2b594:	f8cd 9008 	str.w	r9, [sp, #8]
+
+       2b598:	490f      	ldr	r1, [pc, #60]	@ (2b5d8 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x128>)
+
+       2b59a:	7800      	ldrb	r0, [r0, #0]
+
+       2b59c:	4633      	mov	r3, r6
+
+       2b59e:	462a      	mov	r2, r5
+
+       2b5a0:	f7de f86a 	bl	9678 <<a href="../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       2b5a4:	e7a8      	b.n	2b4f8 <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x48>
+
+       2b5a6:	e9cd 7800 	strd	r7, r8, [sp]
+
+       2b5aa:	4603      	mov	r3, r0
+
+       2b5ac:	4807      	ldr	r0, [pc, #28]	@ (2b5cc <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x11c>)
+
+       2b5ae:	f8cd b010 	str.w	fp, [sp, #16]
+
+       2b5b2:	f8cd a00c 	str.w	sl, [sp, #12]
+
+       2b5b6:	f8cd 9008 	str.w	r9, [sp, #8]
+
+       2b5ba:	4908      	ldr	r1, [pc, #32]	@ (2b5dc <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0x12c>)
+
+       2b5bc:	7800      	ldrb	r0, [r0, #0]
+
+       2b5be:	462a      	mov	r2, r5
+
+       2b5c0:	f7de f85a 	bl	9678 <<a href="../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       2b5c4:	e7d9      	b.n	2b57a <<a href="./d531fe420773dd3bbff50bd947370ef4.html">someip::UdpProxy::send(ip::IPEndpoint const&, unsigned long)</a>+0xca>
+
+       2b5c6:	bf00      	nop
+
+       2b5c8:	0004f038 	.word	0x0004f038
+
+       2b5cc:	20000004 	.word	0x20000004
+
+       2b5d0:	0004eff8 	.word	0x0004eff8
+
+       2b5d4:	0004efb8 	.word	0x0004efb8
+
+       2b5d8:	0004f084 	.word	0x0004f084
+
+       2b5dc:	0004f0d4 	.word	0x0004f0d4
+
+    </pre>
+
+    
+    <pre><a href="./460c58b48b8997d294f9596d89c1887a.html">someip::UdpProxy::dataReceived(udp::AbstractDatagramSocket&amp;, ip::IPAddress, unsigned short, ip::IPAddress, unsigned short) (440)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 156</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 156</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    156
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    156
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    108
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">88</td>
+                <td><a href="../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html" class="icon-function">util::logger::Logger::error(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">88
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../SdOptionParser.cpp.html">SdOptionParser.cpp</a>:129
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&amp;, unsigned char const*&amp;, unsigned long, unsigned char, unsigned char&amp;, unsigned long&amp;, unsigned char const*&amp;, unsigned char&amp;, unsigned char&amp;, unsigned char&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0002d6d8</td>
+                <td>
+    
+    
+</td>
+                <td>48 (static)</td>
+                <td>340</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="./09ee28693ef6059768784cb088b6625c.html">someip::(anonymous namespace)::parseIpOption(someip::(anonymous namespace)::OptionCategory const&amp;, someip::SdOptions const&amp;, unsigned char&amp;, unsigned char&amp;) (356)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=84
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...) (56)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./0f6fdfdf9220c7d26965fee4be38802c.html">someip::(anonymous namespace)::goToOption(unsigned long, unsigned char const*&amp;, unsigned long, unsigned char&amp;, unsigned long&amp;) (140)</a></pre>
+    
+
+    <pre>
+
+    someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&):
+
+       2d6d8:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       2d6dc:	b083      	sub	sp, #12
+
+       2d6de:	e9dd 850c 	ldrd	r8, r5, [sp, #48]	@ 0x30
+
+       2d6e2:	2b00      	cmp	r3, #0
+
+       2d6e4:	d03c      	beq.n	2d760 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x88>
+
+       2d6e6:	2600      	movs	r6, #0
+
+       2d6e8:	4681      	mov	r9, r0
+
+       2d6ea:	460c      	mov	r4, r1
+
+       2d6ec:	4617      	mov	r7, r2
+
+       2d6ee:	469a      	mov	sl, r3
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj2EEC4Ev():
+
+       2d6f0:	46b3      	mov	fp, r6
+
+    someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&):
+
+       2d6f2:	682b      	ldr	r3, [r5, #0]
+
+       2d6f4:	1afb      	subs	r3, r7, r3
+
+       2d6f6:	2b01      	cmp	r3, #1
+
+       2d6f8:	f240 8086 	bls.w	2d808 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x130>
+
+       2d6fc:	6823      	ldr	r3, [r4, #0]
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj2EEC4Ev():
+
+       2d6fe:	f8ad b004 	strh.w	fp, [sp, #4]
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2d702:	7819      	ldrb	r1, [r3, #0]
+
+       2d704:	f88d 1004 	strb.w	r1, [sp, #4]
+
+       2d708:	785b      	ldrb	r3, [r3, #1]
+
+       2d70a:	f88d 3005 	strb.w	r3, [sp, #5]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj2ELi4321ELb1EE19copy_store_to_valueItEEvPKhRT_():
+
+       2d70e:	2202      	movs	r2, #2
+
+       2d710:	a901      	add	r1, sp, #4
+
+       2d712:	f10d 0006 	add.w	r0, sp, #6
+
+    _ZNK3etl14unaligned_typeItLi4321EEcvtEv():
+
+       2d716:	f8ad b006 	strh.w	fp, [sp, #6]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj2ELi4321ELb1EE19copy_store_to_valueItEEvPKhRT_():
+
+       2d71a:	f7d2 ffb5 	bl	688 <<a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl13reverse_bytesItEENS_9enable_ifIXaaaasrNS_11is_integralIT_EE5valuesrNS_11is_unsignedIS3_EE5valueeqsrNS_15integral_limitsIS3_EE4bitsLj16EES3_E4typeES3_():
+
+       2d71e:	f8bd 1006 	ldrh.w	r1, [sp, #6]
+
+    someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&):
+
+       2d722:	682b      	ldr	r3, [r5, #0]
+
+    _ZN3etl13reverse_bytesItEENS_9enable_ifIXaaaasrNS_11is_integralIT_EE5valuesrNS_11is_unsignedIS3_EE5valueeqsrNS_15integral_limitsIS3_EE4bitsLj16EES3_E4typeES3_():
+
+       2d724:	ba49      	rev16	r1, r1
+
+       2d726:	b289      	uxth	r1, r1
+
+    someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&):
+
+       2d728:	3103      	adds	r1, #3
+
+       2d72a:	1afa      	subs	r2, r7, r3
+
+       2d72c:	428a      	cmp	r2, r1
+
+       2d72e:	d36b      	bcc.n	2d808 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x130>
+
+       2d730:	6820      	ldr	r0, [r4, #0]
+
+       2d732:	f899 c000 	ldrb.w	ip, [r9]
+
+       2d736:	7882      	ldrb	r2, [r0, #2]
+
+       2d738:	f1bc 0f00 	cmp.w	ip, #0
+
+    isOptionCategory():
+
+       2d73c:	d014      	beq.n	2d768 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x90>
+
+       2d73e:	f1bc 0f01 	cmp.w	ip, #1
+
+       2d742:	d01b      	beq.n	2d77c <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0xa4>
+
+    someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&):
+
+       2d744:	440b      	add	r3, r1
+
+       2d746:	fa50 f181 	uxtab	r1, r0, r1
+
+       2d74a:	602b      	str	r3, [r5, #0]
+
+       2d74c:	6021      	str	r1, [r4, #0]
+
+       2d74e:	f898 3000 	ldrb.w	r3, [r8]
+
+       2d752:	3301      	adds	r3, #1
+
+       2d754:	b2db      	uxtb	r3, r3
+
+       2d756:	3601      	adds	r6, #1
+
+       2d758:	4556      	cmp	r6, sl
+
+       2d75a:	f888 3000 	strb.w	r3, [r8]
+
+       2d75e:	d1c8      	bne.n	2d6f2 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x1a>
+
+       2d760:	2001      	movs	r0, #1
+
+       2d762:	b003      	add	sp, #12
+
+       2d764:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    isOptionCategory():
+
+       2d768:	2a04      	cmp	r2, #4
+
+       2d76a:	d009      	beq.n	2d780 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0xa8>
+
+       2d76c:	2a06      	cmp	r2, #6
+
+       2d76e:	d1e9      	bne.n	2d744 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x6c>
+
+       2d770:	f04f 0c18 	mov.w	ip, #24
+
+       2d774:	f04f 0e15 	mov.w	lr, #21
+
+       2d778:	4663      	mov	r3, ip
+
+       2d77a:	e006      	b.n	2d78a <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0xb2>
+
+       2d77c:	2a14      	cmp	r2, #20
+
+       2d77e:	d136      	bne.n	2d7ee <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x116>
+
+       2d780:	f04f 0c0c 	mov.w	ip, #12
+
+       2d784:	f04f 0e09 	mov.w	lr, #9
+
+       2d788:	4663      	mov	r3, ip
+
+    someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&):
+
+       2d78a:	4561      	cmp	r1, ip
+
+       2d78c:	d137      	bne.n	2d7fe <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x126>
+
+       2d78e:	f810 e00e 	ldrb.w	lr, [r0, lr]
+
+       2d792:	f1be 0f11 	cmp.w	lr, #17
+
+       2d796:	d019      	beq.n	2d7cc <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0xf4>
+
+       2d798:	f1be 0f06 	cmp.w	lr, #6
+
+       2d79c:	d138      	bne.n	2d810 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x138>
+
+       2d79e:	9b11      	ldr	r3, [sp, #68]	@ 0x44
+
+       2d7a0:	9811      	ldr	r0, [sp, #68]	@ 0x44
+
+       2d7a2:	781b      	ldrb	r3, [r3, #0]
+
+       2d7a4:	3301      	adds	r3, #1
+
+       2d7a6:	b2db      	uxtb	r3, r3
+
+       2d7a8:	7003      	strb	r3, [r0, #0]
+
+       2d7aa:	9810      	ldr	r0, [sp, #64]	@ 0x40
+
+       2d7ac:	7800      	ldrb	r0, [r0, #0]
+
+       2d7ae:	4403      	add	r3, r0
+
+       2d7b0:	2b01      	cmp	r3, #1
+
+       2d7b2:	d016      	beq.n	2d7e2 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x10a>
+
+       2d7b4:	682b      	ldr	r3, [r5, #0]
+
+       2d7b6:	440b      	add	r3, r1
+
+       2d7b8:	602b      	str	r3, [r5, #0]
+
+       2d7ba:	6823      	ldr	r3, [r4, #0]
+
+       2d7bc:	fa53 f181 	uxtab	r1, r3, r1
+
+       2d7c0:	6021      	str	r1, [r4, #0]
+
+       2d7c2:	f898 3000 	ldrb.w	r3, [r8]
+
+       2d7c6:	3301      	adds	r3, #1
+
+       2d7c8:	b2db      	uxtb	r3, r3
+
+       2d7ca:	e7c4      	b.n	2d756 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x7e>
+
+       2d7cc:	9b10      	ldr	r3, [sp, #64]	@ 0x40
+
+       2d7ce:	9810      	ldr	r0, [sp, #64]	@ 0x40
+
+       2d7d0:	781b      	ldrb	r3, [r3, #0]
+
+       2d7d2:	3301      	adds	r3, #1
+
+       2d7d4:	b2db      	uxtb	r3, r3
+
+       2d7d6:	7003      	strb	r3, [r0, #0]
+
+       2d7d8:	9811      	ldr	r0, [sp, #68]	@ 0x44
+
+       2d7da:	7800      	ldrb	r0, [r0, #0]
+
+       2d7dc:	4403      	add	r3, r0
+
+       2d7de:	2b01      	cmp	r3, #1
+
+       2d7e0:	d1e8      	bne.n	2d7b4 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0xdc>
+
+       2d7e2:	980e      	ldr	r0, [sp, #56]	@ 0x38
+
+       2d7e4:	6823      	ldr	r3, [r4, #0]
+
+       2d7e6:	6003      	str	r3, [r0, #0]
+
+       2d7e8:	9b0f      	ldr	r3, [sp, #60]	@ 0x3c
+
+       2d7ea:	701a      	strb	r2, [r3, #0]
+
+       2d7ec:	e7e2      	b.n	2d7b4 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0xdc>
+
+    isOptionCategory():
+
+       2d7ee:	2a16      	cmp	r2, #22
+
+       2d7f0:	d1a8      	bne.n	2d744 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x6c>
+
+       2d7f2:	f04f 0c18 	mov.w	ip, #24
+
+       2d7f6:	f04f 0e15 	mov.w	lr, #21
+
+       2d7fa:	4663      	mov	r3, ip
+
+       2d7fc:	e7c5      	b.n	2d78a <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0xb2>
+
+    someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&):
+
+       2d7fe:	4808      	ldr	r0, [pc, #32]	@ (2d820 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x148>)
+
+       2d800:	4908      	ldr	r1, [pc, #32]	@ (2d824 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x14c>)
+
+       2d802:	7800      	ldrb	r0, [r0, #0]
+
+       2d804:	f7df fd26 	bl	d254 <<a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+       2d808:	2000      	movs	r0, #0
+
+       2d80a:	b003      	add	sp, #12
+
+       2d80c:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       2d810:	4b03      	ldr	r3, [pc, #12]	@ (2d820 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x148>)
+
+       2d812:	4905      	ldr	r1, [pc, #20]	@ (2d828 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x150>)
+
+       2d814:	7818      	ldrb	r0, [r3, #0]
+
+       2d816:	4673      	mov	r3, lr
+
+       2d818:	f7df fd1c 	bl	d254 <<a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+       2d81c:	e7f4      	b.n	2d808 <<a href="./0f527180e10eef97eef04444a7ac7724.html">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&, unsigned char const*&, unsigned long, unsigned char, unsigned char&, unsigned long&, unsigned char const*&, unsigned char&, unsigned char&, unsigned char&)</a>+0x130>
+
+       2d81e:	bf00      	nop
+
+       2d820:	20000004 	.word	0x20000004
+
+       2d824:	0004f84c 	.word	0x0004f84c
+
+       2d828:	0004f890 	.word	0x0004f890
+
+    </pre>
+
+    
+    <pre><a href="./09ee28693ef6059768784cb088b6625c.html">someip::(anonymous namespace)::parseIpOption(someip::(anonymous namespace)::OptionCategory const&amp;, someip::SdOptions const&amp;, unsigned char&amp;, unsigned char&amp;) (356)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 596</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 124</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    596
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    124
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    548
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html" class="icon-function">util::logger::Logger::warn(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">528
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 528</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 2,416</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    528
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,416
+                    
+                    
+                </td>
+                <td class="col_size">340</td>
+                <td><a href="./0f527180e10eef97eef04444a7ac7724.html" class="icon-function">someip::(anonymous namespace)::searchOptions(someip::(anonymous namespace)::OptionCategory const&amp;, unsigned char const*&amp;, unsigned long, unsigned char, unsigned char&amp;, unsigned long&amp;, unsigned char const*&amp;, unsigned char&amp;, unsigned char&amp;, unsigned char&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    480
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                88 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,076
+                    
+                    
+                </td>
+                <td class="col_size">356</td>
+                <td><a href="./09ee28693ef6059768784cb088b6625c.html" class="icon-function">someip::(anonymous namespace)::parseIpOption(someip::(anonymous namespace)::OptionCategory const&amp;, someip::SdOptions const&amp;, unsigned char&amp;, unsigned char&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    392
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,720
+                    
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td><a href="./2b26fd3331211e2080532ba97fde2063.html" class="icon-function">someip::SdOptionParser::parseIpEndpointOption(someip::SdOptions const&amp;, unsigned char&amp;, unsigned char&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    368
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,684
+                    
+                    
+                </td>
+                <td class="col_size">352</td>
+                <td><a href="../SdMessageParser.cpp/98915f04ca3b32d585b1cf996051f635.html" class="icon-function">someip::(anonymous namespace)::searchIPEndpointOption(someip::SdOptions const&amp;, ip::IPAddress const&amp;, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    304
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                80 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,332
+                    
+                    
+                </td>
+                <td class="col_size">232</td>
+                <td><a href="../SdMessageParser.cpp/100638bbb945f44b24b73ec0d5e19384.html" class="icon-function">someip::SdMessageParser::handleEntrySubscribe(someip::SdOptions const&amp;, unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, unsigned short, ip::IPEndpoint const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    224
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,100
+                    
+                    
+                </td>
+                <td class="col_size">624</td>
+                <td><a href="../SdMessageParser.cpp/5bda5bf8c4ddeb5bc28b167d6f8ee6c5.html" class="icon-function">someip::SdMessageParser::parseEntry(etl::span&lt;unsigned char const, 4294967295u&gt; const&amp;, ip::IPEndpoint const&amp;, bool, bool, someip::SdOptions&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                80 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    476
+                    
+                    
+                </td>
+                <td class="col_size">196</td>
+                <td><a href="../SdMessageParser.cpp/3f447b36849ba2a900af75daa12da56a.html" class="icon-function">someip::SdMessageParser::parseMessage(etl::span&lt;unsigned char const, 4294967295u&gt; const&amp;, ip::IPEndpoint const&amp;, bool)</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">280</td>
+                <td><a href="../SdMessageParser.cpp/ed820086fb36cd3b0f6bb28588bf8abe.html" class="icon-function">someip::SdMessageParser::handleMessage(someip::SomeIpMessage const&amp;, ip::IPEndpoint const&amp;, bool)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

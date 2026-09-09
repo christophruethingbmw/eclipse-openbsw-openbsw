@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../middlewareConfiguration.html">middlewareConfiguration</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../MemoryLayout.cpp.html">MemoryLayout.cpp</a>:23
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">middleware::shm::createMemoryLayout()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0004026c</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>32 (static)</td>
+                <td>240</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../application/src/app/app.cpp/4da5c80e94ffd100bf7197f59436fa02.html">app::startApp() (956)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            Σ=168
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../libs/bsw/middleware/src/middleware/memory/PoolBase.cpp/718684ccdfc51330e1f58a9ff61accdd.html">middleware::memory::PoolBase::PoolBase(unsigned char*, unsigned int, unsigned int, unsigned int, unsigned char*) (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../libs/bsw/middleware/src/middleware/memory/PoolBase.cpp/174d1e7f55d2d7e4be74ade13d14a1e7.html">middleware::memory::PoolBase::initialize() (124)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../platform_integration/time/src/SystemTimeProvider.cpp/e8491afd92bb5902131786a4fe29c418.html">middleware::time::getCurrentTimeInMs() (4)</a></pre>
+    
+
+    <pre>
+
+    middleware::shm::createMemoryLayout():
+
+       4026c:	b570      	push	{r4, r5, r6, lr}
+
+    _ZNK3etl13typed_storageIN10middleware3shm12MemoryLayoutEE9has_valueEv():
+
+       4026e:	4e36      	ldr	r6, [pc, #216]	@ (40348 <<a href="./d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout()</a>+0xdc>)
+
+    _ZN3etl13typed_storageIN10middleware3shm12MemoryLayoutEE6createIJEEERS3_DpOT_():
+
+       40270:	f896 3818 	ldrb.w	r3, [r6, #2072]	@ 0x818
+
+    middleware::shm::createMemoryLayout():
+
+       40274:	b084      	sub	sp, #16
+
+    _ZN3etl13typed_storageIN10middleware3shm12MemoryLayoutEE6createIJEEERS3_DpOT_():
+
+       40276:	b11b      	cbz	r3, 40280 <<a href="./d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout()</a>+0x14>
+
+       40278:	4b34      	ldr	r3, [pc, #208]	@ (4034c <<a href="./d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout()</a>+0xe0>)
+
+       4027a:	a803      	add	r0, sp, #12
+
+       4027c:	681b      	ldr	r3, [r3, #0]
+
+       4027e:	4798      	blx	r3
+
+    _ZN10middleware5queue9QueueBaseC4Em():
+
+       40280:	4d33      	ldr	r5, [pc, #204]	@ (40350 <<a href="./d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout()</a>+0xe4>)
+
+    _ZN3etl13typed_storageIN10middleware3shm12MemoryLayoutEE6createIJEEERS3_DpOT_():
+
+       40282:	4831      	ldr	r0, [pc, #196]	@ (40348 <<a href="./d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout()</a>+0xdc>)
+
+       40284:	f640 0218 	movw	r2, #2072	@ 0x818
+
+       40288:	2100      	movs	r1, #0
+
+       4028a:	f7c0 fa0b 	bl	6a4 <<a href="../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN10middleware5queue9QueueBaseC4Em():
+
+       4028e:	230a      	movs	r3, #10
+
+    _ZN10middleware5queue5QueueINS0_11QueueTraitsINS_4core7MessageELt10ENS_11concurrency11integration13ScopedECULockEPhEEvEC4EPVh():
+
+       40290:	f105 0014 	add.w	r0, r5, #20
+
+       40294:	f44f 7220 	mov.w	r2, #640	@ 0x280
+
+       40298:	2100      	movs	r1, #0
+
+    _ZN10middleware5queue9QueueBaseC4Em():
+
+       4029a:	6073      	str	r3, [r6, #4]
+
+    _ZN10middleware5queue5QueueINS0_11QueueTraitsINS_4core7MessageELt10ENS_11concurrency11integration13ScopedECULockEPhEEvEC4EPVh():
+
+       4029c:	f7c0 fa02 	bl	6a4 <<a href="../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN3etl5arrayIN10middleware4core7MessageELj10EEC4Ev():
+
+       402a0:	f105 0414 	add.w	r4, r5, #20
+
+       402a4:	f505 7525 	add.w	r5, r5, #660	@ 0x294
+
+    _ZN10middleware4core7Message11PayloadTypeC4Ev():
+
+       402a8:	f104 0010 	add.w	r0, r4, #16
+
+       402ac:	2230      	movs	r2, #48	@ 0x30
+
+       402ae:	2100      	movs	r1, #0
+
+    _ZN3etl5arrayIN10middleware4core7MessageELj10EEC4Ev():
+
+       402b0:	3440      	adds	r4, #64	@ 0x40
+
+    _ZN10middleware4core7Message11PayloadTypeC4Ev():
+
+       402b2:	f7c0 f9f7 	bl	6a4 <<a href="../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN3etl5arrayIN10middleware4core7MessageELj10EEC4Ev():
+
+       402b6:	42a5      	cmp	r5, r4
+
+       402b8:	d1f6      	bne.n	402a8 <<a href="./d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout()</a>+0x3c>
+
+    _ZN10middleware5queue9QueueBaseC4Em():
+
+       402ba:	4d26      	ldr	r5, [pc, #152]	@ (40354 <<a href="./d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout()</a>+0xe8>)
+
+    _ZN10middleware5queue10QueueMutexIPhvEC4EPVh():
+
+       402bc:	f8c6 62a4 	str.w	r6, [r6, #676]	@ 0x2a4
+
+    _ZN10middleware5queue9QueueBaseC4Em():
+
+       402c0:	220a      	movs	r2, #10
+
+       402c2:	2300      	movs	r3, #0
+
+    _ZN3etl6atomicImLb1EEC4Em():
+
+       402c4:	2100      	movs	r1, #0
+
+    _ZN10middleware5queue9QueueBaseC4Em():
+
+       402c6:	e9c6 23aa 	strd	r2, r3, [r6, #680]	@ 0x2a8
+
+    _ZN10middleware5queue5QueueINS0_11QueueTraitsINS_4core7MessageELt10ENS_11concurrency11integration13ScopedECULockEPhEEvEC4EPVh():
+
+       402ca:	f105 0014 	add.w	r0, r5, #20
+
+       402ce:	f44f 7220 	mov.w	r2, #640	@ 0x280
+
+    _ZN10middleware5queue9QueueBaseC4Em():
+
+       402d2:	e9c6 11ac 	strd	r1, r1, [r6, #688]	@ 0x2b0
+
+       402d6:	6069      	str	r1, [r5, #4]
+
+       402d8:	60a9      	str	r1, [r5, #8]
+
+       402da:	60e9      	str	r1, [r5, #12]
+
+       402dc:	6129      	str	r1, [r5, #16]
+
+    _ZN10middleware5queue5QueueINS0_11QueueTraitsINS_4core7MessageELt10ENS_11concurrency11integration13ScopedECULockEPhEEvEC4EPVh():
+
+       402de:	f7c0 f9e1 	bl	6a4 <<a href="../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN3etl5arrayIN10middleware4core7MessageELj10EEC4Ev():
+
+       402e2:	f105 0414 	add.w	r4, r5, #20
+
+       402e6:	f505 7525 	add.w	r5, r5, #660	@ 0x294
+
+    _ZN10middleware4core7Message11PayloadTypeC4Ev():
+
+       402ea:	f104 0010 	add.w	r0, r4, #16
+
+       402ee:	2230      	movs	r2, #48	@ 0x30
+
+       402f0:	2100      	movs	r1, #0
+
+    _ZN3etl5arrayIN10middleware4core7MessageELj10EEC4Ev():
+
+       402f2:	3440      	adds	r4, #64	@ 0x40
+
+    _ZN10middleware4core7Message11PayloadTypeC4Ev():
+
+       402f4:	f7c0 f9d6 	bl	6a4 <<a href="../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN3etl5arrayIN10middleware4core7MessageELj10EEC4Ev():
+
+       402f8:	42a5      	cmp	r5, r4
+
+       402fa:	d1f6      	bne.n	402ea <<a href="./d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout()</a>+0x7e>
+
+    _ZN10middleware5queue10QueueMutexIPhvEC4EPVh():
+
+       402fc:	4c16      	ldr	r4, [pc, #88]	@ (40358 <<a href="./d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout()</a>+0xec>)
+
+    _ZN10middleware6memory4PoolILj10ELj64EEC4Ev():
+
+       402fe:	f604 0213 	addw	r2, r4, #2067	@ 0x813
+
+    _ZN10middleware6memory13AllocatorBaseINS0_10AggregatorIJNS0_4PoolILj10ELj64EEEEEEEC4ERVh():
+
+       40302:	1c63      	adds	r3, r4, #1
+
+    _ZN10middleware6memory4PoolILj10ELj64EEC4Ev():
+
+       40304:	9201      	str	r2, [sp, #4]
+
+    _ZN10middleware6memory13AllocatorBaseINS0_10AggregatorIJNS0_4PoolILj10ELj64EEEEEEEC4ERVh():
+
+       40306:	2000      	movs	r0, #0
+
+       40308:	f8c6 354c 	str.w	r3, [r6, #1356]	@ 0x54c
+
+       4030c:	2100      	movs	r1, #0
+
+       4030e:	f204 534f 	addw	r3, r4, #1359	@ 0x54f
+
+       40312:	e9c3 0100 	strd	r0, r1, [r3]
+
+    _ZN10middleware6memory4PoolILj10ELj64EEC4Ev():
+
+       40316:	220a      	movs	r2, #10
+
+       40318:	2340      	movs	r3, #64	@ 0x40
+
+    _ZN10middleware6memory13AllocatorBaseINS0_10AggregatorIJNS0_4PoolILj10ELj64EEEEEEEC4ERVh():
+
+       4031a:	2100      	movs	r1, #0
+
+    _ZN10middleware6memory4PoolILj10ELj64EEC4Ev():
+
+       4031c:	9200      	str	r2, [sp, #0]
+
+       4031e:	f204 505b 	addw	r0, r4, #1371	@ 0x55b
+
+       40322:	461a      	mov	r2, r3
+
+    _ZN10middleware6memory13AllocatorBaseINS0_10AggregatorIJNS0_4PoolILj10ELj64EEEEEEEC4ERVh():
+
+       40324:	f8c6 1558 	str.w	r1, [r6, #1368]	@ 0x558
+
+    _ZN10middleware5queue10QueueMutexIPhvEC4EPVh():
+
+       40328:	f8c6 4548 	str.w	r4, [r6, #1352]	@ 0x548
+
+    _ZN10middleware6memory4PoolILj10ELj64EEC4Ev():
+
+       4032c:	f204 5193 	addw	r1, r4, #1427	@ 0x593
+
+       40330:	f007 f8da 	bl	474e8 <<a href="../../../../../libs/bsw/middleware/src/middleware/memory/PoolBase.cpp/718684ccdfc51330e1f58a9ff61accdd.html">middleware::memory::PoolBase::PoolBase(unsigned char*, unsigned int, unsigned int, unsigned int, unsigned char*)</a>>
+
+    _ZN10middleware6memory10AggregatorIJNS0_4PoolILj10ELj64EEEEE5TryDoIN3etl5tupleIJS3_EEELm0EE10initializeEv():
+
+       40334:	f204 505b 	addw	r0, r4, #1371	@ 0x55b
+
+       40338:	f007 f8de 	bl	474f8 <<a href="../../../../../libs/bsw/middleware/src/middleware/memory/PoolBase.cpp/174d1e7f55d2d7e4be74ade13d14a1e7.html">middleware::memory::PoolBase::initialize()</a>>
+
+    _ZN3etl13typed_storageIN10middleware3shm12MemoryLayoutEE6createIJEEERS3_DpOT_():
+
+       4033c:	2301      	movs	r3, #1
+
+       4033e:	f886 3818 	strb.w	r3, [r6, #2072]	@ 0x818
+
+    middleware::shm::createMemoryLayout():
+
+       40342:	b004      	add	sp, #16
+
+       40344:	bd70      	pop	{r4, r5, r6, pc}
+
+       40346:	bf00      	nop
+
+       40348:	20019ac0 	.word	0x20019ac0
+
+       4034c:	20000000 	.word	0x20000000
+
+       40350:	20019ad0 	.word	0x20019ad0
+
+       40354:	20019d74 	.word	0x20019d74
+
+       40358:	20019ac1 	.word	0x20019ac1
+
+    </pre>
+
+    
+    <pre><a href="./7334f55f69b45457fd9a9a76d23ba3eb.html">middleware::shm::getMemoryLayout() (40)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 112</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 124</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">124</td>
+                <td><a href="../../../../../libs/bsw/middleware/src/middleware/memory/PoolBase.cpp/174d1e7f55d2d7e4be74ade13d14a1e7.html" class="icon-function">middleware::memory::PoolBase::initialize()</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">80
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 80</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,196</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    80
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,196
+                    
+                    
+                </td>
+                <td class="col_size">240</td>
+                <td><a href="./d9a9feaa1a5082265c00a162ec6b9aa2.html" class="icon-function">middleware::shm::createMemoryLayout()</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">956</td>
+                <td><a href="../../../application/src/app/app.cpp/4da5c80e94ffd100bf7197f59436fa02.html" class="icon-function">app::startApp()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

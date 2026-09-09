@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../../../../platforms.html">platforms</a></li>
+        
+        <li><a href="../../../../../../s32k148evb.html">s32k148evb</a></li>
+        
+        <li><a href="../../../../../bspConfiguration.html">bspConfiguration</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../bsp.html">bsp</a></li>
+        
+        <li ><a href="../../SystemTimer.html">SystemTimer</a>
+            </li>
+
+        
+        <li class="active"><a href="../SystemTimer.cpp.html">SystemTimer.cpp</a>:55
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">initSystemTimer</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00043110</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>16 (static)</td>
+                <td>108</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../main/src/lifecycle/StaticBsp.cpp/568defa6d3c5321bae4f8323c975656b.html">StaticBsp::StaticBsp() (88)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../stdIo/stdIo.cpp/bc118f5aee818c2804e0f8698afb9326.html">getByteFromStdin (72)</a></pre>
+    
+
+    <pre>
+
+    initSystemTimer():
+
+       43110:	b410      	push	{r4}
+
+       43112:	b083      	sub	sp, #12
+
+       43114:	f3ef 8410 	mrs	r4, PRIMASK
+
+    getMachineStateRegisterValueAndSuspendAllInterrupts():
+
+       43118:	b672      	cpsid	i
+
+    initSystemTimer():
+
+       4311a:	4b17      	ldr	r3, [pc, #92]	@ (43178 <<a href="./569da1184ccffe4435b71ec3494c0a13.html">initSystemTimer</a>+0x68>)
+
+    _ZN10interrupts36SuspendResumeAllInterruptsScopedLockC4Ev():
+
+       4311c:	9401      	str	r4, [sp, #4]
+
+    initSystemTimer():
+
+       4311e:	2201      	movs	r2, #1
+
+       43120:	2100      	movs	r1, #0
+
+       43122:	f04f 30ff 	mov.w	r0, #4294967295	@ 0xffffffff
+
+       43126:	609a      	str	r2, [r3, #8]
+
+       43128:	6299      	str	r1, [r3, #40]	@ 0x28
+
+       4312a:	6218      	str	r0, [r3, #32]
+
+       4312c:	f04f 20e0 	mov.w	r0, #3758153728	@ 0xe000e000
+
+       43130:	615a      	str	r2, [r3, #20]
+
+       43132:	f8d0 3dfc 	ldr.w	r3, [r0, #3580]	@ 0xdfc
+
+       43136:	4a11      	ldr	r2, [pc, #68]	@ (4317c <<a href="./569da1184ccffe4435b71ec3494c0a13.html">initSystemTimer</a>+0x6c>)
+
+       43138:	f043 7380 	orr.w	r3, r3, #16777216	@ 0x1000000
+
+       4313c:	f8c0 3dfc 	str.w	r3, [r0, #3580]	@ 0xdfc
+
+       43140:	6051      	str	r1, [r2, #4]
+
+       43142:	6811      	ldr	r1, [r2, #0]
+
+       43144:	4b0e      	ldr	r3, [pc, #56]	@ (43180 <<a href="./569da1184ccffe4435b71ec3494c0a13.html">initSystemTimer</a>+0x70>)
+
+       43146:	ed9f 7b0a 	vldr	d7, [pc, #40]	@ 43170 <<a href="./569da1184ccffe4435b71ec3494c0a13.html">initSystemTimer</a>+0x60>
+
+       4314a:	f041 0101 	orr.w	r1, r1, #1
+
+       4314e:	6011      	str	r1, [r2, #0]
+
+       43150:	2000      	movs	r0, #0
+
+       43152:	2105      	movs	r1, #5
+
+       43154:	2250      	movs	r2, #80	@ 0x50
+
+       43156:	ed83 7b00 	vstr	d7, [r3]
+
+       4315a:	e9c3 0102 	strd	r0, r1, [r3, #8]
+
+       4315e:	611a      	str	r2, [r3, #16]
+
+       43160:	9b01      	ldr	r3, [sp, #4]
+
+    resumeAllInterrupts():
+
+       43162:	f383 8810 	msr	PRIMASK, r3
+
+    initSystemTimer():
+
+       43166:	b003      	add	sp, #12
+
+       43168:	f85d 4b04 	ldr.w	r4, [sp], #4
+
+       4316c:	4770      	bx	lr
+
+       4316e:	bf00      	nop
+
+    	...
+
+       43178:	40037000 	.word	0x40037000
+
+       4317c:	e0001000 	.word	0xe0001000
+
+       43180:	20000018 	.word	0x20000018
+
+    </pre>
+
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 32</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 196</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    32
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    196
+                    
+                    
+                </td>
+                <td class="col_size">108</td>
+                <td><a href="./569da1184ccffe4435b71ec3494c0a13.html" class="icon-function">initSystemTimer</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">88</td>
+                <td><a href="../../../../../main/src/lifecycle/StaticBsp.cpp/568defa6d3c5321bae4f8323c975656b.html" class="icon-function">StaticBsp::StaticBsp()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

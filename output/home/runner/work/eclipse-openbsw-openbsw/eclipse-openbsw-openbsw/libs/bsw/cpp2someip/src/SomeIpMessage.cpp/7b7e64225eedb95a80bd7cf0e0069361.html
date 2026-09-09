@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../SomeIpMessage.cpp.html">SomeIpMessage.cpp</a>:153
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::SomeIpMessage::setClientId(unsigned short)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00029048</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>24 (static)</td>
+                <td>56</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../RpcHandler.cpp/81374600d5dddd89cdb8f7ec3d5d2b5f.html">someip::RpcHandler::sendRequest(someip::ISomeIpSerializable const*, unsigned short, unsigned short, unsigned char, bool, someip::IRpcChannel&amp;, unsigned long) (576)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=84
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="./1cf2c4f9b330ebbe4f693d65dcead5e3.html">someip::SomeIpMessage::getRequestId() const (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./72857a185841abdd87e24989491387e8.html">someip::SomeIpMessage::getClientId() const (12)</a></pre>
+    
+
+    <pre>
+
+    someip::SomeIpMessage::setClientId(unsigned short):
+
+       29048:	b530      	push	{r4, r5, lr}
+
+       2904a:	b083      	sub	sp, #12
+
+       2904c:	040d      	lsls	r5, r1, #16
+
+       2904e:	4604      	mov	r4, r0
+
+    someip::SomeIpMessage::getSessionId() const():
+
+       29050:	f7ff ffc2 	bl	28fd8 <<a href="./1cf2c4f9b330ebbe4f693d65dcead5e3.html">someip::SomeIpMessage::getRequestId() const</a>>
+
+    _ZNK3etl4spanIhLj4294967295EEixEj():
+
+       29054:	6824      	ldr	r4, [r4, #0]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_value_to_storeImEEvRKT_Ph():
+
+       29056:	2204      	movs	r2, #4
+
+    someip::SomeIpMessage::setClientId(unsigned short):
+
+       29058:	b283      	uxth	r3, r0
+
+       2905a:	432b      	orrs	r3, r5
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_value_to_storeImEEvRKT_Ph():
+
+       2905c:	eb0d 0102 	add.w	r1, sp, r2
+
+       29060:	f104 0008 	add.w	r0, r4, #8
+
+       29064:	9301      	str	r3, [sp, #4]
+
+       29066:	f7d7 fb0f 	bl	688 <<a href="../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl4swapIhEEvRT_S2_():
+
+       2906a:	7a21      	ldrb	r1, [r4, #8]
+
+       2906c:	7ae0      	ldrb	r0, [r4, #11]
+
+       2906e:	7a63      	ldrb	r3, [r4, #9]
+
+       29070:	7aa2      	ldrb	r2, [r4, #10]
+
+       29072:	7220      	strb	r0, [r4, #8]
+
+       29074:	72e1      	strb	r1, [r4, #11]
+
+       29076:	7262      	strb	r2, [r4, #9]
+
+       29078:	72a3      	strb	r3, [r4, #10]
+
+    someip::SomeIpMessage::setClientId(unsigned short):
+
+       2907a:	b003      	add	sp, #12
+
+       2907c:	bd30      	pop	{r4, r5, pc}
+
+       2907e:	bf00      	nop
+
+    </pre>
+
+    
+    <pre><a href="./ddf73cfbad90061924476ee5a59d704c.html">someip::SomeIpMessage::getSessionId() const (12)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 176</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 56</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    176
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="./1cf2c4f9b330ebbe4f693d65dcead5e3.html" class="icon-function">someip::SomeIpMessage::getRequestId() const</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">160
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 160</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 632</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    160
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    632
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="./7b7e64225eedb95a80bd7cf0e0069361.html" class="icon-function">someip::SomeIpMessage::setClientId(unsigned short)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                136 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">576</td>
+                <td><a href="../RpcHandler.cpp/81374600d5dddd89cdb8f7ec3d5d2b5f.html" class="icon-function">someip::RpcHandler::sendRequest(someip::ISomeIpSerializable const*, unsigned short, unsigned short, unsigned char, bool, someip::IRpcChannel&amp;, unsigned long)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

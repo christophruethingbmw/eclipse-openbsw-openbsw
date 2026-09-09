@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../routing.html">routing</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../routing.html">routing</a>
+            </li>
+
+        
+        <li class="active"><a href="../PduTransportTxAdapter.cpp.html">PduTransportTxAdapter.cpp</a>:29
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">routing::PduTransportTxAdapter::maxSize() const</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0003db3c</td>
+                <td>
+    
+    
+</td>
+                <td>0 (static)</td>
+                <td>100</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./fd13775d37b8370b02a3efa49c06000b.html">routing::PduTransportTxAdapter::flush() (100)</a></pre>
+    
+
+    <pre>
+
+    routing::PduTransportTxAdapter::maxSize() const():
+
+       3db3c:	6840      	ldr	r0, [r0, #4]
+
+       3db3e:	4a17      	ldr	r2, [pc, #92]	@ (3db9c <<a href="./8bad9a0bd5a09707d9053e7c0e092deb.html">routing::PduTransportTxAdapter::maxSize() const</a>+0x60>)
+
+       3db40:	6803      	ldr	r3, [r0, #0]
+
+       3db42:	689b      	ldr	r3, [r3, #8]
+
+       3db44:	4293      	cmp	r3, r2
+
+       3db46:	d127      	bne.n	3db98 <<a href="./8bad9a0bd5a09707d9053e7c0e092deb.html">routing::PduTransportTxAdapter::maxSize() const</a>+0x5c>
+
+       3db48:	6840      	ldr	r0, [r0, #4]
+
+       3db4a:	6802      	ldr	r2, [r0, #0]
+
+       3db4c:	6892      	ldr	r2, [r2, #8]
+
+       3db4e:	429a      	cmp	r2, r3
+
+       3db50:	d121      	bne.n	3db96 <<a href="./8bad9a0bd5a09707d9053e7c0e092deb.html">routing::PduTransportTxAdapter::maxSize() const</a>+0x5a>
+
+       3db52:	6840      	ldr	r0, [r0, #4]
+
+       3db54:	6803      	ldr	r3, [r0, #0]
+
+       3db56:	689b      	ldr	r3, [r3, #8]
+
+       3db58:	4293      	cmp	r3, r2
+
+       3db5a:	d11d      	bne.n	3db98 <<a href="./8bad9a0bd5a09707d9053e7c0e092deb.html">routing::PduTransportTxAdapter::maxSize() const</a>+0x5c>
+
+       3db5c:	6840      	ldr	r0, [r0, #4]
+
+       3db5e:	6802      	ldr	r2, [r0, #0]
+
+       3db60:	6892      	ldr	r2, [r2, #8]
+
+       3db62:	429a      	cmp	r2, r3
+
+       3db64:	d117      	bne.n	3db96 <<a href="./8bad9a0bd5a09707d9053e7c0e092deb.html">routing::PduTransportTxAdapter::maxSize() const</a>+0x5a>
+
+       3db66:	6840      	ldr	r0, [r0, #4]
+
+       3db68:	6803      	ldr	r3, [r0, #0]
+
+       3db6a:	689b      	ldr	r3, [r3, #8]
+
+       3db6c:	4293      	cmp	r3, r2
+
+       3db6e:	d113      	bne.n	3db98 <<a href="./8bad9a0bd5a09707d9053e7c0e092deb.html">routing::PduTransportTxAdapter::maxSize() const</a>+0x5c>
+
+       3db70:	6840      	ldr	r0, [r0, #4]
+
+       3db72:	6802      	ldr	r2, [r0, #0]
+
+       3db74:	6892      	ldr	r2, [r2, #8]
+
+       3db76:	429a      	cmp	r2, r3
+
+       3db78:	d10d      	bne.n	3db96 <<a href="./8bad9a0bd5a09707d9053e7c0e092deb.html">routing::PduTransportTxAdapter::maxSize() const</a>+0x5a>
+
+       3db7a:	6840      	ldr	r0, [r0, #4]
+
+       3db7c:	6803      	ldr	r3, [r0, #0]
+
+       3db7e:	689b      	ldr	r3, [r3, #8]
+
+       3db80:	4293      	cmp	r3, r2
+
+       3db82:	d109      	bne.n	3db98 <<a href="./8bad9a0bd5a09707d9053e7c0e092deb.html">routing::PduTransportTxAdapter::maxSize() const</a>+0x5c>
+
+       3db84:	6840      	ldr	r0, [r0, #4]
+
+       3db86:	6802      	ldr	r2, [r0, #0]
+
+       3db88:	6892      	ldr	r2, [r2, #8]
+
+       3db8a:	429a      	cmp	r2, r3
+
+       3db8c:	d103      	bne.n	3db96 <<a href="./8bad9a0bd5a09707d9053e7c0e092deb.html">routing::PduTransportTxAdapter::maxSize() const</a>+0x5a>
+
+       3db8e:	6840      	ldr	r0, [r0, #4]
+
+       3db90:	6803      	ldr	r3, [r0, #0]
+
+       3db92:	689b      	ldr	r3, [r3, #8]
+
+       3db94:	4718      	bx	r3
+
+       3db96:	4710      	bx	r2
+
+       3db98:	4718      	bx	r3
+
+       3db9a:	bf00      	nop
+
+       3db9c:	0003db3d 	.word	0x0003db3d
+
+    </pre>
+
+    
+    <pre><a href="./f9eb49528b7890894c492b01b4947382.html">routing::PduTransportTxAdapter::PduTransportTxAdapter(io::IWriter&amp;, routing::ErrorHandler) (64)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

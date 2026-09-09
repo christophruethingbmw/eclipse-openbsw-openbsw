@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../../../../../platforms.html">platforms</a></li>
+        
+        <li><a href="../../../../../../../s32k148evb.html">s32k148evb</a></li>
+        
+        <li><a href="../../../../../../bspConfiguration.html">bspConfiguration</a></li>
+        
+        <li><a href="../../../../../src.html">src</a></li>
+        
+        <li><a href="../../../../bsp.html">bsp</a></li>
+        
+        <li><a href="../../../io.html">io</a></li>
+        
+        <li ><a href="../../outputPwm.html">outputPwm</a>
+            </li>
+
+        
+        <li class="active"><a href="../PwmSupport.cpp.html">PwmSupport.cpp</a>:32
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">bios::PwmSupport::start()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00042fd4</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>4 (static)</td>
+                <td>180</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../main/src/lifecycle/StaticBsp.cpp/bbaf0c02e73cc075f1271c2d33d1014c.html">StaticBsp::hwInit() (236)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./a62878f1512e9bcda8d1359803735beb.html">bios::PwmSupport::init() (216)</a></pre>
+    
+
+    <pre>
+
+    _ZN4bios3FtmILh8EE22writeProtectionDisableEb():
+
+       42fd4:	6842      	ldr	r2, [r0, #4]
+
+    _ZN4bios7FtmEPwmILh2ELt100ELh1ELh1EE8clrEventEv():
+
+       42fd6:	6883      	ldr	r3, [r0, #8]
+
+       42fd8:	6812      	ldr	r2, [r2, #0]
+
+    _ZN4bios3FtmILh8EE22writeProtectionDisableEb():
+
+       42fda:	6d51      	ldr	r1, [r2, #84]	@ 0x54
+
+       42fdc:	f041 0104 	orr.w	r1, r1, #4
+
+    bios::PwmSupport::start():
+
+       42fe0:	b410      	push	{r4}
+
+    _ZN4bios7FtmEPwmILh2ELt100ELh1ELh1EE5startEv():
+
+       42fe2:	68c4      	ldr	r4, [r0, #12]
+
+    _ZN4bios3FtmILh8EE22writeProtectionDisableEb():
+
+       42fe4:	6551      	str	r1, [r2, #84]	@ 0x54
+
+    _ZN4bios7FtmEPwmILh2ELt100ELh1ELh1EE8clrEventEv():
+
+       42fe6:	6819      	ldr	r1, [r3, #0]
+
+       42fe8:	f021 0180 	bic.w	r1, r1, #128	@ 0x80
+
+       42fec:	6019      	str	r1, [r3, #0]
+
+    _ZN4bios3FtmILh8EE8setPWMenEhb():
+
+       42fee:	6811      	ldr	r1, [r2, #0]
+
+       42ff0:	f441 2180 	orr.w	r1, r1, #262144	@ 0x40000
+
+       42ff4:	6011      	str	r1, [r2, #0]
+
+    _ZN4bios7FtmEPwmILh2ELt100ELh1ELh1EE5startEv():
+
+       42ff6:	7861      	ldrb	r1, [r4, #1]
+
+       42ff8:	2900      	cmp	r1, #0
+
+       42ffa:	d02f      	beq.n	4305c <<a href="./94a05f78912d5444a12d8fa34c10899f.html">bios::PwmSupport::start()</a>+0x88>
+
+       42ffc:	6819      	ldr	r1, [r3, #0]
+
+       42ffe:	f041 0140 	orr.w	r1, r1, #64	@ 0x40
+
+       43002:	6019      	str	r1, [r3, #0]
+
+       43004:	78a1      	ldrb	r1, [r4, #2]
+
+       43006:	2900      	cmp	r1, #0
+
+       43008:	d02f      	beq.n	4306a <<a href="./94a05f78912d5444a12d8fa34c10899f.html">bios::PwmSupport::start()</a>+0x96>
+
+       4300a:	6819      	ldr	r1, [r3, #0]
+
+       4300c:	f041 0101 	orr.w	r1, r1, #1
+
+       43010:	6019      	str	r1, [r3, #0]
+
+    _ZN4bios3FtmILh8EE8getCNTINEv():
+
+       43012:	6cd1      	ldr	r1, [r2, #76]	@ 0x4c
+
+       43014:	6902      	ldr	r2, [r0, #16]
+
+       43016:	b289      	uxth	r1, r1
+
+       43018:	6812      	ldr	r2, [r2, #0]
+
+    _ZN4bios7FtmEPwmILh2ELt100ELh1ELh1EE7setDutyEt():
+
+       4301a:	6059      	str	r1, [r3, #4]
+
+    _ZN4bios3FtmILh8EE22writeProtectionDisableEb():
+
+       4301c:	6d51      	ldr	r1, [r2, #84]	@ 0x54
+
+    _ZN4bios7FtmEPwmILh3ELt100ELh1ELh1EE8clrEventEv():
+
+       4301e:	6943      	ldr	r3, [r0, #20]
+
+    _ZN4bios7FtmEPwmILh3ELt100ELh1ELh1EE5startEv():
+
+       43020:	6980      	ldr	r0, [r0, #24]
+
+    _ZN4bios3FtmILh8EE22writeProtectionDisableEb():
+
+       43022:	f041 0104 	orr.w	r1, r1, #4
+
+       43026:	6551      	str	r1, [r2, #84]	@ 0x54
+
+    _ZN4bios7FtmEPwmILh3ELt100ELh1ELh1EE8clrEventEv():
+
+       43028:	6819      	ldr	r1, [r3, #0]
+
+    _ZN4bios7FtmEPwmILh3ELt100ELh1ELh1EE5startEv():
+
+       4302a:	7844      	ldrb	r4, [r0, #1]
+
+    _ZN4bios7FtmEPwmILh3ELt100ELh1ELh1EE8clrEventEv():
+
+       4302c:	f021 0180 	bic.w	r1, r1, #128	@ 0x80
+
+       43030:	6019      	str	r1, [r3, #0]
+
+    _ZN4bios3FtmILh8EE8setPWMenEhb():
+
+       43032:	6811      	ldr	r1, [r2, #0]
+
+       43034:	f441 2100 	orr.w	r1, r1, #524288	@ 0x80000
+
+       43038:	6011      	str	r1, [r2, #0]
+
+    _ZN4bios7FtmEPwmILh3ELt100ELh1ELh1EE5startEv():
+
+       4303a:	6819      	ldr	r1, [r3, #0]
+
+       4303c:	b1fc      	cbz	r4, 4307e <<a href="./94a05f78912d5444a12d8fa34c10899f.html">bios::PwmSupport::start()</a>+0xaa>
+
+       4303e:	f041 0140 	orr.w	r1, r1, #64	@ 0x40
+
+       43042:	6019      	str	r1, [r3, #0]
+
+       43044:	7881      	ldrb	r1, [r0, #2]
+
+       43046:	b1a9      	cbz	r1, 43074 <<a href="./94a05f78912d5444a12d8fa34c10899f.html">bios::PwmSupport::start()</a>+0xa0>
+
+       43048:	6819      	ldr	r1, [r3, #0]
+
+       4304a:	f041 0101 	orr.w	r1, r1, #1
+
+       4304e:	6019      	str	r1, [r3, #0]
+
+    _ZN4bios3FtmILh8EE8getCNTINEv():
+
+       43050:	6cd2      	ldr	r2, [r2, #76]	@ 0x4c
+
+    bios::PwmSupport::start():
+
+       43052:	f85d 4b04 	ldr.w	r4, [sp], #4
+
+       43056:	b292      	uxth	r2, r2
+
+    _ZN4bios7FtmEPwmILh3ELt100ELh1ELh1EE7setDutyEt():
+
+       43058:	605a      	str	r2, [r3, #4]
+
+    bios::PwmSupport::start():
+
+       4305a:	4770      	bx	lr
+
+    _ZN4bios7FtmEPwmILh2ELt100ELh1ELh1EE5startEv():
+
+       4305c:	6819      	ldr	r1, [r3, #0]
+
+       4305e:	f021 0140 	bic.w	r1, r1, #64	@ 0x40
+
+       43062:	6019      	str	r1, [r3, #0]
+
+       43064:	78a1      	ldrb	r1, [r4, #2]
+
+       43066:	2900      	cmp	r1, #0
+
+       43068:	d1cf      	bne.n	4300a <<a href="./94a05f78912d5444a12d8fa34c10899f.html">bios::PwmSupport::start()</a>+0x36>
+
+       4306a:	6819      	ldr	r1, [r3, #0]
+
+       4306c:	f021 0101 	bic.w	r1, r1, #1
+
+       43070:	6019      	str	r1, [r3, #0]
+
+       43072:	e7ce      	b.n	43012 <<a href="./94a05f78912d5444a12d8fa34c10899f.html">bios::PwmSupport::start()</a>+0x3e>
+
+    _ZN4bios7FtmEPwmILh3ELt100ELh1ELh1EE5startEv():
+
+       43074:	6819      	ldr	r1, [r3, #0]
+
+       43076:	f021 0101 	bic.w	r1, r1, #1
+
+       4307a:	6019      	str	r1, [r3, #0]
+
+       4307c:	e7e8      	b.n	43050 <<a href="./94a05f78912d5444a12d8fa34c10899f.html">bios::PwmSupport::start()</a>+0x7c>
+
+       4307e:	f021 0140 	bic.w	r1, r1, #64	@ 0x40
+
+       43082:	6019      	str	r1, [r3, #0]
+
+       43084:	e7de      	b.n	43044 <<a href="./94a05f78912d5444a12d8fa34c10899f.html">bios::PwmSupport::start()</a>+0x70>
+
+    bios::PwmSupport::start():
+
+       43086:	bf00      	nop
+
+    </pre>
+
+    
+    <pre><a href="../../../stdIo/stdIo.cpp/b4518472f943892ec1c4fd3c765433f9.html">putByteToStdout (64)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 36</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 552</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    36
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                4 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    552
+                    
+                    
+                </td>
+                <td class="col_size">180</td>
+                <td><a href="./94a05f78912d5444a12d8fa34c10899f.html" class="icon-function">bios::PwmSupport::start()</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    32
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    372
+                    
+                    
+                </td>
+                <td class="col_size">236</td>
+                <td><a href="../../../../../../main/src/lifecycle/StaticBsp.cpp/bbaf0c02e73cc075f1271c2d33d1014c.html" class="icon-function">StaticBsp::hwInit()</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    136
+                    
+                    
+                </td>
+                <td class="col_size">4</td>
+                <td><a href="../../../../../../main/src/lifecycle/StaticBsp.cpp/f42c098a5d902487276fda6a241ec854.html" class="icon-function">StaticBsp::init()</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td><a href="../../../../../../main/src/main.cpp/fad58de7366495db4650cfefac2fcd61.html" class="icon-function">main</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

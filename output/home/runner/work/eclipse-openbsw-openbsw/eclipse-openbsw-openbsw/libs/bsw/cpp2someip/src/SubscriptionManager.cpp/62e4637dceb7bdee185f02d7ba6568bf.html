@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../SubscriptionManager.cpp.html">SubscriptionManager.cpp</a>:36
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::SubscriptionManager::clear()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00029ad0</td>
+                <td>
+    
+    
+</td>
+                <td>48 (static)</td>
+                <td>360</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="./1ea38ba82c8623086e77eecc5a48886c.html">someip::SubscriptionManager::stop() (4)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            Σ=238
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../SubscriptionEndpoint.cpp/d308f34704b6a3d6e87155c46f9c8040.html">someip::SubscriptionEndpoint::clear() (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../3rdparty/etl/include/etl/reference_flat_set.h/1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set&lt;someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator&gt;::find(someip::SubscribedEventGroup*) (168)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../unknown/unknown/7d8c66e32294c0fbcad3762662cbd6d5.html">memmove (50)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./4eeccd1ac1a49c67f4193611799776ac.html">someip::SubscriptionManager::SubscriptionManager(etl::iflat_set&lt;someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator&gt;&amp;, etl::ipool&amp;, etl::ipool&amp;) (16)</a></pre>
+    
+
+    <pre>
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE6rbeginEv():
+
+       29ad0:	6843      	ldr	r3, [r0, #4]
+
+       29ad2:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl11pvoidvector3endEv():
+
+       29ad4:	689a      	ldr	r2, [r3, #8]
+
+    someip::SubscriptionManager::clear():
+
+       29ad6:	685b      	ldr	r3, [r3, #4]
+
+       29ad8:	429a      	cmp	r2, r3
+
+       29ada:	f000 80a7 	beq.w	29c2c <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x15c>
+
+       29ade:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       29ae2:	4f53      	ldr	r7, [pc, #332]	@ (29c30 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x160>)
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       29ae4:	f8df 814c 	ldr.w	r8, [pc, #332]	@ 29c34 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x164>
+
+    someip::SubscriptionManager::clear():
+
+       29ae8:	b083      	sub	sp, #12
+
+       29aea:	4681      	mov	r9, r0
+
+       29aec:	4692      	mov	sl, r2
+
+       29aee:	f85a 3d04 	ldr.w	r3, [sl, #-4]!
+
+       29af2:	681e      	ldr	r6, [r3, #0]
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE8get_headEv():
+
+       29af4:	6835      	ldr	r5, [r6, #0]
+
+    someip::SubscriptionManager::clear():
+
+       29af6:	42bd      	cmp	r5, r7
+
+       29af8:	d108      	bne.n	29b0c <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x3c>
+
+       29afa:	e034      	b.n	29b66 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x96>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       29afc:	6863      	ldr	r3, [r4, #4]
+
+       29afe:	602b      	str	r3, [r5, #0]
+
+       29b00:	3a01      	subs	r2, #1
+
+    someip::SubscriptionManager::clear():
+
+       29b02:	45bb      	cmp	fp, r7
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       29b04:	6065      	str	r5, [r4, #4]
+
+       29b06:	60a2      	str	r2, [r4, #8]
+
+    someip::SubscriptionManager::clear():
+
+       29b08:	d02a      	beq.n	29b60 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x90>
+
+       29b0a:	465d      	mov	r5, fp
+
+       29b0c:	4628      	mov	r0, r5
+
+       29b0e:	f7ff fd1f 	bl	29550 <<a href="../SubscriptionEndpoint.cpp/d308f34704b6a3d6e87155c46f9c8040.html">someip::SubscriptionEndpoint::clear()</a>>
+
+    _ZN3etl22intrusive_forward_listIN6someip20SubscriptionEndpointENS_12forward_linkILj0EEEE11erase_afterENS5_8iteratorE():
+
+       29b12:	42be      	cmp	r6, r7
+
+       29b14:	d07c      	beq.n	29c10 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x140>
+
+    _ZN3etl22intrusive_forward_listIN6someip20SubscriptionEndpointENS_12forward_linkILj0EEEE8iteratorppEv():
+
+       29b16:	6833      	ldr	r3, [r6, #0]
+
+    _ZN3etl22intrusive_forward_listIN6someip20SubscriptionEndpointENS_12forward_linkILj0EEEE11erase_afterENS5_8iteratorE():
+
+       29b18:	42bb      	cmp	r3, r7
+
+       29b1a:	d07b      	beq.n	29c14 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x144>
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE21disconnect_link_afterERS2_():
+
+       29b1c:	6872      	ldr	r2, [r6, #4]
+
+    _ZN3etl22intrusive_forward_listIN6someip20SubscriptionEndpointENS_12forward_linkILj0EEEE8iteratorppEv():
+
+       29b1e:	f8d3 b000 	ldr.w	fp, [r3]
+
+    _ZN3etl12unlink_afterINS_12forward_linkILj0EEEEENS_9enable_ifIXsrNS_15is_forward_linkIT_EE5valueEPS5_E4typeERS5_():
+
+       29b22:	f8c6 b000 	str.w	fp, [r6]
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE21disconnect_link_afterERS2_():
+
+       29b26:	3a01      	subs	r2, #1
+
+    _ZN3etl12forward_linkILj0EE5clearEv():
+
+       29b28:	2100      	movs	r1, #0
+
+       29b2a:	6019      	str	r1, [r3, #0]
+
+    _ZN3etl27intrusive_forward_list_baseINS_12forward_linkILj0EEEE21disconnect_link_afterERS2_():
+
+       29b2c:	6072      	str	r2, [r6, #4]
+
+    someip::SubscriptionManager::clear():
+
+       29b2e:	f8d9 400c 	ldr.w	r4, [r9, #12]
+
+    _ZNK3etl5ipool15is_item_in_poolEPKc():
+
+       29b32:	6823      	ldr	r3, [r4, #0]
+
+       29b34:	1ae9      	subs	r1, r5, r3
+
+       29b36:	d406      	bmi.n	29b46 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x76>
+
+       29b38:	6963      	ldr	r3, [r4, #20]
+
+       29b3a:	6922      	ldr	r2, [r4, #16]
+
+       29b3c:	3b01      	subs	r3, #1
+
+       29b3e:	fb02 f303 	mul.w	r3, r2, r3
+
+       29b42:	4299      	cmp	r1, r3
+
+       29b44:	dd03      	ble.n	29b4e <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x7e>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       29b46:	f8d8 3000 	ldr.w	r3, [r8]
+
+       29b4a:	a801      	add	r0, sp, #4
+
+       29b4c:	4798      	blx	r3
+
+       29b4e:	68a2      	ldr	r2, [r4, #8]
+
+       29b50:	2a00      	cmp	r2, #0
+
+       29b52:	d1d3      	bne.n	29afc <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x2c>
+
+       29b54:	f8d8 3000 	ldr.w	r3, [r8]
+
+       29b58:	a801      	add	r0, sp, #4
+
+       29b5a:	4798      	blx	r3
+
+    someip::SubscriptionManager::clear():
+
+       29b5c:	45bb      	cmp	fp, r7
+
+       29b5e:	d1d4      	bne.n	29b0a <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x3a>
+
+       29b60:	f8da 3000 	ldr.w	r3, [sl]
+
+       29b64:	681e      	ldr	r6, [r3, #0]
+
+       29b66:	f8d9 4008 	ldr.w	r4, [r9, #8]
+
+    _ZNK3etl5ipool15is_item_in_poolEPKc():
+
+       29b6a:	6823      	ldr	r3, [r4, #0]
+
+       29b6c:	1af3      	subs	r3, r6, r3
+
+       29b6e:	d406      	bmi.n	29b7e <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0xae>
+
+       29b70:	6962      	ldr	r2, [r4, #20]
+
+       29b72:	6921      	ldr	r1, [r4, #16]
+
+       29b74:	3a01      	subs	r2, #1
+
+       29b76:	fb01 f202 	mul.w	r2, r1, r2
+
+       29b7a:	4293      	cmp	r3, r2
+
+       29b7c:	dd03      	ble.n	29b86 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0xb6>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       29b7e:	f8d8 3000 	ldr.w	r3, [r8]
+
+       29b82:	a801      	add	r0, sp, #4
+
+       29b84:	4798      	blx	r3
+
+       29b86:	68a3      	ldr	r3, [r4, #8]
+
+       29b88:	2b00      	cmp	r3, #0
+
+       29b8a:	d045      	beq.n	29c18 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x148>
+
+       29b8c:	6862      	ldr	r2, [r4, #4]
+
+       29b8e:	6032      	str	r2, [r6, #0]
+
+       29b90:	3b01      	subs	r3, #1
+
+       29b92:	6066      	str	r6, [r4, #4]
+
+       29b94:	60a3      	str	r3, [r4, #8]
+
+    someip::SubscriptionManager::clear():
+
+       29b96:	f8d9 6004 	ldr.w	r6, [r9, #4]
+
+    _ZN3etl9iflat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE4findERKS3_():
+
+       29b9a:	f8da 3000 	ldr.w	r3, [sl]
+
+       29b9e:	6834      	ldr	r4, [r6, #0]
+
+       29ba0:	681a      	ldr	r2, [r3, #0]
+
+       29ba2:	4621      	mov	r1, r4
+
+       29ba4:	a801      	add	r0, sp, #4
+
+       29ba6:	f7ff fcef 	bl	29588 <<a href="../../../../3rdparty/etl/include/etl/reference_flat_set.h/1bdac026410d1ba9bfd999aeab04ddd7.html">etl::ireference_flat_set<someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator>::find(someip::SubscribedEventGroup*)</a>.isra.0>
+
+    _ZN3etleqERKNS_19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE8iteratorES9_():
+
+       29baa:	9d01      	ldr	r5, [sp, #4]
+
+    someip::SubscriptionManager::clear():
+
+       29bac:	68a3      	ldr	r3, [r4, #8]
+
+       29bae:	429d      	cmp	r5, r3
+
+       29bb0:	d027      	beq.n	29c02 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x132>
+
+    _ZN3etl9iflat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE5eraseENS_19ireference_flat_setIS3_S5_E8iteratorE():
+
+       29bb2:	68b4      	ldr	r4, [r6, #8]
+
+    _ZNK3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE8iteratordeEv():
+
+       29bb4:	f8d5 b000 	ldr.w	fp, [r5]
+
+    _ZNK3etl5ipool15is_item_in_poolEPKc():
+
+       29bb8:	6823      	ldr	r3, [r4, #0]
+
+       29bba:	ebbb 0303 	subs.w	r3, fp, r3
+
+       29bbe:	d406      	bmi.n	29bce <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0xfe>
+
+       29bc0:	6962      	ldr	r2, [r4, #20]
+
+       29bc2:	6921      	ldr	r1, [r4, #16]
+
+       29bc4:	3a01      	subs	r2, #1
+
+       29bc6:	fb01 f202 	mul.w	r2, r1, r2
+
+       29bca:	4293      	cmp	r3, r2
+
+       29bcc:	dd03      	ble.n	29bd6 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x106>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       29bce:	f8d8 3000 	ldr.w	r3, [r8]
+
+       29bd2:	4668      	mov	r0, sp
+
+       29bd4:	4798      	blx	r3
+
+       29bd6:	68a3      	ldr	r3, [r4, #8]
+
+       29bd8:	b31b      	cbz	r3, 29c22 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x152>
+
+       29bda:	6862      	ldr	r2, [r4, #4]
+
+       29bdc:	f8cb 2000 	str.w	r2, [fp]
+
+       29be0:	3b01      	subs	r3, #1
+
+       29be2:	f8c4 b004 	str.w	fp, [r4, #4]
+
+       29be6:	60a3      	str	r3, [r4, #8]
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE5eraseENS6_8iteratorE():
+
+       29be8:	6836      	ldr	r6, [r6, #0]
+
+    _ZN3etl8mem_moveIPvEEPT_PKS2_S5_S3_():
+
+       29bea:	68b2      	ldr	r2, [r6, #8]
+
+    _ZN3etl11pvoidvector5eraseEPPv():
+
+       29bec:	1d29      	adds	r1, r5, #4
+
+    _ZN3etl8mem_moveIPvEEPT_PKS2_S5_S3_():
+
+       29bee:	1a52      	subs	r2, r2, r1
+
+       29bf0:	4628      	mov	r0, r5
+
+       29bf2:	f020 fc21 	bl	4a438 <<a href="../../../../../../../../../../unknown/unknown/7d8c66e32294c0fbcad3762662cbd6d5.html">memmove</a>>
+
+    _ZN3etl11pvoidvector5eraseEPPv():
+
+       29bf6:	68b3      	ldr	r3, [r6, #8]
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE4rendEv():
+
+       29bf8:	f8d9 2004 	ldr.w	r2, [r9, #4]
+
+    _ZN3etl11pvoidvector5eraseEPPv():
+
+       29bfc:	3b04      	subs	r3, #4
+
+    _ZN3etl19ireference_flat_setIPN6someip20SubscribedEventGroupENS1_19SubscriptionManager18LessThanComparatorEE4rendEv():
+
+       29bfe:	6814      	ldr	r4, [r2, #0]
+
+    _ZN3etl11pvoidvector5eraseEPPv():
+
+       29c00:	60b3      	str	r3, [r6, #8]
+
+    someip::SubscriptionManager::clear():
+
+       29c02:	6863      	ldr	r3, [r4, #4]
+
+       29c04:	4553      	cmp	r3, sl
+
+       29c06:	f47f af72 	bne.w	29aee <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x1e>
+
+       29c0a:	b003      	add	sp, #12
+
+       29c0c:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    _ZN3etl22intrusive_forward_listIN6someip20SubscriptionEndpointENS_12forward_linkILj0EEEE8iteratorC4ERKS6_():
+
+       29c10:	46b3      	mov	fp, r6
+
+       29c12:	e78c      	b.n	29b2e <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x5e>
+
+       29c14:	46bb      	mov	fp, r7
+
+       29c16:	e78a      	b.n	29b2e <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x5e>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       29c18:	f8d8 3000 	ldr.w	r3, [r8]
+
+       29c1c:	a801      	add	r0, sp, #4
+
+       29c1e:	4798      	blx	r3
+
+       29c20:	e7b9      	b.n	29b96 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0xc6>
+
+       29c22:	f8d8 3000 	ldr.w	r3, [r8]
+
+       29c26:	4668      	mov	r0, sp
+
+       29c28:	4798      	blx	r3
+
+       29c2a:	e7dd      	b.n	29be8 <<a href="./62e4637dceb7bdee185f02d7ba6568bf.html">someip::SubscriptionManager::clear()</a>+0x118>
+
+       29c2c:	4770      	bx	lr
+
+       29c2e:	bf00      	nop
+
+       29c30:	20000120 	.word	0x20000120
+
+       29c34:	20000000 	.word	0x20000000
+
+    </pre>
+
+    
+    <pre><a href="./1ea38ba82c8623086e77eecc5a48886c.html">someip::SubscriptionManager::stop() (4)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 80</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 168</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    80
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">168</td>
+                <td><a href="../../../../3rdparty/etl/include/etl/reference_flat_set.h/1bdac026410d1ba9bfd999aeab04ddd7.html" class="icon-function">etl::ireference_flat_set&lt;someip::SubscribedEventGroup*, someip::SubscriptionManager::LessThanComparator&gt;::find(someip::SubscribedEventGroup*)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">56
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 56</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 416</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    416
+                    
+                    
+                </td>
+                <td class="col_size">360</td>
+                <td><a href="./62e4637dceb7bdee185f02d7ba6568bf.html" class="icon-function">someip::SubscriptionManager::clear()</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">4</td>
+                <td><a href="./1ea38ba82c8623086e77eecc5a48886c.html" class="icon-function">someip::SubscriptionManager::stop()</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">52</td>
+                <td><a href="../SdSomeIpStack.cpp/59d799cb861084845dff433568f54af8.html" class="icon-function">someip::SdSomeIpStack::doStop()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

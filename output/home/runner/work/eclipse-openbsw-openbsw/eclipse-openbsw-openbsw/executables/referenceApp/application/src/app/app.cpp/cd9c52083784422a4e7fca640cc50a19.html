@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../application.html">application</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../app.html">app</a>
+            </li>
+
+        
+        <li class="active"><a href="../app.cpp.html">app.cpp</a>:408
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">_GLOBAL__sub_I_safetyStack</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00008fe4</td>
+                <td>
+    
+    
+</td>
+                <td>8 (static)</td>
+                <td>784</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (5,
+                            <span title="sum of used bytes by all callees">
+                            Σ=404
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/bc8ed9b5302775e31efd3f4fe3830295.html">lifecycle::LifecycleManager::LifecycleManager(unsigned char, etl::delegate&lt;unsigned long ()&gt;, etl::span&lt;lifecycle::LifecycleManager::ComponentInfo, 4294967295u&gt; const&amp;, etl::ivector&lt;lifecycle::LifecycleManager::ComponentTransitionExecutor, void&gt;&amp;, etl::span&lt;unsigned char, 4294967295u&gt; const&amp;) (100)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/c90a3e46f5194e34705aae8091e4dc9b.html">lifecycle::LifecycleManager::addLifecycleListener(lifecycle::ILifecycleListener&amp;) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html">void async::internal::TaskInitializer&lt;async::FreeRtosAdapter&lt;async::AsyncBinding&gt; &gt;::create&lt;etl::array&lt;unsigned long, 512u&gt; &gt;(unsigned char, char const*, xSTATIC_TCB&amp;, etl::array&lt;unsigned long, 512u&gt;&amp;, etl::delegate&lt;void (async::TaskContext&lt;async::FreeRtosAdapter&lt;async::AsyncBinding&gt; &gt;&amp;)&gt;, async::internal::TaskConfigHolder&lt;10u, void&gt;::TaskConfigType const&amp;) (124)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/3rdparty/etl/include/etl/array.h/dcefabc5bf2e69873c5b050915d00a2a.html">etl::array&lt;async::TaskContext&lt;async::FreeRtosAdapter&lt;async::AsyncBinding&gt; &gt;, 9u&gt;::array() (96)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../libs/3rdparty/etl/include/etl/private/variant_variadic.h/917fc5a2a8457ea3fa52103621af0efb.html">void etl::private_variant::do_visit_single&lt;void, etl::private_format::format_visitor&lt;etl::private_print::print_iterator&gt;&amp;, etl::variant&lt;etl::monostate, bool, char, int, unsigned int, long long, unsigned long long, float, double, long double, char const*, etl::basic_string_view&lt;char, etl::char_traits&lt;char&gt; &gt;, void const*, etl::basic_format_arg&lt;etl::basic_format_context&lt;etl::private_print::print_iterator, char&gt; &gt;::handle&gt;&amp;, 7u&gt;(etl::private_format::format_visitor&lt;etl::private_print::print_iterator&gt;&amp;, etl::variant&lt;etl::monostate, bool, char, int, unsigned int, long long, unsigned long long, float, double, long double, char const*, etl::basic_string_view&lt;char, etl::char_traits&lt;char&gt; &gt;, void const*, etl::basic_format_arg&lt;etl::basic_format_context&lt;etl::private_print::print_iterator, char&gt; &gt;::handle&gt;&amp;) (48)</a></pre>
+    
+
+    <pre>
+
+    _GLOBAL__sub_I_safetyStack():
+
+        8fe4:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+    _ZN7runtime14RuntimeMonitorINS_17RuntimeStatisticsES1_EC4ERNS_19StatisticsContainerIS1_NS2_12ContextEntryEEES6_():
+
+        8fe8:	4d9b      	ldr	r5, [pc, #620]	@ (9258 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x274>)
+
+    _ZN7runtime19StatisticsContainerINS_17RuntimeStatisticsENS_14RuntimeMonitorIS1_S1_E12ContextEntryEEC4ERKN3etl4spanIS4_Lj4294967295EEENS6_8delegateIFPKcjEEE():
+
+        8fea:	4a9c      	ldr	r2, [pc, #624]	@ (925c <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x278>)
+
+        8fec:	f8df 82fc 	ldr.w	r8, [pc, #764]	@ 92ec <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x308>
+
+    _GLOBAL__sub_I_safetyStack():
+
+        8ff0:	b08c      	sub	sp, #48	@ 0x30
+
+        8ff2:	2300      	movs	r3, #0
+
+    _ZN7runtime19StatisticsContainerINS_17RuntimeStatisticsENS_14RuntimeMonitorIS1_S1_E12ContextEntryEEC4ERKN3etl4spanIS4_Lj4294967295EEENS6_8delegateIFPKcjEEE():
+
+        8ff4:	9209      	str	r2, [sp, #36]	@ 0x24
+
+    _ZN3etl4spanIN7runtime14RuntimeMonitorINS1_17RuntimeStatisticsES3_E12ContextEntryELj4294967295EEC4ERKS6_():
+
+        8ff6:	f105 0428 	add.w	r4, r5, #40	@ 0x28
+
+    _ZN7runtime14RuntimeMonitorINS_17RuntimeStatisticsES1_EC4ERNS_19StatisticsContainerIS1_NS2_12ContextEntryEEES6_():
+
+        8ffa:	f505 72c8 	add.w	r2, r5, #400	@ 0x190
+
+        8ffe:	2000      	movs	r0, #0
+
+        9000:	2100      	movs	r1, #0
+
+        9002:	e9c5 0104 	strd	r0, r1, [r5, #16]
+
+    _ZN3etl4spanIN7runtime14RuntimeMonitorINS1_17RuntimeStatisticsES3_E12ContextEntryELj4294967295EEC4ERKS6_():
+
+        9006:	e9c5 4206 	strd	r4, r2, [r5, #24]
+
+    __static_initialization_and_destruction_0():
+
+        900a:	9308      	str	r3, [sp, #32]
+
+    _ZN7runtime14RuntimeMonitorINS_17RuntimeStatisticsES1_EC4ERNS_19StatisticsContainerIS1_NS2_12ContextEntryEEES6_():
+
+        900c:	f105 0118 	add.w	r1, r5, #24
+
+        9010:	60ea      	str	r2, [r5, #12]
+
+    _ZN7runtime19StatisticsContainerINS_17RuntimeStatisticsENS_14RuntimeMonitorIS1_S1_E12ContextEntryEEC4ERKN3etl4spanIS4_Lj4294967295EEENS6_8delegateIFPKcjEEE():
+
+        9012:	aa08      	add	r2, sp, #32
+
+    _ZN7runtime14RuntimeMonitorINS_17RuntimeStatisticsES1_EC4ERNS_19StatisticsContainerIS1_NS2_12ContextEntryEEES6_():
+
+        9014:	60a9      	str	r1, [r5, #8]
+
+    _ZN7runtime19StatisticsContainerINS_17RuntimeStatisticsENS_14RuntimeMonitorIS1_S1_E12ContextEntryEEC4ERKN3etl4spanIS4_Lj4294967295EEENS6_8delegateIFPKcjEEE():
+
+        9016:	e892 0003 	ldmia.w	r2, {r0, r1}
+
+        901a:	f105 0220 	add.w	r2, r5, #32
+
+        901e:	e882 0003 	stmia.w	r2, {r0, r1}
+
+    _ZN7runtime7declare19StatisticsContainerINS_17RuntimeStatisticsELj10ENS_14RuntimeMonitorIS2_S2_E12ContextEntryEEC4EN3etl8delegateIFPKcjEEE():
+
+        9022:	4620      	mov	r0, r4
+
+        9024:	f44f 72b4 	mov.w	r2, #360	@ 0x168
+
+        9028:	4619      	mov	r1, r3
+
+    _ZN7runtime14RuntimeMonitorINS_17RuntimeStatisticsES1_EC4ERNS_19StatisticsContainerIS1_NS2_12ContextEntryEEES6_():
+
+        902a:	e9c5 3300 	strd	r3, r3, [r5]
+
+    _ZN7runtime7declare19StatisticsContainerINS_17RuntimeStatisticsELj10ENS_14RuntimeMonitorIS2_S2_E12ContextEntryEEC4EN3etl8delegateIFPKcjEEE():
+
+        902e:	f7f7 fb39 	bl	6a4 <<a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN3etl5arrayIN7runtime14RuntimeMonitorINS1_17RuntimeStatisticsES3_E12ContextEntryELj10EEC4Ev():
+
+        9032:	f505 79b4 	add.w	r9, r5, #360	@ 0x168
+
+    _ZN7runtime7declare19StatisticsContainerINS_17RuntimeStatisticsELj10ENS_14RuntimeMonitorIS2_S2_E12ContextEntryEEC4EN3etl8delegateIFPKcjEEE():
+
+        9036:	462f      	mov	r7, r5
+
+        9038:	462c      	mov	r4, r5
+
+    _ZN7runtime17RuntimeStackEntryINS_14RuntimeMonitorINS_17RuntimeStatisticsES2_E12ContextEntryELb1EEC4Ev():
+
+        903a:	2601      	movs	r6, #1
+
+    _ZN3etl5arrayIN7runtime14RuntimeMonitorINS1_17RuntimeStatisticsES3_E12ContextEntryELj10EEC4Ev():
+
+        903c:	f104 0028 	add.w	r0, r4, #40	@ 0x28
+
+        9040:	2224      	movs	r2, #36	@ 0x24
+
+        9042:	2100      	movs	r1, #0
+
+        9044:	f7f7 fb2e 	bl	6a4 <<a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+        9048:	3424      	adds	r4, #36	@ 0x24
+
+    _ZN7runtime17RuntimeStackEntryINS_14RuntimeMonitorINS_17RuntimeStatisticsES2_E12ContextEntryELb1EEC4Ev():
+
+        904a:	6066      	str	r6, [r4, #4]
+
+    _ZN3etl5arrayIN7runtime14RuntimeMonitorINS1_17RuntimeStatisticsES3_E12ContextEntryELj10EEC4Ev():
+
+        904c:	45a1      	cmp	r9, r4
+
+        904e:	d1f5      	bne.n	903c <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x58>
+
+    _ZN3etl4spanIN7runtime14RuntimeMonitorINS1_17RuntimeStatisticsES3_E12ContextEntryELj4294967295EEC4ERKS6_():
+
+        9050:	4c83      	ldr	r4, [pc, #524]	@ (9260 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x27c>)
+
+        9052:	f8c7 4190 	str.w	r4, [r7, #400]	@ 0x190
+
+        9056:	f104 026c 	add.w	r2, r4, #108	@ 0x6c
+
+        905a:	f8c7 2194 	str.w	r2, [r7, #404]	@ 0x194
+
+    _ZN7runtime19StatisticsContainerINS_17RuntimeStatisticsENS_14RuntimeMonitorIS1_S1_E12ContextEntryEEC4ERKN3etl4spanIS4_Lj4294967295EEENS6_8delegateIFPKcjEEE():
+
+        905e:	4a81      	ldr	r2, [pc, #516]	@ (9264 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x280>)
+
+    _ZN7runtime7declare19StatisticsContainerINS_17RuntimeStatisticsELj3ENS_14RuntimeMonitorIS2_S2_E12ContextEntryEEC4EN3etl8delegateIFPKcjEEE():
+
+        9060:	4620      	mov	r0, r4
+
+    _ZN7runtime19StatisticsContainerINS_17RuntimeStatisticsENS_14RuntimeMonitorIS1_S1_E12ContextEntryEEC4ERKN3etl4spanIS4_Lj4294967295EEENS6_8delegateIFPKcjEEE():
+
+        9062:	e9c7 7266 	strd	r7, r2, [r7, #408]	@ 0x198
+
+    _ZN7runtime7declare19StatisticsContainerINS_17RuntimeStatisticsELj3ENS_14RuntimeMonitorIS2_S2_E12ContextEntryEEC4EN3etl8delegateIFPKcjEEE():
+
+        9066:	2100      	movs	r1, #0
+
+        9068:	226c      	movs	r2, #108	@ 0x6c
+
+        906a:	f7f7 fb1b 	bl	6a4 <<a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN7runtime17RuntimeStackEntryINS_14RuntimeMonitorINS_17RuntimeStatisticsES2_E12ContextEntryELb1EEC4Ev():
+
+        906e:	2601      	movs	r6, #1
+
+        9070:	f5a4 749a 	sub.w	r4, r4, #308	@ 0x134
+
+    _ZN3etl5arrayIN7runtime14RuntimeMonitorINS1_17RuntimeStatisticsES3_E12ContextEntryELj3EEC4Ev():
+
+        9074:	f505 70d0 	add.w	r0, r5, #416	@ 0x1a0
+
+        9078:	2224      	movs	r2, #36	@ 0x24
+
+        907a:	2100      	movs	r1, #0
+
+        907c:	f7f7 fb12 	bl	6a4 <<a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+        9080:	3524      	adds	r5, #36	@ 0x24
+
+    _ZN7runtime17RuntimeStackEntryINS_14RuntimeMonitorINS_17RuntimeStatisticsES2_E12ContextEntryELb1EEC4Ev():
+
+        9082:	f8c5 617c 	str.w	r6, [r5, #380]	@ 0x17c
+
+    _ZN3etl5arrayIN7runtime14RuntimeMonitorINS1_17RuntimeStatisticsES3_E12ContextEntryELj3EEC4Ev():
+
+        9086:	42a5      	cmp	r5, r4
+
+        9088:	d1f4      	bne.n	9074 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x90>
+
+    _ZN3etl4spanIKPKcLj4294967295EEC4IS3_Lj3EEERKNS0_IT_XT0_EEE():
+
+        908a:	4b77      	ldr	r3, [pc, #476]	@ (9268 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x284>)
+
+        908c:	f8c7 320c 	str.w	r3, [r7, #524]	@ 0x20c
+
+        9090:	330c      	adds	r3, #12
+
+    _ZN3etl4spanIN9lifecycle16LifecycleManager13ComponentInfoELj4294967295EEC4IS3_Lj16EEERNS_5arrayIT_XT0_EEEPNS_9enable_ifIXsrNS_14is_convertibleIPA_S7_PA_S3_EE5valueEvE4typeE():
+
+        9092:	f8df 925c 	ldr.w	r9, [pc, #604]	@ 92f0 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x30c>
+
+    _ZN3etl4spanIKPKcLj4294967295EEC4IS3_Lj3EEERKNS0_IT_XT0_EEE():
+
+        9096:	f8c7 3210 	str.w	r3, [r7, #528]	@ 0x210
+
+    __static_initialization_and_destruction_0():
+
+        909a:	4b74      	ldr	r3, [pc, #464]	@ (926c <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x288>)
+
+    _ZN3etl4spanIN9lifecycle16LifecycleManager13ComponentInfoELj4294967295EEC4IS3_Lj16EEERNS_5arrayIT_XT0_EEEPNS_9enable_ifIXsrNS_14is_convertibleIPA_S7_PA_S3_EE5valueEvE4typeE():
+
+        909c:	f8cd 9028 	str.w	r9, [sp, #40]	@ 0x28
+
+    __static_initialization_and_destruction_0():
+
+        90a0:	2400      	movs	r4, #0
+
+        90a2:	e9cd 4306 	strd	r4, r3, [sp, #24]
+
+    _ZN3etl4spanIN9lifecycle16LifecycleManager13ComponentInfoELj4294967295EEC4IS3_Lj16EEERNS_5arrayIT_XT0_EEEPNS_9enable_ifIXsrNS_14is_convertibleIPA_S7_PA_S3_EE5valueEvE4typeE():
+
+        90a6:	f509 73c0 	add.w	r3, r9, #384	@ 0x180
+
+    _ZN9lifecycle7declare16LifecycleManagerILj16ELj9ELj16EEC4EhN3etl8delegateIFmvEEE():
+
+        90aa:	ad0a      	add	r5, sp, #40	@ 0x28
+
+        90ac:	9301      	str	r3, [sp, #4]
+
+    _ZN3etl4spanIN9lifecycle16LifecycleManager13ComponentInfoELj4294967295EEC4IS3_Lj16EEERNS_5arrayIT_XT0_EEEPNS_9enable_ifIXsrNS_14is_convertibleIPA_S7_PA_S3_EE5valueEvE4typeE():
+
+        90ae:	930b      	str	r3, [sp, #44]	@ 0x2c
+
+    _ZN9lifecycle7declare16LifecycleManagerILj16ELj9ELj16EEC4EhN3etl8delegateIFmvEEE():
+
+        90b0:	ab04      	add	r3, sp, #16
+
+        90b2:	9302      	str	r3, [sp, #8]
+
+        90b4:	9500      	str	r5, [sp, #0]
+
+    _ZN3etl4spanIhLj4294967295EEC4IhLj10EEERNS_5arrayIT_XT0_EEEPNS_9enable_ifIXsrNS_14is_convertibleIPA_S4_PA_hEE5valueEvE4typeE():
+
+        90b6:	f209 2296 	addw	r2, r9, #662	@ 0x296
+
+    _ZN9lifecycle7declare16LifecycleManagerILj16ELj9ELj16EEC4EhN3etl8delegateIFmvEEE():
+
+        90ba:	ab06      	add	r3, sp, #24
+
+    _ZN3etl4spanIhLj4294967295EEC4IhLj10EEERNS_5arrayIT_XT0_EEEPNS_9enable_ifIXsrNS_14is_convertibleIPA_S4_PA_hEE5valueEvE4typeE():
+
+        90bc:	9205      	str	r2, [sp, #20]
+
+    _ZN9lifecycle7declare16LifecycleManagerILj16ELj9ELj16EEC4EhN3etl8delegateIFmvEEE():
+
+        90be:	2107      	movs	r1, #7
+
+        90c0:	cb0c      	ldmia	r3, {r2, r3}
+
+    _ZN3etl4spanIhLj4294967295EEC4IhLj10EEERNS_5arrayIT_XT0_EEEPNS_9enable_ifIXsrNS_14is_convertibleIPA_S4_PA_hEE5valueEvE4typeE():
+
+        90c2:	f509 7a23 	add.w	sl, r9, #652	@ 0x28c
+
+    _ZN9lifecycle7declare16LifecycleManagerILj16ELj9ELj16EEC4EhN3etl8delegateIFmvEEE():
+
+        90c6:	f1a9 0044 	sub.w	r0, r9, #68	@ 0x44
+
+    _ZN3etl4spanIhLj4294967295EEC4IhLj10EEERNS_5arrayIT_XT0_EEEPNS_9enable_ifIXsrNS_14is_convertibleIPA_S4_PA_hEE5valueEvE4typeE():
+
+        90ca:	f8cd a010 	str.w	sl, [sp, #16]
+
+    _ZN9lifecycle7declare16LifecycleManagerILj16ELj9ELj16EEC4EhN3etl8delegateIFmvEEE():
+
+        90ce:	f00b fcc7 	bl	14a60 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/bc8ed9b5302775e31efd3f4fe3830295.html">lifecycle::LifecycleManager::LifecycleManager(unsigned char, etl::delegate<unsigned long ()>, etl::span<lifecycle::LifecycleManager::ComponentInfo, 4294967295u> const&, etl::ivector<lifecycle::LifecycleManager::ComponentTransitionExecutor, void>&, etl::span<unsigned char, 4294967295u> const&)</a>>
+
+        90d2:	4b67      	ldr	r3, [pc, #412]	@ (9270 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x28c>)
+
+        90d4:	f849 3c44 	str.w	r3, [r9, #-68]
+
+        90d8:	f103 0228 	add.w	r2, r3, #40	@ 0x28
+
+        90dc:	4621      	mov	r1, r4
+
+        90de:	333c      	adds	r3, #60	@ 0x3c
+
+        90e0:	f849 2c40 	str.w	r2, [r9, #-64]
+
+        90e4:	4648      	mov	r0, r9
+
+        90e6:	f44f 72c0 	mov.w	r2, #384	@ 0x180
+
+        90ea:	f849 3c3c 	str.w	r3, [r9, #-60]
+
+        90ee:	f7f7 fad9 	bl	6a4 <<a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN3etl7ivectorIN9lifecycle16LifecycleManager27ComponentTransitionExecutorEvEC4EPS3_j():
+
+        90f2:	f1a9 0144 	sub.w	r1, r9, #68	@ 0x44
+
+        90f6:	460a      	mov	r2, r1
+
+        90f8:	f8c9 8184 	str.w	r8, [r9, #388]	@ 0x184
+
+        90fc:	f8c1 81cc 	str.w	r8, [r1, #460]	@ 0x1cc
+
+    _ZN3etl12forward_linkILj0EEC4Ev():
+
+        9100:	495c      	ldr	r1, [pc, #368]	@ (9274 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x290>)
+
+    _ZN3app16LifecycleMonitorC4ERN9lifecycle7declare16LifecycleManagerILj16ELj9ELj16EEE():
+
+        9102:	4b5d      	ldr	r3, [pc, #372]	@ (9278 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x294>)
+
+        9104:	600b      	str	r3, [r1, #0]
+
+        9106:	4610      	mov	r0, r2
+
+    _ZN3etl11vector_baseC4Ej():
+
+        9108:	2310      	movs	r3, #16
+
+    _ZN3etl12forward_linkILj0EEC4Ev():
+
+        910a:	604c      	str	r4, [r1, #4]
+
+    _ZN3app16LifecycleMonitorC4ERN9lifecycle7declare16LifecycleManagerILj16ELj9ELj16EEE():
+
+        910c:	720c      	strb	r4, [r1, #8]
+
+    _ZN3etl11vector_baseC4Ej():
+
+        910e:	f8c2 31c4 	str.w	r3, [r2, #452]	@ 0x1c4
+
+    _ZN9lifecycle7declare16LifecycleManagerILj16ELj9ELj16EEC4EhN3etl8delegateIFmvEEE():
+
+        9112:	f8c9 428c 	str.w	r4, [r9, #652]	@ 0x28c
+
+        9116:	f8c9 4290 	str.w	r4, [r9, #656]	@ 0x290
+
+        911a:	f8a9 4294 	strh.w	r4, [r9, #660]	@ 0x294
+
+    _ZN3app16LifecycleMonitorC4ERN9lifecycle7declare16LifecycleManagerILj16ELj9ELj16EEE():
+
+        911e:	f00b fc07 	bl	14930 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/c90a3e46f5194e34705aae8091e4dc9b.html">lifecycle::LifecycleManager::addLifecycleListener(lifecycle::ILifecycleListener&)</a>>
+
+    _ZN5async9QueueNodeINS_9IRunnableEEC4Ev():
+
+        9122:	4b56      	ldr	r3, [pc, #344]	@ (927c <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x298>)
+
+    _ZN3app11IdleHandlerC4Ev():
+
+        9124:	4a56      	ldr	r2, [pc, #344]	@ (9280 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x29c>)
+
+        9126:	601a      	str	r2, [r3, #0]
+
+    _ZN5async14StaticRunnableINS_8internal15TaskInitializerINS_15FreeRtosAdapterINS_12AsyncBindingEEEEEEC4Ev():
+
+        9128:	4956      	ldr	r1, [pc, #344]	@ (9284 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2a0>)
+
+        912a:	4a57      	ldr	r2, [pc, #348]	@ (9288 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2a4>)
+
+        912c:	6808      	ldr	r0, [r1, #0]
+
+        912e:	600a      	str	r2, [r1, #0]
+
+        9130:	e9cd 440a 	strd	r4, r4, [sp, #40]	@ 0x28
+
+    _ZN3etl4spanImLj4294967295EEC4ERKS1_():
+
+        9134:	f502 6180 	add.w	r1, r2, #1024	@ 0x400
+
+        9138:	6091      	str	r1, [r2, #8]
+
+    _ZN5async8internal15TaskInitializerINS_15FreeRtosAdapterINS_12AsyncBindingEEEEC4EhPKcR11xSTATIC_TCBRKN3etl4spanImLj4294967295EEENSA_8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        913a:	6151      	str	r1, [r2, #20]
+
+        913c:	4953      	ldr	r1, [pc, #332]	@ (928c <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2a8>)
+
+        913e:	6191      	str	r1, [r2, #24]
+
+        9140:	2109      	movs	r1, #9
+
+    _ZN5async14StaticRunnableINS_8internal15TaskInitializerINS_15FreeRtosAdapterINS_12AsyncBindingEEEEEEC4Ev():
+
+        9142:	6010      	str	r0, [r2, #0]
+
+    _ZN5async8internal15TaskInitializerINS_15FreeRtosAdapterINS_12AsyncBindingEEEEC4EhPKcR11xSTATIC_TCBRKN3etl4spanImLj4294967295EEENSA_8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        9144:	7711      	strb	r1, [r2, #28]
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh0ELj2048EEC4EPKcN3etl8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        9146:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+    _ZN5async9QueueNodeINS_9IRunnableEEC4Ev():
+
+        914a:	605e      	str	r6, [r3, #4]
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh0ELj2048EEC4EPKcN3etl8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        914c:	4b50      	ldr	r3, [pc, #320]	@ (9290 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2ac>)
+
+    _ZN5async8internal15TaskInitializerINS_15FreeRtosAdapterINS_12AsyncBindingEEEEC4EhPKcR11xSTATIC_TCBRKN3etl4spanImLj4294967295EEENSA_8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        914e:	60d4      	str	r4, [r2, #12]
+
+        9150:	6114      	str	r4, [r2, #16]
+
+    _ZN3etl4spanImLj4294967295EEC4ERKS1_():
+
+        9152:	6052      	str	r2, [r2, #4]
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh0ELj2048EEC4EPKcN3etl8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        9154:	e88d 0003 	stmia.w	sp, {r0, r1}
+
+        9158:	f503 6200 	add.w	r2, r3, #2048	@ 0x800
+
+        915c:	494d      	ldr	r1, [pc, #308]	@ (9294 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2b0>)
+
+        915e:	f7f8 fafb 	bl	1758 <<a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html">void async::internal::TaskInitializer<async::FreeRtosAdapter<async::AsyncBinding> >::create<etl::array<unsigned long, 512u> >(unsigned char, char const*, xSTATIC_TCB&, etl::array<unsigned long, 512u>&, etl::delegate<void (async::TaskContext<async::FreeRtosAdapter<async::AsyncBinding> >&)>, async::internal::TaskConfigHolder<10u, void>::TaskConfigType const&)</a>.isra.0>
+
+    _ZN3etl8delegateIFvRN5async11TaskContextINS1_15FreeRtosAdapterINS1_12AsyncBindingEEEEEEE18invocation_element8ptr_typeC4EPv():
+
+        9162:	e9cd 440a 	strd	r4, r4, [sp, #40]	@ 0x28
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh3ELj2048EEC4EPKcN3etl8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        9166:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+        916a:	4b4b      	ldr	r3, [pc, #300]	@ (9298 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2b4>)
+
+        916c:	e88d 0003 	stmia.w	sp, {r0, r1}
+
+        9170:	f503 6200 	add.w	r2, r3, #2048	@ 0x800
+
+        9174:	4949      	ldr	r1, [pc, #292]	@ (929c <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2b8>)
+
+        9176:	2003      	movs	r0, #3
+
+        9178:	f7f8 faee 	bl	1758 <<a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html">void async::internal::TaskInitializer<async::FreeRtosAdapter<async::AsyncBinding> >::create<etl::array<unsigned long, 512u> >(unsigned char, char const*, xSTATIC_TCB&, etl::array<unsigned long, 512u>&, etl::delegate<void (async::TaskContext<async::FreeRtosAdapter<async::AsyncBinding> >&)>, async::internal::TaskConfigHolder<10u, void>::TaskConfigType const&)</a>.isra.0>
+
+    _ZN3etl8delegateIFvRN5async11TaskContextINS1_15FreeRtosAdapterINS1_12AsyncBindingEEEEEEE18invocation_element8ptr_typeC4EPv():
+
+        917c:	e9cd 440a 	strd	r4, r4, [sp, #40]	@ 0x28
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh7ELj2048EEC4EPKcN3etl8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        9180:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+        9184:	4b46      	ldr	r3, [pc, #280]	@ (92a0 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2bc>)
+
+        9186:	e88d 0003 	stmia.w	sp, {r0, r1}
+
+        918a:	f503 6200 	add.w	r2, r3, #2048	@ 0x800
+
+        918e:	4945      	ldr	r1, [pc, #276]	@ (92a4 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2c0>)
+
+        9190:	2007      	movs	r0, #7
+
+        9192:	f7f8 fae1 	bl	1758 <<a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html">void async::internal::TaskInitializer<async::FreeRtosAdapter<async::AsyncBinding> >::create<etl::array<unsigned long, 512u> >(unsigned char, char const*, xSTATIC_TCB&, etl::array<unsigned long, 512u>&, etl::delegate<void (async::TaskContext<async::FreeRtosAdapter<async::AsyncBinding> >&)>, async::internal::TaskConfigHolder<10u, void>::TaskConfigType const&)</a>.isra.0>
+
+    _ZN3etl8delegateIFvRN5async11TaskContextINS1_15FreeRtosAdapterINS1_12AsyncBindingEEEEEEE18invocation_element8ptr_typeC4EPv():
+
+        9196:	e9cd 440a 	strd	r4, r4, [sp, #40]	@ 0x28
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh6ELj2048EEC4EPKcN3etl8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        919a:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+        919e:	4b42      	ldr	r3, [pc, #264]	@ (92a8 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2c4>)
+
+        91a0:	e88d 0003 	stmia.w	sp, {r0, r1}
+
+        91a4:	f503 6200 	add.w	r2, r3, #2048	@ 0x800
+
+        91a8:	4940      	ldr	r1, [pc, #256]	@ (92ac <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2c8>)
+
+        91aa:	2006      	movs	r0, #6
+
+        91ac:	f7f8 fad4 	bl	1758 <<a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html">void async::internal::TaskInitializer<async::FreeRtosAdapter<async::AsyncBinding> >::create<etl::array<unsigned long, 512u> >(unsigned char, char const*, xSTATIC_TCB&, etl::array<unsigned long, 512u>&, etl::delegate<void (async::TaskContext<async::FreeRtosAdapter<async::AsyncBinding> >&)>, async::internal::TaskConfigHolder<10u, void>::TaskConfigType const&)</a>.isra.0>
+
+    _ZN3etl8delegateIFvRN5async11TaskContextINS1_15FreeRtosAdapterINS1_12AsyncBindingEEEEEEE18invocation_element8ptr_typeC4EPv():
+
+        91b0:	e9cd 440a 	strd	r4, r4, [sp, #40]	@ 0x28
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh5ELj2048EEC4EPKcN3etl8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        91b4:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+        91b8:	4b3d      	ldr	r3, [pc, #244]	@ (92b0 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2cc>)
+
+        91ba:	e88d 0003 	stmia.w	sp, {r0, r1}
+
+        91be:	f503 6200 	add.w	r2, r3, #2048	@ 0x800
+
+        91c2:	493c      	ldr	r1, [pc, #240]	@ (92b4 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2d0>)
+
+        91c4:	2005      	movs	r0, #5
+
+        91c6:	f7f8 fac7 	bl	1758 <<a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html">void async::internal::TaskInitializer<async::FreeRtosAdapter<async::AsyncBinding> >::create<etl::array<unsigned long, 512u> >(unsigned char, char const*, xSTATIC_TCB&, etl::array<unsigned long, 512u>&, etl::delegate<void (async::TaskContext<async::FreeRtosAdapter<async::AsyncBinding> >&)>, async::internal::TaskConfigHolder<10u, void>::TaskConfigType const&)</a>.isra.0>
+
+    _ZN3etl8delegateIFvRN5async11TaskContextINS1_15FreeRtosAdapterINS1_12AsyncBindingEEEEEEE18invocation_element8ptr_typeC4EPv():
+
+        91ca:	e9cd 440a 	strd	r4, r4, [sp, #40]	@ 0x28
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh2ELj2048EEC4EPKcN3etl8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        91ce:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+        91d2:	4b39      	ldr	r3, [pc, #228]	@ (92b8 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2d4>)
+
+        91d4:	e88d 0003 	stmia.w	sp, {r0, r1}
+
+        91d8:	f503 6200 	add.w	r2, r3, #2048	@ 0x800
+
+        91dc:	4937      	ldr	r1, [pc, #220]	@ (92bc <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2d8>)
+
+        91de:	2002      	movs	r0, #2
+
+        91e0:	f7f8 faba 	bl	1758 <<a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html">void async::internal::TaskInitializer<async::FreeRtosAdapter<async::AsyncBinding> >::create<etl::array<unsigned long, 512u> >(unsigned char, char const*, xSTATIC_TCB&, etl::array<unsigned long, 512u>&, etl::delegate<void (async::TaskContext<async::FreeRtosAdapter<async::AsyncBinding> >&)>, async::internal::TaskConfigHolder<10u, void>::TaskConfigType const&)</a>.isra.0>
+
+    _ZN3etl8delegateIFvRN5async11TaskContextINS1_15FreeRtosAdapterINS1_12AsyncBindingEEEEEEE18invocation_element8ptr_typeC4EPv():
+
+        91e4:	e9cd 440a 	strd	r4, r4, [sp, #40]	@ 0x28
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh4ELj2048EEC4EPKcN3etl8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        91e8:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+        91ec:	4b34      	ldr	r3, [pc, #208]	@ (92c0 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2dc>)
+
+        91ee:	e88d 0003 	stmia.w	sp, {r0, r1}
+
+        91f2:	f503 6200 	add.w	r2, r3, #2048	@ 0x800
+
+        91f6:	4933      	ldr	r1, [pc, #204]	@ (92c4 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2e0>)
+
+        91f8:	2004      	movs	r0, #4
+
+        91fa:	f7f8 faad 	bl	1758 <<a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html">void async::internal::TaskInitializer<async::FreeRtosAdapter<async::AsyncBinding> >::create<etl::array<unsigned long, 512u> >(unsigned char, char const*, xSTATIC_TCB&, etl::array<unsigned long, 512u>&, etl::delegate<void (async::TaskContext<async::FreeRtosAdapter<async::AsyncBinding> >&)>, async::internal::TaskConfigHolder<10u, void>::TaskConfigType const&)</a>.isra.0>
+
+    _ZN3etl8delegateIFvRN5async11TaskContextINS1_15FreeRtosAdapterINS1_12AsyncBindingEEEEEEE18invocation_element8ptr_typeC4EPv():
+
+        91fe:	e9cd 440a 	strd	r4, r4, [sp, #40]	@ 0x28
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh1ELj2048EEC4EPKcN3etl8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        9202:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+        9206:	4b30      	ldr	r3, [pc, #192]	@ (92c8 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2e4>)
+
+        9208:	e88d 0003 	stmia.w	sp, {r0, r1}
+
+        920c:	f503 6200 	add.w	r2, r3, #2048	@ 0x800
+
+        9210:	492e      	ldr	r1, [pc, #184]	@ (92cc <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2e8>)
+
+        9212:	2001      	movs	r0, #1
+
+        9214:	f7f8 faa0 	bl	1758 <<a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html">void async::internal::TaskInitializer<async::FreeRtosAdapter<async::AsyncBinding> >::create<etl::array<unsigned long, 512u> >(unsigned char, char const*, xSTATIC_TCB&, etl::array<unsigned long, 512u>&, etl::delegate<void (async::TaskContext<async::FreeRtosAdapter<async::AsyncBinding> >&)>, async::internal::TaskConfigHolder<10u, void>::TaskConfigType const&)</a>.isra.0>
+
+    _ZN3etl8delegateIFvRN5async11TaskContextINS1_15FreeRtosAdapterINS1_12AsyncBindingEEEEEEE18invocation_element8ptr_typeC4EPv():
+
+        9218:	e9cd 440a 	strd	r4, r4, [sp, #40]	@ 0x28
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh8ELj0EEC4IN3etl5arrayImLj512EEEEEPKcRT_NS7_8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        921c:	e895 0003 	ldmia.w	r5, {r0, r1}
+
+    _ZN3etl14singleton_baseIN7runtime7declare14RuntimeMonitorINS1_17RuntimeStatisticsES4_Lj10ELj3EEEEC4ERS5_():
+
+        9220:	4c2b      	ldr	r4, [pc, #172]	@ (92d0 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2ec>)
+
+    _ZN5async8internal8TaskImplINS_15FreeRtosAdapterINS_12AsyncBindingEEELh8ELj0EEC4IN3etl5arrayImLj512EEEEEPKcRT_NS7_8delegateIFvRNS_11TaskContextIS4_EEEEERKNS0_16TaskConfigHolderILj10EvE14TaskConfigTypeE():
+
+        9222:	4b2c      	ldr	r3, [pc, #176]	@ (92d4 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2f0>)
+
+        9224:	4a2c      	ldr	r2, [pc, #176]	@ (92d8 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2f4>)
+
+        9226:	e88d 0003 	stmia.w	sp, {r0, r1}
+
+        922a:	492c      	ldr	r1, [pc, #176]	@ (92dc <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2f8>)
+
+        922c:	2008      	movs	r0, #8
+
+        922e:	f7f8 fa93 	bl	1758 <<a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html">void async::internal::TaskInitializer<async::FreeRtosAdapter<async::AsyncBinding> >::create<etl::array<unsigned long, 512u> >(unsigned char, char const*, xSTATIC_TCB&, etl::array<unsigned long, 512u>&, etl::delegate<void (async::TaskContext<async::FreeRtosAdapter<async::AsyncBinding> >&)>, async::internal::TaskConfigHolder<10u, void>::TaskConfigType const&)</a>.isra.0>
+
+    _ZN3etl14singleton_baseIN7runtime7declare14RuntimeMonitorINS1_17RuntimeStatisticsES4_Lj10ELj3EEEEC4ERS5_():
+
+        9232:	6823      	ldr	r3, [r4, #0]
+
+        9234:	b11b      	cbz	r3, 923e <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x25a>
+
+        9236:	4b2a      	ldr	r3, [pc, #168]	@ (92e0 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x2fc>)
+
+        9238:	4628      	mov	r0, r5
+
+        923a:	681b      	ldr	r3, [r3, #0]
+
+        923c:	4798      	blx	r3
+
+    __static_initialization_and_destruction_0():
+
+        923e:	4a29      	ldr	r2, [pc, #164]	@ (92e4 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x300>)
+
+    _ZN3etl14singleton_baseIN7runtime7declare14RuntimeMonitorINS1_17RuntimeStatisticsES4_Lj10ELj3EEEEC4ERS5_():
+
+        9240:	6027      	str	r7, [r4, #0]
+
+    __static_initialization_and_destruction_0():
+
+        9242:	6813      	ldr	r3, [r2, #0]
+
+        9244:	1c59      	adds	r1, r3, #1
+
+        9246:	6011      	str	r1, [r2, #0]
+
+        9248:	b113      	cbz	r3, 9250 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x26c>
+
+    _GLOBAL__sub_I_safetyStack():
+
+        924a:	b00c      	add	sp, #48	@ 0x30
+
+        924c:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+    __static_initialization_and_destruction_0():
+
+        9250:	4825      	ldr	r0, [pc, #148]	@ (92e8 <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x304>)
+
+        9252:	f7fa fa97 	bl	3784 <<a href="../../../../../../libs/3rdparty/etl/include/etl/array.h/dcefabc5bf2e69873c5b050915d00a2a.html">etl::array<async::TaskContext<async::FreeRtosAdapter<async::AsyncBinding> >, 9u>::array()</a>>
+
+    _GLOBAL__sub_I_safetyStack():
+
+        9256:	e7f8      	b.n	924a <<a href="./cd9c52083784422a4e7fca640cc50a19.html">_GLOBAL__sub_I_safetyStack</a>+0x266>
+
+        9258:	200145b0 	.word	0x200145b0
+
+        925c:	00001575 	.word	0x00001575
+
+        9260:	20014750 	.word	0x20014750
+
+        9264:	00001595 	.word	0x00001595
+
+        9268:	00052af8 	.word	0x00052af8
+
+        926c:	000016e9 	.word	0x000016e9
+
+        9270:	00052a98 	.word	0x00052a98
+
+        9274:	20004b0c 	.word	0x20004b0c
+
+        9278:	00052ae0 	.word	0x00052ae0
+
+        927c:	20004b04 	.word	0x20004b04
+
+        9280:	00052af4 	.word	0x00052af4
+
+        9284:	200000dc 	.word	0x200000dc
+
+        9288:	200046a4 	.word	0x200046a4
+
+        928c:	0004a6f8 	.word	0x0004a6f8
+
+        9290:	20003e44 	.word	0x20003e44
+
+        9294:	0004a700 	.word	0x0004a700
+
+        9298:	200035e4 	.word	0x200035e4
+
+        929c:	0004a6a0 	.word	0x0004a6a0
+
+        92a0:	20002d84 	.word	0x20002d84
+
+        92a4:	0004a6a4 	.word	0x0004a6a4
+
+        92a8:	20002524 	.word	0x20002524
+
+        92ac:	0004a708 	.word	0x0004a708
+
+        92b0:	20001cc4 	.word	0x20001cc4
+
+        92b4:	0004a670 	.word	0x0004a670
+
+        92b8:	20001464 	.word	0x20001464
+
+        92bc:	0004a70c 	.word	0x0004a70c
+
+        92c0:	20000c04 	.word	0x20000c04
+
+        92c4:	0004a6b0 	.word	0x0004a6b0
+
+        92c8:	200003a4 	.word	0x200003a4
+
+        92cc:	0004a710 	.word	0x0004a710
+
+        92d0:	200000e0 	.word	0x200000e0
+
+        92d4:	200147e0 	.word	0x200147e0
+
+        92d8:	20000344 	.word	0x20000344
+
+        92dc:	0004a654 	.word	0x0004a654
+
+        92e0:	20000000 	.word	0x20000000
+
+        92e4:	20000124 	.word	0x20000124
+
+        92e8:	20000128 	.word	0x20000128
+
+        92ec:	200144a0 	.word	0x200144a0
+
+        92f0:	20014314 	.word	0x20014314
+
+    </pre>
+
+    
+    <pre><a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/FreeRtosAdapter.h/8060bbb3dd6f48b3d398c9f682a3154b.html">_GLOBAL__sub_D_safetyStack (84)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 48</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 124</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    48
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">124</td>
+                <td><a href="../../../../../../libs/bsw/asyncFreeRtos/include/async/TaskInitializer.h/9deadc0888351dafbb841409fac0248d.html" class="icon-function">void async::internal::TaskInitializer&lt;async::FreeRtosAdapter&lt;async::AsyncBinding&gt; &gt;::create&lt;etl::array&lt;unsigned long, 512u&gt; &gt;(unsigned char, char const*, xSTATIC_TCB&amp;, etl::array&lt;unsigned long, 512u&gt;&amp;, etl::delegate&lt;void (async::TaskContext&lt;async::FreeRtosAdapter&lt;async::AsyncBinding&gt; &gt;&amp;)&gt;, async::internal::TaskConfigHolder&lt;10u, void&gt;::TaskConfigType const&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">8
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

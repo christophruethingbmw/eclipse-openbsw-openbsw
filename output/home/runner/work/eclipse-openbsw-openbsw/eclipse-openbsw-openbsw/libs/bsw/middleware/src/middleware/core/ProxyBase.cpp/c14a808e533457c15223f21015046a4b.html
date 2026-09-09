@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../middleware.html">middleware</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../middleware.html">middleware</a></li>
+        
+        <li ><a href="../../core.html">core</a>
+            </li>
+
+        
+        <li class="active"><a href="../ProxyBase.cpp.html">ProxyBase.cpp</a>:115
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">middleware::core::ProxyBase::generateMessageHeader(unsigned short, unsigned short) const</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000470b8</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>48 (static)</td>
+                <td>196</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../build/s32k148-freertos-gcc/executables/referenceApp/middlewareConfiguration/src/generated_code/org/test/foo/FooProxy.cpp/b901abeb260136a0a8bd2c351f959b49.html">org::test::foo::Foo::proxy::FooDefaultAttribute::get(etl::delegate&lt;void (etl::expected&lt;etl::reference_wrapper&lt;org::test::foo::Foo::FooStruct const&gt;, middleware::core::Future::State&gt; const&amp;)&gt;) (136)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            Σ=28
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset (28)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./b25c46ea464570fe3b3f577902347afd.html">middleware::core::ProxyBase::unsubscribe(unsigned short) (24)</a></pre>
+    
+
+    <pre>
+
+    middleware::core::ProxyBase::generateMessageHeader(unsigned short, unsigned short) const():
+
+       470b8:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+       470bc:	460d      	mov	r5, r1
+
+       470be:	461e      	mov	r6, r3
+
+       470c0:	6809      	ldr	r1, [r1, #0]
+
+       470c2:	4617      	mov	r7, r2
+
+       470c4:	f64f 72ff 	movw	r2, #65535	@ 0xffff
+
+       470c8:	4296      	cmp	r6, r2
+
+       470ca:	4604      	mov	r4, r0
+
+       470cc:	680b      	ldr	r3, [r1, #0]
+
+       470ce:	b084      	sub	sp, #16
+
+       470d0:	4628      	mov	r0, r5
+
+       470d2:	d034      	beq.n	4713e <<a href="./c14a808e533457c15223f21015046a4b.html">middleware::core::ProxyBase::generateMessageHeader(unsigned short, unsigned short) const</a>+0x86>
+
+       470d4:	4798      	blx	r3
+
+       470d6:	4601      	mov	r1, r0
+
+       470d8:	68a8      	ldr	r0, [r5, #8]
+
+       470da:	88aa      	ldrh	r2, [r5, #4]
+
+       470dc:	6803      	ldr	r3, [r0, #0]
+
+       470de:	f04f 0800 	mov.w	r8, #0
+
+       470e2:	46c1      	mov	r9, r8
+
+       470e4:	689b      	ldr	r3, [r3, #8]
+
+       470e6:	f366 090f 	bfi	r9, r6, #0, #16
+
+       470ea:	f362 491f 	bfi	r9, r2, #16, #16
+
+       470ee:	f361 080f 	bfi	r8, r1, #0, #16
+
+       470f2:	4798      	blx	r3
+
+       470f4:	4606      	mov	r6, r0
+
+       470f6:	68a8      	ldr	r0, [r5, #8]
+
+       470f8:	6803      	ldr	r3, [r0, #0]
+
+       470fa:	68db      	ldr	r3, [r3, #12]
+
+       470fc:	4798      	blx	r3
+
+    middleware::core::ProxyBase::getAddressId() const():
+
+       470fe:	f367 481f 	bfi	r8, r7, #16, #16
+
+       47102:	7b2a      	ldrb	r2, [r5, #12]
+
+    _ZN10middleware4core7MessageC4ERKNS1_6HeaderE():
+
+       47104:	f8cd 8000 	str.w	r8, [sp]
+
+    _ZN10middleware4core7Message13createRequestEtttthhh():
+
+       47108:	2301      	movs	r3, #1
+
+    _ZN10middleware4core7MessageC4ERKNS1_6HeaderE():
+
+       4710a:	f8cd 9004 	str.w	r9, [sp, #4]
+
+       4710e:	f88d 6008 	strb.w	r6, [sp, #8]
+
+       47112:	f88d 0009 	strb.w	r0, [sp, #9]
+
+       47116:	f88d 200a 	strb.w	r2, [sp, #10]
+
+    _ZN10middleware4core7Message13createRequestEtttthhh():
+
+       4711a:	f88d 300b 	strb.w	r3, [sp, #11]
+
+    _ZN10middleware4core7MessageC4ERKNS1_6HeaderE():
+
+       4711e:	e89d 0007 	ldmia.w	sp, {r0, r1, r2}
+
+       47122:	2300      	movs	r3, #0
+
+       47124:	e884 0007 	stmia.w	r4, {r0, r1, r2}
+
+       47128:	60e3      	str	r3, [r4, #12]
+
+       4712a:	2230      	movs	r2, #48	@ 0x30
+
+       4712c:	4619      	mov	r1, r3
+
+       4712e:	f104 0010 	add.w	r0, r4, #16
+
+       47132:	f7b9 fab7 	bl	6a4 <<a href="../../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    middleware::core::ProxyBase::generateMessageHeader(unsigned short, unsigned short) const():
+
+       47136:	4620      	mov	r0, r4
+
+       47138:	b004      	add	sp, #16
+
+       4713a:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+       4713e:	4798      	blx	r3
+
+       47140:	4681      	mov	r9, r0
+
+       47142:	68a8      	ldr	r0, [r5, #8]
+
+    _ZNK10middleware4core15TransceiverBase13getInstanceIdEv():
+
+       47144:	f8b5 a004 	ldrh.w	sl, [r5, #4]
+
+    middleware::core::ProxyBase::generateMessageHeader(unsigned short, unsigned short) const():
+
+       47148:	6803      	ldr	r3, [r0, #0]
+
+       4714a:	689b      	ldr	r3, [r3, #8]
+
+       4714c:	4798      	blx	r3
+
+       4714e:	4680      	mov	r8, r0
+
+       47150:	68a8      	ldr	r0, [r5, #8]
+
+       47152:	6803      	ldr	r3, [r0, #0]
+
+       47154:	68db      	ldr	r3, [r3, #12]
+
+       47156:	4798      	blx	r3
+
+    _ZN10middleware4core7MessageC4ERKNS1_6HeaderE():
+
+       47158:	f240 23ff 	movw	r3, #767	@ 0x2ff
+
+       4715c:	f8ad 9000 	strh.w	r9, [sp]
+
+       47160:	f8ad 7002 	strh.w	r7, [sp, #2]
+
+       47164:	f8ad 6004 	strh.w	r6, [sp, #4]
+
+       47168:	f8ad a006 	strh.w	sl, [sp, #6]
+
+       4716c:	f88d 8008 	strb.w	r8, [sp, #8]
+
+       47170:	f88d 0009 	strb.w	r0, [sp, #9]
+
+       47174:	f8ad 300a 	strh.w	r3, [sp, #10]
+
+       47178:	e7d1      	b.n	4711e <<a href="./c14a808e533457c15223f21015046a4b.html">middleware::core::ProxyBase::generateMessageHeader(unsigned short, unsigned short) const</a>+0x66>
+
+    middleware::core::ProxyBase::generateMessageHeader(unsigned short, unsigned short) const():
+
+       4717a:	bf00      	nop
+
+    </pre>
+
+    
+    <pre><a href="./65dcb07007f0c34499315aa06c5bc6e1.html">middleware::core::ProxyBase::checkCrossThreadError(unsigned long) const (88)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 216</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 868</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    216
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    868
+                    
+                    
+                </td>
+                <td class="col_size">196</td>
+                <td><a href="./c14a808e533457c15223f21015046a4b.html" class="icon-function">middleware::core::ProxyBase::generateMessageHeader(unsigned short, unsigned short) const</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    168
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                112 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    672
+                    
+                    
+                </td>
+                <td class="col_size">136</td>
+                <td><a href="../../../../../../../build/s32k148-freertos-gcc/executables/referenceApp/middlewareConfiguration/src/generated_code/org/test/foo/FooProxy.cpp/b901abeb260136a0a8bd2c351f959b49.html" class="icon-function">org::test::foo::Foo::proxy::FooDefaultAttribute::get(etl::delegate&lt;void (etl::expected&lt;etl::reference_wrapper&lt;org::test::foo::Foo::FooStruct const&gt;, middleware::core::Future::State&gt; const&amp;)&gt;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">536</td>
+                <td><a href="../../../../../../../executables/referenceApp/application/src/systems/DemoSystem.cpp/57bd18889995d93a100bf5c3e7fa05dc.html" class="icon-function">systems::DemoSystem::cyclic()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

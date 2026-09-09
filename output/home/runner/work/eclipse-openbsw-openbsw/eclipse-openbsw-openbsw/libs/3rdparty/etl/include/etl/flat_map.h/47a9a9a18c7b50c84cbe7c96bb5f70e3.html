@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../3rdparty.html">3rdparty</a></li>
+        
+        <li><a href="../../../../etl.html">etl</a></li>
+        
+        <li><a href="../../../include.html">include</a></li>
+        
+        <li ><a href="../../etl.html">etl</a>
+            </li>
+
+        
+        <li class="active"><a href="../flat_map.h.html">flat_map.h</a>:1215
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">etl::iflat_map&lt;ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess&gt;::insert_default_value(etl::ireference_flat_map&lt;ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess&gt;::iterator, ip::IPAddress const&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00028acc</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td></td>
+                <td>392</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../bsw/cpp2someip/src/SessionManager.cpp/e5772d4bd82349161626fdb405fda18b.html">someip::SessionManager::addEndpoint(ip::IPAddress const&amp;) (132)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            Σ=278
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../bsw/cpp2ethernet/include/ip/IPAddress.h/5979ea58fa9eb4d26ab2f2a2dd362b39.html">ip::IPAddressCompareLess::operator()(ip::IPAddress const&amp;, ip::IPAddress const&amp;) const (200)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/7d8c66e32294c0fbcad3762662cbd6d5.html">memmove (50)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../reference_flat_map.h/78aee06081e26c359f271b84a8b9ec54.html">etl::ireference_flat_map&lt;ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess&gt;::find(ip::IPAddress const&amp;) (348)</a></pre>
+    
+
+    <pre>
+
+    etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&):
+
+       28acc:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
+
+       28ad0:	460e      	mov	r6, r1
+
+    _ZNK3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE4fullEv():
+
+       28ad2:	6809      	ldr	r1, [r1, #0]
+
+    etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&):
+
+       28ad4:	4605      	mov	r5, r0
+
+       28ad6:	4699      	mov	r9, r3
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       28ad8:	6888      	ldr	r0, [r1, #8]
+
+       28ada:	684b      	ldr	r3, [r1, #4]
+
+       28adc:	1ac0      	subs	r0, r0, r3
+
+    etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&):
+
+       28ade:	680b      	ldr	r3, [r1, #0]
+
+       28ae0:	ebb3 0fa0 	cmp.w	r3, r0, asr #2
+
+       28ae4:	b083      	sub	sp, #12
+
+       28ae6:	4690      	mov	r8, r2
+
+       28ae8:	d103      	bne.n	28af2 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x26>
+
+       28aea:	4b59      	ldr	r3, [pc, #356]	@ (28c50 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x184>)
+
+       28aec:	a801      	add	r0, sp, #4
+
+       28aee:	681b      	ldr	r3, [r3, #0]
+
+       28af0:	4798      	blx	r3
+
+       28af2:	68b4      	ldr	r4, [r6, #8]
+
+    _ZN3etl5ipool8allocateINS_4pairIKN2ip9IPAddressEN6someip8internal15SessionEndpointEEEEEPT_v():
+
+       28af4:	6923      	ldr	r3, [r4, #16]
+
+       28af6:	2b07      	cmp	r3, #7
+
+       28af8:	d803      	bhi.n	28b02 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x36>
+
+       28afa:	4b55      	ldr	r3, [pc, #340]	@ (28c50 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x184>)
+
+       28afc:	a801      	add	r0, sp, #4
+
+       28afe:	681b      	ldr	r3, [r3, #0]
+
+       28b00:	4798      	blx	r3
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+       28b02:	68a0      	ldr	r0, [r4, #8]
+
+       28b04:	6963      	ldr	r3, [r4, #20]
+
+       28b06:	4298      	cmp	r0, r3
+
+       28b08:	f080 8098 	bcs.w	28c3c <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x170>
+
+       28b0c:	68e2      	ldr	r2, [r4, #12]
+
+       28b0e:	4293      	cmp	r3, r2
+
+       28b10:	d90c      	bls.n	28b2c <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x60>
+
+       28b12:	f8d4 e010 	ldr.w	lr, [r4, #16]
+
+       28b16:	f8d4 c000 	ldr.w	ip, [r4]
+
+       28b1a:	fb0e f702 	mul.w	r7, lr, r2
+
+       28b1e:	eb0c 0107 	add.w	r1, ip, r7
+
+       28b22:	3201      	adds	r2, #1
+
+       28b24:	4471      	add	r1, lr
+
+       28b26:	f84c 1007 	str.w	r1, [ip, r7]
+
+       28b2a:	60e2      	str	r2, [r4, #12]
+
+       28b2c:	6867      	ldr	r7, [r4, #4]
+
+       28b2e:	3001      	adds	r0, #1
+
+       28b30:	4283      	cmp	r3, r0
+
+       28b32:	bf88      	it	hi
+
+       28b34:	683b      	ldrhi	r3, [r7, #0]
+
+       28b36:	60a0      	str	r0, [r4, #8]
+
+       28b38:	bf98      	it	ls
+
+       28b3a:	2300      	movls	r3, #0
+
+    etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&):
+
+       28b3c:	4649      	mov	r1, r9
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+       28b3e:	f04f 0901 	mov.w	r9, #1
+
+       28b42:	6063      	str	r3, [r4, #4]
+
+    etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&):
+
+       28b44:	2204      	movs	r2, #4
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+       28b46:	f8c7 9000 	str.w	r9, [r7]
+
+    etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&):
+
+       28b4a:	4638      	mov	r0, r7
+
+       28b4c:	f7d7 fd9c 	bl	688 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE3endEv():
+
+       28b50:	6832      	ldr	r2, [r6, #0]
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE8iteratorC4ERKS8_():
+
+       28b52:	f8d8 4000 	ldr.w	r4, [r8]
+
+    _ZN3etl11pvoidvector3endEv():
+
+       28b56:	6893      	ldr	r3, [r2, #8]
+
+    _ZN6someip8internal12SessionEntryC4Ev():
+
+       28b58:	f8a7 9004 	strh.w	r9, [r7, #4]
+
+    _ZN3etl4pairINS_19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS2_20IPAddressCompareLessEE8iteratorEbEC4IS9_bEEOT_OT0_():
+
+       28b5c:	2100      	movs	r1, #0
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28b5e:	429c      	cmp	r4, r3
+
+    _ZN6someip8internal12SessionEntryC4Ev():
+
+       28b60:	f887 9006 	strb.w	r9, [r7, #6]
+
+    _ZN3etl4pairINS_19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS2_20IPAddressCompareLessEE8iteratorEbEC4IS9_bEEOT_OT0_():
+
+       28b64:	7129      	strb	r1, [r5, #4]
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE8iteratorC4ERKS8_():
+
+       28b66:	602b      	str	r3, [r5, #0]
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28b68:	d025      	beq.n	28bb6 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0xea>
+
+       28b6a:	f8d4 8000 	ldr.w	r8, [r4]
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE8iteratoraSERKS8_():
+
+       28b6e:	602c      	str	r4, [r5, #0]
+
+    _ZNK3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE14keys_are_equalERKS2_S9_():
+
+       28b70:	4639      	mov	r1, r7
+
+       28b72:	4640      	mov	r0, r8
+
+       28b74:	f7ff fe40 	bl	287f8 <<a href="../../../../../bsw/cpp2ethernet/include/ip/IPAddress.h/5979ea58fa9eb4d26ab2f2a2dd362b39.html">ip::IPAddressCompareLess::operator()(ip::IPAddress const&, ip::IPAddress const&) const</a>.isra.0>
+
+       28b78:	2800      	cmp	r0, #0
+
+       28b7a:	d035      	beq.n	28be8 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x11c>
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28b7c:	f8d6 8000 	ldr.w	r8, [r6]
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       28b80:	f8d8 2008 	ldr.w	r2, [r8, #8]
+
+       28b84:	f8d8 3004 	ldr.w	r3, [r8, #4]
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28b88:	f8d8 1000 	ldr.w	r1, [r8]
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       28b8c:	1ad3      	subs	r3, r2, r3
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28b8e:	ebb1 0fa3 	cmp.w	r1, r3, asr #2
+
+       28b92:	d032      	beq.n	28bfa <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x12e>
+
+    _ZN3etl11pvoidvector6insertEPKPvS1_():
+
+       28b94:	1d13      	adds	r3, r2, #4
+
+       28b96:	42a2      	cmp	r2, r4
+
+       28b98:	f8c8 3008 	str.w	r3, [r8, #8]
+
+       28b9c:	d02b      	beq.n	28bf6 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x12a>
+
+    _ZN3etl8mem_moveIPvEEPT_PKS2_S5_S3_():
+
+       28b9e:	1b12      	subs	r2, r2, r4
+
+       28ba0:	4621      	mov	r1, r4
+
+       28ba2:	1d20      	adds	r0, r4, #4
+
+       28ba4:	f021 fc48 	bl	4a438 <<a href="../../../../../../../../../../../unknown/unknown/7d8c66e32294c0fbcad3762662cbd6d5.html">memmove</a>>
+
+    _ZN3etl11pvoidvector6insertEPKPvS1_():
+
+       28ba8:	6027      	str	r7, [r4, #0]
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28baa:	2301      	movs	r3, #1
+
+    etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&):
+
+       28bac:	4628      	mov	r0, r5
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28bae:	712b      	strb	r3, [r5, #4]
+
+    etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&):
+
+       28bb0:	b003      	add	sp, #12
+
+       28bb2:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       28bb6:	6851      	ldr	r1, [r2, #4]
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28bb8:	6810      	ldr	r0, [r2, #0]
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       28bba:	1a59      	subs	r1, r3, r1
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28bbc:	ebb0 0fa1 	cmp.w	r0, r1, asr #2
+
+       28bc0:	d105      	bne.n	28bce <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x102>
+
+       28bc2:	4b23      	ldr	r3, [pc, #140]	@ (28c50 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x184>)
+
+       28bc4:	a801      	add	r0, sp, #4
+
+       28bc6:	681b      	ldr	r3, [r3, #0]
+
+       28bc8:	4798      	blx	r3
+
+       28bca:	6832      	ldr	r2, [r6, #0]
+
+    _ZN3etl11pvoidvector9push_backEPv():
+
+       28bcc:	6893      	ldr	r3, [r2, #8]
+
+       28bce:	1d19      	adds	r1, r3, #4
+
+       28bd0:	6091      	str	r1, [r2, #8]
+
+       28bd2:	601f      	str	r7, [r3, #0]
+
+    _ZN3etl11pvoidvector3endEv():
+
+       28bd4:	6833      	ldr	r3, [r6, #0]
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE8iteratormmEv():
+
+       28bd6:	689b      	ldr	r3, [r3, #8]
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28bd8:	2201      	movs	r2, #1
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE8iteratormmEv():
+
+       28bda:	3b04      	subs	r3, #4
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28bdc:	712a      	strb	r2, [r5, #4]
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE8iteratoraSERKS8_():
+
+       28bde:	602b      	str	r3, [r5, #0]
+
+    etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&):
+
+       28be0:	4628      	mov	r0, r5
+
+       28be2:	b003      	add	sp, #12
+
+       28be4:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
+
+    _ZNK3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE14keys_are_equalERKS2_S9_():
+
+       28be8:	4641      	mov	r1, r8
+
+       28bea:	4638      	mov	r0, r7
+
+       28bec:	f7ff fe04 	bl	287f8 <<a href="../../../../../bsw/cpp2ethernet/include/ip/IPAddress.h/5979ea58fa9eb4d26ab2f2a2dd362b39.html">ip::IPAddressCompareLess::operator()(ip::IPAddress const&, ip::IPAddress const&) const</a>.isra.0>
+
+       28bf0:	2800      	cmp	r0, #0
+
+       28bf2:	d1c3      	bne.n	28b7c <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0xb0>
+
+       28bf4:	e7f4      	b.n	28be0 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x114>
+
+    _ZN3etl11pvoidvector6insertEPKPvS1_():
+
+       28bf6:	6017      	str	r7, [r2, #0]
+
+       28bf8:	e7d7      	b.n	28baa <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0xde>
+
+    _ZN3etl19ireference_flat_mapIN2ip9IPAddressEN6someip8internal15SessionEndpointENS1_20IPAddressCompareLessEE9insert_atENS7_8iteratorERNS_4pairIKS2_S5_EE():
+
+       28bfa:	f8df 9054 	ldr.w	r9, [pc, #84]	@ 28c50 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x184>
+
+       28bfe:	a801      	add	r0, sp, #4
+
+       28c00:	f8d9 3000 	ldr.w	r3, [r9]
+
+       28c04:	4798      	blx	r3
+
+       28c06:	f8d6 8000 	ldr.w	r8, [r6]
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       28c0a:	f8d8 2008 	ldr.w	r2, [r8, #8]
+
+       28c0e:	f8d8 3004 	ldr.w	r3, [r8, #4]
+
+    _ZN3etl11pvoidvector6insertEPKPvS1_():
+
+       28c12:	f8d8 1000 	ldr.w	r1, [r8]
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       28c16:	1ad3      	subs	r3, r2, r3
+
+    _ZN3etl11pvoidvector6insertEPKPvS1_():
+
+       28c18:	ebb1 0fa3 	cmp.w	r1, r3, asr #2
+
+       28c1c:	d1ba      	bne.n	28b94 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0xc8>
+
+       28c1e:	f8d9 3000 	ldr.w	r3, [r9]
+
+       28c22:	a801      	add	r0, sp, #4
+
+       28c24:	4798      	blx	r3
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       28c26:	f8d8 2008 	ldr.w	r2, [r8, #8]
+
+       28c2a:	f8d8 3004 	ldr.w	r3, [r8, #4]
+
+    _ZN3etl11pvoidvector6insertEPKPvS1_():
+
+       28c2e:	f8d8 1000 	ldr.w	r1, [r8]
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       28c32:	1ad3      	subs	r3, r2, r3
+
+    _ZN3etl11pvoidvector6insertEPKPvS1_():
+
+       28c34:	ebb1 0fa3 	cmp.w	r1, r3, asr #2
+
+       28c38:	d0b7      	beq.n	28baa <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0xde>
+
+       28c3a:	e7ab      	b.n	28b94 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0xc8>
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+       28c3c:	4b04      	ldr	r3, [pc, #16]	@ (28c50 <<a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html">etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&)</a>+0x184>)
+
+       28c3e:	a801      	add	r0, sp, #4
+
+       28c40:	681b      	ldr	r3, [r3, #0]
+
+       28c42:	4798      	blx	r3
+
+    etl::iflat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::insert_default_value(etl::ireference_flat_map<ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess>::iterator, ip::IPAddress const&):
+
+       28c44:	2204      	movs	r2, #4
+
+       28c46:	4649      	mov	r1, r9
+
+       28c48:	2000      	movs	r0, #0
+
+       28c4a:	f7d7 fd1d 	bl	688 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       28c4e:	deff      	udf	#255	@ 0xff
+
+       28c50:	20000000 	.word	0x20000000
+
+    </pre>
+
+    
+    <pre><a href="../reference_flat_map.h/f2709f8d3403484cc9411407545c10ef.html">etl::ireference_flat_map&lt;ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess&gt;::lower_bound(ip::IPAddress const&amp;) (268)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 424</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 2,536</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,536
+                    
+                    
+                </td>
+                <td class="col_size">392</td>
+                <td><a href="./47a9a9a18c7b50c84cbe7c96bb5f70e3.html" class="icon-function">etl::iflat_map&lt;ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess&gt;::insert_default_value(etl::ireference_flat_map&lt;ip::IPAddress, someip::internal::SessionEndpoint, ip::IPAddressCompareLess&gt;::iterator, ip::IPAddress const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    424
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,144
+                    
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/SessionManager.cpp/e5772d4bd82349161626fdb405fda18b.html" class="icon-function">someip::SessionManager::addEndpoint(ip::IPAddress const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    376
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,012
+                    
+                    
+                </td>
+                <td class="col_size">96</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/SessionManager.cpp/f505200a96f808ccbbdc9afc18864b19.html" class="icon-function">someip::SessionManager::getSessionInfoForNextUnicastMessage(ip::IPAddress const&amp;, unsigned short&amp;, bool&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    352
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,916
+                    
+                    
+                </td>
+                <td class="col_size">156</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/ServiceAnnouncer.cpp/775ed43d39c3d1dd2eaacd1493d16732.html" class="icon-function">someip::ServiceAnnouncer::getSessionInfoForNextMessage(unsigned short&amp;, bool&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    320
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,760
+                    
+                    
+                </td>
+                <td class="col_size">96</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/ServiceAnnouncer.cpp/6708387b5b832295dccabd7f5b9044b5.html" class="icon-function">someip::ServiceAnnouncer::finalizeMessage()</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    288
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,664
+                    
+                    
+                </td>
+                <td class="col_size">120</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/ServiceAnnouncer.cpp/c153ef6167f327ab551f333a88ee67d1.html" class="icon-function">someip::ServiceAnnouncer::processTaskSubscribeAckMulticast(someip::ServiceAnnouncerTask const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    216
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,544
+                    
+                    
+                </td>
+                <td class="col_size">180</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/ServiceAnnouncer.cpp/6817f402106859955f469ef05d56a49a.html" class="icon-function">someip::ServiceAnnouncer::executeTask(someip::ServiceAnnouncerTask const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    176
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,364
+                    
+                    
+                </td>
+                <td class="col_size">960</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/ServiceAnnouncer.cpp/ad9908f725a70f9ffd16d6c06c22a86d.html" class="icon-function">someip::ServiceAnnouncer::checkPendingTasks(unsigned long long)</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    104
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    404
+                    
+                    
+                </td>
+                <td class="col_size">256</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/ServiceAnnouncer.cpp/8029cfa3d951ccc3d6f2113cceb0ec61.html" class="icon-function">someip::ServiceAnnouncer::enqueueTxMessage(someip::ServiceAnnouncerTask const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">148</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/ServiceAnnouncer.cpp/7ae425b35fa46802a6bee6c3e77f697b.html" class="icon-function">someip::ServiceAnnouncer::sendSubscribeAckMulticast(unsigned short, unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&amp;, unsigned short, ip::IPAddress const&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

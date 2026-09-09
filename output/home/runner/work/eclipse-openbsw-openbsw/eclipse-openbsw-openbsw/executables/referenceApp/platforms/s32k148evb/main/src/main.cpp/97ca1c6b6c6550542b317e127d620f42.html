@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../../platforms.html">platforms</a></li>
+        
+        <li><a href="../../../../s32k148evb.html">s32k148evb</a></li>
+        
+        <li><a href="../../../main.html">main</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../main.cpp.html">main.cpp</a>:105
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">platform::platformLifecycleAdd(lifecycle::LifecycleManager&amp;, unsigned char)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000169ec</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>24 (static)</td>
+                <td>208</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../application/src/app/app.cpp/4da5c80e94ffd100bf7197f59436fa02.html">app::startApp() (956)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (4,
+                            <span title="sum of used bytes by all callees">
+                            Σ=808
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../systems/BspSystem.cpp/ef2aa4d47b5650e199937851d6c6b1ef.html">systems::BspSystem::BspSystem(unsigned char, StaticBsp&amp;) (140)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&amp;, unsigned char) (224)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../systems/CanSystem.cpp/2e1c47610716b2f99c81f4d19b0a6836.html">systems::CanSystem::CanSystem(unsigned char, StaticBsp&amp;) (132)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../systems/S32K148EvbEthernetSystem.cpp/21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&amp;) (312)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./966406635f86cc7b7d91c2678c6c4f4a.html">platform::getStaticBsp() (8)</a></pre>
+    
+
+    <pre>
+
+    platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char):
+
+       169ec:	b530      	push	{r4, r5, lr}
+
+       169ee:	2901      	cmp	r1, #1
+
+       169f0:	b083      	sub	sp, #12
+
+       169f2:	4604      	mov	r4, r0
+
+       169f4:	d003      	beq.n	169fe <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0x12>
+
+       169f6:	2902      	cmp	r1, #2
+
+       169f8:	d016      	beq.n	16a28 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0x3c>
+
+       169fa:	b003      	add	sp, #12
+
+       169fc:	bd30      	pop	{r4, r5, pc}
+
+    _ZNK3etl13typed_storageIN7systems9BspSystemEE9has_valueEv():
+
+       169fe:	4d25      	ldr	r5, [pc, #148]	@ (16a94 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xa8>)
+
+    platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char):
+
+       16a00:	f895 30e4 	ldrb.w	r3, [r5, #228]	@ 0xe4
+
+    create<<unnamed enum>, StaticBsp&>():
+
+       16a04:	2b00      	cmp	r3, #0
+
+       16a06:	d13f      	bne.n	16a88 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0x9c>
+
+       16a08:	4a23      	ldr	r2, [pc, #140]	@ (16a98 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xac>)
+
+       16a0a:	4822      	ldr	r0, [pc, #136]	@ (16a94 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xa8>)
+
+       16a0c:	2102      	movs	r1, #2
+
+       16a0e:	f000 f8ed 	bl	16bec <<a href="../systems/BspSystem.cpp/ef2aa4d47b5650e199937851d6c6b1ef.html">systems::BspSystem::BspSystem(unsigned char, StaticBsp&)</a>>
+
+    platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char):
+
+       16a12:	4a20      	ldr	r2, [pc, #128]	@ (16a94 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xa8>)
+
+       16a14:	4921      	ldr	r1, [pc, #132]	@ (16a9c <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xb0>)
+
+    create<<unnamed enum>, StaticBsp&>():
+
+       16a16:	2301      	movs	r3, #1
+
+    platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char):
+
+       16a18:	4620      	mov	r0, r4
+
+    create<<unnamed enum>, StaticBsp&>():
+
+       16a1a:	f885 30e4 	strb.w	r3, [r5, #228]	@ 0xe4
+
+    platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char):
+
+       16a1e:	b003      	add	sp, #12
+
+       16a20:	e8bd 4030 	ldmia.w	sp!, {r4, r5, lr}
+
+       16a24:	f7fe b84e 	b.w	14ac4 <<a href="../../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+    _ZNK3etl13typed_storageIN7systems9CanSystemEE9has_valueEv():
+
+       16a28:	4d1d      	ldr	r5, [pc, #116]	@ (16aa0 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xb4>)
+
+    platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char):
+
+       16a2a:	f895 34b0 	ldrb.w	r3, [r5, #1200]	@ 0x4b0
+
+    create<<unnamed enum>, StaticBsp&>():
+
+       16a2e:	b11b      	cbz	r3, 16a38 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0x4c>
+
+       16a30:	4b1c      	ldr	r3, [pc, #112]	@ (16aa4 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xb8>)
+
+       16a32:	a801      	add	r0, sp, #4
+
+       16a34:	681b      	ldr	r3, [r3, #0]
+
+       16a36:	4798      	blx	r3
+
+       16a38:	4a17      	ldr	r2, [pc, #92]	@ (16a98 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xac>)
+
+       16a3a:	4819      	ldr	r0, [pc, #100]	@ (16aa0 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xb4>)
+
+       16a3c:	2106      	movs	r1, #6
+
+       16a3e:	f000 fc65 	bl	1730c <<a href="../systems/CanSystem.cpp/2e1c47610716b2f99c81f4d19b0a6836.html">systems::CanSystem::CanSystem(unsigned char, StaticBsp&)</a>>
+
+       16a42:	2001      	movs	r0, #1
+
+       16a44:	f885 04b0 	strb.w	r0, [r5, #1200]	@ 0x4b0
+
+    _ZNK3etl13typed_storageIN7systems24S32K148EvbEthernetSystemEE9has_valueEv():
+
+       16a48:	4d17      	ldr	r5, [pc, #92]	@ (16aa8 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xbc>)
+
+    platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char):
+
+       16a4a:	4a18      	ldr	r2, [pc, #96]	@ (16aac <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xc0>)
+
+       16a4c:	4918      	ldr	r1, [pc, #96]	@ (16ab0 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xc4>)
+
+       16a4e:	2302      	movs	r3, #2
+
+       16a50:	4620      	mov	r0, r4
+
+       16a52:	f7fe f837 	bl	14ac4 <<a href="../../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+       16a56:	f895 315c 	ldrb.w	r3, [r5, #348]	@ 0x15c
+
+    create<<unnamed enum>, lifecycle::LifecycleManager&>():
+
+       16a5a:	b11b      	cbz	r3, 16a64 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0x78>
+
+       16a5c:	4b11      	ldr	r3, [pc, #68]	@ (16aa4 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xb8>)
+
+       16a5e:	a801      	add	r0, sp, #4
+
+       16a60:	681b      	ldr	r3, [r3, #0]
+
+       16a62:	4798      	blx	r3
+
+       16a64:	4622      	mov	r2, r4
+
+       16a66:	2105      	movs	r1, #5
+
+       16a68:	480f      	ldr	r0, [pc, #60]	@ (16aa8 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xbc>)
+
+       16a6a:	f000 fb91 	bl	17190 <<a href="../systems/S32K148EvbEthernetSystem.cpp/21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>>
+
+    platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char):
+
+       16a6e:	4a11      	ldr	r2, [pc, #68]	@ (16ab4 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xc8>)
+
+       16a70:	4911      	ldr	r1, [pc, #68]	@ (16ab8 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xcc>)
+
+    create<<unnamed enum>, lifecycle::LifecycleManager&>():
+
+       16a72:	f04f 0c01 	mov.w	ip, #1
+
+    platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char):
+
+       16a76:	2302      	movs	r3, #2
+
+       16a78:	4620      	mov	r0, r4
+
+    create<<unnamed enum>, lifecycle::LifecycleManager&>():
+
+       16a7a:	f885 c15c 	strb.w	ip, [r5, #348]	@ 0x15c
+
+    platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char):
+
+       16a7e:	b003      	add	sp, #12
+
+       16a80:	e8bd 4030 	ldmia.w	sp!, {r4, r5, lr}
+
+       16a84:	f7fe b81e 	b.w	14ac4 <<a href="../../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+    create<<unnamed enum>, StaticBsp&>():
+
+       16a88:	4b06      	ldr	r3, [pc, #24]	@ (16aa4 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0xb8>)
+
+       16a8a:	a801      	add	r0, sp, #4
+
+       16a8c:	681b      	ldr	r3, [r3, #0]
+
+       16a8e:	4798      	blx	r3
+
+       16a90:	e7ba      	b.n	16a08 <<a href="./97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>+0x1c>
+
+       16a92:	bf00      	nop
+
+       16a94:	20017860 	.word	0x20017860
+
+       16a98:	20017948 	.word	0x20017948
+
+       16a9c:	0004a70c 	.word	0x0004a70c
+
+       16aa0:	200173ac 	.word	0x200173ac
+
+       16aa4:	20000000 	.word	0x20000000
+
+       16aa8:	2001724c 	.word	0x2001724c
+
+       16aac:	200173b0 	.word	0x200173b0
+
+       16ab0:	0004a708 	.word	0x0004a708
+
+       16ab4:	20017258 	.word	0x20017258
+
+       16ab8:	0004c11c 	.word	0x0004c11c
+
+    </pre>
+
+    
+    <pre><a href="./24c2da7f0b08a7a492d8bafe5efed83d.html">systems::getCanSystem() (40)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 188</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 556</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    188
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    556
+                    
+                    
+                </td>
+                <td class="col_size">76</td>
+                <td><a href="../../../../../../../libs/bsw/util/src/util/string/ConstString.cpp/da3f19b0834dcc2a495f1571acfa454d.html" class="icon-function">util::string::ConstString::compareIgnoreCase(util::string::ConstString const&amp;) const</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    168
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    480
+                    
+                    
+                </td>
+                <td class="col_size">220</td>
+                <td><a href="../../../../../../../libs/bsw/util/src/util/command/ParentCommand.cpp/29f754d764c89bdd27dee4f5eb8a063d.html" class="icon-function">util::command::ParentCommand::addCommand_local(util::command::ICommand&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    260
+                    
+                    
+                </td>
+                <td class="col_size">4</td>
+                <td><a href="../../../../../../../libs/bsw/util/src/util/command/ParentCommand.cpp/4a5f12c423b787f541d1c10602f30107.html" class="icon-function">util::command::ParentCommand::addCommand(util::command::ICommand&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    120
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    256
+                    
+                    
+                </td>
+                <td class="col_size">72</td>
+                <td><a href="../../../../../../../libs/bsw/asyncConsole/src/console/AsyncConsole.cpp/ef61218900d06da5c46cbd0f8215384b.html" class="icon-function">console::AsyncConsole::addCommand(util::command::ICommand&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    104
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    184
+                    
+                    
+                </td>
+                <td class="col_size">44</td>
+                <td><a href="../../../../../../../libs/bsw/asyncConsole/src/console/AsyncCommandWrapper.cpp/0d79e28394e5e6b1c4f868fcd5aee107.html" class="icon-function">console::AsyncCommandWrapper::AsyncCommandWrapper(util::command::ICommand&amp;, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    96
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">140</td>
+                <td><a href="../systems/BspSystem.cpp/ef2aa4d47b5650e199937851d6c6b1ef.html" class="icon-function">systems::BspSystem::BspSystem(unsigned char, StaticBsp&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">72
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 72</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,164</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,164
+                    
+                    
+                </td>
+                <td class="col_size">208</td>
+                <td><a href="./97ca1c6b6c6550542b317e127d620f42.html" class="icon-function">platform::platformLifecycleAdd(lifecycle::LifecycleManager&amp;, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">956</td>
+                <td><a href="../../../../../application/src/app/app.cpp/4da5c80e94ffd100bf7197f59436fa02.html" class="icon-function">app::startApp()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../routing.html">routing</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../routing.html">routing</a>
+            </li>
+
+        
+        <li class="active"><a href="../pduRouting.cpp.html">pduRouting.cpp</a>:46
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">routing::route(unsigned char, routing::PduRoutingTable const&amp;, io::IReader&amp;, etl::span&lt;io::IWriter*, 4294967295u&gt;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0003ce68</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>88 (static)</td>
+                <td>416</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../executables/referenceApp/application/src/systems/RoutingSystem.cpp/0655d8a5bb8e286649922927de61fbd4.html">systems::RoutingSystem::execute() (360)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (4,
+                            <span title="sum of used bytes by all callees">
+                            Σ=368
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...) (88)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./1fadef7cfe956c9b9c996992e6adee83.html">routing::outputPdu(etl::unaligned_type&lt;unsigned long, 4321&gt;, unsigned char, etl::span&lt;unsigned char const, 4294967295u&gt;, io::IWriter&amp;) (196)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./1fadef7cfe956c9b9c996992e6adee83.html">routing::outputPdu(etl::unaligned_type&lt;unsigned long, 4321&gt;, unsigned char, etl::span&lt;unsigned char const, 4294967295u&gt;, io::IWriter&amp;) (196)</a></pre>
+    
+
+    <pre>
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3ce68:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       3ce6c:	4614      	mov	r4, r2
+
+       3ce6e:	6812      	ldr	r2, [r2, #0]
+
+       3ce70:	b08d      	sub	sp, #52	@ 0x34
+
+       3ce72:	68d2      	ldr	r2, [r2, #12]
+
+       3ce74:	4607      	mov	r7, r0
+
+       3ce76:	460d      	mov	r5, r1
+
+       3ce78:	a806      	add	r0, sp, #24
+
+       3ce7a:	4621      	mov	r1, r4
+
+       3ce7c:	461e      	mov	r6, r3
+
+       3ce7e:	4790      	blx	r2
+
+    _ZNK3etl4spanIhLj4294967295EE5emptyEv():
+
+       3ce80:	e9dd 2306 	ldrd	r2, r3, [sp, #24]
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3ce84:	429a      	cmp	r2, r3
+
+       3ce86:	d00e      	beq.n	3cea6 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x3e>
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       3ce88:	1a9b      	subs	r3, r3, r2
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3ce8a:	2b03      	cmp	r3, #3
+
+       3ce8c:	d80f      	bhi.n	3ceae <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x46>
+
+       3ce8e:	6823      	ldr	r3, [r4, #0]
+
+       3ce90:	4620      	mov	r0, r4
+
+       3ce92:	691b      	ldr	r3, [r3, #16]
+
+       3ce94:	4798      	blx	r3
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       3ce96:	e9dd 3206 	ldrd	r3, r2, [sp, #24]
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3ce9a:	4855      	ldr	r0, [pc, #340]	@ (3cff0 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x188>)
+
+       3ce9c:	4955      	ldr	r1, [pc, #340]	@ (3cff4 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x18c>)
+
+       3ce9e:	7800      	ldrb	r0, [r0, #0]
+
+       3cea0:	1ad2      	subs	r2, r2, r3
+
+       3cea2:	f7cc fbe9 	bl	9678 <<a href="../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       3cea6:	2000      	movs	r0, #0
+
+       3cea8:	b00d      	add	sp, #52	@ 0x34
+
+       3ceaa:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       3ceae:	463a      	mov	r2, r7
+
+       3ceb0:	4f4f      	ldr	r7, [pc, #316]	@ (3cff0 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x188>)
+
+       3ceb2:	4951      	ldr	r1, [pc, #324]	@ (3cff8 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x190>)
+
+       3ceb4:	7838      	ldrb	r0, [r7, #0]
+
+       3ceb6:	f7cc fd63 	bl	9980 <<a href="../../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...)</a>>
+
+    _ZNK3etl4spanIhLj4294967295EE4dataEv():
+
+       3ceba:	9b06      	ldr	r3, [sp, #24]
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       3cebc:	2200      	movs	r2, #0
+
+       3cebe:	f103 3cff 	add.w	ip, r3, #4294967295	@ 0xffffffff
+
+       3cec2:	9208      	str	r2, [sp, #32]
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       3cec4:	3303      	adds	r3, #3
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       3cec6:	f10d 0e20 	add.w	lr, sp, #32
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       3ceca:	f81c 2f01 	ldrb.w	r2, [ip, #1]!
+
+       3cece:	f80e 2b01 	strb.w	r2, [lr], #1
+
+       3ced2:	459c      	cmp	ip, r3
+
+       3ced4:	d1f9      	bne.n	3ceca <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x62>
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       3ced6:	2204      	movs	r2, #4
+
+       3ced8:	a908      	add	r1, sp, #32
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       3ceda:	f04f 0900 	mov.w	r9, #0
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       3cede:	a80a      	add	r0, sp, #40	@ 0x28
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       3cee0:	f8cd 9028 	str.w	r9, [sp, #40]	@ 0x28
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       3cee4:	f7c3 fbd0 	bl	688 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       3cee8:	9b0a      	ldr	r3, [sp, #40]	@ 0x28
+
+    _ZNK3etl4spanIKNS_14unaligned_typeImLi4321EEELj4294967295EE4sizeEv():
+
+       3ceea:	68aa      	ldr	r2, [r5, #8]
+
+       3ceec:	fa93 f883 	rev.w	r8, r3
+
+       3cef0:	68eb      	ldr	r3, [r5, #12]
+
+       3cef2:	1a9b      	subs	r3, r3, r2
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3cef4:	f108 0201 	add.w	r2, r8, #1
+
+       3cef8:	ebb2 0fa3 	cmp.w	r2, r3, asr #2
+
+       3cefc:	d309      	bcc.n	3cf12 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0xaa>
+
+       3cefe:	6823      	ldr	r3, [r4, #0]
+
+       3cf00:	4620      	mov	r0, r4
+
+       3cf02:	691b      	ldr	r3, [r3, #16]
+
+       3cf04:	4798      	blx	r3
+
+       3cf06:	493d      	ldr	r1, [pc, #244]	@ (3cffc <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x194>)
+
+       3cf08:	7838      	ldrb	r0, [r7, #0]
+
+       3cf0a:	4642      	mov	r2, r8
+
+       3cf0c:	f7cc fbb4 	bl	9678 <<a href="../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       3cf10:	e7c9      	b.n	3cea6 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x3e>
+
+       3cf12:	4642      	mov	r2, r8
+
+       3cf14:	493a      	ldr	r1, [pc, #232]	@ (3d000 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x198>)
+
+       3cf16:	7838      	ldrb	r0, [r7, #0]
+
+       3cf18:	f7cc fd32 	bl	9980 <<a href="../../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...)</a>>
+
+    _ZNK3etl4spanIKNS_14unaligned_typeImLi4321EEELj4294967295EEixEj():
+
+       3cf1c:	68a9      	ldr	r1, [r5, #8]
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       3cf1e:	f8cd 9028 	str.w	r9, [sp, #40]	@ 0x28
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       3cf22:	eb01 0188 	add.w	r1, r1, r8, lsl #2
+
+       3cf26:	2204      	movs	r2, #4
+
+       3cf28:	a80a      	add	r0, sp, #40	@ 0x28
+
+       3cf2a:	f7c3 fbad 	bl	688 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZNK3etl4spanIKNS_14unaligned_typeImLi4321EEELj4294967295EEixEj():
+
+       3cf2e:	ea4f 0888 	mov.w	r8, r8, lsl #2
+
+       3cf32:	68a9      	ldr	r1, [r5, #8]
+
+       3cf34:	9b0a      	ldr	r3, [sp, #40]	@ 0x28
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+       3cf36:	f8cd 9028 	str.w	r9, [sp, #40]	@ 0x28
+
+    _ZNK3etl4spanIKNS_14unaligned_typeImLi4321EEELj4294967295EEixEj():
+
+       3cf3a:	f108 0804 	add.w	r8, r8, #4
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+       3cf3e:	4441      	add	r1, r8
+
+       3cf40:	2204      	movs	r2, #4
+
+       3cf42:	a80a      	add	r0, sp, #40	@ 0x28
+
+       3cf44:	fa93 f983 	rev.w	r9, r3
+
+       3cf48:	f7c3 fb9e 	bl	688 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       3cf4c:	9a0a      	ldr	r2, [sp, #40]	@ 0x28
+
+    _ZNK3etl4spanIKhLj4294967295EE7subspanEjj():
+
+       3cf4e:	682b      	ldr	r3, [r5, #0]
+
+    _ZNK3etl4spanIKNS_14unaligned_typeImLi4321EEELj4294967295EE7subspanEjj():
+
+       3cf50:	6929      	ldr	r1, [r5, #16]
+
+       3cf52:	ba12      	rev	r2, r2
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3cf54:	eba2 0009 	sub.w	r0, r2, r9
+
+    _ZNK3etl4spanIKhLj4294967295EE7subspanEjj():
+
+       3cf58:	3001      	adds	r0, #1
+
+    _ZNK3etl4spanIKNS_14unaligned_typeImLi4321EEELj4294967295EE7subspanEjj():
+
+       3cf5a:	eb01 0189 	add.w	r1, r1, r9, lsl #2
+
+    _ZNK3etl4spanIKhLj4294967295EE7subspanEjj():
+
+       3cf5e:	4499      	add	r9, r3
+
+       3cf60:	bf08      	it	eq
+
+       3cf62:	686b      	ldreq	r3, [r5, #4]
+
+    _ZNK3etl4spanIhLj4294967295EE7subspanEjj():
+
+       3cf64:	9806      	ldr	r0, [sp, #24]
+
+    _ZN3etl4spanIKNS_14unaligned_typeImLi4321EEELj4294967295EEC4IPS3_S6_EET_T0_PNS_9enable_ifIXntsrNS_11is_integralIS8_EE5valueEvE4typeE():
+
+       3cf66:	bf0e      	itee	eq
+
+       3cf68:	9108      	streq	r1, [sp, #32]
+
+    _ZNK3etl4spanIKhLj4294967295EE7subspanEjj():
+
+       3cf6a:	189b      	addne	r3, r3, r2
+
+    _ZN3etl4spanIKNS_14unaligned_typeImLi4321EEELj4294967295EEC4IPS3_S6_EET_T0_PNS_9enable_ifIXntsrNS_11is_integralIS8_EE5valueEvE4typeE():
+
+       3cf6c:	9108      	strne	r1, [sp, #32]
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3cf6e:	4599      	cmp	r9, r3
+
+    _ZNK3etl4spanIhLj4294967295EE7subspanEjj():
+
+       3cf70:	9a07      	ldr	r2, [sp, #28]
+
+       3cf72:	f100 0004 	add.w	r0, r0, #4
+
+    _ZNK3etl4spanIKhLj4294967295EE4sizeEv():
+
+       3cf76:	eba3 0b09 	sub.w	fp, r3, r9
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3cf7a:	d030      	beq.n	3cfde <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x176>
+
+       3cf7c:	f04f 0800 	mov.w	r8, #0
+
+       3cf80:	f109 39ff 	add.w	r9, r9, #4294967295	@ 0xffffffff
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       3cf84:	46c2      	mov	sl, r8
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_storeEPKhiPh():
+
+       3cf86:	9001      	str	r0, [sp, #4]
+
+       3cf88:	9202      	str	r2, [sp, #8]
+
+       3cf8a:	9403      	str	r4, [sp, #12]
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3cf8c:	f819 4f01 	ldrb.w	r4, [r9, #1]!
+
+       3cf90:	7838      	ldrb	r0, [r7, #0]
+
+       3cf92:	491c      	ldr	r1, [pc, #112]	@ (3d004 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x19c>)
+
+       3cf94:	4622      	mov	r2, r4
+
+       3cf96:	f7cc fcf3 	bl	9980 <<a href="../../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...)</a>>
+
+    _ZNK3etl4spanIPN2io7IWriterELj4294967295EE4sizeEv():
+
+       3cf9a:	e9d6 1300 	ldrd	r1, r3, [r6]
+
+       3cf9e:	1a5b      	subs	r3, r3, r1
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3cfa0:	ebb4 0fa3 	cmp.w	r4, r3, asr #2
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_storeEPKhiPh():
+
+       3cfa4:	f04f 0204 	mov.w	r2, #4
+
+       3cfa8:	a805      	add	r0, sp, #20
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3cfaa:	d213      	bcs.n	3cfd4 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x16c>
+
+       3cfac:	f851 5024 	ldr.w	r5, [r1, r4, lsl #2]
+
+       3cfb0:	b185      	cbz	r5, 3cfd4 <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x16c>
+
+    _ZNK3etl4spanIKNS_14unaligned_typeImLi4321EEELj4294967295EEixEj():
+
+       3cfb2:	9908      	ldr	r1, [sp, #32]
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+       3cfb4:	f8cd a014 	str.w	sl, [sp, #20]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_storeEPKhiPh():
+
+       3cfb8:	eb01 0188 	add.w	r1, r1, r8, lsl #2
+
+       3cfbc:	f7c3 fb64 	bl	688 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl4spanIKhLj4294967295EEC4IhLj4294967295EEERKNS0_IT_XT0_EEE():
+
+       3cfc0:	9a01      	ldr	r2, [sp, #4]
+
+       3cfc2:	920a      	str	r2, [sp, #40]	@ 0x28
+
+       3cfc4:	9a02      	ldr	r2, [sp, #8]
+
+       3cfc6:	920b      	str	r2, [sp, #44]	@ 0x2c
+
+    routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>):
+
+       3cfc8:	462b      	mov	r3, r5
+
+       3cfca:	4621      	mov	r1, r4
+
+       3cfcc:	aa0a      	add	r2, sp, #40	@ 0x28
+
+       3cfce:	a805      	add	r0, sp, #20
+
+       3cfd0:	f7ff fee8 	bl	3cda4 <<a href="./1fadef7cfe956c9b9c996992e6adee83.html">routing::outputPdu(etl::unaligned_type<unsigned long, 4321>, unsigned char, etl::span<unsigned char const, 4294967295u>, io::IWriter&)</a>>
+
+       3cfd4:	f108 0801 	add.w	r8, r8, #1
+
+       3cfd8:	45d8      	cmp	r8, fp
+
+       3cfda:	d3d7      	bcc.n	3cf8c <<a href="./3181a06eeed32221368f19190c471953.html">routing::route(unsigned char, routing::PduRoutingTable const&, io::IReader&, etl::span<io::IWriter*, 4294967295u>)</a>+0x124>
+
+       3cfdc:	9c03      	ldr	r4, [sp, #12]
+
+       3cfde:	6823      	ldr	r3, [r4, #0]
+
+       3cfe0:	4620      	mov	r0, r4
+
+       3cfe2:	691b      	ldr	r3, [r3, #16]
+
+       3cfe4:	4798      	blx	r3
+
+       3cfe6:	2001      	movs	r0, #1
+
+       3cfe8:	b00d      	add	sp, #52	@ 0x34
+
+       3cfea:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       3cfee:	bf00      	nop
+
+       3cff0:	20000005 	.word	0x20000005
+
+       3cff4:	00051be0 	.word	0x00051be0
+
+       3cff8:	00051bf8 	.word	0x00051bf8
+
+       3cffc:	00051c34 	.word	0x00051c34
+
+       3d000:	00051c48 	.word	0x00051c48
+
+       3d004:	00051c74 	.word	0x00051c74
+
+    </pre>
+
+    
+    <pre><a href="../../../../blob/include/blob/util.h/a646253d4369e1621eb12e0389332cb6.html">etl::span&lt;unsigned char const, 4294967295u&gt; blob::loadColumn&lt;etl::unaligned_type&lt;unsigned long, 4321&gt; &gt;(etl::span&lt;etl::unaligned_type&lt;unsigned long, 4321&gt; const, 4294967295u&gt;&amp;, etl::span&lt;unsigned char const, 4294967295u&gt;) (184)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 252</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 320</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    252
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    320
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    204
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    252
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="../../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html" class="icon-function">util::logger::Logger::debug(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    184
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">196</td>
+                <td><a href="./1fadef7cfe956c9b9c996992e6adee83.html" class="icon-function">routing::outputPdu(etl::unaligned_type&lt;unsigned long, 4321&gt;, unsigned char, etl::span&lt;unsigned char const, 4294967295u&gt;, io::IWriter&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">136
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 136</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 776</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    136
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                88 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    776
+                    
+                    
+                </td>
+                <td class="col_size">416</td>
+                <td><a href="./3181a06eeed32221368f19190c471953.html" class="icon-function">routing::route(unsigned char, routing::PduRoutingTable const&amp;, io::IReader&amp;, etl::span&lt;io::IWriter*, 4294967295u&gt;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">360</td>
+                <td><a href="../../../../../../executables/referenceApp/application/src/systems/RoutingSystem.cpp/0655d8a5bb8e286649922927de61fbd4.html" class="icon-function">systems::RoutingSystem::execute()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

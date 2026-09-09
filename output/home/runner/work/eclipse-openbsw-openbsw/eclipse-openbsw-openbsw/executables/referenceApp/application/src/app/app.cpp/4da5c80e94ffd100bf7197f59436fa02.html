@@ -1,0 +1,1250 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../application.html">application</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../app.html">app</a>
+            </li>
+
+        
+        <li class="active"><a href="../app.cpp.html">app.cpp</a>:270
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">app::startApp()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000033c4</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>48 (static)</td>
+                <td>956</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../libs/3rdparty/etl/include/etl/private/delegate_cpp11.h/feddca9ecddf6faff19f694479a1ab5e.html">void etl::delegate&lt;void ()&gt;::function_stub&lt;&amp;app::startApp&gt;(etl::delegate&lt;void ()&gt;::invocation_element const&amp;) (4)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (22,
+                            <span title="sum of used bytes by all callees">
+                            Σ=6484
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../middlewareConfiguration/src/MemoryLayout.cpp/d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout() (240)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../platforms/s32k148evb/main/src/main.cpp/97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&amp;, unsigned char) (208)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/RuntimeSystem.cpp/52596e261fbca0debe9800e7912fca77.html">systems::RuntimeSystem::RuntimeSystem(unsigned char, runtime::declare::RuntimeMonitor&lt;runtime::RuntimeStatistics, runtime::RuntimeStatistics, 10u, 3u&gt;&amp;) (76)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&amp;, unsigned char) (224)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/SafetySystem.cpp/718eff2a1e3c5364f69a998c6970187e.html">systems::SafetySystem::SafetySystem(unsigned char, lifecycle::ILifecycleManager&amp;) (76)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/TransportSystem.cpp/f42fd3f357bdae05dd817cdb0afc0047.html">transport::TransportSystem::TransportSystem(unsigned char) (88)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../platforms/s32k148evb/main/src/main.cpp/24c2da7f0b08a7a492d8bafe5efed83d.html">systems::getCanSystem() (40)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/DoCanSystem.cpp/8d209b4c7ada2e533c6136360e624eaf.html">docan::DoCanSystem::DoCanSystem(transport::ITransportSystem&amp;, can::ICanSystem&amp;, unsigned char) (576)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../platforms/s32k148evb/main/src/main.cpp/084858131a0b254b3f169945d112d857.html">systems::getEthernetSystem() (40)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/EthernetSystem.cpp/223df1a844c23764cbbc23739d778929.html">systems::EthernetSystem::EthernetSystem(unsigned char, ethernet::IEthernetDriverSystem&amp;) (1136)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../platforms/s32k148evb/main/src/main.cpp/966406635f86cc7b7d91c2678c6c4f4a.html">platform::getStaticBsp() (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/StorageSystem.cpp/ad831030495ff0476c8e46a9ed91c53b.html">systems::StorageSystem::StorageSystem(unsigned char, unsigned char, eeprom::IEepromDriver&amp;) (340)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/SomeIpSystem.cpp/d3e5616d34e0c3aa0a736485577ad566.html">systems::SomeIpSystem::SomeIpSystem(unsigned char) (648)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/cpp2ethernet/src/ip/NetworkInterfaceConfig.cpp/17e51eba320540cad17bd546b31c78e2.html">ip::NetworkInterfaceConfig::broadcastAddress() const (64)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/DoIpServerSystem.cpp/70936c6e95477946d4edf180a346ad9b.html">doip::DoIpServerSystem::DoIpServerSystem(transport::ITransportSystem&amp;, ip::NetworkInterfaceConfigRegistry&amp;, unsigned char, unsigned char, unsigned short, etl::span&lt;unsigned char const, 6u&gt;, ip::IPAddress const&amp;) (828)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/RoutingSystem.cpp/1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&amp;) (712)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/UdsSystem.cpp/1a5fb6ad6a534a510f10fa5716f066e5.html">uds::UdsSystem::UdsSystem(lifecycle::LifecycleManager&amp;, transport::ITransportSystem&amp;, unsigned char, unsigned short) (528)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/SysAdminSystem.cpp/672c5dc1d4f81f4ae954e3e6c46027ad.html">systems::SysAdminSystem::SysAdminSystem(unsigned char, lifecycle::ILifecycleManager&amp;) (76)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../systems/DemoSystem.cpp/90136955dd6a9ca9af7d3a63ba657e4b.html">systems::DemoSystem::DemoSystem(unsigned char, lifecycle::ILifecycleManager&amp;, can::ICanSystem&amp;, storage::IStorage&amp;) (384)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/a11bcf88ca51caebf1f9142176c8117e.html">lifecycle::LifecycleManager::transitionToLevel(unsigned char) (36)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/ef726e6b5f9357a8fa025578b908794c.html">getSystemTicks32Bit (52)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Async.cpp/4dfe65e158466f2f9a73b985dc4b0ecc.html">async::execute(unsigned char, async::IRunnable&amp;) (104)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../libs/3rdparty/etl/include/etl/format.h/1e210a6c076402009317d31ba2d80ae1.html">etl::private_format::parse_nested_replacement(etl::basic_format_parse_context&lt;char&gt;&amp;, etl::optional&lt;unsigned int&gt;&amp;) (256)</a></pre>
+    
+
+    <pre>
+
+    app::startApp():
+
+        33c4:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+
+    _ZNK3etl13typed_storageIN7systems13RuntimeSystemEE9has_valueEv():
+
+        33c8:	4da9      	ldr	r5, [pc, #676]	@ (3670 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2ac>)
+
+    app::startApp():
+
+        33ca:	b086      	sub	sp, #24
+
+        33cc:	f03c ff4e 	bl	4026c <<a href="../../../../middlewareConfiguration/src/MemoryLayout.cpp/d9a9feaa1a5082265c00a162ec6b9aa2.html">middleware::shm::createMemoryLayout()</a>>
+
+        33d0:	48a8      	ldr	r0, [pc, #672]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        33d2:	2101      	movs	r1, #1
+
+        33d4:	f013 fb0a 	bl	169ec <<a href="../../../../platforms/s32k148evb/main/src/main.cpp/97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>>
+
+        33d8:	f895 315c 	ldrb.w	r3, [r5, #348]	@ 0x15c
+
+    create<<unnamed enum>, runtime::declare::RuntimeMonitor<runtime::RuntimeStatistics, runtime::RuntimeStatistics, 10, 3>&>():
+
+        33dc:	2b00      	cmp	r3, #0
+
+        33de:	f040 81b8 	bne.w	3752 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x38e>
+
+        33e2:	ac05      	add	r4, sp, #20
+
+        33e4:	4aa4      	ldr	r2, [pc, #656]	@ (3678 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b4>)
+
+        33e6:	48a2      	ldr	r0, [pc, #648]	@ (3670 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2ac>)
+
+        33e8:	2101      	movs	r1, #1
+
+        33ea:	f006 fda9 	bl	9f40 <<a href="../../systems/RuntimeSystem.cpp/52596e261fbca0debe9800e7912fca77.html">systems::RuntimeSystem::RuntimeSystem(unsigned char, runtime::declare::RuntimeMonitor<runtime::RuntimeStatistics, runtime::RuntimeStatistics, 10u, 3u>&)</a>>
+
+        33ee:	2301      	movs	r3, #1
+
+        33f0:	f885 315c 	strb.w	r3, [r5, #348]	@ 0x15c
+
+    _ZNK3etl13typed_storageIN7systems12SafetySystemEE9has_valueEv():
+
+        33f4:	4da1      	ldr	r5, [pc, #644]	@ (367c <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b8>)
+
+    app::startApp():
+
+        33f6:	4a9e      	ldr	r2, [pc, #632]	@ (3670 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2ac>)
+
+        33f8:	49a1      	ldr	r1, [pc, #644]	@ (3680 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2bc>)
+
+        33fa:	489e      	ldr	r0, [pc, #632]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        33fc:	f011 fb62 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+        3400:	f895 305c 	ldrb.w	r3, [r5, #92]	@ 0x5c
+
+    create<<unnamed enum>, lifecycle::declare::LifecycleManager<16, 9, 16>&>():
+
+        3404:	b11b      	cbz	r3, 340e <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x4a>
+
+        3406:	4b9f      	ldr	r3, [pc, #636]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        3408:	4620      	mov	r0, r4
+
+        340a:	681b      	ldr	r3, [r3, #0]
+
+        340c:	4798      	blx	r3
+
+        340e:	4a99      	ldr	r2, [pc, #612]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        3410:	489a      	ldr	r0, [pc, #616]	@ (367c <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b8>)
+
+        3412:	2108      	movs	r1, #8
+
+        3414:	f006 fe3c 	bl	a090 <<a href="../../systems/SafetySystem.cpp/718eff2a1e3c5364f69a998c6970187e.html">systems::SafetySystem::SafetySystem(unsigned char, lifecycle::ILifecycleManager&)</a>>
+
+        3418:	2301      	movs	r3, #1
+
+    app::startApp():
+
+        341a:	4a98      	ldr	r2, [pc, #608]	@ (367c <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b8>)
+
+        341c:	499a      	ldr	r1, [pc, #616]	@ (3688 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c4>)
+
+        341e:	4895      	ldr	r0, [pc, #596]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+    create<<unnamed enum>, lifecycle::declare::LifecycleManager<16, 9, 16>&>():
+
+        3420:	f885 305c 	strb.w	r3, [r5, #92]	@ 0x5c
+
+    app::startApp():
+
+        3424:	f011 fb4e 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+    _ZNK3etl13typed_storageIN9transport15TransportSystemEE9has_valueEv():
+
+        3428:	4d98      	ldr	r5, [pc, #608]	@ (368c <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c8>)
+
+    app::startApp():
+
+        342a:	4892      	ldr	r0, [pc, #584]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        342c:	2102      	movs	r1, #2
+
+        342e:	f013 fadd 	bl	169ec <<a href="../../../../platforms/s32k148evb/main/src/main.cpp/97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>>
+
+        3432:	4890      	ldr	r0, [pc, #576]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        3434:	2103      	movs	r1, #3
+
+        3436:	f013 fad9 	bl	169ec <<a href="../../../../platforms/s32k148evb/main/src/main.cpp/97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>>
+
+        343a:	f895 3120 	ldrb.w	r3, [r5, #288]	@ 0x120
+
+    create<<unnamed enum> >():
+
+        343e:	b11b      	cbz	r3, 3448 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x84>
+
+        3440:	4b90      	ldr	r3, [pc, #576]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        3442:	4620      	mov	r0, r4
+
+        3444:	681b      	ldr	r3, [r3, #0]
+
+        3446:	4798      	blx	r3
+
+        3448:	2103      	movs	r1, #3
+
+        344a:	4891      	ldr	r0, [pc, #580]	@ (3690 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2cc>)
+
+        344c:	f007 fa14 	bl	a878 <<a href="../../systems/TransportSystem.cpp/f42fd3f357bdae05dd817cdb0afc0047.html">transport::TransportSystem::TransportSystem(unsigned char)</a>>
+
+        3450:	2001      	movs	r0, #1
+
+    app::startApp():
+
+        3452:	2304      	movs	r3, #4
+
+    create<<unnamed enum> >():
+
+        3454:	f885 0120 	strb.w	r0, [r5, #288]	@ 0x120
+
+    app::startApp():
+
+        3458:	4a8e      	ldr	r2, [pc, #568]	@ (3694 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2d0>)
+
+        345a:	498f      	ldr	r1, [pc, #572]	@ (3698 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2d4>)
+
+        345c:	4885      	ldr	r0, [pc, #532]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        345e:	f011 fb31 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+    _ZN3etl13typed_storageIN9transport15TransportSystemEEptEv():
+
+        3462:	f895 3120 	ldrb.w	r3, [r5, #288]	@ 0x120
+
+        3466:	b91b      	cbnz	r3, 3470 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0xac>
+
+        3468:	4b86      	ldr	r3, [pc, #536]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        346a:	4620      	mov	r0, r4
+
+        346c:	681b      	ldr	r3, [r3, #0]
+
+        346e:	4798      	blx	r3
+
+    _ZNK3etl13typed_storageIN5docan11DoCanSystemEE9has_valueEv():
+
+        3470:	4f8a      	ldr	r7, [pc, #552]	@ (369c <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2d8>)
+
+    app::startApp():
+
+        3472:	f013 fb23 	bl	16abc <<a href="../../../../platforms/s32k148evb/main/src/main.cpp/24c2da7f0b08a7a492d8bafe5efed83d.html">systems::getCanSystem()</a>>
+
+        3476:	f897 30f4 	ldrb.w	r3, [r7, #244]	@ 0xf4
+
+        347a:	4606      	mov	r6, r0
+
+    create<transport::TransportSystem&, can::ICanSystem&, <unnamed enum> >():
+
+        347c:	b11b      	cbz	r3, 3486 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0xc2>
+
+        347e:	4b81      	ldr	r3, [pc, #516]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        3480:	4620      	mov	r0, r4
+
+        3482:	681b      	ldr	r3, [r3, #0]
+
+        3484:	4798      	blx	r3
+
+        3486:	4632      	mov	r2, r6
+
+        3488:	4981      	ldr	r1, [pc, #516]	@ (3690 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2cc>)
+
+        348a:	4885      	ldr	r0, [pc, #532]	@ (36a0 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2dc>)
+
+    _ZNK3etl13typed_storageIN7systems14EthernetSystemEE9has_valueEv():
+
+        348c:	4e85      	ldr	r6, [pc, #532]	@ (36a4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2e0>)
+
+    create<transport::TransportSystem&, can::ICanSystem&, <unnamed enum> >():
+
+        348e:	2306      	movs	r3, #6
+
+        3490:	f00d fdbc 	bl	1100c <<a href="../../systems/DoCanSystem.cpp/8d209b4c7ada2e533c6136360e624eaf.html">docan::DoCanSystem::DoCanSystem(transport::ITransportSystem&, can::ICanSystem&, unsigned char)</a>>
+
+        3494:	2101      	movs	r1, #1
+
+    app::startApp():
+
+        3496:	2305      	movs	r3, #5
+
+    create<transport::TransportSystem&, can::ICanSystem&, <unnamed enum> >():
+
+        3498:	f887 10f4 	strb.w	r1, [r7, #244]	@ 0xf4
+
+    app::startApp():
+
+        349c:	4a80      	ldr	r2, [pc, #512]	@ (36a0 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2dc>)
+
+        349e:	4982      	ldr	r1, [pc, #520]	@ (36a8 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2e4>)
+
+        34a0:	4874      	ldr	r0, [pc, #464]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        34a2:	f011 fb0f 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+        34a6:	f013 fb1d 	bl	16ae4 <<a href="../../../../platforms/s32k148evb/main/src/main.cpp/084858131a0b254b3f169945d112d857.html">systems::getEthernetSystem()</a>>
+
+        34aa:	f896 3208 	ldrb.w	r3, [r6, #520]	@ 0x208
+
+        34ae:	4607      	mov	r7, r0
+
+    create<<unnamed enum>, ethernet::IEthernetDriverSystem&>():
+
+        34b0:	b11b      	cbz	r3, 34ba <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0xf6>
+
+        34b2:	4b74      	ldr	r3, [pc, #464]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        34b4:	4620      	mov	r0, r4
+
+        34b6:	681b      	ldr	r3, [r3, #0]
+
+        34b8:	4798      	blx	r3
+
+        34ba:	463a      	mov	r2, r7
+
+        34bc:	2105      	movs	r1, #5
+
+        34be:	4879      	ldr	r0, [pc, #484]	@ (36a4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2e0>)
+
+    _ZNK3etl13typed_storageIN7systems13StorageSystemEE9has_valueEv():
+
+        34c0:	4f7a      	ldr	r7, [pc, #488]	@ (36ac <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2e8>)
+
+    create<<unnamed enum>, ethernet::IEthernetDriverSystem&>():
+
+        34c2:	f008 f927 	bl	b714 <<a href="../../systems/EthernetSystem.cpp/223df1a844c23764cbbc23739d778929.html">systems::EthernetSystem::EthernetSystem(unsigned char, ethernet::IEthernetDriverSystem&)</a>>
+
+        34c6:	2101      	movs	r1, #1
+
+    app::startApp():
+
+        34c8:	2305      	movs	r3, #5
+
+        34ca:	4a76      	ldr	r2, [pc, #472]	@ (36a4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2e0>)
+
+        34cc:	4869      	ldr	r0, [pc, #420]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+    create<<unnamed enum>, ethernet::IEthernetDriverSystem&>():
+
+        34ce:	f886 1208 	strb.w	r1, [r6, #520]	@ 0x208
+
+    app::startApp():
+
+        34d2:	4977      	ldr	r1, [pc, #476]	@ (36b0 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2ec>)
+
+        34d4:	f011 faf6 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+        34d8:	f013 fa84 	bl	169e4 <<a href="../../../../platforms/s32k148evb/main/src/main.cpp/966406635f86cc7b7d91c2678c6c4f4a.html">platform::getStaticBsp()</a>>
+
+        34dc:	f897 31b0 	ldrb.w	r3, [r7, #432]	@ 0x1b0
+
+    _ZN9StaticBsp15getEepromDriverEv():
+
+        34e0:	f100 0808 	add.w	r8, r0, #8
+
+    create<<unnamed enum>, <unnamed enum>, eeprom::IEepromDriver&>():
+
+        34e4:	b11b      	cbz	r3, 34ee <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x12a>
+
+        34e6:	4b67      	ldr	r3, [pc, #412]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        34e8:	4620      	mov	r0, r4
+
+        34ea:	681b      	ldr	r3, [r3, #0]
+
+        34ec:	4798      	blx	r3
+
+        34ee:	4643      	mov	r3, r8
+
+        34f0:	2204      	movs	r2, #4
+
+        34f2:	2102      	movs	r1, #2
+
+        34f4:	486d      	ldr	r0, [pc, #436]	@ (36ac <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2e8>)
+
+    _ZNK3etl13typed_storageIN7systems12SomeIpSystemEE9has_valueEv():
+
+        34f6:	f8df 81f4 	ldr.w	r8, [pc, #500]	@ 36ec <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x328>
+
+    create<<unnamed enum>, <unnamed enum>, eeprom::IEepromDriver&>():
+
+        34fa:	f010 fe03 	bl	14104 <<a href="../../systems/StorageSystem.cpp/ad831030495ff0476c8e46a9ed91c53b.html">systems::StorageSystem::StorageSystem(unsigned char, unsigned char, eeprom::IEepromDriver&)</a>>
+
+        34fe:	2301      	movs	r3, #1
+
+        3500:	f887 31b0 	strb.w	r3, [r7, #432]	@ 0x1b0
+
+    app::startApp():
+
+        3504:	4a69      	ldr	r2, [pc, #420]	@ (36ac <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2e8>)
+
+        3506:	496b      	ldr	r1, [pc, #428]	@ (36b4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2f0>)
+
+        3508:	485a      	ldr	r0, [pc, #360]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        350a:	2305      	movs	r3, #5
+
+        350c:	f011 fada 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+        3510:	f898 30e0 	ldrb.w	r3, [r8, #224]	@ 0xe0
+
+    create<<unnamed enum> >():
+
+        3514:	b11b      	cbz	r3, 351e <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x15a>
+
+        3516:	4b5b      	ldr	r3, [pc, #364]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        3518:	4620      	mov	r0, r4
+
+        351a:	681b      	ldr	r3, [r3, #0]
+
+        351c:	4798      	blx	r3
+
+        351e:	2105      	movs	r1, #5
+
+        3520:	4865      	ldr	r0, [pc, #404]	@ (36b8 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2f4>)
+
+        3522:	f009 fc19 	bl	cd58 <<a href="../../systems/SomeIpSystem.cpp/d3e5616d34e0c3aa0a736485577ad566.html">systems::SomeIpSystem::SomeIpSystem(unsigned char)</a>>
+
+        3526:	2301      	movs	r3, #1
+
+        3528:	f888 30e0 	strb.w	r3, [r8, #224]	@ 0xe0
+
+    app::startApp():
+
+        352c:	4a62      	ldr	r2, [pc, #392]	@ (36b8 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2f4>)
+
+        352e:	4963      	ldr	r1, [pc, #396]	@ (36bc <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2f8>)
+
+        3530:	4850      	ldr	r0, [pc, #320]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        3532:	2306      	movs	r3, #6
+
+        3534:	f011 fac6 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+    _ZN3etl13typed_storageIN9transport15TransportSystemEEptEv():
+
+        3538:	f895 3120 	ldrb.w	r3, [r5, #288]	@ 0x120
+
+        353c:	b91b      	cbnz	r3, 3546 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x182>
+
+        353e:	4b51      	ldr	r3, [pc, #324]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        3540:	4620      	mov	r0, r4
+
+        3542:	681b      	ldr	r3, [r3, #0]
+
+        3544:	4798      	blx	r3
+
+    _ZN3etl13typed_storageIN7systems14EthernetSystemEEptEv():
+
+        3546:	f896 3208 	ldrb.w	r3, [r6, #520]	@ 0x208
+
+        354a:	b963      	cbnz	r3, 3566 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x1a2>
+
+        354c:	f8df 8134 	ldr.w	r8, [pc, #308]	@ 3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>
+
+        3550:	4620      	mov	r0, r4
+
+        3552:	f8d8 3000 	ldr.w	r3, [r8]
+
+        3556:	4798      	blx	r3
+
+        3558:	f896 3208 	ldrb.w	r3, [r6, #520]	@ 0x208
+
+        355c:	b91b      	cbnz	r3, 3566 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x1a2>
+
+        355e:	f8d8 3000 	ldr.w	r3, [r8]
+
+        3562:	4620      	mov	r0, r4
+
+        3564:	4798      	blx	r3
+
+    _ZNK3etl4spanIhLj4294967295EE14reinterpret_asIN2ip22NetworkInterfaceConfigEEENS0_IT_Lj4294967295EEEv():
+
+        3566:	6cb0      	ldr	r0, [r6, #72]	@ 0x48
+
+        3568:	0783      	lsls	r3, r0, #30
+
+        356a:	d004      	beq.n	3576 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x1b2>
+
+        356c:	4b45      	ldr	r3, [pc, #276]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        356e:	4620      	mov	r0, r4
+
+        3570:	681b      	ldr	r3, [r3, #0]
+
+        3572:	4798      	blx	r3
+
+        3574:	6cb0      	ldr	r0, [r6, #72]	@ 0x48
+
+    _ZNK3etl13typed_storageIN4doip16DoIpServerSystemEE9has_valueEv():
+
+        3576:	4e52      	ldr	r6, [pc, #328]	@ (36c0 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2fc>)
+
+    app::startApp():
+
+        3578:	f01c fc16 	bl	1fda8 <<a href="../../../../../../libs/bsw/cpp2ethernet/src/ip/NetworkInterfaceConfig.cpp/17e51eba320540cad17bd546b31c78e2.html">ip::NetworkInterfaceConfig::broadcastAddress() const</a>>
+
+        357c:	f896 3588 	ldrb.w	r3, [r6, #1416]	@ 0x588
+
+        3580:	9004      	str	r0, [sp, #16]
+
+    create<transport::TransportSystem&, ip::declare::NetworkInterfaceConfigRegistry<2, shed::table<systems::NetifsSchema>, ethernet::NetifBusId>&, <unnamed enum>, unsigned char const&, short unsigned int const&, const etl::array<unsigned char, 6>&, ip::IPAddress>():
+
+        3582:	b11b      	cbz	r3, 358c <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x1c8>
+
+        3584:	4b3f      	ldr	r3, [pc, #252]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        3586:	4620      	mov	r0, r4
+
+        3588:	681b      	ldr	r3, [r3, #0]
+
+        358a:	4798      	blx	r3
+
+    _ZN3etl4spanIKhLj6EEC4IhLj6EEERKNS_5arrayIT_XT0_EEEPNS_9enable_ifIXaaeqT0_Lj6EsrNS_14is_convertibleIPA_S5_PA_S1_EE5valueEvE4typeE():
+
+        358c:	4b4d      	ldr	r3, [pc, #308]	@ (36c4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x300>)
+
+        358e:	9305      	str	r3, [sp, #20]
+
+    create<transport::TransportSystem&, ip::declare::NetworkInterfaceConfigRegistry<2, shed::table<systems::NetifsSchema>, ethernet::NetifBusId>&, <unnamed enum>, unsigned char const&, short unsigned int const&, const etl::array<unsigned char, 6>&, ip::IPAddress>():
+
+        3590:	ab04      	add	r3, sp, #16
+
+        3592:	9303      	str	r3, [sp, #12]
+
+        3594:	2103      	movs	r1, #3
+
+        3596:	232a      	movs	r3, #42	@ 0x2a
+
+        3598:	e9cd 1300 	strd	r1, r3, [sp]
+
+        359c:	4a4a      	ldr	r2, [pc, #296]	@ (36c8 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x304>)
+
+        359e:	493c      	ldr	r1, [pc, #240]	@ (3690 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2cc>)
+
+        35a0:	484a      	ldr	r0, [pc, #296]	@ (36cc <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x308>)
+
+        35a2:	9402      	str	r4, [sp, #8]
+
+        35a4:	2305      	movs	r3, #5
+
+        35a6:	f00a fba5 	bl	dcf4 <<a href="../../systems/DoIpServerSystem.cpp/70936c6e95477946d4edf180a346ad9b.html">doip::DoIpServerSystem::DoIpServerSystem(transport::ITransportSystem&, ip::NetworkInterfaceConfigRegistry&, unsigned char, unsigned char, unsigned short, etl::span<unsigned char const, 6u>, ip::IPAddress const&)</a>>
+
+        35aa:	2301      	movs	r3, #1
+
+        35ac:	f886 3588 	strb.w	r3, [r6, #1416]	@ 0x588
+
+    app::startApp():
+
+        35b0:	4a46      	ldr	r2, [pc, #280]	@ (36cc <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x308>)
+
+        35b2:	4947      	ldr	r1, [pc, #284]	@ (36d0 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x30c>)
+
+        35b4:	482f      	ldr	r0, [pc, #188]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+    _ZNK3etl13typed_storageIN7systems13RoutingSystemEE9has_valueEv():
+
+        35b6:	f8df 8138 	ldr.w	r8, [pc, #312]	@ 36f0 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x32c>
+
+    app::startApp():
+
+        35ba:	2306      	movs	r3, #6
+
+        35bc:	f011 fa82 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+        35c0:	f013 fa7c 	bl	16abc <<a href="../../../../platforms/s32k148evb/main/src/main.cpp/24c2da7f0b08a7a492d8bafe5efed83d.html">systems::getCanSystem()</a>>
+
+        35c4:	f898 39e0 	ldrb.w	r3, [r8, #2528]	@ 0x9e0
+
+        35c8:	4606      	mov	r6, r0
+
+    create<<unnamed enum>, can::ICanSystem&>():
+
+        35ca:	b11b      	cbz	r3, 35d4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x210>
+
+        35cc:	4b2d      	ldr	r3, [pc, #180]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        35ce:	4620      	mov	r0, r4
+
+        35d0:	681b      	ldr	r3, [r3, #0]
+
+        35d2:	4798      	blx	r3
+
+        35d4:	4632      	mov	r2, r6
+
+        35d6:	2105      	movs	r1, #5
+
+        35d8:	483e      	ldr	r0, [pc, #248]	@ (36d4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x310>)
+
+        35da:	f00b fbc1 	bl	ed60 <<a href="../../systems/RoutingSystem.cpp/1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&)</a>>
+
+        35de:	2301      	movs	r3, #1
+
+        35e0:	f888 39e0 	strb.w	r3, [r8, #2528]	@ 0x9e0
+
+    app::startApp():
+
+        35e4:	4a3b      	ldr	r2, [pc, #236]	@ (36d4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x310>)
+
+        35e6:	493c      	ldr	r1, [pc, #240]	@ (36d8 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x314>)
+
+        35e8:	4822      	ldr	r0, [pc, #136]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        35ea:	2306      	movs	r3, #6
+
+        35ec:	f011 fa6a 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+    _ZN3etl13typed_storageIN9transport15TransportSystemEEptEv():
+
+        35f0:	f895 3120 	ldrb.w	r3, [r5, #288]	@ 0x120
+
+        35f4:	b91b      	cbnz	r3, 35fe <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x23a>
+
+        35f6:	4b23      	ldr	r3, [pc, #140]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        35f8:	4620      	mov	r0, r4
+
+        35fa:	681b      	ldr	r3, [r3, #0]
+
+        35fc:	4798      	blx	r3
+
+    _ZNK3etl13typed_storageIN3uds9UdsSystemEE9has_valueEv():
+
+        35fe:	4d37      	ldr	r5, [pc, #220]	@ (36dc <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x318>)
+
+    app::startApp():
+
+        3600:	f895 3a0c 	ldrb.w	r3, [r5, #2572]	@ 0xa0c
+
+    create<lifecycle::declare::LifecycleManager<16, 9, 16>&, transport::TransportSystem&, <unnamed enum>, short unsigned int const&>():
+
+        3604:	b11b      	cbz	r3, 360e <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x24a>
+
+        3606:	4b1f      	ldr	r3, [pc, #124]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        3608:	4620      	mov	r0, r4
+
+        360a:	681b      	ldr	r3, [r3, #0]
+
+        360c:	4798      	blx	r3
+
+        360e:	232a      	movs	r3, #42	@ 0x2a
+
+        3610:	4a1f      	ldr	r2, [pc, #124]	@ (3690 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2cc>)
+
+        3612:	4918      	ldr	r1, [pc, #96]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        3614:	9300      	str	r3, [sp, #0]
+
+        3616:	4831      	ldr	r0, [pc, #196]	@ (36dc <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x318>)
+
+        3618:	2303      	movs	r3, #3
+
+        361a:	f007 f989 	bl	a930 <<a href="../../systems/UdsSystem.cpp/1a5fb6ad6a534a510f10fa5716f066e5.html">uds::UdsSystem::UdsSystem(lifecycle::LifecycleManager&, transport::ITransportSystem&, unsigned char, unsigned short)</a>>
+
+        361e:	2101      	movs	r1, #1
+
+        3620:	f885 1a0c 	strb.w	r1, [r5, #2572]	@ 0xa0c
+
+    _ZNK3etl13typed_storageIN7systems14SysAdminSystemEE9has_valueEv():
+
+        3624:	4d2e      	ldr	r5, [pc, #184]	@ (36e0 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x31c>)
+
+    app::startApp():
+
+        3626:	4a2d      	ldr	r2, [pc, #180]	@ (36dc <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x318>)
+
+        3628:	492e      	ldr	r1, [pc, #184]	@ (36e4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x320>)
+
+        362a:	4812      	ldr	r0, [pc, #72]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        362c:	2307      	movs	r3, #7
+
+        362e:	f011 fa49 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+        3632:	f895 3060 	ldrb.w	r3, [r5, #96]	@ 0x60
+
+    create<<unnamed enum>, lifecycle::declare::LifecycleManager<16, 9, 16>&>():
+
+        3636:	b11b      	cbz	r3, 3640 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x27c>
+
+        3638:	4b12      	ldr	r3, [pc, #72]	@ (3684 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2c0>)
+
+        363a:	4620      	mov	r0, r4
+
+        363c:	681b      	ldr	r3, [r3, #0]
+
+        363e:	4798      	blx	r3
+
+        3640:	4a0c      	ldr	r2, [pc, #48]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        3642:	4827      	ldr	r0, [pc, #156]	@ (36e0 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x31c>)
+
+        3644:	2107      	movs	r1, #7
+
+        3646:	f006 fcc5 	bl	9fd4 <<a href="../../systems/SysAdminSystem.cpp/672c5dc1d4f81f4ae954e3e6c46027ad.html">systems::SysAdminSystem::SysAdminSystem(unsigned char, lifecycle::ILifecycleManager&)</a>>
+
+        364a:	2101      	movs	r1, #1
+
+    app::startApp():
+
+        364c:	2308      	movs	r3, #8
+
+        364e:	4a24      	ldr	r2, [pc, #144]	@ (36e0 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x31c>)
+
+    create<<unnamed enum>, lifecycle::declare::LifecycleManager<16, 9, 16>&>():
+
+        3650:	f885 1060 	strb.w	r1, [r5, #96]	@ 0x60
+
+    app::startApp():
+
+        3654:	4807      	ldr	r0, [pc, #28]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        3656:	4924      	ldr	r1, [pc, #144]	@ (36e8 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x324>)
+
+        3658:	f011 fa34 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+        365c:	4805      	ldr	r0, [pc, #20]	@ (3674 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x2b0>)
+
+        365e:	2109      	movs	r1, #9
+
+        3660:	f013 f9c4 	bl	169ec <<a href="../../../../platforms/s32k148evb/main/src/main.cpp/97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&, unsigned char)</a>>
+
+        3664:	f013 fa2a 	bl	16abc <<a href="../../../../platforms/s32k148evb/main/src/main.cpp/24c2da7f0b08a7a492d8bafe5efed83d.html">systems::getCanSystem()</a>>
+
+    _ZN3etl13typed_storageIN7systems13StorageSystemEEptEv():
+
+        3668:	f897 31b0 	ldrb.w	r3, [r7, #432]	@ 0x1b0
+
+    app::startApp():
+
+        366c:	4605      	mov	r5, r0
+
+        366e:	e041      	b.n	36f4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x330>
+
+        3670:	2001416c 	.word	0x2001416c
+
+        3674:	200142d0 	.word	0x200142d0
+
+        3678:	200145b0 	.word	0x200145b0
+
+        367c:	20012b5c 	.word	0x20012b5c
+
+        3680:	0004a64c 	.word	0x0004a64c
+
+        3684:	20000000 	.word	0x20000000
+
+        3688:	0004a654 	.word	0x0004a654
+
+        368c:	2000cd60 	.word	0x2000cd60
+
+        3690:	20009d60 	.word	0x20009d60
+
+        3694:	20009d64 	.word	0x20009d64
+
+        3698:	0004a65c 	.word	0x0004a65c
+
+        369c:	20009c68 	.word	0x20009c68
+
+        36a0:	20006c68 	.word	0x20006c68
+
+        36a4:	20012950 	.word	0x20012950
+
+        36a8:	0004a668 	.word	0x0004a668
+
+        36ac:	20004b18 	.word	0x20004b18
+
+        36b0:	0004a670 	.word	0x0004a670
+
+        36b4:	0004a67c 	.word	0x0004a67c
+
+        36b8:	20010868 	.word	0x20010868
+
+        36bc:	0004a684 	.word	0x0004a684
+
+        36c0:	200066dc 	.word	0x200066dc
+
+        36c4:	00052b04 	.word	0x00052b04
+
+        36c8:	200129b8 	.word	0x200129b8
+
+        36cc:	200056dc 	.word	0x200056dc
+
+        36d0:	0004a68c 	.word	0x0004a68c
+
+        36d4:	2000ce84 	.word	0x2000ce84
+
+        36d8:	0004a698 	.word	0x0004a698
+
+        36dc:	20004ccc 	.word	0x20004ccc
+
+        36e0:	20014108 	.word	0x20014108
+
+        36e4:	0004a6a0 	.word	0x0004a6a0
+
+        36e8:	0004a6a4 	.word	0x0004a6a4
+
+        36ec:	20012868 	.word	0x20012868
+
+        36f0:	2000fe84 	.word	0x2000fe84
+
+    _ZN3etl13typed_storageIN7systems13StorageSystemEEptEv():
+
+        36f4:	b91b      	cbnz	r3, 36fe <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x33a>
+
+        36f6:	4b1a      	ldr	r3, [pc, #104]	@ (3760 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x39c>)
+
+        36f8:	4620      	mov	r0, r4
+
+        36fa:	681b      	ldr	r3, [r3, #0]
+
+        36fc:	4798      	blx	r3
+
+    _ZNK3etl13typed_storageIN7systems10DemoSystemEE9has_valueEv():
+
+        36fe:	4e19      	ldr	r6, [pc, #100]	@ (3764 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x3a0>)
+
+    app::startApp():
+
+        3700:	f896 3548 	ldrb.w	r3, [r6, #1352]	@ 0x548
+
+    create<<unnamed enum>, lifecycle::declare::LifecycleManager<16, 9, 16>&, can::ICanSystem&, storage::IStorage&>():
+
+        3704:	b11b      	cbz	r3, 370e <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x34a>
+
+        3706:	4b16      	ldr	r3, [pc, #88]	@ (3760 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x39c>)
+
+        3708:	4620      	mov	r0, r4
+
+        370a:	681b      	ldr	r3, [r3, #0]
+
+        370c:	4798      	blx	r3
+
+        370e:	4b16      	ldr	r3, [pc, #88]	@ (3768 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x3a4>)
+
+        3710:	9300      	str	r3, [sp, #0]
+
+        3712:	4a16      	ldr	r2, [pc, #88]	@ (376c <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x3a8>)
+
+        3714:	4816      	ldr	r0, [pc, #88]	@ (3770 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x3ac>)
+
+        3716:	462b      	mov	r3, r5
+
+        3718:	2104      	movs	r1, #4
+
+        371a:	f006 f94d 	bl	99b8 <<a href="../../systems/DemoSystem.cpp/90136955dd6a9ca9af7d3a63ba657e4b.html">systems::DemoSystem::DemoSystem(unsigned char, lifecycle::ILifecycleManager&, can::ICanSystem&, storage::IStorage&)</a>>
+
+        371e:	2401      	movs	r4, #1
+
+    app::startApp():
+
+        3720:	4a13      	ldr	r2, [pc, #76]	@ (3770 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x3ac>)
+
+        3722:	4914      	ldr	r1, [pc, #80]	@ (3774 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x3b0>)
+
+        3724:	4811      	ldr	r0, [pc, #68]	@ (376c <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x3a8>)
+
+    create<<unnamed enum>, lifecycle::declare::LifecycleManager<16, 9, 16>&, can::ICanSystem&, storage::IStorage&>():
+
+        3726:	f886 4548 	strb.w	r4, [r6, #1352]	@ 0x548
+
+    app::startApp():
+
+        372a:	2309      	movs	r3, #9
+
+        372c:	f011 f9ca 	bl	14ac4 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/30e9b0165543e427907413beba9a03ed.html">lifecycle::LifecycleManager::addComponent(char const*, lifecycle::ILifecycleComponent&, unsigned char)</a>>
+
+        3730:	2109      	movs	r1, #9
+
+        3732:	480e      	ldr	r0, [pc, #56]	@ (376c <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x3a8>)
+
+        3734:	f011 f8c0 	bl	148b8 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleManager.cpp/a11bcf88ca51caebf1f9142176c8117e.html">lifecycle::LifecycleManager::transitionToLevel(unsigned char)</a>>
+
+    _ZN7runtime14RuntimeMonitorINS_17RuntimeStatisticsES1_E5startEv():
+
+        3738:	f03f fd4c 	bl	431d4 <<a href="../../../../platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/ef726e6b5f9357a8fa025578b908794c.html">getSystemTicks32Bit</a>>
+
+        373c:	4a0e      	ldr	r2, [pc, #56]	@ (3778 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x3b4>)
+
+    _ZN3app11IdleHandler5startEv():
+
+        373e:	490f      	ldr	r1, [pc, #60]	@ (377c <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x3b8>)
+
+    _ZN7runtime14RuntimeMonitorINS_17RuntimeStatisticsES1_E5startEv():
+
+        3740:	4603      	mov	r3, r0
+
+    _ZN3app11IdleHandler5startEv():
+
+        3742:	2000      	movs	r0, #0
+
+    _ZN7runtime14RuntimeMonitorINS_17RuntimeStatisticsES1_E5startEv():
+
+        3744:	e9c2 3304 	strd	r3, r3, [r2, #16]
+
+    app::startApp():
+
+        3748:	b006      	add	sp, #24
+
+        374a:	e8bd 41f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, lr}
+
+    _ZN3app11IdleHandler5startEv():
+
+        374e:	f015 bb55 	b.w	18dfc <<a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Async.cpp/4dfe65e158466f2f9a73b985dc4b0ecc.html">async::execute(unsigned char, async::IRunnable&)</a>>
+
+    create<<unnamed enum>, runtime::declare::RuntimeMonitor<runtime::RuntimeStatistics, runtime::RuntimeStatistics, 10, 3>&>():
+
+        3752:	4b03      	ldr	r3, [pc, #12]	@ (3760 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x39c>)
+
+        3754:	ac05      	add	r4, sp, #20
+
+        3756:	681b      	ldr	r3, [r3, #0]
+
+        3758:	4620      	mov	r0, r4
+
+        375a:	4798      	blx	r3
+
+        375c:	e642      	b.n	33e4 <<a href="./4da5c80e94ffd100bf7197f59436fa02.html">app::startApp()</a>+0x20>
+
+        375e:	bf00      	nop
+
+        3760:	20000000 	.word	0x20000000
+
+        3764:	20013bbc 	.word	0x20013bbc
+
+        3768:	20004b98 	.word	0x20004b98
+
+        376c:	200142d0 	.word	0x200142d0
+
+        3770:	20012bbc 	.word	0x20012bbc
+
+        3774:	0004a6b0 	.word	0x0004a6b0
+
+        3778:	200145b0 	.word	0x200145b0
+
+        377c:	20004b04 	.word	0x20004b04
+
+    </pre>
+
+    
+    <pre><a href="../../../../../../libs/3rdparty/etl/include/etl/private/delegate_cpp11.h/feddca9ecddf6faff19f694479a1ab5e.html">void etl::delegate&lt;void ()&gt;::function_stub&lt;&amp;app::startApp&gt;(etl::delegate&lt;void ()&gt;::invocation_element const&amp;) (4)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 336</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,988</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    336
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,988
+                    
+                    
+                </td>
+                <td class="col_size">48</td>
+                <td><a href="../../../../../../libs/bsw/cpp2someip/src/NetworkConfig.cpp/c9187acb9b41dbde9e9c6d892ee7cfce.html" class="icon-function">someip::NetworkConfig::NetworkConfig(ip::IPAddress const&amp;, ip::IPAddress const&amp;, unsigned char, someip::UdpConfig&amp;, someip::TcpConfig&amp;, someip::TpConfig&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    320
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                88 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,940
+                    
+                    
+                </td>
+                <td class="col_size">420</td>
+                <td><a href="../../../../../../libs/bsw/cpp2someip/include/someip/NetworkConfig.h/b8002c669963c7fa92fe1a5c8f7a632f.html" class="icon-function">someip::internal::NetworkResources&lt;udp::LwipDatagramSocket, (unsigned char)1, (unsigned char)2, ServerSocketDummy, (unsigned char)0, SocketDummy, (unsigned char)0, 1500u, (unsigned char)0, 1500u&gt;::NetworkResources(ip::IPAddress const&amp;, ip::IPAddress const&amp;, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    232
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,520
+                    
+                    
+                </td>
+                <td class="col_size">872</td>
+                <td><a href="../../../../../../libs/bsw/cpp2someip/include/someip/SdSomeIpStack.h/50bc29b93616a4ffa78285d48d3d2a58.html" class="icon-function">someip::declare::detail::SdMembers&lt;udp::LwipDatagramSocket, (unsigned char)2, ServerSocketDummy, (unsigned char)0, SocketDummy, (unsigned char)0, 1500u, (unsigned char)0, false, 0u, (unsigned short)1, (unsigned short)0, (unsigned short)1, (unsigned short)2, (unsigned short)2, (unsigned char)2, (unsigned char)0, (unsigned char)0&gt;::SdMembers(ip::IPAddress const&amp;, ip::IPAddress const&amp;, unsigned char, unsigned char&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    160
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                112 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">648</td>
+                <td><a href="../../systems/SomeIpSystem.cpp/d3e5616d34e0c3aa0a736485577ad566.html" class="icon-function">systems::SomeIpSystem::SomeIpSystem(unsigned char)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">48
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

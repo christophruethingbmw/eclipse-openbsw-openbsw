@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../3rdparty.html">3rdparty</a></li>
+        
+        <li><a href="../../../../etl.html">etl</a></li>
+        
+        <li><a href="../../../include.html">include</a></li>
+        
+        <li ><a href="../../etl.html">etl</a>
+            </li>
+
+        
+        <li class="active"><a href="../flat_set.h.html">flat_set.h</a>:262
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">etl::iflat_set&lt;someip::ServiceQuery*, someip::QueryManager::LessThanComparator&gt;::insert(someip::ServiceQuery*&amp;&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000228f8</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>72 (static)</td>
+                <td>344</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../bsw/cpp2someip/src/QueryManager.cpp/48e8c73c6181c4925038306dbf80e779.html">someip::QueryManager::registerQuery(someip::ServiceQuery&amp;) (244)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=340
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../bsw/cpp2someip/src/QueryManager.cpp/7521a95b310b6845376d95cc5e38131d.html">someip::QueryManager::LessThanComparator::operator()(someip::ServiceQuery const*, someip::ServiceQuery const*) const (84)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../reference_flat_set.h/0e6421450d709b655cc69bb35efda86f.html">etl::ireference_flat_set&lt;someip::ServiceQuery*, someip::QueryManager::LessThanComparator&gt;::insert_at(etl::ireference_flat_set&lt;someip::ServiceQuery*, someip::QueryManager::LessThanComparator&gt;::iterator, someip::ServiceQuery*&amp;) (256)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../reference_flat_set.h/0e6421450d709b655cc69bb35efda86f.html">etl::ireference_flat_set&lt;someip::ServiceQuery*, someip::QueryManager::LessThanComparator&gt;::insert_at(etl::ireference_flat_set&lt;someip::ServiceQuery*, someip::QueryManager::LessThanComparator&gt;::iterator, someip::ServiceQuery*&amp;) (256)</a></pre>
+    
+
+    <pre>
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       228f8:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       228fc:	680b      	ldr	r3, [r1, #0]
+
+    _ZN3etl9iflat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE11lower_boundERKS3_():
+
+       228fe:	f8d2 8000 	ldr.w	r8, [r2]
+
+    _ZN3etl11pvoidvector5beginEv():
+
+       22902:	f8d3 a004 	ldr.w	sl, [r3, #4]
+
+    _ZN3etl11pvoidvector3endEv():
+
+       22906:	689c      	ldr	r4, [r3, #8]
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       22908:	b089      	sub	sp, #36	@ 0x24
+
+    _ZN3etl15distance_helperINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorEEENS_15iterator_traitsIT_vE15difference_typeESA_SA_NS_26bidirectional_iterator_tagE():
+
+       2290a:	45a2      	cmp	sl, r4
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       2290c:	9101      	str	r1, [sp, #4]
+
+       2290e:	9302      	str	r3, [sp, #8]
+
+       22910:	9203      	str	r2, [sp, #12]
+
+       22912:	4681      	mov	r9, r0
+
+    _ZN3etl15distance_helperINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorEEENS_15iterator_traitsIT_vE15difference_typeESA_SA_NS_26bidirectional_iterator_tagE():
+
+       22914:	f000 808a 	beq.w	22a2c <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x134>
+
+       22918:	1f25      	subs	r5, r4, #4
+
+       2291a:	eba5 050a 	sub.w	r5, r5, sl
+
+       2291e:	08ad      	lsrs	r5, r5, #2
+
+       22920:	3501      	adds	r5, #1
+
+    _ZN3etl19ireference_flat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE8iteratorC4EPPS3_():
+
+       22922:	46d3      	mov	fp, sl
+
+       22924:	af06      	add	r7, sp, #24
+
+    _ZN3etl14advance_helperINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorEiEEvRT_T0_NS_26bidirectional_iterator_tagE():
+
+       22926:	106e      	asrs	r6, r5, #1
+
+       22928:	d011      	beq.n	2294e <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x56>
+
+       2292a:	1e71      	subs	r1, r6, #1
+
+       2292c:	f10b 0304 	add.w	r3, fp, #4
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       22930:	4642      	mov	r2, r8
+
+       22932:	f853 0021 	ldr.w	r0, [r3, r1, lsl #2]
+
+       22936:	eb03 0381 	add.w	r3, r3, r1, lsl #2
+
+       2293a:	6801      	ldr	r1, [r0, #0]
+
+       2293c:	9300      	str	r3, [sp, #0]
+
+       2293e:	4638      	mov	r0, r7
+
+       22940:	f7ff fd8a 	bl	22458 <<a href="../../../../../bsw/cpp2someip/src/QueryManager.cpp/7521a95b310b6845376d95cc5e38131d.html">someip::QueryManager::LessThanComparator::operator()(someip::ServiceQuery const*, someip::ServiceQuery const*) const</a>>
+
+       22944:	2800      	cmp	r0, #0
+
+       22946:	d15a      	bne.n	229fe <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x106>
+
+       22948:	4635      	mov	r5, r6
+
+    _ZN3etl14advance_helperINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorEiEEvRT_T0_NS_26bidirectional_iterator_tagE():
+
+       2294a:	106e      	asrs	r6, r5, #1
+
+       2294c:	d1ed      	bne.n	2292a <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x32>
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       2294e:	f8db 1000 	ldr.w	r1, [fp]
+
+       22952:	4642      	mov	r2, r8
+
+       22954:	6809      	ldr	r1, [r1, #0]
+
+       22956:	4638      	mov	r0, r7
+
+       22958:	f7ff fd7e 	bl	22458 <<a href="../../../../../bsw/cpp2someip/src/QueryManager.cpp/7521a95b310b6845376d95cc5e38131d.html">someip::QueryManager::LessThanComparator::operator()(someip::ServiceQuery const*, someip::ServiceQuery const*) const</a>>
+
+       2295c:	b108      	cbz	r0, 22962 <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x6a>
+
+    _ZN3etl19ireference_flat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE8iteratorppEv():
+
+       2295e:	f10b 0b04 	add.w	fp, fp, #4
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorEbEC4IRS8_bEEOT_OT0_():
+
+       22962:	2200      	movs	r2, #0
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       22964:	455c      	cmp	r4, fp
+
+    _ZN3etl19ireference_flat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE8iteratorC4ERKS7_():
+
+       22966:	f8c9 b000 	str.w	fp, [r9]
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorEbEC4IRS8_bEEOT_OT0_():
+
+       2296a:	f889 2004 	strb.w	r2, [r9, #4]
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       2296e:	d00a      	beq.n	22986 <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x8e>
+
+       22970:	f8db 2000 	ldr.w	r2, [fp]
+
+       22974:	9b01      	ldr	r3, [sp, #4]
+
+       22976:	6812      	ldr	r2, [r2, #0]
+
+       22978:	4641      	mov	r1, r8
+
+       2297a:	f103 000c 	add.w	r0, r3, #12
+
+       2297e:	f7ff fd6b 	bl	22458 <<a href="../../../../../bsw/cpp2someip/src/QueryManager.cpp/7521a95b310b6845376d95cc5e38131d.html">someip::QueryManager::LessThanComparator::operator()(someip::ServiceQuery const*, someip::ServiceQuery const*) const</a>>
+
+       22982:	2800      	cmp	r0, #0
+
+       22984:	d037      	beq.n	229f6 <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0xfe>
+
+       22986:	9b02      	ldr	r3, [sp, #8]
+
+       22988:	681a      	ldr	r2, [r3, #0]
+
+    _ZNK3etl11pvoidvector4sizeEv():
+
+       2298a:	eba4 0a0a 	sub.w	sl, r4, sl
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       2298e:	ebb2 0faa 	cmp.w	r2, sl, asr #2
+
+       22992:	d041      	beq.n	22a18 <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x120>
+
+       22994:	9b01      	ldr	r3, [sp, #4]
+
+       22996:	689d      	ldr	r5, [r3, #8]
+
+    _ZN3etl5ipool8allocateIPN6someip12ServiceQueryEEEPT_v():
+
+       22998:	692a      	ldr	r2, [r5, #16]
+
+       2299a:	2a03      	cmp	r2, #3
+
+       2299c:	d937      	bls.n	22a0e <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x116>
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+       2299e:	68aa      	ldr	r2, [r5, #8]
+
+       229a0:	6969      	ldr	r1, [r5, #20]
+
+       229a2:	428a      	cmp	r2, r1
+
+       229a4:	d249      	bcs.n	22a3a <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x142>
+
+       229a6:	68e8      	ldr	r0, [r5, #12]
+
+       229a8:	4281      	cmp	r1, r0
+
+       229aa:	d90a      	bls.n	229c2 <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0xca>
+
+       229ac:	692c      	ldr	r4, [r5, #16]
+
+       229ae:	682b      	ldr	r3, [r5, #0]
+
+       229b0:	fb04 fc00 	mul.w	ip, r4, r0
+
+       229b4:	eb03 060c 	add.w	r6, r3, ip
+
+       229b8:	3001      	adds	r0, #1
+
+       229ba:	4426      	add	r6, r4
+
+       229bc:	f843 600c 	str.w	r6, [r3, ip]
+
+       229c0:	60e8      	str	r0, [r5, #12]
+
+       229c2:	3201      	adds	r2, #1
+
+       229c4:	686b      	ldr	r3, [r5, #4]
+
+       229c6:	60aa      	str	r2, [r5, #8]
+
+       229c8:	4291      	cmp	r1, r2
+
+       229ca:	bf88      	it	hi
+
+       229cc:	681a      	ldrhi	r2, [r3, #0]
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       229ce:	9901      	ldr	r1, [sp, #4]
+
+    _ZN3etl19ireference_flat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE8iteratorC4ERKS7_():
+
+       229d0:	f8cd b014 	str.w	fp, [sp, #20]
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+       229d4:	bf98      	it	ls
+
+       229d6:	2200      	movls	r2, #0
+
+       229d8:	606a      	str	r2, [r5, #4]
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       229da:	9a03      	ldr	r2, [sp, #12]
+
+       229dc:	6812      	ldr	r2, [r2, #0]
+
+       229de:	601a      	str	r2, [r3, #0]
+
+       229e0:	4638      	mov	r0, r7
+
+       229e2:	aa05      	add	r2, sp, #20
+
+       229e4:	f7ff ff08 	bl	227f8 <<a href="../reference_flat_set.h/0e6421450d709b655cc69bb35efda86f.html">etl::ireference_flat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert_at(etl::ireference_flat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::iterator, someip::ServiceQuery*&)</a>>
+
+    _ZN3etl19ireference_flat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE8iteratoraSERKS7_():
+
+       229e8:	9a06      	ldr	r2, [sp, #24]
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorEbEaSEOS9_():
+
+       229ea:	f89d 301c 	ldrb.w	r3, [sp, #28]
+
+    _ZN3etl19ireference_flat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE8iteratoraSERKS7_():
+
+       229ee:	f8c9 2000 	str.w	r2, [r9]
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorEbEaSEOS9_():
+
+       229f2:	f889 3004 	strb.w	r3, [r9, #4]
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       229f6:	4648      	mov	r0, r9
+
+       229f8:	b009      	add	sp, #36	@ 0x24
+
+       229fa:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       229fe:	3601      	adds	r6, #1
+
+    _ZN3etl19ireference_flat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE8iteratorppEv():
+
+       22a00:	9b00      	ldr	r3, [sp, #0]
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       22a02:	1bad      	subs	r5, r5, r6
+
+       22a04:	2d00      	cmp	r5, #0
+
+    _ZN3etl19ireference_flat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE8iteratorppEv():
+
+       22a06:	f103 0b04 	add.w	fp, r3, #4
+
+    _ZN3etl11lower_boundINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorES4_S6_EET_S9_S9_RKT0_T1_():
+
+       22a0a:	dc8c      	bgt.n	22926 <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x2e>
+
+       22a0c:	e7a9      	b.n	22962 <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x6a>
+
+    _ZN3etl5ipool8allocateIPN6someip12ServiceQueryEEEPT_v():
+
+       22a0e:	4a0f      	ldr	r2, [pc, #60]	@ (22a4c <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x154>)
+
+       22a10:	4638      	mov	r0, r7
+
+       22a12:	6812      	ldr	r2, [r2, #0]
+
+       22a14:	4790      	blx	r2
+
+       22a16:	e7c2      	b.n	2299e <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0xa6>
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       22a18:	4a0c      	ldr	r2, [pc, #48]	@ (22a4c <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x154>)
+
+       22a1a:	4638      	mov	r0, r7
+
+       22a1c:	6812      	ldr	r2, [r2, #0]
+
+       22a1e:	4790      	blx	r2
+
+       22a20:	9b01      	ldr	r3, [sp, #4]
+
+       22a22:	689d      	ldr	r5, [r3, #8]
+
+    _ZN3etl5ipool8allocateIPN6someip12ServiceQueryEEEPT_v():
+
+       22a24:	692a      	ldr	r2, [r5, #16]
+
+       22a26:	2a03      	cmp	r2, #3
+
+       22a28:	d8b9      	bhi.n	2299e <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0xa6>
+
+       22a2a:	e7f0      	b.n	22a0e <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x116>
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorEbEC4IRS8_bEEOT_OT0_():
+
+       22a2c:	2300      	movs	r3, #0
+
+    _ZN3etl19ireference_flat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE8iteratorC4ERKS7_():
+
+       22a2e:	f8c0 a000 	str.w	sl, [r0]
+
+    _ZN3etl4pairINS_19ireference_flat_setIPN6someip12ServiceQueryENS2_12QueryManager18LessThanComparatorEE8iteratorEbEC4IRS8_bEEOT_OT0_():
+
+       22a32:	7103      	strb	r3, [r0, #4]
+
+    _ZN3etl19ireference_flat_setIPN6someip12ServiceQueryENS1_12QueryManager18LessThanComparatorEE8iteratorC4EPPS3_():
+
+       22a34:	46d3      	mov	fp, sl
+
+       22a36:	af06      	add	r7, sp, #24
+
+       22a38:	e7a5      	b.n	22986 <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x8e>
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+       22a3a:	4b04      	ldr	r3, [pc, #16]	@ (22a4c <<a href="./c9a92374148e5d7689ed18db361a97e9.html">etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&)</a>+0x154>)
+
+       22a3c:	4638      	mov	r0, r7
+
+       22a3e:	681b      	ldr	r3, [r3, #0]
+
+       22a40:	4798      	blx	r3
+
+    etl::iflat_set<someip::ServiceQuery*, someip::QueryManager::LessThanComparator>::insert(someip::ServiceQuery*&&):
+
+       22a42:	9a03      	ldr	r2, [sp, #12]
+
+       22a44:	2300      	movs	r3, #0
+
+       22a46:	6812      	ldr	r2, [r2, #0]
+
+       22a48:	601a      	str	r2, [r3, #0]
+
+       22a4a:	deff      	udf	#255	@ 0xff
+
+       22a4c:	20000000 	.word	0x20000000
+
+    </pre>
+
+    
+    <pre><a href="../../../../../bsw/cpp2someip/src/QueryManager.cpp/48e8c73c6181c4925038306dbf80e779.html">someip::QueryManager::registerQuery(someip::ServiceQuery&amp;) (244)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 220</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 340</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    220
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                4 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    340
+                    
+                    
+                </td>
+                <td class="col_size">84</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/QueryManager.cpp/7521a95b310b6845376d95cc5e38131d.html" class="icon-function">someip::QueryManager::LessThanComparator::operator()(someip::ServiceQuery const*, someip::ServiceQuery const*) const</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    216
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">256</td>
+                <td><a href="../reference_flat_set.h/0e6421450d709b655cc69bb35efda86f.html" class="icon-function">etl::ireference_flat_set&lt;someip::ServiceQuery*, someip::QueryManager::LessThanComparator&gt;::insert_at(etl::ireference_flat_set&lt;someip::ServiceQuery*, someip::QueryManager::LessThanComparator&gt;::iterator, someip::ServiceQuery*&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">160
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 160</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 632</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    160
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    632
+                    
+                    
+                </td>
+                <td class="col_size">344</td>
+                <td><a href="./c9a92374148e5d7689ed18db361a97e9.html" class="icon-function">etl::iflat_set&lt;someip::ServiceQuery*, someip::QueryManager::LessThanComparator&gt;::insert(someip::ServiceQuery*&amp;&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    88
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    288
+                    
+                    
+                </td>
+                <td class="col_size">244</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/QueryManager.cpp/48e8c73c6181c4925038306dbf80e779.html" class="icon-function">someip::QueryManager::registerQuery(someip::ServiceQuery&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">44</td>
+                <td><a href="../../../../../bsw/cpp2someip/src/SdServiceRegistry.cpp/e55a079561e7ef3de4293cf596d80331.html" class="icon-function">someip::SdServiceRegistry::registerServiceQuery(someip::ServiceQuery&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

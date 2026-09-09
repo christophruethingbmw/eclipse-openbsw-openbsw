@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../middleware.html">middleware</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../middleware.html">middleware</a></li>
+        
+        <li ><a href="../../core.html">core</a>
+            </li>
+
+        
+        <li class="active"><a href="../ProxyBase.cpp.html">ProxyBase.cpp</a>:52
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span&lt;middleware::core::IInstanceDatabase const* const, 4294967295u&gt; const&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00046f84</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>48 (static)</td>
+                <td>284</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../build/s32k148-freertos-gcc/executables/referenceApp/middlewareConfiguration/src/generated_code/org/test/foo/FooProxy.cpp/9fff1fb6f853042bcb4982f03ed12d01.html">org::test::foo::Foo::proxy::FooProxy::init(org::test::foo::Foo::internal::InstanceId, middleware::core::ClusterId) (116)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            Σ=116
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../LoggerApi.cpp/e2e2d0d51d4ebc4cb9c93d916186ede7.html">middleware::logger::logInitFailure(middleware::logger::LogLevel, middleware::logger::Error, middleware::core::HRESULT, unsigned short, unsigned short, unsigned char) (116)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./a0b81e8b324416cf846d49326b913192.html">middleware::core::ProxyBase::setAddressId(unsigned char) (4)</a></pre>
+    
+
+    <pre>
+
+    middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&):
+
+       46f84:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+       46f88:	4698      	mov	r8, r3
+
+       46f8a:	6803      	ldr	r3, [r0, #0]
+
+       46f8c:	b084      	sub	sp, #16
+
+       46f8e:	681b      	ldr	r3, [r3, #0]
+
+       46f90:	4607      	mov	r7, r0
+
+       46f92:	4616      	mov	r6, r2
+
+       46f94:	460c      	mov	r4, r1
+
+       46f96:	4798      	blx	r3
+
+       46f98:	4602      	mov	r2, r0
+
+    middleware::core::ProxyBase::unsubscribe(unsigned short):
+
+       46f9a:	68b8      	ldr	r0, [r7, #8]
+
+       46f9c:	b128      	cbz	r0, 46faa <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0x26>
+
+       46f9e:	6803      	ldr	r3, [r0, #0]
+
+       46fa0:	4639      	mov	r1, r7
+
+       46fa2:	699b      	ldr	r3, [r3, #24]
+
+       46fa4:	4798      	blx	r3
+
+       46fa6:	2300      	movs	r3, #0
+
+       46fa8:	60bb      	str	r3, [r7, #8]
+
+    _ZNK3etl4spanIKPKN10middleware4core17IInstanceDatabaseELj4294967295EE3endEv():
+
+       46faa:	e9d8 3500 	ldrd	r3, r5, [r8]
+
+    middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&):
+
+       46fae:	42ab      	cmp	r3, r5
+
+    find_if<const middleware::core::IInstanceDatabase* const*, middleware::core::ProxyBase::initFromInstancesDatabase(uint16_t, uint8_t, const etl::span<const middleware::core::IInstanceDatabase* const>&)::<lambda(const middleware::core::IInstanceDatabase*)> >():
+
+       46fb0:	d073      	beq.n	4709a <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0x116>
+
+       46fb2:	4699      	mov	r9, r3
+
+       46fb4:	46ca      	mov	sl, r9
+
+       46fb6:	f859 1b04 	ldr.w	r1, [r9], #4
+
+    middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&):
+
+       46fba:	680b      	ldr	r3, [r1, #0]
+
+    operator()():
+
+       46fbc:	a802      	add	r0, sp, #8
+
+       46fbe:	689b      	ldr	r3, [r3, #8]
+
+       46fc0:	4798      	blx	r3
+
+    _ZNK3etl4spanIKtLj4294967295EE3endEv():
+
+       46fc2:	e9dd 2002 	ldrd	r2, r0, [sp, #8]
+
+    _ZN3etl15distance_helperIPKtEENS_15iterator_traitsIT_vE15difference_typeES4_S4_NS_26random_access_iterator_tagE():
+
+       46fc6:	1a83      	subs	r3, r0, r2
+
+       46fc8:	105b      	asrs	r3, r3, #1
+
+    _ZN3etl11lower_boundIPKttNS_4lessItEEEET_S5_S5_RKT0_T1_():
+
+       46fca:	e008      	b.n	46fde <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0x5a>
+
+       46fcc:	f832 e011 	ldrh.w	lr, [r2, r1, lsl #1]
+
+       46fd0:	45a6      	cmp	lr, r4
+
+       46fd2:	bf3d      	ittte	cc
+
+       46fd4:	3101      	addcc	r1, #1
+
+       46fd6:	f10c 0202 	addcc.w	r2, ip, #2
+
+       46fda:	1a5b      	subcc	r3, r3, r1
+
+       46fdc:	460b      	movcs	r3, r1
+
+    _ZN3etl14advance_helperIPKtiEEvRT_T0_NS_26random_access_iterator_tagE():
+
+       46fde:	f023 0c01 	bic.w	ip, r3, #1
+
+    _ZN3etl11lower_boundIPKttNS_4lessItEEEET_S5_S5_RKT0_T1_():
+
+       46fe2:	2b00      	cmp	r3, #0
+
+       46fe4:	ea4f 0163 	mov.w	r1, r3, asr #1
+
+    _ZN3etl14advance_helperIPKtiEEvRT_T0_NS_26random_access_iterator_tagE():
+
+       46fe8:	4494      	add	ip, r2
+
+    _ZN3etl11lower_boundIPKttNS_4lessItEEEET_S5_S5_RKT0_T1_():
+
+       46fea:	dcef      	bgt.n	46fcc <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0x48>
+
+    operator()():
+
+       46fec:	4290      	cmp	r0, r2
+
+       46fee:	d002      	beq.n	46ff6 <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0x72>
+
+       46ff0:	8813      	ldrh	r3, [r2, #0]
+
+       46ff2:	42a3      	cmp	r3, r4
+
+       46ff4:	d002      	beq.n	46ffc <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0x78>
+
+    find_if<const middleware::core::IInstanceDatabase* const*, middleware::core::ProxyBase::initFromInstancesDatabase(uint16_t, uint8_t, const etl::span<const middleware::core::IInstanceDatabase* const>&)::<lambda(const middleware::core::IInstanceDatabase*)> >():
+
+       46ff6:	454d      	cmp	r5, r9
+
+       46ff8:	46ca      	mov	sl, r9
+
+       46ffa:	d1db      	bne.n	46fb4 <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0x30>
+
+    middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&):
+
+       46ffc:	f8d8 3004 	ldr.w	r3, [r8, #4]
+
+       47000:	4553      	cmp	r3, sl
+
+       47002:	d046      	beq.n	47092 <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0x10e>
+
+       47004:	f8da 1000 	ldr.w	r1, [sl]
+
+       47008:	680b      	ldr	r3, [r1, #0]
+
+       4700a:	a802      	add	r0, sp, #8
+
+       4700c:	685b      	ldr	r3, [r3, #4]
+
+       4700e:	4798      	blx	r3
+
+    _ZNK3etl4spanIKPN10middleware4core18IClusterConnectionELj4294967295EE3endEv():
+
+       47010:	e9dd 5902 	ldrd	r5, r9, [sp, #8]
+
+    middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&):
+
+       47014:	454d      	cmp	r5, r9
+
+    find_if<middleware::core::IClusterConnection* const*, middleware::core::ProxyBase::initFromInstancesDatabase(uint16_t, uint8_t, const etl::span<const middleware::core::IInstanceDatabase* const>&)::<lambda(const middleware::core::IClusterConnection*)> >():
+
+       47016:	d031      	beq.n	4707c <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0xf8>
+
+    middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&):
+
+       47018:	46aa      	mov	sl, r5
+
+    find_if<middleware::core::IClusterConnection* const*, middleware::core::ProxyBase::initFromInstancesDatabase(uint16_t, uint8_t, const etl::span<const middleware::core::IInstanceDatabase* const>&)::<lambda(const middleware::core::IClusterConnection*)> >():
+
+       4701a:	f855 3b04 	ldr.w	r3, [r5], #4
+
+    operator()():
+
+       4701e:	4618      	mov	r0, r3
+
+       47020:	b123      	cbz	r3, 4702c <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0xa8>
+
+       47022:	681b      	ldr	r3, [r3, #0]
+
+       47024:	689b      	ldr	r3, [r3, #8]
+
+       47026:	4798      	blx	r3
+
+    find_if<middleware::core::IClusterConnection* const*, middleware::core::ProxyBase::initFromInstancesDatabase(uint16_t, uint8_t, const etl::span<const middleware::core::IInstanceDatabase* const>&)::<lambda(const middleware::core::IClusterConnection*)> >():
+
+       47028:	4286      	cmp	r6, r0
+
+       4702a:	d002      	beq.n	47032 <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0xae>
+
+       4702c:	45a9      	cmp	r9, r5
+
+       4702e:	46aa      	mov	sl, r5
+
+       47030:	d1f2      	bne.n	47018 <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0x94>
+
+    middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&):
+
+       47032:	9b03      	ldr	r3, [sp, #12]
+
+       47034:	4553      	cmp	r3, sl
+
+       47036:	d021      	beq.n	4707c <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0xf8>
+
+       47038:	f8da 0000 	ldr.w	r0, [sl]
+
+       4703c:	6803      	ldr	r3, [r0, #0]
+
+       4703e:	4622      	mov	r2, r4
+
+       47040:	691b      	ldr	r3, [r3, #16]
+
+       47042:	4639      	mov	r1, r7
+
+       47044:	4798      	blx	r3
+
+       47046:	4605      	mov	r5, r0
+
+       47048:	b1e0      	cbz	r0, 47084 <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0x100>
+
+       4704a:	28fc      	cmp	r0, #252	@ 0xfc
+
+       4704c:	bf04      	itt	eq
+
+       4704e:	f8da 3000 	ldreq.w	r3, [sl]
+
+       47052:	60bb      	streq	r3, [r7, #8]
+
+    _ZNK3etl4spanIKPKN10middleware4core17IInstanceDatabaseELj4294967295EE5emptyEv():
+
+       47054:	e9d8 3a00 	ldrd	r3, sl, [r8]
+
+    middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&):
+
+       47058:	4553      	cmp	r3, sl
+
+       4705a:	d00b      	beq.n	47074 <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0xf0>
+
+       4705c:	683b      	ldr	r3, [r7, #0]
+
+       4705e:	4638      	mov	r0, r7
+
+       47060:	681b      	ldr	r3, [r3, #0]
+
+       47062:	4798      	blx	r3
+
+       47064:	e9cd 4600 	strd	r4, r6, [sp]
+
+       47068:	4603      	mov	r3, r0
+
+       4706a:	462a      	mov	r2, r5
+
+       4706c:	2102      	movs	r1, #2
+
+       4706e:	2001      	movs	r0, #1
+
+       47070:	f7ff fdbe 	bl	46bf0 <<a href="../LoggerApi.cpp/e2e2d0d51d4ebc4cb9c93d916186ede7.html">middleware::logger::logInitFailure(middleware::logger::LogLevel, middleware::logger::Error, middleware::core::HRESULT, unsigned short, unsigned short, unsigned char)</a>>
+
+       47074:	4628      	mov	r0, r5
+
+       47076:	b004      	add	sp, #16
+
+       47078:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+    _ZNK3etl4spanIKPKN10middleware4core17IInstanceDatabaseELj4294967295EE5emptyEv():
+
+       4707c:	e9d8 3a00 	ldrd	r3, sl, [r8]
+
+    middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&):
+
+       47080:	25f3      	movs	r5, #243	@ 0xf3
+
+       47082:	e7e9      	b.n	47058 <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0xd4>
+
+       47084:	f8da 3000 	ldr.w	r3, [sl]
+
+       47088:	60bb      	str	r3, [r7, #8]
+
+       4708a:	4628      	mov	r0, r5
+
+       4708c:	b004      	add	sp, #16
+
+       4708e:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+    _ZNK3etl4spanIKPKN10middleware4core17IInstanceDatabaseELj4294967295EE5emptyEv():
+
+       47092:	f8d8 3000 	ldr.w	r3, [r8]
+
+    middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&):
+
+       47096:	25f3      	movs	r5, #243	@ 0xf3
+
+       47098:	e7de      	b.n	47058 <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0xd4>
+
+       4709a:	25f3      	movs	r5, #243	@ 0xf3
+
+       4709c:	e7ea      	b.n	47074 <<a href="./c9ccde3d50b3961b75e040c93bccb4a4.html">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span<middleware::core::IInstanceDatabase const* const, 4294967295u> const&)</a>+0xf0>
+
+       4709e:	bf00      	nop
+
+    </pre>
+
+    
+    <pre><a href="./b25c46ea464570fe3b3f577902347afd.html">middleware::core::ProxyBase::unsubscribe(unsigned short) (24)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 252</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 280</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    252
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    280
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    204
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                36 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    212
+                    
+                    
+                </td>
+                <td class="col_size">96</td>
+                <td><a href="../../../../../../../executables/referenceApp/middlewareConfiguration/platform_integration/logger/src/LoggerImpl.cpp/8898359ef4c4e464a742644b555e7f67.html" class="icon-function">middleware::logger::log(middleware::logger::LogLevel, char const*, ...)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    168
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">116</td>
+                <td><a href="../LoggerApi.cpp/e2e2d0d51d4ebc4cb9c93d916186ede7.html" class="icon-function">middleware::logger::logInitFailure(middleware::logger::LogLevel, middleware::logger::Error, middleware::core::HRESULT, unsigned short, unsigned short, unsigned char)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">96
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 96</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 480</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    96
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    480
+                    
+                    
+                </td>
+                <td class="col_size">284</td>
+                <td><a href="./c9ccde3d50b3961b75e040c93bccb4a4.html" class="icon-function">middleware::core::ProxyBase::initFromInstancesDatabase(unsigned short, unsigned char, etl::span&lt;middleware::core::IInstanceDatabase const* const, 4294967295u&gt; const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    48
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    196
+                    
+                    
+                </td>
+                <td class="col_size">116</td>
+                <td><a href="../../../../../../../build/s32k148-freertos-gcc/executables/referenceApp/middlewareConfiguration/src/generated_code/org/test/foo/FooProxy.cpp/9fff1fb6f853042bcb4982f03ed12d01.html" class="icon-function">org::test::foo::Foo::proxy::FooProxy::init(org::test::foo::Foo::internal::InstanceId, middleware::core::ClusterId)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">80</td>
+                <td><a href="../../../../../../../executables/referenceApp/application/src/systems/DemoSystem.cpp/8d76449584df6346447bac45c26bd613.html" class="icon-function">systems::DemoSystem::init()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

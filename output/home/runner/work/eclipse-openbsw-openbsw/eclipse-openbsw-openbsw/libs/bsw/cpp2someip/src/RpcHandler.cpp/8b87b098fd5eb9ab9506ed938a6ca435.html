@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../../eclipse-openbsw-openbsw.html">eclipse-openbsw-openbsw</a></li>
+        
+        <li><a href="../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../cpp2someip.html">cpp2someip</a></li>
+        
+        <li ><a href="../../src.html">src</a>
+            </li>
+
+        
+        <li class="active"><a href="../RpcHandler.cpp.html">RpcHandler.cpp</a>:669
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">someip::RpcHandler::requestDone(someip::RequestContext&amp;, someip::ServiceResultCode)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00023f1c</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>112 (static)</td>
+                <td>496</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../include/someip/Closure.h/712e92fd87e00fa8c92db27356f7a1c6.html">someip::ServiceResultCode someip::BoundCallback&lt;someip::RequestContext, someip::ServiceResultCode, someip::ServiceResultCode&gt;::methodCaller&lt;someip::RpcHandler, &amp;someip::RpcHandler::requestDone&gt;(void*, someip::RequestContext&amp;, someip::ServiceResultCode) (4)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (19,
+                            <span title="sum of used bytes by all callees">
+                            Σ=724
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="./8dd9f4bfd5951420557b1aa148fa4403.html">someip::RpcHandler::sendError(unsigned long, unsigned short, unsigned short, unsigned char, unsigned char, unsigned short, unsigned char, ip::IPEndpoint const&amp;) const (252)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../NetworkChannel.cpp/604a25aecb3f7e74dcfffa9514b0f688.html">someip::NetworkChannel::getOutputBuffer() const (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/4e8bc6ec7b1a2035a473a8ff5e6ce750.html">someip::SomeIpMessage::setRequestId(unsigned long) (44)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/af76f9d8bd2bc105d54d770c436f607d.html">someip::SomeIpMessage::setServiceId(unsigned short) (36)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/90653e43335d1e69bbbbfe5e21b1b243.html">someip::SomeIpMessage::setMethodId(unsigned short) (36)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/7432f15af01b22cdb69f15e66f525c19.html">someip::SomeIpMessage::setMessageType(someip::SomeIpMessage::MessageType) (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/8cfaba63fd5822dfd04b1fea0477bed1.html">someip::SomeIpMessage::setProtocolVersion(unsigned char) (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/83abd81c543f39f741ab8914fee7e78c.html">someip::SomeIpMessage::setInterfaceVersion(unsigned char) (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/6331021c231999fe2bd8bdbfb59813b2.html">someip::SomeIpMessage::setReturnCode(someip::SomeIpMessage::ReturnCode) (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/c3138aeeff878090302c30a6439ab3ef.html">someip::SomeIpMessage::getPayload() (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/3d8bed6925eff7aabd28a248f6da7ba6.html">someip::SomeIpMessage::getMaximumPayloadLength() const (12)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpSerializer.cpp/84fd336c2f593d191bf5b6674c88c2b3.html">someip::SomeIpSerializer::SomeIpSerializer(etl::span&lt;unsigned char, 4294967295u&gt;) (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/7c5cce004c045226ac5de5a0dea052c9.html">someip::SomeIpMessage::setPayloadLength(unsigned long) (44)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../SomeIpMessage.cpp/f39165547d40d0d38be0b515c58d2ffe.html">someip::readTotalLength(etl::span&lt;unsigned char const, 4294967295u&gt; const&amp;) (12)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../NetworkChannel.cpp/736232ab7fe0d266fb5ffb36ade07a02.html">someip::NetworkChannel::getProto() const (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../ITpTransceiver.cpp/a51963d0f5a85694741f9438cb23c578.html">someip::ITpTransceiver::isOutgoingTpMessage(unsigned char, unsigned long) (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../NetworkChannel.cpp/2069b5511afabcab54b4261c265f6db7.html">someip::NetworkChannel::~NetworkChannel() (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../NetworkChannel.cpp/50fad3afcd805db2d6c3d80028b0eb42.html">someip::NetworkChannel::send(unsigned long) (64)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./8dd9f4bfd5951420557b1aa148fa4403.html">someip::RpcHandler::sendError(unsigned long, unsigned short, unsigned short, unsigned char, unsigned char, unsigned short, unsigned char, ip::IPEndpoint const&amp;) const (252)</a></pre>
+    
+
+    <pre>
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       23f1c:	b5f0      	push	{r4, r5, r6, r7, lr}
+
+       23f1e:	f891 3024 	ldrb.w	r3, [r1, #36]	@ 0x24
+
+       23f22:	b097      	sub	sp, #92	@ 0x5c
+
+       23f24:	460c      	mov	r4, r1
+
+       23f26:	4605      	mov	r5, r0
+
+       23f28:	2a00      	cmp	r2, #0
+
+       23f2a:	d03e      	beq.n	23faa <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x8e>
+
+       23f2c:	2b01      	cmp	r3, #1
+
+       23f2e:	f000 80ae 	beq.w	2408e <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x172>
+
+       23f32:	3a09      	subs	r2, #9
+
+       23f34:	fa5f fc82 	uxtb.w	ip, r2
+
+       23f38:	f1bc 0f04 	cmp.w	ip, #4
+
+       23f3c:	bf98      	it	ls
+
+       23f3e:	4e6c      	ldrls	r6, [pc, #432]	@ (240f0 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1d4>)
+
+       23f40:	f894 0023 	ldrb.w	r0, [r4, #35]	@ 0x23
+
+    _ZN6someip10RpcHandler18getSomeipErrorCodeENS_17ServiceResultCodeE():
+
+       23f44:	bf98      	it	ls
+
+       23f46:	f816 600c 	ldrbls.w	r6, [r6, ip]
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       23f4a:	6989      	ldr	r1, [r1, #24]
+
+       23f4c:	8ba2      	ldrh	r2, [r4, #28]
+
+       23f4e:	8be3      	ldrh	r3, [r4, #30]
+
+       23f50:	9404      	str	r4, [sp, #16]
+
+       23f52:	bf88      	it	hi
+
+       23f54:	2601      	movhi	r6, #1
+
+       23f56:	e9cd 0600 	strd	r0, r6, [sp]
+
+       23f5a:	4628      	mov	r0, r5
+
+       23f5c:	f894 5022 	ldrb.w	r5, [r4, #34]	@ 0x22
+
+       23f60:	9503      	str	r5, [sp, #12]
+
+       23f62:	8c25      	ldrh	r5, [r4, #32]
+
+       23f64:	9502      	str	r5, [sp, #8]
+
+       23f66:	f7ff ff5b 	bl	23e20 <<a href="./8dd9f4bfd5951420557b1aa148fa4403.html">someip::RpcHandler::sendError(unsigned long, unsigned short, unsigned short, unsigned char, unsigned char, unsigned short, unsigned char, ip::IPEndpoint const&) const</a>>
+
+       23f6a:	4607      	mov	r7, r0
+
+    _ZN6someip14ServiceHandler15releaseCallbackERKNS_13BoundCallbackINS_14RequestContextENS_17ServiceResultCodeES3_EE():
+
+       23f6c:	6923      	ldr	r3, [r4, #16]
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       23f6e:	6966      	ldr	r6, [r4, #20]
+
+    _ZN6someip14ServiceHandler15releaseCallbackERKNS_13BoundCallbackINS_14RequestContextENS_17ServiceResultCodeES3_EE():
+
+       23f70:	685d      	ldr	r5, [r3, #4]
+
+    _ZNK3etl5ipool15is_item_in_poolEPKc():
+
+       23f72:	682b      	ldr	r3, [r5, #0]
+
+       23f74:	1af3      	subs	r3, r6, r3
+
+       23f76:	d406      	bmi.n	23f86 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x6a>
+
+       23f78:	696a      	ldr	r2, [r5, #20]
+
+       23f7a:	6929      	ldr	r1, [r5, #16]
+
+       23f7c:	3a01      	subs	r2, #1
+
+       23f7e:	fb01 f202 	mul.w	r2, r1, r2
+
+       23f82:	4293      	cmp	r3, r2
+
+       23f84:	dd03      	ble.n	23f8e <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x72>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       23f86:	4b5b      	ldr	r3, [pc, #364]	@ (240f4 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1d8>)
+
+       23f88:	a811      	add	r0, sp, #68	@ 0x44
+
+       23f8a:	681b      	ldr	r3, [r3, #0]
+
+       23f8c:	4798      	blx	r3
+
+       23f8e:	68ab      	ldr	r3, [r5, #8]
+
+       23f90:	2b00      	cmp	r3, #0
+
+       23f92:	d07e      	beq.n	24092 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x176>
+
+       23f94:	686a      	ldr	r2, [r5, #4]
+
+       23f96:	6032      	str	r2, [r6, #0]
+
+       23f98:	3b01      	subs	r3, #1
+
+       23f9a:	606e      	str	r6, [r5, #4]
+
+       23f9c:	60ab      	str	r3, [r5, #8]
+
+    ~RequestContextCleanup():
+
+       23f9e:	2300      	movs	r3, #0
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       23fa0:	4638      	mov	r0, r7
+
+    ~RequestContextCleanup():
+
+       23fa2:	60a3      	str	r3, [r4, #8]
+
+       23fa4:	60e3      	str	r3, [r4, #12]
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       23fa6:	b017      	add	sp, #92	@ 0x5c
+
+       23fa8:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+       23faa:	2b00      	cmp	r3, #0
+
+       23fac:	d16f      	bne.n	2408e <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x172>
+
+       23fae:	6901      	ldr	r1, [r0, #16]
+
+       23fb0:	f894 2022 	ldrb.w	r2, [r4, #34]	@ 0x22
+
+       23fb4:	680b      	ldr	r3, [r1, #0]
+
+       23fb6:	9200      	str	r2, [sp, #0]
+
+       23fb8:	6c9e      	ldr	r6, [r3, #72]	@ 0x48
+
+       23fba:	8c22      	ldrh	r2, [r4, #32]
+
+       23fbc:	4623      	mov	r3, r4
+
+       23fbe:	a811      	add	r0, sp, #68	@ 0x44
+
+       23fc0:	47b0      	blx	r6
+
+       23fc2:	f89d 3054 	ldrb.w	r3, [sp, #84]	@ 0x54
+
+       23fc6:	2b00      	cmp	r3, #0
+
+       23fc8:	d072      	beq.n	240b0 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x194>
+
+       23fca:	a911      	add	r1, sp, #68	@ 0x44
+
+       23fcc:	a807      	add	r0, sp, #28
+
+       23fce:	f7fd fd79 	bl	21ac4 <<a href="../NetworkChannel.cpp/604a25aecb3f7e74dcfffa9514b0f688.html">someip::NetworkChannel::getOutputBuffer() const</a>>
+
+    _ZN3etl4spanIhLj4294967295EEC4ERKS1_():
+
+       23fd2:	9b08      	ldr	r3, [sp, #32]
+
+       23fd4:	9a07      	ldr	r2, [sp, #28]
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       23fd6:	69a1      	ldr	r1, [r4, #24]
+
+    _ZN3etl4spanIhLj4294967295EEC4ERKS1_():
+
+       23fd8:	9209      	str	r2, [sp, #36]	@ 0x24
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       23fda:	a809      	add	r0, sp, #36	@ 0x24
+
+    _ZN3etl4spanIhLj4294967295EEC4ERKS1_():
+
+       23fdc:	930a      	str	r3, [sp, #40]	@ 0x28
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       23fde:	f005 f817 	bl	29010 <<a href="../SomeIpMessage.cpp/4e8bc6ec7b1a2035a473a8ff5e6ce750.html">someip::SomeIpMessage::setRequestId(unsigned long)</a>>
+
+       23fe2:	8ba1      	ldrh	r1, [r4, #28]
+
+       23fe4:	a809      	add	r0, sp, #36	@ 0x24
+
+       23fe6:	f004 ffb9 	bl	28f5c <<a href="../SomeIpMessage.cpp/af76f9d8bd2bc105d54d770c436f607d.html">someip::SomeIpMessage::setServiceId(unsigned short)</a>>
+
+       23fea:	8be1      	ldrh	r1, [r4, #30]
+
+       23fec:	a809      	add	r0, sp, #36	@ 0x24
+
+       23fee:	f004 ffe1 	bl	28fb4 <<a href="../SomeIpMessage.cpp/90653e43335d1e69bbbbfe5e21b1b243.html">someip::SomeIpMessage::setMethodId(unsigned short)</a>>
+
+       23ff2:	2180      	movs	r1, #128	@ 0x80
+
+       23ff4:	a809      	add	r0, sp, #36	@ 0x24
+
+       23ff6:	f005 f879 	bl	290ec <<a href="../SomeIpMessage.cpp/7432f15af01b22cdb69f15e66f525c19.html">someip::SomeIpMessage::setMessageType(someip::SomeIpMessage::MessageType)</a>>
+
+       23ffa:	2101      	movs	r1, #1
+
+       23ffc:	a809      	add	r0, sp, #36	@ 0x24
+
+       23ffe:	f005 f865 	bl	290cc <<a href="../SomeIpMessage.cpp/8cfaba63fd5822dfd04b1fea0477bed1.html">someip::SomeIpMessage::setProtocolVersion(unsigned char)</a>>
+
+       24002:	f894 1023 	ldrb.w	r1, [r4, #35]	@ 0x23
+
+       24006:	a809      	add	r0, sp, #36	@ 0x24
+
+       24008:	f005 f868 	bl	290dc <<a href="../SomeIpMessage.cpp/83abd81c543f39f741ab8914fee7e78c.html">someip::SomeIpMessage::setInterfaceVersion(unsigned char)</a>>
+
+       2400c:	f894 1025 	ldrb.w	r1, [r4, #37]	@ 0x25
+
+       24010:	a809      	add	r0, sp, #36	@ 0x24
+
+       24012:	f005 f87b 	bl	2910c <<a href="../SomeIpMessage.cpp/6331021c231999fe2bd8bdbfb59813b2.html">someip::SomeIpMessage::setReturnCode(someip::SomeIpMessage::ReturnCode)</a>>
+
+       24016:	68a6      	ldr	r6, [r4, #8]
+
+       24018:	2e00      	cmp	r6, #0
+
+       2401a:	d053      	beq.n	240c4 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1a8>
+
+       2401c:	a809      	add	r0, sp, #36	@ 0x24
+
+       2401e:	f004 ff5b 	bl	28ed8 <<a href="../SomeIpMessage.cpp/c3138aeeff878090302c30a6439ab3ef.html">someip::SomeIpMessage::getPayload()</a>>
+
+       24022:	4607      	mov	r7, r0
+
+       24024:	a809      	add	r0, sp, #36	@ 0x24
+
+       24026:	f005 f89d 	bl	29164 <<a href="../SomeIpMessage.cpp/3d8bed6925eff7aabd28a248f6da7ba6.html">someip::SomeIpMessage::getMaximumPayloadLength() const</a>>
+
+    _ZN3etl4spanIhLj4294967295EEC4IPhEET_j():
+
+       2402a:	970b      	str	r7, [sp, #44]	@ 0x2c
+
+       2402c:	4438      	add	r0, r7
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       2402e:	af0d      	add	r7, sp, #52	@ 0x34
+
+    _ZN3etl4spanIhLj4294967295EEC4IPhEET_j():
+
+       24030:	900c      	str	r0, [sp, #48]	@ 0x30
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       24032:	a90b      	add	r1, sp, #44	@ 0x2c
+
+       24034:	4638      	mov	r0, r7
+
+       24036:	f005 f8c7 	bl	291c8 <<a href="../SomeIpSerializer.cpp/84fd336c2f593d191bf5b6674c88c2b3.html">someip::SomeIpSerializer::SomeIpSerializer(etl::span<unsigned char, 4294967295u>)</a>>
+
+       2403a:	6833      	ldr	r3, [r6, #0]
+
+       2403c:	4630      	mov	r0, r6
+
+       2403e:	689b      	ldr	r3, [r3, #8]
+
+       24040:	4639      	mov	r1, r7
+
+       24042:	4798      	blx	r3
+
+       24044:	f89d 3034 	ldrb.w	r3, [sp, #52]	@ 0x34
+
+       24048:	bb43      	cbnz	r3, 2409c <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x180>
+
+       2404a:	9910      	ldr	r1, [sp, #64]	@ 0x40
+
+       2404c:	a809      	add	r0, sp, #36	@ 0x24
+
+       2404e:	f005 f873 	bl	29138 <<a href="../SomeIpMessage.cpp/7c5cce004c045226ac5de5a0dea052c9.html">someip::SomeIpMessage::setPayloadLength(unsigned long)</a>>
+
+    _ZNK3etl4spanIhLj4294967295EE4dataEv():
+
+       24052:	9b0a      	ldr	r3, [sp, #40]	@ 0x28
+
+    _ZN3etl4spanIKhLj4294967295EEC4IhLj4294967295EEERKNS0_IT_XT0_EEE():
+
+       24054:	930e      	str	r3, [sp, #56]	@ 0x38
+
+    _ZNK6someip13SomeIpMessage14getTotalLengthEv():
+
+       24056:	4638      	mov	r0, r7
+
+    _ZN3etl4spanIKhLj4294967295EEC4IhLj4294967295EEERKNS0_IT_XT0_EEE():
+
+       24058:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       2405a:	930d      	str	r3, [sp, #52]	@ 0x34
+
+    _ZNK6someip13SomeIpMessage14getTotalLengthEv():
+
+       2405c:	f004 ff0e 	bl	28e7c <<a href="../SomeIpMessage.cpp/f39165547d40d0d38be0b515c58d2ffe.html">someip::readTotalLength(etl::span<unsigned char const, 4294967295u> const&)</a>>
+
+       24060:	4606      	mov	r6, r0
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       24062:	a811      	add	r0, sp, #68	@ 0x44
+
+       24064:	f7fd fd1a 	bl	21a9c <<a href="../NetworkChannel.cpp/736232ab7fe0d266fb5ffb36ade07a02.html">someip::NetworkChannel::getProto() const</a>>
+
+       24068:	4631      	mov	r1, r6
+
+       2406a:	f7fc fff9 	bl	21060 <<a href="../ITpTransceiver.cpp/a51963d0f5a85694741f9438cb23c578.html">someip::ITpTransceiver::isOutgoingTpMessage(unsigned char, unsigned long)</a>>
+
+       2406e:	2800      	cmp	r0, #0
+
+       24070:	d02e      	beq.n	240d0 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1b4>
+
+       24072:	69a8      	ldr	r0, [r5, #24]
+
+       24074:	6803      	ldr	r3, [r0, #0]
+
+       24076:	aa09      	add	r2, sp, #36	@ 0x24
+
+       24078:	689b      	ldr	r3, [r3, #8]
+
+       2407a:	a911      	add	r1, sp, #68	@ 0x44
+
+       2407c:	4798      	blx	r3
+
+       2407e:	b360      	cbz	r0, 240da <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1be>
+
+    _ZN6someip10Statistics10incCounterENS0_7CounterE():
+
+       24080:	4a1d      	ldr	r2, [pc, #116]	@ (240f8 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1dc>)
+
+    _ZN3etl16private_optional13optional_implIN6someip14NetworkChannelELb0EE12storage_type7destroyEv():
+
+       24082:	f89d 1054 	ldrb.w	r1, [sp, #84]	@ 0x54
+
+    _ZN6someip10Statistics10incCounterENS0_7CounterE():
+
+       24086:	6813      	ldr	r3, [r2, #0]
+
+       24088:	3301      	adds	r3, #1
+
+       2408a:	6013      	str	r3, [r2, #0]
+
+    _ZN3etl16private_optional13optional_implIN6someip14NetworkChannelELb0EE12storage_type7destroyEv():
+
+       2408c:	bb59      	cbnz	r1, 240e6 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1ca>
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       2408e:	2704      	movs	r7, #4
+
+       24090:	e76c      	b.n	23f6c <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x50>
+
+    _ZN3etl5ipool12release_itemEPc():
+
+       24092:	4b18      	ldr	r3, [pc, #96]	@ (240f4 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1d8>)
+
+       24094:	a811      	add	r0, sp, #68	@ 0x44
+
+       24096:	681b      	ldr	r3, [r3, #0]
+
+       24098:	4798      	blx	r3
+
+       2409a:	e780      	b.n	23f9e <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x82>
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       2409c:	4b17      	ldr	r3, [pc, #92]	@ (240fc <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1e0>)
+
+       2409e:	4918      	ldr	r1, [pc, #96]	@ (24100 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1e4>)
+
+       240a0:	7818      	ldrb	r0, [r3, #0]
+
+       240a2:	f7e9 f8d7 	bl	d254 <<a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+    _ZN3etl16private_optional13optional_implIN6someip14NetworkChannelELb0EE12storage_type7destroyEv():
+
+       240a6:	f89d 3054 	ldrb.w	r3, [sp, #84]	@ 0x54
+
+       240aa:	b93b      	cbnz	r3, 240bc <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1a0>
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       240ac:	2701      	movs	r7, #1
+
+       240ae:	e75d      	b.n	23f6c <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x50>
+
+       240b0:	4b12      	ldr	r3, [pc, #72]	@ (240fc <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1e0>)
+
+       240b2:	4914      	ldr	r1, [pc, #80]	@ (24104 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1e8>)
+
+       240b4:	7818      	ldrb	r0, [r3, #0]
+
+       240b6:	f7e9 f8cd 	bl	d254 <<a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+       240ba:	e7f4      	b.n	240a6 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x18a>
+
+    _ZN3etl10destroy_atIN6someip14NetworkChannelEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleIT_EE5valueEvE4typeEPS5_():
+
+       240bc:	a811      	add	r0, sp, #68	@ 0x44
+
+       240be:	f7fd fcbb 	bl	21a38 <<a href="../NetworkChannel.cpp/2069b5511afabcab54b4261c265f6db7.html">someip::NetworkChannel::~NetworkChannel()</a>>
+
+    _ZN3etl16private_optional13optional_implIN6someip14NetworkChannelELb0EE12storage_type7destroyEv():
+
+       240c2:	e7f3      	b.n	240ac <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x190>
+
+    someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode):
+
+       240c4:	4631      	mov	r1, r6
+
+       240c6:	a809      	add	r0, sp, #36	@ 0x24
+
+       240c8:	f005 f836 	bl	29138 <<a href="../SomeIpMessage.cpp/7c5cce004c045226ac5de5a0dea052c9.html">someip::SomeIpMessage::setPayloadLength(unsigned long)</a>>
+
+       240cc:	af0d      	add	r7, sp, #52	@ 0x34
+
+       240ce:	e7c0      	b.n	24052 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x136>
+
+       240d0:	4631      	mov	r1, r6
+
+       240d2:	a811      	add	r0, sp, #68	@ 0x44
+
+       240d4:	f7fd fd22 	bl	21b1c <<a href="../NetworkChannel.cpp/50fad3afcd805db2d6c3d80028b0eb42.html">someip::NetworkChannel::send(unsigned long)</a>>
+
+       240d8:	e7d1      	b.n	2407e <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x162>
+
+       240da:	4b08      	ldr	r3, [pc, #32]	@ (240fc <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1e0>)
+
+       240dc:	490a      	ldr	r1, [pc, #40]	@ (24108 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x1ec>)
+
+       240de:	7818      	ldrb	r0, [r3, #0]
+
+       240e0:	f7e9 f8b8 	bl	d254 <<a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+       240e4:	e7df      	b.n	240a6 <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x18a>
+
+    _ZN3etl10destroy_atIN6someip14NetworkChannelEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleIT_EE5valueEvE4typeEPS5_():
+
+       240e6:	a811      	add	r0, sp, #68	@ 0x44
+
+       240e8:	f7fd fca6 	bl	21a38 <<a href="../NetworkChannel.cpp/2069b5511afabcab54b4261c265f6db7.html">someip::NetworkChannel::~NetworkChannel()</a>>
+
+    _ZN3etl16private_optional13optional_implIN6someip14NetworkChannelELb0EE12storage_type7destroyEv():
+
+       240ec:	e7cf      	b.n	2408e <<a href="./8b87b098fd5eb9ab9506ed938a6ca435.html">someip::RpcHandler::requestDone(someip::RequestContext&, someip::ServiceResultCode)</a>+0x172>
+
+       240ee:	bf00      	nop
+
+       240f0:	00054750 	.word	0x00054750
+
+       240f4:	20000000 	.word	0x20000000
+
+       240f8:	200199e0 	.word	0x200199e0
+
+       240fc:	20000004 	.word	0x20000004
+
+       24100:	0004da9c 	.word	0x0004da9c
+
+       24104:	0004da74 	.word	0x0004da74
+
+       24108:	0004dac8 	.word	0x0004dac8
+
+    </pre>
+
+    
+    <pre><a href="../../include/someip/Closure.h/712e92fd87e00fa8c92db27356f7a1c6.html">someip::ServiceResultCode someip::BoundCallback&lt;someip::RequestContext, someip::ServiceResultCode, someip::ServiceResultCode&gt;::methodCaller&lt;someip::RpcHandler, &amp;someip::RpcHandler::requestDone&gt;(void*, someip::RequestContext&amp;, someip::ServiceResultCode) (4)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 268</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 376</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    268
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    376
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    220
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    308
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html" class="icon-function">util::logger::Logger::warn(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    200
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                88 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">252</td>
+                <td><a href="./8dd9f4bfd5951420557b1aa148fa4403.html" class="icon-function">someip::RpcHandler::sendError(unsigned long, unsigned short, unsigned short, unsigned char, unsigned char, unsigned short, unsigned char, ip::IPEndpoint const&amp;) const</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">112
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>
