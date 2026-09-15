@@ -1,0 +1,42 @@
+# *******************************************************************************
+# Copyright (c) 2026 Accenture
+#
+# This program and the accompanying materials are made available under the
+# terms of the Apache License Version 2.0 which is available at
+# https://www.apache.org/licenses/LICENSE-2.0
+#
+# SPDX-License-Identifier: Apache-2.0
+# *******************************************************************************
+
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+
+label_flag(
+    name = "blob_configuration",
+    build_setting_default = "//executables/referenceApp/configuration:blob_configuration_headers",
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "blob",
+    srcs = [
+        "src/blob/Blob.cpp",
+        "src/blob/Config.cpp",
+        "src/blob/Header.cpp",
+        "src/blob/Logger.cpp",
+        "src/blob/util.cpp",
+    ],
+    hdrs = [
+        "include/blob/Blob.h",
+        "include/blob/Config.h",
+        "include/blob/Header.h",
+        "include/blob/Logger.h",
+        "include/blob/util.h",
+    ],
+    strip_include_prefix = "include",
+    visibility = ["//visibility:public"],
+    deps = [
+        ":blob_configuration",
+        "//libs/3rdparty/etl",
+        "//libs/bsw/util",
+    ],
+)
